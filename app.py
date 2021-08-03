@@ -4,23 +4,28 @@ waste collection routes used by the authorities'''
 
 # import libraries
 import pandas as pd
-
+import datetime as dt
 import dash
 import dash_core_components as dcc
 import dash_html_components as html
 import dash_bootstrap_components as dbc
 import plotly.graph_objects as go
-
 import dash_auth
+from dash.dependencies import Input, Output, State
+from flask import Flask
+
 USER_PASS = [['ecogestus', 'emarp2021']]
 
 #____________________________________________________________________________________
+#Dealing with figures to show on dashboard
+#____________________________________________________________________________________
 #Loading data to use for mapbox and and for the figure
+
 #load mapbox utilities
 with open('./assets/mapbox_tkn.txt', 'r') as f:
     mapbox_access_token = f.read().strip()
 
-#open c1
+#open
 c1 = pd.read_csv('./datasets/c1.csv')
 c2 = pd.read_csv('./datasets/c2.csv')
 c4 = pd.read_csv('./datasets/c4.csv')
@@ -28,9 +33,9 @@ c5 = pd.read_csv('./datasets/c5.csv')
 c6 = pd.read_csv('./datasets/c6.csv')
 c8 = pd.read_csv('./datasets/c8.csv')
 c9 = pd.read_csv('./datasets/c9.csv')
-cont_recolha = pd.read_csv('./datasets/cont_recolha.csv')
-# Legendas aldrabadas
+cont_recolha = pd.read_excel('./datasets/cont_recolha.xlsx')
 
+# Manipulação das figuras
 mapas = go.Figure()
 
 mapas.add_trace(go.Scattermapbox(
@@ -94,7 +99,7 @@ mapas.add_trace(go.Scattermapbox(
         lon=c6['Longitude'],
         mode='lines',
         marker=go.scattermapbox.Marker(
-            size=3,
+            size=9,
             color = '#9b2226',
         ),
         name = 'Circuito 6',
@@ -108,7 +113,7 @@ mapas.add_trace(go.Scattermapbox(
         lon=c8['Longitude'],
         mode='lines',
         marker=go.scattermapbox.Marker(
-            size=3,
+            size=9,
             color = '#283618',
         ),
         name = 'Circuito 8',
@@ -122,7 +127,7 @@ mapas.add_trace(go.Scattermapbox(
         lon=c9['Longitude'],
         mode='lines',
         marker=go.scattermapbox.Marker(
-            size=3,
+            size=9,
             color = '#5f0f40',
         ),
         name = 'Circuito 9',
@@ -166,20 +171,58 @@ mapas.update_layout(dict(
             ),
         )
 
+#external stylesheet
+#external_stylesheets = ['https://codepen.io/chriddyp/pen/bWLwgP.css']
+#external_stylesheets = [dbc.themes.SPACELAB]
+external_stylesheets = ['https://cdn.rawgit.com/plotly/dash-app-stylesheets/2d266c578d2a6e8850ebce48fdb52759b2aef506/stylesheet-oil-and-gas.css']
+
 # create app
-app = dash.Dash(__name__, external_stylesheets=[dbc.themes.SPACELAB])
+app = dash.Dash(__name__, external_stylesheets=external_stylesheets) #changed to insert oil and gas stylesheet
 auth = dash_auth.BasicAuth(app, USER_PASS)
 
-#test layout
-#https://codepen.io/chriddyp/pen/bWLwgP.css
-
 server = app.server
-app.layout = html.Div(children = [html.H1('Ecogestus - Desempenho do Sistema de Recolha'),
-                        html.Div(children='Representação Geográfica - Prova de Conceito - Versão Teste'),
-                        dcc.Graph(
+app.layout = html.Div(
+    [
+        dcc.Store(id='coisas'),
+        html.Div(
+            [
+                html.Div(
+                    [
+                        html.Img(
+                            src="https://www.ecogestus.com/pt/wp-content/uploads/2021/01/ecogestus_logotipo_moderno-2.jpeg",
+                            style={'height':'7%', 'width':'7%'},
+                            className='two columns',
+                        ),
+                        html.H1(
+                            'Município de Portimão | Desempenho do Sistema de Recolha',
+
+                        ),
+                    ],
+                    className='ten columns',
+                ),
+                html.A(
+                    html.Button(
+                        "Visite-nos",
+                        id="learnMore"
+
+                    ),
+                    href="https://www.ecogestus.com",
+                    className="two columns"
+                )
+            ],
+            id="header",
+            className='row',
+        ),
+    html.Div(
+                    children=dcc.Graph(
                         id='Circuitos de Recolha',
                         figure=mapas)
-                        ])
+                    )
+                ]
+            )
+
 
 if __name__ == '__main__':
     app.run_server(debug = True)
+
+#Análise dos circuitos de recolha de resíduos indiferenciados no Município de Portimão
