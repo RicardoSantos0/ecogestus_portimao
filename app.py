@@ -14,9 +14,6 @@ import dash_auth
 from dash.dependencies import Input, Output, State
 from flask import Flask
 
-#Global Password
-USER_PASS = [['ecogestus', 'emarp2021']]
-
 #____________________________________________________________________________________
 #Dealing with figures to show on dashboard
 #____________________________________________________________________________________
@@ -171,15 +168,19 @@ mapas.update_layout(dict(
         zoom=10
             ),
         )
+#____________________________________________________________________________________________________________________
+#Global Variables and Passwords
+USER_PASS = [['ecogestus', 'emarp2021']]
 
 #external stylesheet
 #external_stylesheets = ['https://codepen.io/chriddyp/pen/bWLwgP.css']
 #external_stylesheets = [dbc.themes.SPACELAB]
 external_stylesheets = ['https://cdn.rawgit.com/plotly/dash-app-stylesheets/2d266c578d2a6e8850ebce48fdb52759b2aef506/stylesheet-oil-and-gas.css']
+#____________________________________________________________________________________________________________________
 
 # create app
 app = dash.Dash(__name__, external_stylesheets=external_stylesheets) #changed to insert oil and gas stylesheet
-auth = dash_auth.BasicAuth(app, USER_PASS)
+#auth = dash_auth.BasicAuth(app, USER_PASS)
 
 server = app.server
 app.layout = html.Div(
@@ -194,7 +195,7 @@ app.layout = html.Div(
                             style={'height':'7%', 'width':'7%'},
                             className='two columns',
                         ),
-                        html.H1(
+                        html.H2(
                             'Município de Portimão | Desempenho do Sistema de Recolha',
                         ),
                     ],
@@ -223,5 +224,4 @@ app.layout = html.Div(
 
 if __name__ == '__main__':
     app.run_server(debug = True)
-
 #Análise dos circuitos de recolha de resíduos indiferenciados no Município de Portimão
