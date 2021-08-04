@@ -14,12 +14,13 @@ import dash_auth
 from dash.dependencies import Input, Output, State
 from flask import Flask
 
+#Global Password
 USER_PASS = [['ecogestus', 'emarp2021']]
 
 #____________________________________________________________________________________
 #Dealing with figures to show on dashboard
 #____________________________________________________________________________________
-#Loading data to use for mapbox and and for the figure
+#Loading data to use for mapbox and and for other figures
 
 #load mapbox utilities
 with open('./assets/mapbox_tkn.txt', 'r') as f:
@@ -33,7 +34,7 @@ c5 = pd.read_csv('./datasets/c5.csv')
 c6 = pd.read_csv('./datasets/c6.csv')
 c8 = pd.read_csv('./datasets/c8.csv')
 c9 = pd.read_csv('./datasets/c9.csv')
-cont_recolha = pd.read_excel('./datasets/cont_recolha.xlsx')
+cont_recolha = pd.read_csv('./datasets/cont_recolha.csv')
 
 # Manipulação das figuras
 mapas = go.Figure()
@@ -178,7 +179,7 @@ external_stylesheets = ['https://cdn.rawgit.com/plotly/dash-app-stylesheets/2d26
 
 # create app
 app = dash.Dash(__name__, external_stylesheets=external_stylesheets) #changed to insert oil and gas stylesheet
-auth = dash_auth.BasicAuth(app, USER_PASS)
+#auth = dash_auth.BasicAuth(app, USER_PASS)
 
 server = app.server
 app.layout = html.Div(
