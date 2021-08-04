@@ -205,7 +205,6 @@ app.layout = html.Div(
                     html.Button(
                         "Visite-nos",
                         id="learnMore"
-
                     ),
                     href="https://www.ecogestus.com",
                     className="two columns"
