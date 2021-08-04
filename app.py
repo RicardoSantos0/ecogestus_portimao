@@ -196,7 +196,6 @@ app.layout = html.Div(
                         ),
                         html.H1(
                             'Município de Portimão | Desempenho do Sistema de Recolha',
-
                         ),
                     ],
                     className='ten columns',
@@ -221,7 +220,6 @@ app.layout = html.Div(
                     )
                 ]
             )
-
 
 if __name__ == '__main__':
     app.run_server(debug = True)
