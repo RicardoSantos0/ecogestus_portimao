@@ -1,7 +1,6 @@
 '''This is will be a template simple dashboard to present to Portimao Municipality,
 We will use Plotly and Dash as main tools. The goal is to show and compare the different
 waste collection routes used by the authorities'''
-
 # import libraries
 import pandas as pd
 import datetime as dt
@@ -16,24 +15,51 @@ from flask import Flask
 
 #____________________________________________________________________________________
 #Dealing with figures to show on dashboard
-#____________________________________________________________________________________
 #Loading data to use for mapbox and and for other figures
-
-#load mapbox utilities
 with open('./assets/mapbox_tkn.txt', 'r') as f:
     mapbox_access_token = f.read().strip()
 
-#open
-c1 = pd.read_csv('./datasets/c1.csv')
-c2 = pd.read_csv('./datasets/c2.csv')
-c4 = pd.read_csv('./datasets/c4.csv')
-c5 = pd.read_csv('./datasets/c5.csv')
-c6 = pd.read_csv('./datasets/c6.csv')
-c8 = pd.read_csv('./datasets/c8.csv')
-c9 = pd.read_csv('./datasets/c9.csv')
+#open circuits
+circuitos = pd.read_csv('./datasets/agg_circuitos.csv')
 cont_recolha = pd.read_csv('./datasets/cont_recolha.csv')
 
-# Manipulação das figuras
+#open other data
+pass
+#____________________________________________________________________________________
+# Variáveis globais - dicionário de cores
+# Necessitarei de verificar o que se passa, não estou a conseguir mapear cores de rotas
+
+color_dict = {1: '#008490',
+              2: '#580000',
+              3: '#001563',
+              4: '#005B46',
+              5: '#6D017F',
+              6: '#F75D50',
+              7: '#EB6B02',
+              8: '#98000D',
+              9: '#ffba08'}
+
+#____________________________________________________________________________________
+# Manipulação de dados - criação de variáveis
+#____________________________________________________________________________________
+c1 = circuitos[circuitos['Circuit'] == 1]
+c2 = circuitos[circuitos['Circuit'] == 2]
+#c3 = circuitos[circuitos['Circuit'] == 3]
+c4 = circuitos[circuitos['Circuit'] == 4]
+c5 = circuitos[circuitos['Circuit'] == 5]
+c6 = circuitos[circuitos['Circuit'] == 6]
+#c7 = circuitos[circuitos['Circuit'] == 7]
+c8 = circuitos[circuitos['Circuit'] == 8]
+c9 = circuitos[circuitos['Circuit'] == 9]
+
+#may need in future
+#________________________________________________________________________________
+#enterrados = cont_recolha[cont_recolha['tipo'] == 'Contentor semi-enterrado']
+#superficie = cont_recolha[~(cont_recolha['tipo'] == 'Contentor semi-enterrado')]
+
+del circuitos
+
+#Figura 1
 mapas = go.Figure()
 
 mapas.add_trace(go.Scattermapbox(
@@ -42,13 +68,12 @@ mapas.add_trace(go.Scattermapbox(
         mode='lines',
         marker=go.scattermapbox.Marker(
             size=9,
-            color = '#001219'
+            color = '#008490'
         ),
         name = 'Circuito 1',
         text = '<b>Minutos Passados:<b>' + c1["Tempo Acumulado (min)"].astype(str) +
                 'Dist. Percorrida (km):' +  c1["Dist. Acumulada (km)"].astype(str),
-        )
-        )
+        ))
 
 mapas.add_trace(go.Scattermapbox(
         lat=c2['Latitude'],
@@ -56,7 +81,7 @@ mapas.add_trace(go.Scattermapbox(
         mode='lines',
         marker=go.scattermapbox.Marker(
             size=9,
-            color = '#005f73',
+            color = '#580000',
         ),
         name = 'Circuito 2',
         text = '<b>Minutos Passados:<b>' + c2["Tempo Acumulado (min)"].astype(str) +
@@ -70,7 +95,7 @@ mapas.add_trace(go.Scattermapbox(
         mode='lines',
         marker=go.scattermapbox.Marker(
             size=9,
-            color = '#ca6702',
+            color = '#005B46',
         ),
         name = 'Circuito 4',
         text = '<b>Minutos Passados:<b>' + c4["Tempo Acumulado (min)"].astype(str) +
@@ -84,7 +109,7 @@ mapas.add_trace(go.Scattermapbox(
         mode='lines',
         marker=go.scattermapbox.Marker(
             size=9,
-            color = '#bb3e03',
+            color = '#6D017F',
         ),
         name = 'Circuito 5',
         text = '<b>Minutos Passados:<b>' + c5["Tempo Acumulado (min)"].astype(str) +
@@ -98,7 +123,7 @@ mapas.add_trace(go.Scattermapbox(
         mode='lines',
         marker=go.scattermapbox.Marker(
             size=9,
-            color = '#9b2226',
+            color = '#F75D50',
         ),
         name = 'Circuito 6',
         text='<b>Minutos Passados:<b>' + c6["Tempo Acumulado (min)"].astype(str) +
@@ -112,7 +137,7 @@ mapas.add_trace(go.Scattermapbox(
         mode='lines',
         marker=go.scattermapbox.Marker(
             size=9,
-            color = '#283618',
+            color = '#98000D',
         ),
         name = 'Circuito 8',
         text='<b>Minutos Passados:<b>' + c8["Tempo Acumulado (min)"].astype(str) +
@@ -126,7 +151,7 @@ mapas.add_trace(go.Scattermapbox(
         mode='lines',
         marker=go.scattermapbox.Marker(
             size=9,
-            color = '#5f0f40',
+            color = '#ffba08',
         ),
         name = 'Circuito 9',
         text='<b>Minutos Passados:<b>' + c9["Tempo Acumulado (min)"].astype(str) +
@@ -134,14 +159,14 @@ mapas.add_trace(go.Scattermapbox(
         )
         )
 
-#color_dict = ['#001219', '#005f73', '#ca6702', '#bb3e03', '#9b2226', '#283618', '#5f0f40']
+#split between underground and surface level containers
 mapas.add_trace(go.Scattermapbox(
         lat=cont_recolha['Latitude'],
         lon=cont_recolha['Longitude'],
         mode='markers',
         marker=go.scattermapbox.Marker(
-            size=8,
-            color = cont_recolha['Circuit'],
+            size= (cont_recolha['litros']/70),
+            color = cont_recolha['Circuit'].map(color_dict),
         ),
         name = 'Contentores',
         text = 'Circuito: ' + cont_recolha['Circuit'].astype(str)
@@ -160,6 +185,7 @@ mapas.update_layout(dict(
     mapbox=dict(
         accesstoken=mapbox_access_token,
         bearing=0,
+        style = 'streets',
         center=dict(
             lat=37.157381,
             lon=-8.552441
