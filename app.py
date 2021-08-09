@@ -191,7 +191,7 @@ mapas.add_trace(go.Scattermapbox(
         lon=cont_recolha['Longitude'],
         mode='markers',
         marker=go.scattermapbox.Marker(
-            size= (cont_recolha['litros']/200),
+            size= cont_recolha['litros']/200,
             color = cont_recolha['Circuit'].map(color_dict),
         ),
         customdata=np.stack((cont_recolha["contentores"], (cont_recolha["recolhas"] * 100).astype(int),
