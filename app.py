@@ -3,6 +3,7 @@ We will use Plotly and Dash as main tools. The goal is to show and compare the d
 waste collection routes used by the authorities'''
 # import libraries
 import pandas as pd
+import numpy as np
 import datetime as dt
 import dash
 import dash_core_components as dcc
@@ -22,6 +23,7 @@ with open('./assets/mapbox_tkn.txt', 'r') as f:
 #open circuits
 circuitos = pd.read_csv('./datasets/agg_circuitos.csv')
 cont_recolha = pd.read_csv('./datasets/cont_recolha.csv')
+circuitos.style.format({'Dist. Acumulada (km)': "{:.2f}", 'Longitude': "{:.2f}", 'Latitude': "{:.2f}"})
 
 #open other data
 pass
@@ -53,6 +55,7 @@ c8 = circuitos[circuitos['Circuit'] == 8]
 c9 = circuitos[circuitos['Circuit'] == 9]
 
 #may need in future
+cont_recolha.replace('Ã£','ã', inplace = True)
 #________________________________________________________________________________
 #enterrados = cont_recolha[cont_recolha['tipo'] == 'Contentor semi-enterrado']
 #superficie = cont_recolha[~(cont_recolha['tipo'] == 'Contentor semi-enterrado')]
@@ -70,11 +73,14 @@ mapas.add_trace(go.Scattermapbox(
             size=9,
             color = '#008490'
         ),
-        name = 'Circuito 1',
-        text = '<b>Minutos Passados:<b>' + c1["Tempo Acumulado (min)"].astype(str) +
-                'Dist. Percorrida (km):' +  c1["Dist. Acumulada (km)"].astype(str),
+        customdata= np.stack((c1["Dist. Acumulada (km)"], c1["Tempo Acumulado (min)"]), axis = -1),
+        hovertemplate =
+        '<b>Tempo (min):</b>: %{customdata[1]}<br>' +
+        '<b>Kms Percorridos</b>: %{customdata[0]:.2f}<br>' +
+        '<b>Longitude</b>: %{lon:.2f}<br>' +
+        '<b>Latitude</b>: %{lat:.2f}<br>',
+        name = '<b>Circuito 1</b>',
         ))
-
 mapas.add_trace(go.Scattermapbox(
         lat=c2['Latitude'],
         lon=c2['Longitude'],
@@ -83,12 +89,14 @@ mapas.add_trace(go.Scattermapbox(
             size=9,
             color = '#580000',
         ),
-        name = 'Circuito 2',
-        text = '<b>Minutos Passados:<b>' + c2["Tempo Acumulado (min)"].astype(str) +
-                'Dist. Percorrida (km):' +  c2["Dist. Acumulada (km)"].astype(str),
-        )
-        )
-
+        customdata= np.stack((c2["Dist. Acumulada (km)"], c2["Tempo Acumulado (min)"]), axis = -1),
+        hovertemplate =
+        '<b>Tempo (min):</b>: %{customdata[1]}<br>' +
+        '<b>Kms Percorridos</b>: %{customdata[0]:.2f}<br>' +
+        '<b>Longitude</b>: %{lon:.2f}<br>' +
+        '<b>Latitude</b>: %{lat:.2f}<br>',
+        name = '<b>Circuito 2</b>',
+        ))
 mapas.add_trace(go.Scattermapbox(
         lat=c4['Latitude'],
         lon=c4['Longitude'],
@@ -97,12 +105,14 @@ mapas.add_trace(go.Scattermapbox(
             size=9,
             color = '#005B46',
         ),
-        name = 'Circuito 4',
-        text = '<b>Minutos Passados:<b>' + c4["Tempo Acumulado (min)"].astype(str) +
-                'Dist. Percorrida (km):' +  c4["Dist. Acumulada (km)"].astype(str),
-        )
-        )
-
+        customdata= np.stack((c4["Dist. Acumulada (km)"], c4["Tempo Acumulado (min)"]), axis = -1),
+        hovertemplate =
+        '<b>Tempo (min):</b>: %{customdata[1]}<br>' +
+        '<b>Kms Percorridos</b>: %{customdata[0]:.2f}<br>' +
+        '<b>Longitude</b>: %{lon:.2f}<br>' +
+        '<b>Latitude</b>: %{lat:.2f}<br>',
+        name = '<b>Circuito 4</b>',
+        ))
 mapas.add_trace(go.Scattermapbox(
         lat=c5['Latitude'],
         lon=c5['Longitude'],
@@ -111,12 +121,14 @@ mapas.add_trace(go.Scattermapbox(
             size=9,
             color = '#6D017F',
         ),
-        name = 'Circuito 5',
-        text = '<b>Minutos Passados:<b>' + c5["Tempo Acumulado (min)"].astype(str) +
-                'Dist. Percorrida (km):' +  c5["Dist. Acumulada (km)"].astype(str),
-        )
-        )
-
+        customdata= np.stack((c5["Dist. Acumulada (km)"], c5["Tempo Acumulado (min)"]), axis = -1),
+        hovertemplate =
+        '<b>Tempo (min):</b>: %{customdata[1]}<br>' +
+        '<b>Kms Percorridos</b>: %{customdata[0]:.2f}<br>' +
+        '<b>Longitude</b>: %{lon:.2f}<br>' +
+        '<b>Latitude</b>: %{lat:.2f}<br>',
+        name = '<b>Circuito 5</b>',
+        ))
 mapas.add_trace(go.Scattermapbox(
         lat=c6['Latitude'],
         lon=c6['Longitude'],
@@ -125,12 +137,14 @@ mapas.add_trace(go.Scattermapbox(
             size=9,
             color = '#F75D50',
         ),
-        name = 'Circuito 6',
-        text='<b>Minutos Passados:<b>' + c6["Tempo Acumulado (min)"].astype(str) +
-         'Dist. Percorrida (km):' + c6["Dist. Acumulada (km)"].astype(str),
-        )
-        )
-
+        customdata= np.stack((c6["Dist. Acumulada (km)"], c6["Tempo Acumulado (min)"]), axis = -1),
+        hovertemplate =
+        '<b>Tempo (min):</b>: %{customdata[1]}<br>' +
+        '<b>Kms Percorridos</b>: %{customdata[0]:.2f}<br>' +
+        '<b>Longitude</b>: %{lon:.2f}<br>' +
+        '<b>Latitude</b>: %{lat:.2f}<br>',
+        name = '<b>Circuito 6</b>',
+        ))
 mapas.add_trace(go.Scattermapbox(
         lat=c8['Latitude'],
         lon=c8['Longitude'],
@@ -139,12 +153,14 @@ mapas.add_trace(go.Scattermapbox(
             size=9,
             color = '#98000D',
         ),
-        name = 'Circuito 8',
-        text='<b>Minutos Passados:<b>' + c8["Tempo Acumulado (min)"].astype(str) +
-         'Dist. Percorrida (km):' + c8["Dist. Acumulada (km)"].astype(str),
-        )
-        )
-
+        customdata= np.stack((c8["Dist. Acumulada (km)"], c8["Tempo Acumulado (min)"]), axis = -1),
+        hovertemplate =
+        '<b>Tempo (min):</b>: %{customdata[1]}<br>' +
+        '<b>Kms Percorridos</b>: %{customdata[0]:.2f}<br>' +
+        '<b>Longitude</b>: %{lon:.2f}<br>' +
+        '<b>Latitude</b>: %{lat:.2f}<br>',
+        name = '<b>Circuito 8</b>',
+        ))
 mapas.add_trace(go.Scattermapbox(
         lat=c9['Latitude'],
         lon=c9['Longitude'],
@@ -153,13 +169,16 @@ mapas.add_trace(go.Scattermapbox(
             size=9,
             color = '#ffba08',
         ),
-        name = 'Circuito 9',
-        text='<b>Minutos Passados:<b>' + c9["Tempo Acumulado (min)"].astype(str) +
-         'Dist. Percorrida (km):' + c9["Dist. Acumulada (km)"].astype(str),
-        )
-        )
+        customdata= np.stack((c9["Dist. Acumulada (km)"], c9["Tempo Acumulado (min)"]), axis = -1),
+        hovertemplate =
+        '<b>Tempo (min):</b>: %{customdata[1]}<br>' +
+        '<b>Kms Percorridos</b>: %{customdata[0]:.2f}<br>' +
+        '<b>Longitude</b>: %{lon:.2f}<br>' +
+        '<b>Latitude</b>: %{lat:.2f}<br>',
+        name = '<b>Circuito 9</b>',
+        ))
 
-#split between underground and surface level containers
+#split between underground and surface level containers not possible yet
 mapas.add_trace(go.Scattermapbox(
         lat=cont_recolha['Latitude'],
         lon=cont_recolha['Longitude'],
@@ -168,6 +187,7 @@ mapas.add_trace(go.Scattermapbox(
             size= (cont_recolha['litros']/70),
             color = cont_recolha['Circuit'].map(color_dict),
         ),
+
         name = 'Contentores',
         text = 'Circuito: ' + cont_recolha['Circuit'].astype(str)
         )
