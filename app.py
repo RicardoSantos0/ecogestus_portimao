@@ -76,9 +76,10 @@ mapas.add_trace(go.Scattermapbox(
         customdata= np.stack((c1["Dist. Acumulada (km)"], c1["Tempo Acumulado (min)"]), axis = -1),
         hovertemplate =
         '<b>Tempo (min):</b>: %{customdata[1]}<br>' +
-        '<b>Kms Percorridos</b>: %{customdata[0]:.2f}<br>' +
-        '<b>Longitude</b>: %{lon:.2f}<br>' +
-        '<b>Latitude</b>: %{lat:.2f}<br>',
+        '<b>Kms Percorridos</b>: %{customdata[0]:.2f}<br>' # +
+        #'<b>Longitude</b>: %{lon:.2f}<br>' +
+        #'<b>Latitude</b>: %{lat:.2f}<br>'
+        ,
         name = '<b>Circuito 1</b>',
         ))
 mapas.add_trace(go.Scattermapbox(
@@ -92,9 +93,10 @@ mapas.add_trace(go.Scattermapbox(
         customdata= np.stack((c2["Dist. Acumulada (km)"], c2["Tempo Acumulado (min)"]), axis = -1),
         hovertemplate =
         '<b>Tempo (min):</b>: %{customdata[1]}<br>' +
-        '<b>Kms Percorridos</b>: %{customdata[0]:.2f}<br>' +
-        '<b>Longitude</b>: %{lon:.2f}<br>' +
-        '<b>Latitude</b>: %{lat:.2f}<br>',
+        '<b>Kms Percorridos</b>: %{customdata[0]:.2f}<br>' # +
+        #'<b>Longitude</b>: %{lon:.2f}<br>' +
+        #'<b>Latitude</b>: %{lat:.2f}<br>'
+        ,
         name = '<b>Circuito 2</b>',
         ))
 mapas.add_trace(go.Scattermapbox(
@@ -108,9 +110,10 @@ mapas.add_trace(go.Scattermapbox(
         customdata= np.stack((c4["Dist. Acumulada (km)"], c4["Tempo Acumulado (min)"]), axis = -1),
         hovertemplate =
         '<b>Tempo (min):</b>: %{customdata[1]}<br>' +
-        '<b>Kms Percorridos</b>: %{customdata[0]:.2f}<br>' +
-        '<b>Longitude</b>: %{lon:.2f}<br>' +
-        '<b>Latitude</b>: %{lat:.2f}<br>',
+        '<b>Kms Percorridos</b>: %{customdata[0]:.2f}<br>' # +
+        #'<b>Longitude</b>: %{lon:.2f}<br>' +
+        #'<b>Latitude</b>: %{lat:.2f}<br>'
+        ,
         name = '<b>Circuito 4</b>',
         ))
 mapas.add_trace(go.Scattermapbox(
@@ -124,9 +127,10 @@ mapas.add_trace(go.Scattermapbox(
         customdata= np.stack((c5["Dist. Acumulada (km)"], c5["Tempo Acumulado (min)"]), axis = -1),
         hovertemplate =
         '<b>Tempo (min):</b>: %{customdata[1]}<br>' +
-        '<b>Kms Percorridos</b>: %{customdata[0]:.2f}<br>' +
-        '<b>Longitude</b>: %{lon:.2f}<br>' +
-        '<b>Latitude</b>: %{lat:.2f}<br>',
+        '<b>Kms Percorridos</b>: %{customdata[0]:.2f}<br>' # +
+        #'<b>Longitude</b>: %{lon:.2f}<br>' +
+        #'<b>Latitude</b>: %{lat:.2f}<br>'
+        ,
         name = '<b>Circuito 5</b>',
         ))
 mapas.add_trace(go.Scattermapbox(
@@ -140,9 +144,10 @@ mapas.add_trace(go.Scattermapbox(
         customdata= np.stack((c6["Dist. Acumulada (km)"], c6["Tempo Acumulado (min)"]), axis = -1),
         hovertemplate =
         '<b>Tempo (min):</b>: %{customdata[1]}<br>' +
-        '<b>Kms Percorridos</b>: %{customdata[0]:.2f}<br>' +
-        '<b>Longitude</b>: %{lon:.2f}<br>' +
-        '<b>Latitude</b>: %{lat:.2f}<br>',
+        '<b>Kms Percorridos</b>: %{customdata[0]:.2f}<br>' # +
+        #'<b>Longitude</b>: %{lon:.2f}<br>' +
+        #'<b>Latitude</b>: %{lat:.2f}<br>'
+        ,
         name = '<b>Circuito 6</b>',
         ))
 mapas.add_trace(go.Scattermapbox(
@@ -156,9 +161,10 @@ mapas.add_trace(go.Scattermapbox(
         customdata= np.stack((c8["Dist. Acumulada (km)"], c8["Tempo Acumulado (min)"]), axis = -1),
         hovertemplate =
         '<b>Tempo (min):</b>: %{customdata[1]}<br>' +
-        '<b>Kms Percorridos</b>: %{customdata[0]:.2f}<br>' +
-        '<b>Longitude</b>: %{lon:.2f}<br>' +
-        '<b>Latitude</b>: %{lat:.2f}<br>',
+        '<b>Kms Percorridos</b>: %{customdata[0]:.2f}<br>'# +
+        #'<b>Longitude</b>: %{lon:.2f}<br>' +
+        #'<b>Latitude</b>: %{lat:.2f}<br>'
+        ,
         name = '<b>Circuito 8</b>',
         ))
 mapas.add_trace(go.Scattermapbox(
@@ -172,9 +178,10 @@ mapas.add_trace(go.Scattermapbox(
         customdata= np.stack((c9["Dist. Acumulada (km)"], c9["Tempo Acumulado (min)"]), axis = -1),
         hovertemplate =
         '<b>Tempo (min):</b>: %{customdata[1]}<br>' +
-        '<b>Kms Percorridos</b>: %{customdata[0]:.2f}<br>' +
-        '<b>Longitude</b>: %{lon:.2f}<br>' +
-        '<b>Latitude</b>: %{lat:.2f}<br>',
+        '<b>Kms Percorridos</b>: %{customdata[0]:.2f}<br>'# +
+        #'<b>Longitude</b>: %{lon:.2f}<br>' +
+        #'<b>Latitude</b>: %{lat:.2f}<br>'
+        ,
         name = '<b>Circuito 9</b>',
         ))
 
@@ -187,20 +194,32 @@ mapas.add_trace(go.Scattermapbox(
             size= (cont_recolha['litros']/70),
             color = cont_recolha['Circuit'].map(color_dict),
         ),
-
-        name = 'Contentores',
-        text = 'Circuito: ' + cont_recolha['Circuit'].astype(str)
-        )
-        )
-
+        customdata=np.stack((cont_recolha["contentores"], (cont_recolha["recolhas"] * 100).astype(int),
+                            (cont_recolha["percentagem"] * 100).astype(int), cont_recolha["tipo"],
+                             cont_recolha['volume'], cont_recolha['estado'], cont_recolha["Circuit"],
+                             ), axis=-1),
+        hovertemplate=
+        #lado esquerdo do hover
+        '<b>Contentores Visitados</b>: %{customdata[0]}<br>' +
+        '<b>Contentores Recolhidos/Visitados</b>: %{customdata[1]}%<br>' +
+        '<b>Grau de enchimento contentores recolhidos</b>: %{customdata[2]}%<br>' +
+        '<b>Coordenadas</b>: lon - %{lon:.2f}, lat - %{lat:.2f}' +
+        #lado direito do hover
+        '<extra><b>Tipo de Contentor: %{customdata[3]}</b><br>' +
+        '<b>Capacidade do Contentor (l): %{customdata[4]}</b><br>' +
+        '<b>Estado: %{customdata[5]}</b><br>'
+        '<b>Circuito de Recolha %{customdata[6]}</b><br></extra>',
+        name = '<b>Contentores</b>'
+))
+#care with size on final upload
 mapas.update_layout(dict(
     autosize=True,
-    #margin=dict(
-    #    l=30,
-    #    r=30,
-    #    b=20,
-    #    t=40
-    ),
+    margin=dict(
+        l=20,
+        r=20,
+        b=20,
+        t=20)
+    ,
     hovermode='closest',
     mapbox=dict(
         accesstoken=mapbox_access_token,
@@ -213,6 +232,7 @@ mapas.update_layout(dict(
         pitch=0,
         zoom=10
             ),
+        )
         )
 #____________________________________________________________________________________________________________________
 #Global Variables and Passwords
@@ -242,7 +262,7 @@ app.layout = html.Div(
                             className='two columns',
                         ),
                         html.H2(
-                            'Município de Portimão | Desempenho do Sistema de Recolha',
+                            'Município de Portimão | Sistema de Recolha de Resíduos',
                         ),
                     ],
                     className='ten columns',
