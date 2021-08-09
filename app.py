@@ -191,7 +191,7 @@ mapas.add_trace(go.Scattermapbox(
         lon=cont_recolha['Longitude'],
         mode='markers',
         marker=go.scattermapbox.Marker(
-            size= (cont_recolha['litros']/70),
+            size= (cont_recolha['litros']/200),
             color = cont_recolha['Circuit'].map(color_dict),
         ),
         customdata=np.stack((cont_recolha["contentores"], (cont_recolha["recolhas"] * 100).astype(int),
@@ -246,7 +246,7 @@ external_stylesheets = ['https://cdn.rawgit.com/plotly/dash-app-stylesheets/2d26
 
 # create app
 app = dash.Dash(__name__, external_stylesheets=external_stylesheets) #changed to insert oil and gas stylesheet
-#auth = dash_auth.BasicAuth(app, USER_PASS)
+auth = dash_auth.BasicAuth(app, USER_PASS)
 
 server = app.server
 app.layout = html.Div(
