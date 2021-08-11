@@ -64,7 +64,6 @@ del circuitos
 
 #Figura 1
 mapas = go.Figure()
-
 mapas.add_trace(go.Scattermapbox(
         lat=c1['Latitude'],
         lon=c1['Longitude'],
@@ -82,6 +81,7 @@ mapas.add_trace(go.Scattermapbox(
         ,
         name = '<b>Circuito 1</b>',
         ))
+
 mapas.add_trace(go.Scattermapbox(
         lat=c2['Latitude'],
         lon=c2['Longitude'],
@@ -99,6 +99,7 @@ mapas.add_trace(go.Scattermapbox(
         ,
         name = '<b>Circuito 2</b>',
         ))
+
 mapas.add_trace(go.Scattermapbox(
         lat=c4['Latitude'],
         lon=c4['Longitude'],
@@ -116,6 +117,7 @@ mapas.add_trace(go.Scattermapbox(
         ,
         name = '<b>Circuito 4</b>',
         ))
+
 mapas.add_trace(go.Scattermapbox(
         lat=c5['Latitude'],
         lon=c5['Longitude'],
@@ -133,6 +135,7 @@ mapas.add_trace(go.Scattermapbox(
         ,
         name = '<b>Circuito 5</b>',
         ))
+
 mapas.add_trace(go.Scattermapbox(
         lat=c6['Latitude'],
         lon=c6['Longitude'],
@@ -150,6 +153,7 @@ mapas.add_trace(go.Scattermapbox(
         ,
         name = '<b>Circuito 6</b>',
         ))
+
 mapas.add_trace(go.Scattermapbox(
         lat=c8['Latitude'],
         lon=c8['Longitude'],
@@ -167,6 +171,7 @@ mapas.add_trace(go.Scattermapbox(
         ,
         name = '<b>Circuito 8</b>',
         ))
+
 mapas.add_trace(go.Scattermapbox(
         lat=c9['Latitude'],
         lon=c9['Longitude'],
@@ -209,18 +214,21 @@ mapas.add_trace(go.Scattermapbox(
         '<b>Capacidade do Contentor (l): %{customdata[4]}</b><br>' +
         '<b>Estado: %{customdata[5]}</b><br>'
         '<b>Circuito de Recolha %{customdata[6]}</b><br></extra>',
-        name = '<b>Contentores</b>'
+        name = '<b>Ilha Ecológica/Contentores</b>'
 ))
+
 #care with size on final upload
 mapas.update_layout(dict(
     autosize=True,
     margin=dict(
-        l=20,
-        r=20,
+        l=30,
+        r=30,
         b=20,
-        t=20)
-    ,
+        t=40
+    ),
     hovermode='closest',
+    showlegend = False,
+    title = 'Circuitos de Recolha de RU',
     mapbox=dict(
         accesstoken=mapbox_access_token,
         bearing=0,
@@ -246,46 +254,63 @@ external_stylesheets = ['https://cdn.rawgit.com/plotly/dash-app-stylesheets/2d26
 
 # create app
 app = dash.Dash(__name__, external_stylesheets=external_stylesheets) #changed to insert oil and gas stylesheet
-auth = dash_auth.BasicAuth(app, USER_PASS)
+#auth = dash_auth.BasicAuth(app, USER_PASS)
 
 server = app.server
-app.layout = html.Div(
-    [
+app.layout = dbc.Container([
+    #cabeçalho - Título, logo e botão
+    dbc.Row([html.Div([
         dcc.Store(id='coisas'),
-        html.Div(
-            [
                 html.Div(
                     [
                         html.Img(
                             src="https://www.ecogestus.com/pt/wp-content/uploads/2021/01/ecogestus_logotipo_moderno-2.jpeg",
-                            style={'height':'7%', 'width':'7%'},
+                            style={'height': '10%', 'width': '10%', 'verticalAlign': 'middle'},
                             className='two columns',
                         ),
+                        #html.Img(
+                        #    src = "https://www.emarp.pt/wp-content/uploads/2021/07/EMARP_LOGO-PRINCIPAL.png",
+                        #    #src="https://www.ecogestus.com/pt/wp-content/uploads/2021/01/ecogestus_logotipo_moderno-2.jpeg",
+                        #    style={'height':'20%', 'width':'20%', 'verticalAlign': 'middle'},
+                        #    className='two columns',
+                        #),
                         html.H2(
-                            'Município de Portimão | Sistema de Recolha de Resíduos',
-                        ),
-                    ],
-                    className='ten columns',
-                ),
-                html.A(
-                    html.Button(
+                            'Portimão | Avaliação de Desempenho da Recolha de RU', style={'textAlign': 'center', 'fontWeight': 'bold',  'verticalAlign': 'middle'},
+                            className='eight columns'),
+                    html.A(
+                        html.Button(
                         "Visite-nos",
-                        id="learnMore"
-                    ),
-                    href="https://www.ecogestus.com",
-                    className="two columns"
-                )
+                        id="learnMore",
+                        ),
+                        href="https://www.ecogestus.com",
+                        className="two columns",
+                        style=dict(verticalAlign ='middle', display = 'inline')
+                        )
             ],
             id="header",
             className='row',
-        ),
-    html.Div(
+        )])
+        ]),
+    #linha 2: Mapa e outras representações
+    dbc.Row([dbc.Col(html.Div(
                     children=dcc.Graph(
                         id='Circuitos de Recolha',
-                        figure=mapas)
-                    )
-                ]
-            )
+                        figure=mapas,
+                    ),
+                    style={"margin": "10px"},
+                    className='eight columns'),
+                    ),
+        dbc.Col([html.P('O mapa à esquerda ilustra e resume o acompanhamento no terreno dos circuitos de recolha da EMARP. ' +
+                        'Para cada localização foram registados:', style = {'textAlign': 'justify'}),
+                html.P(),
+                html.P('O número de contentores visitados e a respetiva capacidade volumétrica,', style = {'font-weight': 'bold', 'textAlign': 'justify'}),
+                html.P('O número de contentores recolhidos e o grau de enchimento observado,', style = {'font-weight': 'bold', 'textAlign': 'justify'}),
+                html.P('Tendo por base os indicadores observados, foi feita uma estimativa da contribuição (em volume) de cada localização para o total dos resíduos recolhidos. Essa contribuição está representada no diâmetro de cada ponto.',
+                       style = {'textAlign': 'justify'})],
+                className = 'three columns',
+                style={'display': "inline-block"})
+        ], no_gutters=True, justify='start')
+    ], fluid = True)
 
 if __name__ == '__main__':
     app.run_server(debug = True)
