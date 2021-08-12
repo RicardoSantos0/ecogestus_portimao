@@ -41,207 +41,13 @@ color_dict = {1: '#008490',
               8: '#98000D',
               9: '#ffba08'}
 
+#created list as placeholder for better solution of line_color since plotly does not seem to handle it well
+color_list = ['#008490', '#580000', '#001563', '#005B46', '#6D017F', '#F75D50', '#EB6B02', '#98000D', '#ffba08']
+
 #____________________________________________________________________________________
 # Manipulação de dados - criação de variáveis
-#____________________________________________________________________________________
-c1 = circuitos[circuitos['Circuit'] == 1]
-c2 = circuitos[circuitos['Circuit'] == 2]
-#c3 = circuitos[circuitos['Circuit'] == 3]
-c4 = circuitos[circuitos['Circuit'] == 4]
-c5 = circuitos[circuitos['Circuit'] == 5]
-c6 = circuitos[circuitos['Circuit'] == 6]
-#c7 = circuitos[circuitos['Circuit'] == 7]
-c8 = circuitos[circuitos['Circuit'] == 8]
-c9 = circuitos[circuitos['Circuit'] == 9]
-
 #may need in future
 cont_recolha.replace('Ã£','ã', inplace = True)
-#________________________________________________________________________________
-#enterrados = cont_recolha[cont_recolha['tipo'] == 'Contentor semi-enterrado']
-#superficie = cont_recolha[~(cont_recolha['tipo'] == 'Contentor semi-enterrado')]
-
-del circuitos
-
-#Figura 1
-mapas = go.Figure()
-mapas.add_trace(go.Scattermapbox(
-        lat=c1['Latitude'],
-        lon=c1['Longitude'],
-        mode='lines',
-        marker=go.scattermapbox.Marker(
-            size=9,
-            color = '#008490'
-        ),
-        customdata= np.stack((c1["Dist. Acumulada (km)"], c1["Tempo Acumulado (min)"]), axis = -1),
-        hovertemplate =
-        '<b>Tempo (min):</b>: %{customdata[1]}<br>' +
-        '<b>Kms Percorridos</b>: %{customdata[0]:.2f}<br>' # +
-        #'<b>Longitude</b>: %{lon:.2f}<br>' +
-        #'<b>Latitude</b>: %{lat:.2f}<br>'
-        ,
-        name = '<b>Circuito 1</b>',
-        ))
-
-mapas.add_trace(go.Scattermapbox(
-        lat=c2['Latitude'],
-        lon=c2['Longitude'],
-        mode='lines',
-        marker=go.scattermapbox.Marker(
-            size=9,
-            color = '#580000',
-        ),
-        customdata= np.stack((c2["Dist. Acumulada (km)"], c2["Tempo Acumulado (min)"]), axis = -1),
-        hovertemplate =
-        '<b>Tempo (min):</b>: %{customdata[1]}<br>' +
-        '<b>Kms Percorridos</b>: %{customdata[0]:.2f}<br>' # +
-        #'<b>Longitude</b>: %{lon:.2f}<br>' +
-        #'<b>Latitude</b>: %{lat:.2f}<br>'
-        ,
-        name = '<b>Circuito 2</b>',
-        ))
-
-mapas.add_trace(go.Scattermapbox(
-        lat=c4['Latitude'],
-        lon=c4['Longitude'],
-        mode='lines',
-        marker=go.scattermapbox.Marker(
-            size=9,
-            color = '#005B46',
-        ),
-        customdata= np.stack((c4["Dist. Acumulada (km)"], c4["Tempo Acumulado (min)"]), axis = -1),
-        hovertemplate =
-        '<b>Tempo (min):</b>: %{customdata[1]}<br>' +
-        '<b>Kms Percorridos</b>: %{customdata[0]:.2f}<br>' # +
-        #'<b>Longitude</b>: %{lon:.2f}<br>' +
-        #'<b>Latitude</b>: %{lat:.2f}<br>'
-        ,
-        name = '<b>Circuito 4</b>',
-        ))
-
-mapas.add_trace(go.Scattermapbox(
-        lat=c5['Latitude'],
-        lon=c5['Longitude'],
-        mode='lines',
-        marker=go.scattermapbox.Marker(
-            size=9,
-            color = '#6D017F',
-        ),
-        customdata= np.stack((c5["Dist. Acumulada (km)"], c5["Tempo Acumulado (min)"]), axis = -1),
-        hovertemplate =
-        '<b>Tempo (min):</b>: %{customdata[1]}<br>' +
-        '<b>Kms Percorridos</b>: %{customdata[0]:.2f}<br>' # +
-        #'<b>Longitude</b>: %{lon:.2f}<br>' +
-        #'<b>Latitude</b>: %{lat:.2f}<br>'
-        ,
-        name = '<b>Circuito 5</b>',
-        ))
-
-mapas.add_trace(go.Scattermapbox(
-        lat=c6['Latitude'],
-        lon=c6['Longitude'],
-        mode='lines',
-        marker=go.scattermapbox.Marker(
-            size=9,
-            color = '#F75D50',
-        ),
-        customdata= np.stack((c6["Dist. Acumulada (km)"], c6["Tempo Acumulado (min)"]), axis = -1),
-        hovertemplate =
-        '<b>Tempo (min):</b>: %{customdata[1]}<br>' +
-        '<b>Kms Percorridos</b>: %{customdata[0]:.2f}<br>' # +
-        #'<b>Longitude</b>: %{lon:.2f}<br>' +
-        #'<b>Latitude</b>: %{lat:.2f}<br>'
-        ,
-        name = '<b>Circuito 6</b>',
-        ))
-
-mapas.add_trace(go.Scattermapbox(
-        lat=c8['Latitude'],
-        lon=c8['Longitude'],
-        mode='lines',
-        marker=go.scattermapbox.Marker(
-            size=9,
-            color = '#98000D',
-        ),
-        customdata= np.stack((c8["Dist. Acumulada (km)"], c8["Tempo Acumulado (min)"]), axis = -1),
-        hovertemplate =
-        '<b>Tempo (min):</b>: %{customdata[1]}<br>' +
-        '<b>Kms Percorridos</b>: %{customdata[0]:.2f}<br>'# +
-        #'<b>Longitude</b>: %{lon:.2f}<br>' +
-        #'<b>Latitude</b>: %{lat:.2f}<br>'
-        ,
-        name = '<b>Circuito 8</b>',
-        ))
-
-mapas.add_trace(go.Scattermapbox(
-        lat=c9['Latitude'],
-        lon=c9['Longitude'],
-        mode='lines',
-        marker=go.scattermapbox.Marker(
-            size=9,
-            color = '#ffba08',
-        ),
-        customdata= np.stack((c9["Dist. Acumulada (km)"], c9["Tempo Acumulado (min)"]), axis = -1),
-        hovertemplate =
-        '<b>Tempo (min):</b>: %{customdata[1]}<br>' +
-        '<b>Kms Percorridos</b>: %{customdata[0]:.2f}<br>'# +
-        #'<b>Longitude</b>: %{lon:.2f}<br>' +
-        #'<b>Latitude</b>: %{lat:.2f}<br>'
-        ,
-        name = '<b>Circuito 9</b>',
-        ))
-
-#split between underground and surface level containers not possible yet
-mapas.add_trace(go.Scattermapbox(
-        lat=cont_recolha['Latitude'],
-        lon=cont_recolha['Longitude'],
-        mode='markers',
-        marker=go.scattermapbox.Marker(
-            size= cont_recolha['litros']/200,
-            color = cont_recolha['Circuit'].map(color_dict),
-        ),
-        customdata=np.stack((cont_recolha["contentores"], (cont_recolha["recolhas"] * 100).astype(int),
-                            (cont_recolha["percentagem"] * 100).astype(int), cont_recolha["tipo"],
-                             cont_recolha['volume'], cont_recolha['estado'], cont_recolha["Circuit"],
-                             ), axis=-1),
-        hovertemplate=
-        #lado esquerdo do hover
-        '<b>Contentores Visitados</b>: %{customdata[0]}<br>' +
-        '<b>Contentores Recolhidos/Visitados</b>: %{customdata[1]}%<br>' +
-        '<b>Grau de enchimento contentores recolhidos</b>: %{customdata[2]}%<br>' +
-        '<b>Coordenadas</b>: lon - %{lon:.2f}, lat - %{lat:.2f}' +
-        #lado direito do hover
-        '<extra><b>Tipo de Contentor: %{customdata[3]}</b><br>' +
-        '<b>Capacidade do Contentor (l): %{customdata[4]}</b><br>' +
-        '<b>Estado: %{customdata[5]}</b><br>'
-        '<b>Circuito de Recolha %{customdata[6]}</b><br></extra>',
-        name = '<b>Ilha Ecológica/Contentores</b>'
-))
-
-#care with size on final upload
-mapas.update_layout(dict(
-    autosize=True,
-    margin=dict(
-        l=30,
-        r=30,
-        b=20,
-        t=40
-    ),
-    hovermode='closest',
-    showlegend = False,
-    title = 'Circuitos de Recolha de RU',
-    mapbox=dict(
-        accesstoken=mapbox_access_token,
-        bearing=0,
-        style = 'streets',
-        center=dict(
-            lat=37.157381,
-            lon=-8.552441
-                    ),
-        pitch=0,
-        zoom=10
-            ),
-        )
-        )
 #____________________________________________________________________________________________________________________
 #Global Variables and Passwords
 USER_PASS = [['ecogestus', 'emarp2021']]
@@ -291,18 +97,54 @@ app.layout = dbc.Container([
             className='row',
         )])
         ]),
-    #linha 2: Mapa e outras representações
+    #linha 2, Dropdown de selecção : Mapa e outras representações
+    dbc.Row([html.Div(),
+    html.Br(),
+    html.Label(['Circuitos de Recolha observados'], style={'font-weight': 'bold'}),
+    dcc.Dropdown(id='my_dropdown',
+                 options=[
+                     {'label': 'Circuito 1', 'value': 1},
+                     {'label': 'Circuito 2', 'value': 2},
+                     {'label': 'Circuito 3', 'value': 3, 'disabled':True},
+                     {'label': 'Circuito 4', 'value': 4},
+                     {'label': 'Circuito 5', 'value': 5},
+                     {'label': 'Circuito 6', 'value': 6},
+                     {'label': 'Circuito 7', 'value': 7, 'disabled': True},
+                     {'label': 'Circuito 8', 'value': 8},
+                     {'label': 'Circuito 9', 'value': 9},
+                 ],
+                 #value = [1],
+                 optionHeight=25,  # height/space between dropdown options
+                 disabled=False,  # disable dropdown value selection
+                 multi=True,  # allow multiple dropdown values to be selected
+                 searchable=True,  # allow user-searching of dropdown values
+                 search_value='',  # remembers the value searched in dropdown
+                 placeholder='Seleccione o(s) circuito(s) que pretende acompanhar...',  # gray, default text shown when no option is selected
+                 clearable=True,  # allow user to removes the selected value
+                 style= {'width' : '100%'},  # use dictionary to define CSS styles of your dropdown
+                 className='select_box',           #activate separate CSS document in assets folder
+                 # persistence=True,                 #remembers dropdown value. Used with persistence_type
+                 # persistence_type='memory'         #remembers dropdown value selected until...
+                 ),  # 'memory': browser tab is refreshed
+                #html.Br()
+    # 'session': browser tab is closed
+    # 'local': browser cookies are deleted
+    #
+    ],
+    className='eight columns'),
+#linha 3 - Mapa e subplots
     dbc.Row([dbc.Col(html.Div(
                     children=dcc.Graph(
-                        id='Circuitos de Recolha',
-                        figure=mapas,
+                        id='c-rec',
                     ),
                     style={"margin": "10px"},
                     className='eight columns'),
                     ),
-        dbc.Col([html.P('O mapa à esquerda ilustra e resume o acompanhamento no terreno dos circuitos de recolha da EMARP. ' +
-                        'Para cada localização foram registados:', style = {'textAlign': 'justify'}),
-                html.P(),
+        dbc.Col([html.P('Acompanhamento dos Circuitos de Recolha',
+                 style = {'textAlign': 'center', 'font-weight': 'bold'}),
+                html.P('O mapa à esquerda ilustra e resume o acompanhamento no terreno dos circuitos de recolha da EMARP. ' +
+                        'Para cada localização foram registados:',
+                        style = {'textAlign': 'justify'}),
                 html.P('O número de contentores visitados e a respetiva capacidade volumétrica,', style = {'font-weight': 'bold', 'textAlign': 'justify'}),
                 html.P('O número de contentores recolhidos e o grau de enchimento observado,', style = {'font-weight': 'bold', 'textAlign': 'justify'}),
                 html.P('Tendo por base os indicadores observados, foi feita uma estimativa da contribuição (em volume) de cada localização para o total dos resíduos recolhidos. Essa contribuição está representada no diâmetro de cada ponto.',
@@ -312,6 +154,106 @@ app.layout = dbc.Container([
         ], no_gutters=True, justify='start')
     ], fluid = True)
 
+#________________________________________________________________________________________________________________________
+#Callbacks e Helper Functions
+#________________________________________________________________________________________________________________________
+#---------------------------------------------------------------
+
+# Callback 1: Map visualization
+@app.callback(
+    Output(component_id='c-rec', component_property='figure'),
+    [Input(component_id='my_dropdown', component_property='value')]
+)
+
+def build_graph(circuito):
+    '''constrói um mapa representativo dos circuitos seleccionados a partir do circuito escolhido pelo utilizador'''
+
+    if circuito is None:
+        raise dash.exceptions.PreventUpdate
+
+    #parte 1: manipulação dos dfs
+    passeios = circuitos[circuitos["Circuit"].isin(circuito)]
+    c_lista = list(passeios.Circuit.unique())
+
+    ilhas = cont_recolha[cont_recolha['Circuit'].isin(circuito)]
+
+    #parte 2: criação do mapa - circuitos
+    #trace vazio
+    traces = []
+    for i in c_lista:
+
+        trace = passeios[passeios['Circuit'] == i]
+        traces.append(go.Scattermapbox(
+        lat=trace['Latitude'],
+        lon=trace['Longitude'],
+        mode='lines',
+        line_color = color_list[i-1],
+        customdata= np.stack((trace["Dist. Acumulada (km)"], trace["Tempo Acumulado (min)"], trace["Circuit"]), axis = -1),
+        hovertemplate =
+        '<b>Tempo (min):</b>: %{customdata[1]}<br>' +
+        '<b>Kms Percorridos</b>: %{customdata[0]:.2f}<br>' +
+        '<extra><b>Circuito: %{customdata[2]}</b></extra>'
+        #'<b>Longitude</b>: %{lon:.2f}<br>' +
+        #'<b>Latitude</b>: %{lat:.2f}<br>'
+        ,
+        ))
+
+    #split between underground and surface level containers not possible yet
+        trace_i = ilhas[ilhas['Circuit'] == i]
+        traces.append(go.Scattermapbox(
+        lat=trace_i['Latitude'],
+        lon=trace_i['Longitude'],
+        mode='markers',
+        marker=go.scattermapbox.Marker(
+            size= trace_i['litros']/200,
+            color = trace_i['Circuit'].map(color_dict),
+            ),
+            customdata=np.stack((trace_i["contentores"], (trace_i["recolhas"] * 100).astype(int),
+                                (trace_i["percentagem"] * 100).astype(int), trace_i["tipo"],
+                                 trace_i['volume'], trace_i['estado'], trace_i["Circuit"],
+                                 ), axis=-1),
+            hovertemplate=
+            #lado esquerdo do hover
+            '<b>Contentores Visitados</b>: %{customdata[0]}<br>' +
+            '<b>Contentores Recolhidos/Visitados</b>: %{customdata[1]}%<br>' +
+            '<b>Grau de enchimento contentores recolhidos</b>: %{customdata[2]}%<br>' +
+            '<b>Coordenadas</b>: lon - %{lon:.2f}, lat - %{lat:.2f}' +
+            #lado direito do hover
+            '<extra><b>Tipo de Contentor: %{customdata[3]}</b><br>' +
+            '<b>Capacidade do Contentor (l): %{customdata[4]}</b><br>' +
+            '<b>Estado: %{customdata[5]}</b><br>'
+            '<b>Circuito de Recolha %{customdata[6]}</b><br></extra>',
+            name = '<b>Ilha Ecológica/Contentores</b>'
+    ))
+        #start
+    return {    'data' : traces,#, traces_i],
+               'layout': go.Layout(
+                uirevision= 'figure',
+                autosize=True,
+                margin=dict(
+                    l=30,
+                    r=30,
+                    b=20,
+                    t=40
+                ),
+                hovermode='closest',
+                showlegend = False,
+                #title = 'Circuitos de Recolha de RU',
+                mapbox=dict(
+                    accesstoken=mapbox_access_token,
+                    bearing=0,
+                    style = 'streets',
+                    center=dict(
+                        lat=37.157381,
+                        lon=-8.552441
+                                ),
+                    pitch=0,
+                    zoom=10
+                        ),
+                    )
+        }
+
+#---------------------------------------------------------------
 if __name__ == '__main__':
     app.run_server(debug = True)
 #Análise dos circuitos de recolha de resíduos indiferenciados no Município de Portimão
