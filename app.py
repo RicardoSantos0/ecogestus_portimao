@@ -60,7 +60,7 @@ external_stylesheets = ['https://cdn.rawgit.com/plotly/dash-app-stylesheets/2d26
 
 # create app
 app = dash.Dash(__name__, external_stylesheets=external_stylesheets) #changed to insert oil and gas stylesheet
-#auth = dash_auth.BasicAuth(app, USER_PASS)
+auth = dash_auth.BasicAuth(app, USER_PASS)
 
 server = app.server
 app.layout = dbc.Container([
