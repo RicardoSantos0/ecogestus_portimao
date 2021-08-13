@@ -4,7 +4,6 @@ waste collection routes used by the authorities'''
 # import libraries
 import pandas as pd
 import numpy as np
-import datetime as dt
 import dash
 import dash_core_components as dcc
 import dash_html_components as html
@@ -61,7 +60,7 @@ external_stylesheets = ['https://cdn.rawgit.com/plotly/dash-app-stylesheets/2d26
 
 # create app
 app = dash.Dash(__name__, external_stylesheets=external_stylesheets) #changed to insert oil and gas stylesheet
-#auth = dash_auth.BasicAuth(app, USER_PASS)
+auth = dash_auth.BasicAuth(app, USER_PASS)
 
 server = app.server
 app.layout = dbc.Container([
