@@ -113,7 +113,7 @@ app.layout = dbc.Container([
                      {'label': 'Circuito 8', 'value': 8},
                      {'label': 'Circuito 9', 'value': 9},
                  ],
-                 #value = [1],
+                 value = [1],
                  optionHeight=25,  # height/space between dropdown options
                  disabled=False,  # disable dropdown value selection
                  multi=True,  # allow multiple dropdown values to be selected
@@ -168,7 +168,7 @@ app.layout = dbc.Container([
 def build_graph(circuito):
     '''constrói um mapa representativo dos circuitos seleccionados a partir do circuito escolhido pelo utilizador'''
 
-    if circuito is None:
+    if not circuito:
         raise dash.exceptions.PreventUpdate
 
     #parte 1: manipulação dos dfs
@@ -192,10 +192,10 @@ def build_graph(circuito):
         hovertemplate =
         '<b>Tempo (min):</b>: %{customdata[1]}<br>' +
         '<b>Kms Percorridos</b>: %{customdata[0]:.2f}<br>' +
-        '<extra><b>Circuito: %{customdata[2]}</b></extra>'
+        '<extra><b>Circuito: %{customdata[2]}</b></extra>',
         #'<b>Longitude</b>: %{lon:.2f}<br>' +
         #'<b>Latitude</b>: %{lat:.2f}<br>'
-        ,
+        name = 'rotas',
         ))
 
     #split between underground and surface level containers not possible yet
