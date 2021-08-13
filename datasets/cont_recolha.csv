@@ -1,597 +1,597 @@
-,ID,City,Date,Circuit,id_containers,contentores,tipo,volume,percentagem,estado,notas,Recolhidos,Fora do Contentor,Uso Comercial,Latitude,Longitude,recolhas,litros
-0,6d30fb8e,Portimão,2021-07-05,4,dce2e794,1,Rectangular c/ rodas,1000,0.5,Bom,,1,Não,Não,37.144729,-8.548999,1.0,515.1
-1,b8c094dc,Portimão,2021-07-05,4,6c3e6f6e,2,Rectangular c/ rodas,1000,0.5,Bom,,2,Não,Não,37.144659,-8.551605,1.0,1030.2
-2,3f325f9c,Portimão,2021-07-05,2,50c9c5a1,3,Rectangular c/ rodas,1000,1.0,Bom,Recolheram 2,2,Não,Não,37.132873,-8.543445,0.6666666666666666,2050.3
-3,02a231e4,Portimão,2021-07-05,4,8630ae90,4,Rectangular c/ rodas,1000,0.75,Bom,,4,Não,Não,37.145611,-8.552184,1.0,3070.4
-4,f1e7c3c6,Portimão,2021-07-05,4,ac851fd1,2,Rectangular c/ rodas,1000,0.75,Bom,,2,Não,Não,37.146479,-8.554225,1.0,1535.2
-5,810116c8,Portimão,2021-07-05,2,4f3389d6,2,Contentor semi-enterrado,3000,0.5,Bom,Levantam 1 de cada vez,2,Não,Não,37.132178,-8.542857,1.0,3090.6
-6,e02e3eea,Portimão,2021-07-05,4,d9b383b0,3,Rectangular c/ rodas,1000,0.75,Bom,,3,Não,Não,37.14639,-8.555024,1.0,2302.8
-7,4ffb81b5,Portimão,2021-07-05,2,1b60f72d,3,Contentor semi-enterrado,3000,0.75,Bom,"Recolheram 2, um a 75% e outro a 50%",2,Não,Não,37.131525,-8.543819,0.6666666666666666,4628.4
-8,c28aa56d,Portimão,2021-07-05,4,50064dd5,1,Contentor semi-enterrado,3000,0.75,Bom,,1,Não,Não,37.146884,-8.558688,1.0,2302.8
-9,6b9203a7,Portimão,2021-07-05,2,95155c32,2,Contentor semi-enterrado,3000,0.75,Bom,"Recolheram, um a 75% e outro a 50%",2,Não,Não,37.131241,-8.54443,1.0,4605.6
-10,ec762cf9,Portimão,2021-07-05,4,9cd8e8bc,1,Contentor semi-enterrado,3000,0.75,Bom,,1,Não,Não,37.147146,-8.559262,1.0,2302.8
-11,6153140a,Portimão,2021-07-05,2,a4d4d238,2,Contentor semi-enterrado,3000,1.0,Bom,"Recolheram 1, apanharam monos e colocaram nos indiferenciado",1,Sim,Não,37.130493,-8.544502,0.5,3090.6
-12,3844032c,Portimão,2021-07-05,4,6c6804af,1,Rectangular c/ rodas,120,1.0,Bom,Restaurantes pontual,1,Não,Não,37.150846,-8.56302,1.0,122.412
-13,b3c6a53e,Portimão,2021-07-05,2,5f4eaebb,2,Contentor semi-enterrado,3000,0.75,Bom,"Recolheram 2, um a 75, outro a 50%",2,Não,Não,37.130337,-8.54365,1.0,4605.6
-14,76a8ecf6,Portimão,2021-07-05,4,1818b7e7,3,Contentor semi-enterrado,3000,0.75,Bom,,3,Não,Não,37.149838,-8.562878,1.0,6908.4000000000015
-15,41cf7de0,Portimão,2021-07-05,2,272d2cb2,3,Contentor semi-enterrado,3000,0.75,Bom,"Recolheram 2, um a 50 e outro a 75",3,Não,Não,37.131436,-8.543421,1.0,6908.4000000000015
-16,7b776307,Portimão,2021-07-05,4,e763b75e,1,Contentor semi-enterrado,3000,0.5,Bom,,1,Não,Não,37.14848,-8.561535,1.0,1545.3
-17,f7afaacc,Portimão,2021-07-05,2,75b2a645,3,Contentor semi-enterrado,3000,0.75,Bom,"Recolheram 3. A 50, 75 e 100",3,Não,Não,37.131526,-8.541816,1.0,6908.4000000000015
-18,cad5a910,Portimão,2021-07-05,4,7dc71512,2,Rectangular c/ rodas,1000,1.0,Bom,Papel e cartão,2,Não,Não,37.148176,-8.559997,1.0,2040.2
-19,ebbf9ed3,Portimão,2021-07-05,4,f8c5d07c,2,Rectangular c/ rodas,1000,0.75,Bom,,2,Não,Não,37.147462,-8.558012,1.0,1535.2
-20,8d93db10,Portimão,2021-07-05,2,f1d37c41,2,Contentor semi-enterrado,3000,0.75,Bom,"Recolheram os dois. Um a 75, outro a 50",2,Não,Não,37.132542,-8.542214,1.0,4605.6
-21,1e5a7218,Portimão,2021-07-05,4,50d35fd6,2,Contentor semi-enterrado,3000,0.5,Bom,Não se encontravam muito cheios,2,Não,Não,37.146726,-8.558314,1.0,3090.6
-22,6846932d,Portimão,2021-07-05,2,e7b2576c,1,Contentor semi-enterrado,3000,0.75,Bom,,1,Não,Não,37.132794,-8.538279,1.0,2302.8
-23,77d4a99e,Portimão,2021-07-05,2,66be8acd,3,Contentor semi-enterrado,3000,0.75,Bom,Dois a 75,2,Não,Não,37.131685,-8.538739,0.6666666666666666,4628.4
-24,b55ad507,Portimão,2021-07-05,2,f5e1a5d4,4,Contentor semi-enterrado,3000,0.75,Bom,"2 a 75%, 1 a 50%",3,Não,Não,37.130579,-8.539691,0.75,6931.2
-25,5f94eb77,Portimão,2021-07-05,2,9a8367b5,3,Contentor semi-enterrado,3000,0.75,Bom,"Dois a 75, um a 50",2,Não,Não,37.129647,-8.539728,0.6666666666666666,4628.4
-26,11d94f4c,Portimão,2021-07-05,4,63e7e52b,3,Contentor semi-enterrado,3000,0.75,Bom,,3,Não,Não,37.144615,-8.560501,1.0,6908.4000000000015
-27,f33ab37b,Portimão,2021-07-05,4,3b7aeafd,2,Contentor semi-enterrado,3000,0.75,Bom,,2,Não,Não,37.144353,-8.559795,1.0,4605.6
-28,8018525c,Portimão,2021-07-05,2,113a890e,2,Contentor semi-enterrado,3000,0.5,Bom,Dois a 50%,2,Não,Não,37.13242,-8.538783,1.0,3090.6
-29,48f6e238,Portimão,2021-07-05,2,766ee8c9,3,Contentor semi-enterrado,3000,0.5,Bom,Dois a 50,3,Não,Não,37.132302,-8.540695,1.0,4635.900000000001
-30,e0962364,Portimão,2021-07-05,4,d43e3229,1,Contentor semi-enterrado,3000,0.75,Bom,Roupas,1,Não,Não,37.144623,-8.558955,1.0,2302.8
-31,2943ba54,Portimão,2021-07-05,2,93008abb,2,Contentor semi-enterrado,3000,0.75,Bom,"Um a 100, um a 75",2,Não,Não,37.13144,-8.540291,1.0,4605.6
-32,a48969ab,Portimão,2021-07-05,4,f18fccfa,2,Contentor semi-enterrado,3000,0.0,Bom,,2,Não,Não,37.14357,-8.557785,1.0,60.599999999999994
-33,a9aa583e,Portimão,2021-07-05,4,79fdbdde,2,Rectangular c/ rodas,1000,1.0,Bom,,2,Não,Não,37.143577,-8.559097,1.0,2040.2
-34,36d2e07f,Portimão,2021-07-05,4,e3ccdfba,1,Contentor semi-enterrado,3000,0.75,Bom,,1,Não,Não,37.143196,-8.556214,1.0,2302.8
-35,612ead32,Portimão,2021-07-05,2,5d4f24d2,4,Contentor semi-enterrado,3000,0.75,Bom,"Um a 75, um a 50",2,Não,Não,37.129943,-8.540896,0.5,4651.2
-36,049d0ec0,Portimão,2021-07-05,4,bf4394e2,2,Contentor semi-enterrado,3000,0.75,Bom,Um está cheio e outro não está,1,Não,Não,37.144829,-8.556207,0.5,2325.6
-37,91d50a32,Portimão,2021-07-05,2,61029cfa,1,Contentor semi-enterrado,3000,0.5,Bom,,1,Não,Não,37.129979,-8.542106,1.0,1545.3
-38,50ad790f,Portimão,2021-07-05,4,82bfc46f,1,Rectangular c/ rodas,1000,0.75,Bom,,1,Não,Não,37.144902,-8.556175,1.0,767.6
-39,7e0abc7c,Portimão,2021-07-05,4,79df299f,1,Contentor semi-enterrado,3000,0.0,Bom,Vazio,0,Não,Não,37.144352,-8.552237,0.0,0.3
-40,a387c38b,Portimão,2021-07-05,2,30e1b7cb,2,Contentor semi-enterrado,3000,0.5,Razoável,Dois a 50%. Contentor quebrado no cimo.,2,Não,Não,37.128886,-8.542745,1.0,3090.6
-41,7b6f37e8,Portimão,2021-07-05,4,ee0eb456,1,Rectangular c/ rodas,1000,1.0,Bom,,1,Não,Não,37.143892,-8.55232,1.0,1020.1
-42,6c7f75f2,Portimão,2021-07-05,4,2be5035a,1,Contentor semi-enterrado,3000,0.75,Bom,,1,Não,Não,37.144026,-8.553766,1.0,2302.8
-43,34b794a8,Portimão,2021-07-05,2,37fac70f,2,Contentor semi-enterrado,3000,0.5,Bom,1 a 50%,1,Não,Não,37.127547,-8.543245,0.5,1560.6
-44,0bfc83ca,Portimão,2021-07-05,4,8f6e3594,2,Rectangular c/ rodas,1000,1.0,Bom,,2,Não,Não,37.143073,-8.553542,1.0,2040.2
-45,bffb2740,Portimão,2021-07-05,2,61f119e6,2,Contentor semi-enterrado,3000,1.0,Bom,"Um a 100, um a 50%",2,Não,Não,37.128732,-8.542508,1.0,6120.6
-46,7e6a64a1,Portimão,2021-07-05,4,5c99e8e3,1,Rectangular c/ rodas,1000,1.0,Bom,,1,Não,Não,37.141079,-8.551498,1.0,1020.1
-47,485a2295,Portimão,2021-07-05,4,32f67da5,1,Contentor semi-enterrado,3000,0.75,Bom,,1,Não,Não,37.141778,-8.550207,1.0,2302.8
-48,d0287f6b,Portimão,2021-07-05,2,6e5ff711,2,Contentor semi-enterrado,3000,0.5,Bom,Duas a 50%,2,Não,Não,37.127061,-8.544296,1.0,3090.6
-49,c5f15d82,Portimão,2021-07-05,4,93f0d7f8,2,Contentor semi-enterrado,3000,0.75,Bom,,2,Não,Não,37.142303,-8.550382,1.0,4605.6
-50,6bb01f46,Portimão,2021-07-05,2,3249b7f8,3,Contentor semi-enterrado,3000,0.75,Bom,"Um a 75, dois a 50%",3,Não,Não,37.127888,-8.545758,1.0,6908.4000000000015
-51,87a58186,Portimão,2021-07-05,4,9c85156b,1,Contentor semi-enterrado,3000,1.0,Bom,,1,Não,Não,37.143544,-8.550435,1.0,3060.3
-52,56d95bc9,Portimão,2021-07-05,4,f8effd42,2,Rectangular c/ rodas,1000,0.75,Bom,Junto a ecoponto,2,Não,Não,37.142799,-8.552139,1.0,1535.2
-53,9dba4ce4,Portimão,2021-07-05,4,71e046b3,2,Contentor semi-enterrado,3000,0.75,Bom,Lixo em redor. Não é limpo,2,Sim,Não,37.142138,-8.554214,1.0,4605.6
-54,d0108303,Portimão,2021-07-05,2,3f77a594,1,Contentor semi-enterrado,3000,0.5,Bom,"Escola perto fechada, costuma encher",1,Não,Não,37.127388,-8.539982,1.0,1545.3
-55,3d6108cc,Portimão,2021-07-05,2,8d24f7bf,3,Contentor semi-enterrado,3000,0.75,Bom,"Recolheram 2. Um a 75, outro a 50%",2,Não,Não,37.125675,-8.540502,0.6666666666666666,4628.4
-56,f8b6357b,Portimão,2021-07-05,4,059659b7,1,Contentor semi-enterrado,3000,0.75,Bom,Ilha ecológica limpa,1,Não,Não,37.141262,-8.552657,1.0,2302.8
-57,c281371e,Portimão,2021-07-05,4,f6b1a410,3,Rectangular c/ rodas,1000,0.5,Bom,Lixo em redor. Monos,3,Sim,Não,37.138994,-8.554458,1.0,1545.3000000000002
-58,f9779980,Portimão,2021-07-05,2,057acc32,2,Contentor semi-enterrado,3000,0.5,Bom,Recolheram um a 50%,2,Não,Não,37.125489,-8.541853,1.0,3090.6
-59,d40f9bcc,Portimão,2021-07-05,4,daf30b0c,1,Contentor semi-enterrado,3000,1.0,Bom,,1,Não,Não,37.140729,-8.556175,1.0,3060.3
-60,e378c59f,Portimão,2021-07-05,2,a5cfd07b,2,Contentor semi-enterrado,3000,0.5,Bom,Dois a 50%,2,Não,Não,37.126149,-8.538172,1.0,3090.6
-61,74f12452,Portimão,2021-07-05,4,dd90c1d4,1,Contentor semi-enterrado,3000,0.75,Bom,Ilha ecológica bem conservada,1,Não,Não,37.140418,-8.559351,1.0,2302.8
-62,74f12452,Portimão,2021-07-05,4,6c6f68c8,2,Contentor semi-enterrado,3000,0.75,Bom,,2,Não,Não,37.140418,-8.559351,1.0,4605.6
-63,6fdeda4e,Portimão,2021-07-05,2,58eff08c,2,Contentor semi-enterrado,3000,0.75,Bom,"Um a 75, relva à beira",1,Sim,Não,37.122883,-8.535954,0.5,2325.6
-64,272888a5,Portimão,2021-07-05,4,58f2988c,1,Contentor semi-enterrado,3000,0.75,Bom,2 mas só 1 foi realizado,1,Não,Não,37.141353,-8.560623,1.0,2302.8
-65,1dd1950c,Portimão,2021-07-05,2,3f072c78,3,Contentor semi-enterrado,3000,1.0,Bom,"Um a 100, dois a 75",3,Não,Não,37.124682,-8.536359,1.0,9180.900000000001
-66,8bea72a1,Portimão,2021-07-05,4,7641098f,2,Contentor semi-enterrado,3000,0.75,Bom,Óleos em garrafoes,2,Não,Não,37.14185,-8.561364,1.0,4605.6
-67,affedcfd,Portimão,2021-07-05,2,6c9c0547,1,Contentor semi-enterrado,3000,0.75,Bom,,1,Não,Não,37.126451,-8.536474,1.0,2302.8
-68,497941dc,Portimão,2021-07-05,4,902ffdf3,1,Contentor semi-enterrado,3000,0.75,Bom,Lixo em volta do contentor. 2 contentores só um foi recolhido,1,Sim,Não,37.142862,-8.561738,1.0,2302.8
-69,8707a7c9,Portimão,2021-07-05,2,405b1080,3,Contentor semi-enterrado,3000,0.5,Bom,Os três a 50%,3,Não,Não,37.127525,-8.53479,1.0,4635.900000000001
-70,226c309d,Portimão,2021-07-05,4,98d08f10,2,Contentor semi-enterrado,3000,0.75,Bom,,2,Não,Não,37.142006,-8.563126,1.0,4605.6
-71,a85a129c,Portimão,2021-07-05,4,0e9e4df9,2,Contentor semi-enterrado,3000,1.0,Bom,Ruído após 23h,2,Não,Não,37.140522,-8.562302,1.0,6120.6
-72,d99d23fa,Portimão,2021-07-05,2,e204daa4,3,Contentor semi-enterrado,3000,0.75,Bom,"Dois recolhidos. Um a 75, um a 50%",2,Não,Não,37.126369,-8.535894,0.6666666666666666,4628.4
-73,8184b756,Portimão,2021-07-05,4,b1f214b9,3,Contentor semi-enterrado,3000,0.75,Bom,2 visitados e 1 recolhido,1,Não,Não,37.139923,-8.560084,0.3333333333333333,2348.4
-74,b128a905,Portimão,2021-07-05,2,d18899e6,2,Contentor semi-enterrado,3000,0.5,Bom,Recolheram um a 50,1,Não,Não,37.123959,-8.537027,0.5,1560.6
-75,11197ad2,Portimão,2021-07-05,2,6354aabe,2,Contentor semi-enterrado,3000,0.75,Bom,Recolheram 1. Demoraram mais porque tiveram de recolher vidro e partir.,1,Não,Não,37.126055,-8.537357,0.5,2325.6
-76,5eb8a47a,Portimão,2021-07-05,2,c9c72c47,2,Contentor semi-enterrado,3000,0.75,Bom,"Recolheram dois. Um a 75, um a 25. Recolheram o de 25 para não ficar a cheirar mal.",2,Não,Não,37.127267,-8.538574,1.0,4605.6
-77,de2f7104,Portimão,2021-07-05,2,3fe7ac04,1,Contentor semi-enterrado,3000,0.75,Bom,,1,Não,Não,37.12774,-8.537411,1.0,2302.8
-78,df936b8a,Portimão,2021-07-05,2,1a036895,1,Contentor semi-enterrado,3000,0.5,Bom,Um a 50%,1,Não,Não,37.128131,-8.538822,1.0,1545.3
-79,260b35ea,Portimão,2021-07-05,2,dc72eb79,2,Contentor semi-enterrado,3000,1.0,Bom,"Uma a 100, outra a 75",2,Não,Não,37.128464,-8.539873,1.0,6120.6
-80,12f49b02,Portimão,2021-07-05,2,1976b388,2,Rectangular c/ rodas,1000,0.25,Bom,"Recolheram 1. Um a 50, outro só tinha um saco",1,Não,Não,37.127377,-8.531184,0.5,265.2
-81,a4d7bf0d,Portimão,2021-07-05,2,a78c2b6c,1,Rectangular c/ rodas,1000,1.0,Bom,,1,Não,Não,37.129541,-8.531811,1.0,1020.1
-82,70e849b6,Portimão,2021-07-05,2,193efa5f,2,Contentor semi-enterrado,3000,0.5,Bom,Dois a 50%,2,Não,Não,37.126481,-8.534424,1.0,3090.6
-83,c6650c94,Portimão,2021-07-05,2,06958ef0,3,Rectangular c/ rodas,1000,1.0,Bom,Os 3 a 100%,3,Não,Não,37.129745,-8.533846,1.0,3060.3
-84,93763d44,Portimão,2021-07-05,4,64dec7f7,1,Rectangular c/ rodas,1000,0.5,Bom,,1,Não,Não,37.142141,-8.564316,1.0,515.1
-85,ccf96395,Portimão,2021-07-05,4,70fbd034,1,Contentor semi-enterrado,3000,0.75,Bom,,1,Não,Não,37.145627,-8.564521,1.0,2302.8
-86,f88abfc1,Portimão,2021-07-05,2,d325816b,3,Contentor semi-enterrado,3000,0.5,Bom,"Recolheram 1, a 50%. Tem três poços mas um está encerrado",1,Não,Não,37.130725,-8.53507,0.3333333333333333,1575.8999999999999
-87,879e20c6,Portimão,2021-07-05,4,5b921356,1,Contentor semi-enterrado,3000,0.5,Bom,Afastado de prédios.,1,Não,Não,37.145893,-8.56317,1.0,1545.3
-88,fb1ffede,Portimão,2021-07-05,2,717e780f,3,Contentor semi-enterrado,3000,0.75,Bom,"Recolheram 2. Um a 75, um a 50%",2,Não,Não,37.129677,-8.53405,0.6666666666666666,4628.4
-89,9c2e3613,Portimão,2021-07-05,4,c40df902,1,Contentor semi-enterrado,3000,0.0,Bom,Não recolhido,0,Não,Não,37.144898,-8.565498,0.0,0.3
-90,cb4542c9,Portimão,2021-07-05,4,b90b7f2d,1,Rectangular c/ rodas,1000,0.0,Bom,Não recolhido,0,Não,Não,37.149864,-8.567631,0.0,0.1
-91,c32b2e3e,Portimão,2021-07-05,2,1f015167,2,Rectangular c/ rodas,3000,0.75,Bom,Os dois a 75,2,Não,Não,37.129393,-8.535592,1.0,4605.6
-92,dbfbf7af,Portimão,2021-07-05,4,62f71bac,1,Contentor semi-enterrado,1000,0.5,Bom,Zona rural,1,Não,Não,37.150582,-8.568328,1.0,515.1
-93,becb43b3,Portimão,2021-07-05,4,b17ebc17,2,Rectangular c/ rodas,1000,0.75,Razoável,Ilha . Zona i,2,Não,Não,37.148926,-8.568421,1.0,1535.2
-94,de5f7980,Portimão,2021-07-05,2,0c608433,3,Rectangular c/ rodas,3000,0.5,Bom,Recolheram 2. Os dois a 50%,2,Não,Não,37.129204,-8.537198,0.6666666666666666,3105.8999999999996
-95,9542fa1c,Portimão,2021-07-05,4,1ba81e9b,1,Rectangular c/ rodas,1000,1.0,Razoável,Ruído. Caes,1,Não,Não,37.144481,-8.566049,1.0,1020.1
-96,6ca3adc2,Portimão,2021-07-05,4,b23a7538,1,Contentor semi-enterrado,3000,1.0,Bom,,1,Não,Não,37.143769,-8.56338,1.0,3060.3
-97,0b7f57d6,Portimão,2021-07-05,4,3cd4120e,2,Contentor semi-enterrado,3000,0.75,Bom,Em3 recolheram 2,2,Não,Não,37.144286,-8.562435,1.0,4605.6
-98,52271dbc,Portimão,2021-07-05,2,6177bcc5,1,Rectangular c/ rodas,1000,0.75,Bom,,1,Não,Não,37.134442,-8.538858,1.0,767.6
-99,970147c6,Portimão,2021-07-05,2,e4dcc008,3,Contentor semi-enterrado,3000,1.0,Razoável,"Dois a 100, um a 75. Um está quebrado no topo.",3,Não,Não,37.134617,-8.537836,1.0,9180.900000000001
-100,4fffb89b,Portimão,2021-07-05,4,df6444b4,1,Rectangular c/ rodas,1000,1.0,Bom,Junto a prédio e zona comercial,1,Não,Sim,37.138952,-8.556812,1.0,1020.1
-101,f13f23a6,Portimão,2021-07-05,4,3689adeb,1,Contentor semi-enterrado,3000,0.75,Bom,Zona residencial. Ruido,1,Não,Não,37.137111,-8.554262,1.0,2302.8
-102,4787166d,Portimão,2021-07-05,4,6952ac2f,1,Rectangular c/ rodas,1000,0.75,Bom,,1,Não,Não,37.136459,-8.55484,1.0,767.6
-103,78d62a8f,Portimão,2021-07-05,2,5e8695c3,2,Contentor semi-enterrado,3000,0.75,Bom,"Um a 75, um a 50",2,Não,Não,37.135332,-8.537616,1.0,4605.6
-104,a0ec00e3,Portimão,2021-07-05,4,e28bc597,1,Contentor semi-enterrado,3000,0.5,Bom,,1,Não,Não,37.136711,-8.560235,1.0,1545.3
-105,68261622,Portimão,2021-07-06,4,0585fa57,1,Contentor semi-enterrado,3000,1.0,Bom,,1,Não,Não,37.136895,-8.562653,1.0,3060.3
-106,6b5ead61,Portimão,2021-07-06,2,63ee9bf7,2,Contentor semi-enterrado,3000,0.5,Razoável,Dois a 50. Um está quebrado no topo.,2,Não,Não,37.134563,-8.536686,1.0,3090.6
-107,6f41b518,Portimão,2021-07-06,4,88114f77,1,Contentor semi-enterrado,3000,0.0,Bom,Não houve recolha,0,Não,Não,37.137197,-8.562657,0.0,0.3
-108,4afbcc41,Portimão,2021-07-06,4,cc3db6f6,1,Contentor semi-enterrado,3000,0.0,Bom,Não houve,0,Não,Não,37.135813,-8.564347,0.0,0.3
-109,18dc81e0,Portimão,2021-07-06,2,27e44ad4,2,Contentor semi-enterrado,3000,0.5,Bom,"Recolheram 1, a 50",1,Não,Não,37.13294,-8.536643,0.5,1560.6
-110,36cf1333,Portimão,2021-07-06,4,84455f2d,2,Contentor semi-enterrado,3000,0.5,Razoável,Colocamos razoável pq uns dos contentor está um pouco danificado,2,Não,Não,37.136673,-8.564685,1.0,3090.6
-111,8a9a3f05,Portimão,2021-07-06,4,1ab7e763,2,Contentor semi-enterrado,3000,0.5,Bom,,2,Não,Não,37.136366,-8.565754,1.0,3090.6
-112,e513f513,Portimão,2021-07-06,2,34d4c740,2,Contentor semi-enterrado,3000,1.0,Bom,Recolheram 1 a 100%,1,Não,Não,37.131792,-8.537137,0.5,3090.6
-113,19354a9b,Portimão,2021-07-06,4,2ed72858,1,Rectangular c/ rodas,1000,0.5,Bom,,1,Não,Não,37.134136,-8.56707,1.0,515.1
-114,dd01ead7,Portimão,2021-07-06,4,1ffae6d8,2,Rectangular c/ rodas,1000,0.75,Bom,Lixo em redor passível de recolha. Caixas de madeira,2,Sim,Não,37.133816,-8.568979,1.0,1535.2
-115,eb0f3009,Portimão,2021-07-06,4,59bb132b,1,Contentor semi-enterrado,3000,0.0,Bom,Não foi recolhido 1 de 2,1,Não,Não,37.134437,-8.569433,1.0,30.299999999999997
-116,e27f3d91,Portimão,2021-07-06,4,64c391fa,1,Contentor semi-enterrado,3000,0.5,Bom,,1,Não,Não,37.13442,-8.569454,1.0,1545.3
-117,464fb609,Portimão,2021-07-06,2,8edc04f4,2,Contentor semi-enterrado,3000,0.5,Bom,Dois a 50,2,Não,Não,37.131631,-8.535898,1.0,3090.6
-118,e7d0655f,Portimão,2021-07-06,4,68eee35c,1,Contentor semi-enterrado,3000,0.75,Bom,,1,Não,Não,37.135118,-8.569516,1.0,2302.8
-119,87f52c62,Portimão,2021-07-06,2,c2ab13a7,2,Contentor semi-enterrado,3000,0.5,Bom,"Recolheram 1, a 50",1,Não,Não,37.131735,-8.534948,0.5,1560.6
-120,c1aa6bbb,Portimão,2021-07-06,4,9de747c3,2,Rectangular c/ rodas,1000,0.25,Bom,Lixo no chão,2,Não,Não,37.134049,-8.570563,1.0,525.2
-121,7fbee138,Portimão,2021-07-06,4,b62a8ec8,3,Rectangular c/ rodas,1000,0.25,Bom,,3,Não,Não,37.132991,-8.571184,1.0,787.8000000000001
-122,a7fe9607,Portimão,2021-07-06,4,22ddce4d,1,Contentor semi-enterrado,3000,0.5,Bom,3 mas só 1 foi recolhido,1,Não,Não,37.132591,-8.572869,1.0,1545.3
-123,d30e484c,Portimão,2021-07-06,2,9634f46b,2,Contentor semi-enterrado,3000,1.0,Razoável,"Um a 100, outro a 75. Um com buraco no topo.",2,Não,Não,37.135788,-8.535639,1.0,6120.6
-124,f9e00392,Portimão,2021-07-06,4,66c3f19e,2,Rectangular c/ rodas,1000,1.0,Bom,,2,Não,Não,37.135009,-8.574606,1.0,2040.2
-125,f5320f60,Portimão,2021-07-06,2,100169ab,1,Contentor semi-enterrado,3000,0.75,Bom,Um a 75,1,Não,Não,37.136757,-8.535612,1.0,2302.8
-126,0a927b56,Portimão,2021-07-06,4,9d90060d,1,Rectangular c/ rodas,1000,1.0,Bom,,1,Não,Não,37.134332,-8.57668,1.0,1020.1
-127,b553454f,Portimão,2021-07-06,4,353a74d0,1,Rectangular c/ rodas,240,0.0,Mau,Não recolhidos,0,Não,Não,37.134331,-8.57667,0.0,0.024
-128,dee0b286,Portimão,2021-07-06,4,5b741eb9,3,Rectangular c/ rodas,1000,0.5,Bom,Monos não recolhidos,3,Não,Não,37.133995,-8.571856,1.0,1545.3000000000002
-129,e9a0c8fa,Portimão,2021-07-06,4,2056608d,3,Rectangular c/ rodas,1000,0.75,Bom,,3,Não,Não,37.132899,-8.570322,1.0,2302.8
-130,8c8242db,Portimão,2021-07-06,2,026ec4ae,3,Contentor semi-enterrado,3000,0.75,Razoável,"Recolheram 2, os dois a 75",2,Não,Não,37.135993,-8.537334,0.6666666666666666,4628.4
-131,4b9a11a0,Portimão,2021-07-06,4,c1091bae,2,Rectangular c/ rodas,1000,0.75,Bom,,2,Não,Não,37.132126,-8.570975,1.0,1535.2
-132,b49afdc9,Portimão,2021-07-06,4,93fa1c4f,2,Rectangular c/ rodas,1000,0.75,Bom,,2,Não,Não,37.133019,-8.574072,1.0,1535.2
-133,0b7acffd,Portimão,2021-07-06,2,1eef397a,1,Rectangular c/ rodas,1000,1.0,Bom,,1,Não,Não,37.13507,-8.539217,1.0,1020.1
-134,b361cba7,Portimão,2021-07-06,4,9d1c2e9c,3,Contentor semi-enterrado,3000,1.0,Bom,Lixo em redor,3,Não,Não,37.131363,-8.572973,1.0,9180.900000000001
-135,9426214d,Portimão,2021-07-06,2,40f6cc54,2,Contentor semi-enterrado,3000,0.5,Bom,Dois a 50,2,Não,Não,37.133851,-8.540823,1.0,3090.6
-136,333403d2,Portimão,2021-07-06,4,7312cbb2,1,Contentor semi-enterrado,3000,0.0,Bom,Não recolheu,0,Não,Não,37.125789,-8.573703,0.0,0.3
-137,0de59f4c,Portimão,2021-07-06,4,d6b9d92d,1,Rectangular c/ rodas,1000,0.75,Razoável,,1,Não,Não,37.130536,-8.573982,1.0,767.6
-138,df3a8189,Portimão,2021-07-06,2,a5a82474,3,Contentor semi-enterrado,3000,1.0,Bom,"Recolheram 3, um a 100, dois a 50%",3,Não,Não,37.133236,-8.544895,1.0,9180.900000000001
-139,a90397be,Portimão,2021-07-06,4,401a4d79,1,Rectangular c/ rodas,1000,0.0,Bom,Não recolh,0,Não,Não,37.130255,-8.575803,0.0,0.1
-140,35a9c634,Portimão,2021-07-06,4,44499450,2,Contentor semi-enterrado,3000,0.75,Bom,Lixo recolhido a volta,2,Sim,Não,37.132061,-8.577631,1.0,4605.6
-141,9135f7c2,Portimão,2021-07-06,4,dfe0b431,3,Contentor semi-enterrado,3000,0.75,Bom,,3,Não,Não,37.13124,-8.577111,1.0,6908.4000000000015
-142,d1b0351d,Portimão,2021-07-06,4,8aa093e1,1,Contentor semi-enterrado,3000,0.0,Bom,Não recolhido,0,Não,Não,37.128562,-8.582252,0.0,0.3
-143,dbad717c,Portimão,2021-07-06,4,a61a08d7,1,Rectangular c/ rodas,1000,0.5,Bom,Contentor em bomba de gasolina,1,Não,Sim,37.128961,-8.579543,1.0,515.1
-144,bdf94f62,Portimão,2021-07-06,4,dc2e1769,2,Rectangular c/ rodas,1000,0.25,Razoável,,2,Não,Não,37.129369,-8.583618,1.0,525.2
-145,cca3d56d,Portimão,2021-07-06,2,39c92a40,1,Rectangular c/ rodas,1000,0.5,Bom,,1,Não,Não,37.2076,-8.538776,1.0,515.1
-146,ac99d849,Portimão,2021-07-06,4,c206d04c,1,Contentor semi-enterrado,3000,0.0,Bom,Não recolhid,0,Não,Não,37.131022,-8.583801,0.0,0.3
-147,71e95f3f,Portimão,2021-07-06,4,4ccf9707,1,Contentor semi-enterrado,3000,0.75,Bom,,1,Não,Não,37.130202,-8.582286,1.0,2302.8
-148,424ddb1c,Portimão,2021-07-06,2,ffe18bcc,2,Rectangular c/ rodas,1000,1.0,Bom,"Dois, um a 100, um a 50",2,Não,Não,37.222154,-8.543736,1.0,2040.2
-149,ff28866f,Portimão,2021-07-06,4,193a6cb3,1,Rectangular c/ rodas,1000,0.75,Bom,Recolha em Hotel,1,Não,Sim,37.129482,-8.582513,1.0,767.6
-150,c331d1e3,Portimão,2021-07-06,2,57674881,3,Rectangular c/ rodas,1000,1.0,Bom,"Um a 100, um a 50, um a 25",3,Não,Não,37.228318,-8.543916,1.0,3060.3
-151,0bf41c4b,Portimão,2021-07-06,4,52c62536,5,Rectangular c/ rodas,1000,0.75,Bom,,5,Não,Não,37.130667,-8.580986,1.0,3838.0
-152,c6a2cc90,Portimão,2021-07-06,4,24554c50,1,Contentor semi-enterrado,3000,0.0,Bom,Não recolhidos,0,Não,Não,37.129255,-8.582848,0.0,0.3
-153,8ddf33dc,Portimão,2021-07-06,4,59d13542,1,Contentor semi-enterrado,3000,0.75,Bom,,1,Não,Não,37.128119,-8.58342,1.0,2302.8
-154,778edbc6,Portimão,2021-07-06,2,24bb6253,2,Rectangular c/ rodas,1000,1.0,Bom,"Recolheram 1, a 100",1,Não,Não,37.240145,-8.546035,0.5,1030.2
-155,70c5f183,Portimão,2021-07-06,4,23121937,2,Contentor semi-enterrado,3000,0.75,Bom,,0,Não,Não,37.127127,-8.581425,0.0,45.6
-156,d2b76293,Portimão,2021-07-06,2,a8323c19,1,Rectangular c/ rodas,1000,0.5,Bom,,1,Não,Não,37.233102,-8.544179,1.0,515.1
-157,8df5d499,Portimão,2021-07-06,4,798c4163,3,Rectangular c/ rodas,1000,0.5,Bom,,1,Não,Não,37.12528,-8.579752,0.3333333333333333,525.3
-158,fdb42b6e,Portimão,2021-07-06,2,c3db32b8,1,Sacos de lixo,120,0.5,Mau,Devia ter contentor mas contentor não estava no sitio,1,Sim,Não,37.2297,-8.543996,1.0,61.812
-159,bd4f9836,Portimão,2021-07-06,4,6c186629,2,Contentor semi-enterrado,3000,0.75,Bom,,2,Não,Não,37.127356,-8.57671,1.0,4605.6
-160,fee0d39e,Portimão,2021-07-06,2,93885963,2,Rectangular c/ rodas,1000,0.5,Bom,"Um a 50, um a 25",2,Não,Não,37.224649,-8.543881,1.0,1030.2
-161,3a0c4f55,Portimão,2021-07-06,2,c848e3bc,4,Rectangular c/ rodas,1000,1.0,Bom,"3 a 100, 1 a 25%",4,Não,Não,37.218243,-8.543653,1.0,4080.4
-162,96ab3d90,Portimão,2021-07-06,4,5540c303,1,Contentor semi-enterrado,3000,0.75,Bom,Só foi recolhido 1 de 2,1,Não,Não,37.128954,-8.57788,1.0,2302.8
-163,9cebf650,Portimão,2021-07-06,2,f63b3744,1,Rectangular c/ rodas,1000,0.25,Bom,,1,Não,Não,37.215255,-8.543443,1.0,262.6
-164,f5fc46da,Portimão,2021-07-06,2,22b41a4a,1,Rectangular c/ rodas,1000,0.5,Bom,,1,Não,Não,37.214284,-8.543438,1.0,515.1
-165,8f6434c6,Portimão,2021-07-06,6,06cdac25,2,Contentor semi-enterrado,3000,0.25,Bom,"Ambos foram recolhidos, 25% ambos",2,Não,Não,37.154239,-8.556219,1.0,1575.6
-166,adc2ee0b,Portimão,2021-07-06,3,161be496,1,Contentor semi-enterrado,3000,0.25,Bom,,1,Não,Não,37.140974,-8.543153,1.0,787.8
-167,e8ad0fc8,Portimão,2021-07-06,3,e9043da8,2,Contentor semi-enterrado,3000,0.0,Bom,"Visitamos 2 ,mas só recolhemos um",1,Não,Não,37.141181,-8.541624,0.5,30.6
-168,1f3b2c0d,Portimão,2021-07-06,3,e3527a93,1,Contentor semi-enterrado,3000,0.25,Bom,Visitou 2 e recolheu 1,1,Não,Não,37.14107,-8.540905,1.0,787.8
-169,2a5e1d47,Portimão,2021-07-06,6,e6a058f5,2,Rectangular c/ rodas,1000,0.5,Bom,Um a 25 e outro 5p,2,Não,Não,37.151623,-8.576419,1.0,1030.2
-170,c4454e61,Portimão,2021-07-06,6,c77e5ec2,2,Rectangular c/ rodas,1000,0.25,Razoável,"2 contentores, recolha de 1, ambos a 25%",1,Não,Não,37.148912,-8.587705,0.5,265.2
-171,7904a8f1,Portimão,2021-07-06,3,f3029eba,3,Contentor semi-enterrado,3000,0.25,Bom,3 visitados 1 recolhido,1,Não,Não,37.141027,-8.540359,0.3333333333333333,803.4000000000001
-172,71db6701,Portimão,2021-07-06,6,db766a58,3,Contentor semi-enterrado,3000,0.5,Razoável,"Recolheram 1 contentor, deixaram um com verdes a 50 %",1,Não,Não,37.14753,-8.583949,0.3333333333333333,1575.8999999999999
-173,72fee7b0,Portimão,2021-07-06,3,84ef668a,2,Contentor semi-enterrado,3000,0.25,Bom,Zona com trânsito. Estacionamento sentido inverso ao de circulação. 2 visitados.  1Reco,1,Não,Não,37.140448,-8.539526,0.5,795.6
-174,58d208a9,Portimão,2021-07-06,6,1a782528,2,Rectangular c/ rodas,1000,0.25,Bom,"Ambos recolhidos, já tinham sido recolhidos no dia anterior",2,Não,Não,37.144366,-8.586472,1.0,525.2
-175,23bf64a3,Portimão,2021-07-06,3,4d1515c3,2,Contentor semi-enterrado,3000,0.25,Bom,,2,Não,Não,37.139554,-8.53938,1.0,1575.6
-176,1e68fe8b,Portimão,2021-07-06,3,2450dedf,2,Contentor semi-enterrado,3000,0.5,Bom,2 em 2 . Corrigir último ponto.,2,Não,Não,37.139575,-8.539424,1.0,3090.6
-177,d02d23ef,Portimão,2021-07-06,6,f098278f,2,Contentor semi-enterrado,3000,0.75,Bom,Recolhido todos os dias,2,Não,Não,37.14643,-8.586414,1.0,4605.6
-178,6c0b6cf4,Portimão,2021-07-06,3,fcc7e755,2,Contentor semi-enterrado,3000,0.75,Bom,,2,Não,Não,37.138918,-8.538688,1.0,4605.6
-179,f366400a,Portimão,2021-07-06,6,3a47490e,3,Contentor semi-enterrado,3000,0.25,Bom,"Nenhum recolhido, com monos não recolhidos",0,Sim,Não,37.143597,-8.583548,0.0,23.4
-180,33357ac7,Portimão,2021-07-06,6,a7e56021,2,Contentor semi-enterrado,3000,0.25,Razoável,"2 contentores, 1 semi enterrafo",2,Não,Não,37.142409,-8.574635,1.0,1575.6
-181,7f76e408,Portimão,2021-07-06,6,56b0c3eb,1,Rectangular c/ rodas,1000,0.5,Bom,Recolhido,1,Não,Não,37.142366,-8.573449,1.0,515.1
-182,73314168,Portimão,2021-07-06,3,96bb089b,4,Contentor semi-enterrado,3000,0.5,Bom,Recolha de 3 em 4,3,Não,Não,37.139034,-8.536605,0.75,4651.2
-183,0d7bb02b,Portimão,2021-07-06,6,4582c24d,1,Rectangular c/ rodas,1000,0.25,Bom,"Não rechido, nem mono",0,Sim,Não,37.141709,-8.5718,0.0,2.6000000000000005
-184,cef59c66,Portimão,2021-07-06,6,7166e2f2,2,Contentor semi-enterrado,3000,0.5,Bom,"Recolhidos no dia anterior, n recolhidos no circuito",0,Não,Não,37.140911,-8.5704,0.0,30.6
-185,7d6dd273,Portimão,2021-07-06,6,76509541,2,Contentor semi-enterrado,3000,0.25,Bom,"1inut,n rec",0,Não,Não,37.140866,-8.570036,0.0,15.600000000000001
-186,4236d38d,Portimão,2021-07-06,6,051b2993,1,Contentor semi-enterrado,3000,0.25,Bom,"N recolhido,",0,Não,Não,37.140924,-8.569282,0.0,7.800000000000001
-187,4eb2c7da,Portimão,2021-07-06,6,de541f7f,2,Contentor semi-enterrado,3000,0.5,Bom,"Recolheram 1 contentor apenas, outro 25 %",1,Não,Não,37.142743,-8.571777,0.5,1560.6
-188,b1e060ba,Portimão,2021-07-06,6,f3fc1c0b,1,Rectangular c/ rodas,1000,0.25,Bom,N rec,0,Não,Não,37.14327,-8.57327,0.0,2.6000000000000005
-189,36bc795d,Portimão,2021-07-06,3,a4724593,2,Contentor semi-enterrado,3000,0.75,Bom,Problemas de trânsito. Centro comercial,2,Não,Sim,37.140068,-8.538156,1.0,4605.6
-190,dd86885a,Portimão,2021-07-06,6,fd9f2b54,2,Rectangular c/ rodas,1000,0.25,Bom,Rec 1,1,Não,Não,37.143477,-8.574136,0.5,265.2
-191,51c111f5,Portimão,2021-07-06,6,9ed7ae49,1,Rectangular c/ rodas,1000,0.25,Bom,,1,Não,Não,37.143547,-8.577972,1.0,262.6
-192,11b84f8a,Portimão,2021-07-06,6,695179d4,2,Rectangular c/ rodas,1000,0.25,Razoável,Recolheram 1,1,Não,Não,37.144477,-8.5812,0.5,265.2
-193,09c2aec0,Portimão,2021-07-06,3,6c58b117,2,Contentor semi-enterrado,3000,0.5,Bom,3 visitados e  2 recolhidos,2,Não,Não,37.140599,-8.538119,1.0,3090.6
-194,43d706a6,Portimão,2021-07-06,6,0b2ba3e1,1,Contentor semi-enterrado,3000,0.5,Razoável,Contentor algo leve,1,Não,Não,37.135304,-8.59012,1.0,1545.3
-195,b62f45eb,Portimão,2021-07-06,6,ab22bb16,2,Contentor semi-enterrado,3000,0.5,Bom,"Colocado a beira de um cruzamento, recolheram 1, outro inutilizavel",1,Não,Não,37.13587,-8.588041,0.5,1560.6
-196,a6a04202,Portimão,2021-07-06,6,3962b4fa,1,Contentor semi-enterrado,3000,1.0,Bom,"Problemas operacionais com a remoção dos resíduos, contentor que deveria ser de hotel",1,Não,Sim,37.136422,-8.586722,1.0,3060.3
-197,0118d806,Portimão,2021-07-06,3,c678fa7e,3,Contentor semi-enterrado,3000,0.75,Bom,Lixo comercial. Supermercado,3,Não,Sim,37.141087,-8.53823,1.0,6908.4000000000015
-198,9ee14547,Portimão,2021-07-06,6,eda95eb8,2,Sacos de lixo,3000,0.5,Bom,Recolheram 1,1,Não,Não,37.13692,-8.584736,0.5,1560.6
-199,8c8d0565,Portimão,2021-07-06,3,18a1f2eb,2,Contentor semi-enterrado,3000,0.75,Bom,,2,Não,Não,37.139411,-8.541279,1.0,4605.6
-200,4cb931b1,Portimão,2021-07-06,6,5d8031e2,6,Rectangular c/ rodas,1000,1.0,Bom,"Recolhido todos os dias, hoje foram 2",2,Não,Sim,37.135882,-8.58449,0.3333333333333333,2080.6
-201,36f01009,Portimão,2021-07-06,6,d2d9c39f,4,Rectangular c/ rodas,1000,0.5,Bom,"Recolheram 2, 1 cheio, restantes 50%",2,Não,Não,37.137582,-8.585724,0.5,1040.4
-202,03d5f295,Portimão,2021-07-06,6,9ad95dd3,2,Contentor semi-enterrado,3000,0.75,Bom,Recolhido apenas o cheio,1,Não,Não,37.139269,-8.584903,0.5,2325.6
-203,83dc666e,Portimão,2021-07-06,3,34d23995,1,Contentor semi-enterrado,3000,0.75,Bom,1 de 2 recolhidos,1,Não,Não,37.139933,-8.54196,1.0,2302.8
-204,fcdd84d0,Portimão,2021-07-06,6,aa84f709,1,Rectangular c/ rodas,1000,0.5,Razoável,Muitos verdes,1,Não,Não,37.140118,-8.584685,1.0,515.1
-205,1dd66842,Portimão,2021-07-06,3,e0857223,3,Contentor semi-enterrado,3000,0.75,Bom,3 recolhas. Recolha 6x semana,3,Não,Não,37.140133,-8.542603,1.0,6908.4000000000015
-206,d983c250,Portimão,2021-07-06,6,73dcd4c7,2,Rectangular c/ rodas,1000,0.75,Bom,Grande ponto de dor - requer enorme viagem até aos contentores,2,Não,Não,37.138488,-8.582094,1.0,1535.2
-207,70163f5e,Portimão,2021-07-06,3,6fd81e18,1,Rectangular c/ rodas,1000,0.25,Razoável,Bairro informal,1,Não,Não,37.140235,-8.543026,1.0,262.6
-208,a141da43,Portimão,2021-07-06,3,e06dfd1b,1,Rectangular c/ rodas,1000,0.25,Razoável,,1,Não,Não,37.140219,-8.543147,1.0,262.6
-209,3178b7fe,Portimão,2021-07-06,6,77668b50,2,Contentor semi-enterrado,3000,0.75,Bom,"1 75 % rec, 1 50% n rec",1,Não,Não,37.131907,-8.592413,0.5,2325.6
-210,26bf8d5a,Portimão,2021-07-06,6,5a2161cc,2,Contentor semi-enterrado,3000,0.5,Mau,"Recolha de 1 50%, outro n rec",1,Não,Não,37.131823,-8.591525,0.5,1560.6
-211,6757c706,Portimão,2021-07-06,3,eed890a5,1,Contentor semi-enterrado,3000,0.25,Bom,1 não recolhido,0,Não,Não,37.139331,-8.544941,0.0,7.800000000000001
-212,29d8c178,Portimão,2021-07-06,6,d726755a,2,Contentor semi-enterrado,3000,0.75,Bom,"Recolha de um 75%, fica por recolher outro 50%",1,Não,Não,37.130392,-8.591921,0.5,2325.6
-213,86b30ad6,Portimão,2021-07-06,3,25005d06,3,Rectangular c/ rodas,1000,0.5,Bom,Centro saúde,3,Não,Não,37.138919,-8.545203,1.0,1545.3000000000002
-214,da03e303,Portimão,2021-07-06,6,981c20ee,2,Contentor semi-enterrado,3000,0.5,Razoável,Recolheram 1,1,Não,Não,37.127661,-8.588725,0.5,1560.6
-215,7d0135d3,Portimão,2021-07-06,3,0360cd6a,1,Contentor semi-enterrado,3000,0.75,Bom,,1,Não,Não,37.138718,-8.543178,1.0,2302.8
-216,cd422d4e,Portimão,2021-07-06,6,5e98af2b,3,Contentor semi-enterrado,3000,0.5,Bom,"Recolhido 1, outros entre 25 e 50%",1,Não,Não,37.123648,-8.588973,0.3333333333333333,1575.8999999999999
-217,bce34122,Portimão,2021-07-06,6,07a9700b,3,Contentor semi-enterrado,3000,0.75,Razoável,"Recolheram 2, um a 75 e outro 50",2,Não,Não,37.123991,-8.590372,0.6666666666666666,4628.4
-218,71dad8c4,Portimão,2021-07-06,6,042b957e,1,Rectangular c/ rodas,3000,0.5,Bom,Recolhido,1,Não,Não,37.124781,-8.590013,1.0,1545.3
-219,d399badd,Portimão,2021-07-06,6,bf999c26,2,Contentor semi-enterrado,3000,0.5,Razoável,Recolhido 1 a 75%,1,Não,Não,37.122851,-8.586226,0.5,1560.6
-220,a0cc9a04,Portimão,2021-07-06,6,352d1655,2,Contentor semi-enterrado,3000,0.25,Bom,Nenhum recolhido,0,Não,Não,37.12289,-8.584465,0.0,15.600000000000001
-221,b75b510f,Portimão,2021-07-06,6,646aaf53,5,Rectangular c/ rodas,1000,1.0,Bom,"Recolheram 1 cheio e 1 a 50%,  deixaram outro",2,Não,Sim,37.120983,-8.582435,0.4,2070.5000000000005
-222,af754cf9,Portimão,2021-07-06,6,57025ffe,2,Rectangular c/ rodas,800,0.5,Bom,Recolha de 1,1,Não,Não,37.122181,-8.580481,0.5,416.15999999999997
-223,4eda5c8e,Portimão,2021-07-06,6,8050c18d,1,Rectangular c/ rodas,1000,0.5,Bom,Recolha,1,Não,Não,37.123275,-8.577453,1.0,515.1
-224,a4e44de0,Portimão,2021-07-06,6,5b77c075,2,Contentor semi-enterrado,3000,0.25,Bom,"N recolhidos, viatura a obstruir",0,Não,Sim,37.122093,-8.576247,0.0,15.600000000000001
-225,77deb581,Portimão,2021-07-06,6,5ac65b18,3,Rectangular c/ rodas,800,1.0,Bom,"3 recolhidos, resíduos fora de contentor por recolher, hotel",3,Sim,Sim,37.120701,-8.573379,1.0,2448.2400000000002
-226,021ceb1e,Portimão,2021-07-06,3,58160980,1,Contentor semi-enterrado,3000,0.5,Razoável,Avaria do veículo,1,Não,Não,37.138603,-8.541557,1.0,1545.3
-227,296ebb94,Portimão,2021-07-06,6,f7b12582,1,Contentor semi-enterrado,3000,0.75,Bom,Volume elevado de verdes,1,Não,Não,37.121858,-8.567719,1.0,2302.8
-228,3f599e86,Portimão,2021-07-06,3,8baff145,3,Rectangular c/ rodas,1000,1.0,Razoável,,3,Não,Não,37.138356,-8.540313,1.0,3060.3
-229,e16d7b18,Portimão,2021-07-06,6,15abd51f,2,Rectangular c/ rodas,1000,0.5,Bom,"Recolhido 1, outro 25% n recolhido",1,Não,Não,37.122613,-8.564974,0.5,520.2
-230,414996a3,Portimão,2021-07-06,6,2156afbe,1,Rectangular c/ rodas,1000,1.0,Bom,,1,Não,Não,37.122409,-8.566523,1.0,1020.1
-231,646be738,Portimão,2021-07-06,6,029f9674,1,Rectangular c/ rodas,1000,0.5,Bom,Verdes,1,Não,Não,37.121584,-8.570133,1.0,515.1
-232,0decd370,Portimão,2021-07-06,6,36140f87,1,Rectangular c/ rodas,1000,0.5,Bom,,1,Não,Não,37.121101,-8.571483,1.0,515.1
-233,224b4e82,Portimão,2021-07-06,6,,10,Rectangular c/ rodas,800,1.0,Bom,,10,Não,Sim,37.12221,-8.57493,1.0,8160.8
-234,224b4e82,Portimão,2021-07-06,6,ab09bbdf,14,Rectangular c/ rodas,1000,1.0,Razoável,"14 1100, 10 de 800",14,Não,Sim,37.12221,-8.57493,1.0,14281.400000000001
-235,ff958abb,Portimão,2021-07-06,3,6f2233f9,7,Rectangular c/ rodas,1000,0.75,Razoável,Setor comercial. Cozinha.,7,Não,Sim,37.137507,-8.538518,1.0,5373.200000000001
-236,1d6cb9cd,Portimão,2021-07-06,6,f041bbc1,1,Rectangular c/ rodas,1000,0.75,Bom,,1,Não,Não,37.122695,-8.576576,1.0,767.6
-237,b2bd1a25,Portimão,2021-07-06,6,5f74c59f,1,Contentor semi-enterrado,3000,0.25,Bom,N recolhido,0,Não,Não,37.125016,-8.578785,0.0,7.800000000000001
-238,33ce3c88,Portimão,2021-07-06,6,30c24208,3,Rectangular c/ rodas,1000,0.25,Razoável,Recolhidos 2 de 800 l a 25%,2,Não,Não,37.125037,-8.581398,0.6666666666666666,527.8
-239,716141d3,Portimão,2021-07-06,6,0149092a,2,Contentor semi-enterrado,3000,0.25,Bom,Nenhum recolhido,0,Não,Não,37.127272,-8.583562,0.0,15.600000000000001
-240,96896f7f,Portimão,2021-07-06,6,1de04edb,1,Rectangular c/ rodas,1000,0.25,Bom,Recolhiso,1,Não,Não,37.128885,-8.587179,1.0,262.6
-241,4142db9d,Portimão,2021-07-06,6,830cb7f5,1,Rectangular c/ rodas,1000,0.75,Bom,,1,Não,Não,37.128773,-8.588687,1.0,767.6
-242,b0733cc1,Portimão,2021-07-06,6,dbfe9a97,2,Contentor semi-enterrado,3000,0.25,Bom,2 não levabtados,0,Não,Não,37.128852,-8.591111,0.0,15.600000000000001
-243,095c43c0,Portimão,2021-07-06,6,be4ceea2,3,Contentor semi-enterrado,1000,1.0,Bom,,3,Não,Não,37.128051,-8.590096,1.0,3060.3
-244,6827eebb,Portimão,2021-07-06,6,1388b81b,3,Rectangular c/ rodas,1000,0.5,Razoável,Recolheram 1 a 5p %,1,Não,Não,37.127833,-8.590322,0.3333333333333333,525.3
-245,813ee2fd,Portimão,2021-07-06,6,ed4f8f93,2,Rectangular c/ rodas,1000,1.0,Bom,Zona residencial,2,Não,Não,37.127949,-8.591159,1.0,2040.2
-246,c34cb5e7,Portimão,2021-07-06,6,a61db482,2,Contentor semi-enterrado,3000,0.75,Bom,Recolhido 1 a u75 %,1,Não,Não,37.126506,-8.592553,0.5,2325.6
-247,1053b260,Portimão,2021-07-06,6,e6c92533,2,Rectangular c/ rodas,1000,0.5,Bom,Recolhidos dois,2,Não,Não,37.128272,-8.592309,1.0,1030.2
-248,6256eceb,Portimão,2021-07-06,6,f5ad3642,3,Rectangular c/ rodas,1000,0.5,Razoável,Uma recolha a 50%,1,Não,Não,37.128642,-8.592847,0.3333333333333333,525.3
-249,140ca02d,Portimão,2021-07-06,6,416dbebd,4,Rectangular c/ rodas,1000,0.5,Bom,"Recolhido um, 3 por recolher con 25 a 50%",1,Não,Não,37.126777,-8.590639,0.25,530.4
-250,9ef6c9cd,Portimão,2021-07-06,6,,2,Rectangular c/ rodas,120,1.0,Mau,,2,Não,Sim,37.129996,-8.596369,1.0,244.824
-251,9ef6c9cd,Portimão,2021-07-06,6,1668756a,5,Contentor semi-enterrado,3000,0.75,Razoável,5 contentores enterrados 75% mais 2 120 2m mau estado e cheiks,5,Não,Sim,37.129996,-8.596369,1.0,11514.0
-252,c233f589,Portimão,2021-07-06,6,35efc01c,3,Contentor semi-enterrado,3000,0.75,Razoável,Um a 75 % - recolhido e outros dois por recolher a 35%,1,Não,Não,37.127863,-8.5954,0.3333333333333333,2348.4
-253,55b21362,Portimão,2021-07-06,6,06272eb8,1,Rectangular c/ rodas,1000,0.5,Razoável,Monos neste local,1,Sim,Não,37.127352,-8.595973,1.0,515.1
-254,c6684a76,Portimão,2021-07-06,6,3ca6ece2,1,Rectangular c/ rodas,1000,0.5,Razoável,Monos n recolhidos,1,Sim,Não,37.126931,-8.5963,1.0,515.1
-255,7273fde5,Portimão,2021-07-06,6,b4e307cc,2,Contentor semi-enterrado,1000,0.75,Razoável,Maioria verdes em ambos,2,Não,Não,37.126445,-8.595959,1.0,1535.2
-256,e4f669ed,Portimão,2021-07-06,6,cbdbcc74,3,Rectangular c/ rodas,1000,0.5,Razoável,Recolhidos 2 a 75% e um por recokher,3,Não,Não,37.123674,-8.596353,1.0,1545.3000000000002
-257,6e3f9945,Portimão,2021-07-06,6,f2dd480f,2,Rectangular c/ rodas,1000,0.5,Bom,"Recolhido um a 75%,outro a 25%",1,Não,Não,37.1237,-8.595325,0.5,520.2
-258,ee7ee1b2,Portimão,2021-07-06,6,4be74a22,2,Rectangular c/ rodas,1000,0.5,Razoável,Recolhidos ambos sem que estejam cheios - ingleses reclamam se não sempre recolhido (50 e 25),2,Não,Não,37.131267,-8.590676,1.0,1030.2
-259,8139b868,Portimão,2021-07-06,6,2a5f11a7,2,Contentor semi-enterrado,3000,0.75,Mau,Verdes que requerem algumas cuidado,2,Não,Não,37.132524,-8.59059,1.0,4605.6
-260,29bdc77c,Portimão,2021-07-06,6,601bcc91,2,Rectangular c/ rodas,1000,0.5,Bom,Recolhidos 2 - latas e cartao,2,Não,Não,37.133417,-8.59128,1.0,1030.2
-261,01b7ba33,Portimão,2021-07-06,6,e98da552,11,Rectangular c/ rodas,1000,1.0,Bom,9 de 800 litros e 2 de 1000,11,Não,Não,37.135044,-8.590596,1.0,11221.1
-262,42f30b8b,Portimão,2021-07-07,6,501fb327,1,Rectangular c/ rodas,1000,0.25,Bom,Não recolhido,0,Não,Não,37.140279,-8.589251,0.0,2.6000000000000005
-263,ad42d182,Portimão,2021-07-07,6,0fcbc596,1,Recipiente redondo,1000,0.25,Bom,N recolhido,0,Não,Não,37.143207,-8.586426,0.0,2.6000000000000005
-264,07b9b0fb,Portimão,2021-07-07,6,02e93f79,1,Rectangular c/ rodas,800,1.0,Bom,,1,Não,Não,37.143691,-8.585768,1.0,816.08
-265,1bc71bcd,Portimão,2021-07-07,6,d3120ec4,2,Contentor semi-enterrado,3000,0.5,Bom,"Recolhido apenas 1 - 50%, outro por recolher",1,Não,Não,37.145067,-8.584281,0.5,1560.6
-266,f3d5293b,Portimão,2021-07-07,6,1602d7bd,1,Rectangular c/ rodas,800,0.75,Bom,Apanharam folhas colocadas à parte,1,Sim,Não,37.146836,-8.582351,1.0,614.08
-267,a3dfefa7,Portimão,2021-07-07,6,7dafc958,1,Rectangular c/ rodas,1000,0.75,Bom,,1,Não,Não,37.147457,-8.579957,1.0,767.6
-268,e845deda,Portimão,2021-07-07,6,ad13d9c2,1,Rectangular c/ rodas,1000,0.25,Razoável,N recolhido,0,Não,Não,37.149353,-8.576761,0.0,2.6000000000000005
-269,17f9a616,Portimão,2021-07-07,6,a80f0fa3,1,Rectangular c/ rodas,1000,0.5,Razoável,Zona turistica,1,Não,Sim,37.148989,-8.576053,1.0,515.1
-270,0f5e64da,Portimão,2021-07-07,6,24307859,1,Rectangular c/ rodas,1000,0.75,Bom,Recolha,1,Não,Não,37.152598,-8.575721,1.0,767.6
-271,882f49bd,Portimão,2021-07-07,6,beb7ef56,1,Rectangular c/ rodas,1000,0.25,Bom,,1,Não,Não,37.158139,-8.571842,1.0,262.6
-272,4c95564c,Portimão,2021-07-07,6,601b94f7,1,Rectangular c/ rodas,1000,0.5,Bom,,1,Não,Não,37.159523,-8.570891,1.0,515.1
-273,fa2a1889,Portimão,2021-07-07,6,b75ddeeb,1,Rectangular c/ rodas,1000,0.5,Razoável,,1,Não,Não,37.159579,-8.570733,1.0,515.1
-274,1bcad49e,Portimão,2021-07-07,6,b80f25e8,1,Rectangular c/ rodas,1000,0.25,Bom,Não recolhido,0,Não,Não,37.161539,-8.572882,0.0,2.6000000000000005
-275,90c6ca75,Portimão,2021-07-07,6,ff32560c,4,Rectangular c/ rodas,1000,1.0,Razoável,Recolha fora do circuito,4,Não,Sim,37.161602,-8.585595,1.0,4080.4
-276,07926a3d,Portimão,2021-07-08,6,f932e3d5,8,Rectangular c/ rodas,800,0.5,Bom,"Recolha dos contentores todos, recolha de Hotel fora deste circuito",8,Não,Sim,37.160995,-8.579407,1.0,3296.64
-277,07926a3d,Portimão,2021-07-08,6,46b6b492,8,Rectangular c/ rodas,1000,0.5,Bom,Recolha extraordinária - hotel produz muitos resíduos normalmente,8,Não,Sim,37.160995,-8.579407,1.0,4120.8
-278,19111451,Portimão,2021-07-07,6,c7bcd8df,2,Rectangular c/ rodas,1000,1.0,Bom,"1 de 1100 recolhido, outro de 800 por recolher",1,Não,Sim,37.160991,-8.578486,0.5,1030.2
-279,e01051f2,Portimão,2021-07-07,8,0b13dca7,3,Rectangular c/ rodas,1000,0.5,Razoável,Os que se partem,3,Não,Não,37.157381,-8.552441,1.0,1545.3000000000002
-280,7ecf2568,Portimão,2021-07-07,8,5d3eeb3e,2,Rectangular c/ rodas,800,0.5,Razoável,,2,Não,Não,37.157379,-8.552663,1.0,824.16
-281,6c156aeb,Portimão,2021-07-07,8,083a2b99,1,Recipiente redondo,1000,0.5,Bom,,1,Não,Não,37.156216,-8.551942,1.0,515.1
-282,d1ac5bee,Portimão,2021-07-07,8,73e3287a,1,Rectangular c/ rodas,1000,0.5,Bom,Recolhido,1,Não,Não,37.153477,-8.552665,1.0,515.1
-283,91550b7d,Portimão,2021-07-07,5,f48a10ab,1,Rectangular c/ rodas,1000,0.25,Bom,,1,Não,Não,37.14349,-8.548502,1.0,262.6
-284,1e07a340,Portimão,2021-07-07,8,a3b91ac3,1,Rectangular c/ rodas,1000,0.5,Bom,,1,Não,Não,37.154519,-8.552837,1.0,515.1
-285,f6eb8b5a,Portimão,2021-07-07,8,365a3db9,1,Rectangular c/ rodas,1000,0.75,Bom,,1,Não,Não,37.157177,-8.553354,1.0,767.6
-286,5907da93,Portimão,2021-07-07,5,98614f8c,3,Rectangular c/ rodas,1000,1.0,Bom,"Recolheram 2, 1 a 100, 1 a 50",2,Não,Não,37.137716,-8.546378,0.6666666666666666,2050.3
-287,a3fd88ed,Portimão,2021-07-07,8,bd921172,3,Rectangular c/ rodas,1000,0.75,Bom,,3,Não,Não,37.153142,-8.551152,1.0,2302.8
-288,a8ae5566,Portimão,2021-07-07,5,b71f9945,1,Rectangular c/ rodas,1000,0.5,Bom,,1,Não,Não,37.134117,-8.545778,1.0,515.1
-289,615f5dae,Portimão,2021-07-07,8,f1e35117,1,Rectangular c/ rodas,1000,0.75,Bom,,1,Não,Não,37.153947,-8.549964,1.0,767.6
-290,501bfd83,Portimão,2021-07-07,5,2b1d67fa,2,Rectangular c/ rodas,1000,0.75,Bom,"1 a 75, 1 a 50",2,Não,Não,37.133389,-8.546437,1.0,1535.2
-291,b0ee1980,Portimão,2021-07-07,8,2f3b1708,2,Rectangular c/ rodas,1000,0.75,Bom,"Aqui é uma empresa de banco alimentar,consta muitas frutas estragadas, e mal acondicionadas e estavam atirados dentária dos contentores",2,Não,Sim,37.154634,-8.549517,1.0,1535.2
-292,fbb8e368,Portimão,2021-07-07,8,89772a9c,1,Rectangular c/ rodas,1000,0.25,Bom,Não recolhidos,0,Não,Não,37.155201,-8.549466,0.0,2.6000000000000005
-293,58c2176c,Portimão,2021-07-07,8,dd5df5a4,2,Rectangular c/ rodas,1000,0.25,Bom,,2,Não,Não,37.155696,-8.549066,1.0,525.2
-294,67f32d81,Portimão,2021-07-07,5,4d5dc884,1,Contentor semi-enterrado,3000,0.75,Bom,,1,Não,Não,37.132558,-8.546132,1.0,2302.8
-295,20c90e3d,Portimão,2021-07-07,5,de43fa87,2,Rectangular c/ rodas,1000,1.0,Bom,"1 a 100, 1 a 75",2,Não,Não,37.132248,-8.545911,1.0,2040.2
-296,920c0c6d,Portimão,2021-07-07,8,43a9cb2a,3,Rectangular c/ rodas,1000,0.25,Bom,Mal acondicionados,3,Sim,Não,37.152681,-8.5492,1.0,787.8000000000001
-297,69e5243f,Portimão,2021-07-07,5,2f7e406d,1,Rectangular c/ rodas,1000,1.0,Bom,,1,Não,Não,37.127547,-8.547646,1.0,1020.1
-298,7047686f,Portimão,2021-07-07,8,b7ea9f98,1,Contentor semi-enterrado,3000,0.5,Bom,,1,Não,Não,37.15198,-8.548515,1.0,1545.3
-299,7a310241,Portimão,2021-07-07,5,c8abc2a4,2,Contentor semi-enterrado,3000,0.75,Bom,"1 a 75, 1 a 50",2,Não,Não,37.123943,-8.545427,1.0,4605.6
-300,5ad3afbf,Portimão,2021-07-07,8,cec709cb,1,Rectangular c/ rodas,1000,0.5,Bom,,1,Não,Não,37.150663,-8.547082,1.0,515.1
-301,4544968c,Portimão,2021-07-07,5,98de6be6,3,Contentor semi-enterrado,3000,1.0,Bom,"Recolheram 2, os dois a 100",2,Não,Não,37.124727,-8.547382,0.6666666666666666,6150.9
-302,ae02df34,Portimão,2021-07-07,8,ba1bddfe,2,Contentor semi-enterrado,3000,0.5,Bom,Muito mal acondicionados (resíduos colocados dentro das cubas sem sacos),2,Sim,Não,37.150513,-8.546119,1.0,3090.6
-303,cec9b8a3,Portimão,2021-07-07,8,02dc3adf,3,Contentor semi-enterrado,3000,0.25,Bom,"1-75%,2-100%,3-25%",3,Não,Não,37.151936,-8.545623,1.0,2363.4
-304,69eb6f9b,Portimão,2021-07-07,5,7d576a54,3,Contentor semi-enterrado,3000,1.0,Bom,2 a 100,2,Não,Não,37.12557,-8.548101,0.6666666666666666,6150.9
-305,77555ce3,Portimão,2021-07-07,5,5d957ea6,1,Rectangular c/ rodas,1000,1.0,Bom,,1,Não,Não,37.124998,-8.549595,1.0,1020.1
-306,6ffaaea1,Portimão,2021-07-07,5,9a72d94f,3,Contentor semi-enterrado,3000,1.0,Bom,"Recolheram 3, 1 a 100, 1 a 75",3,Não,Não,37.124064,-8.54897,1.0,9180.900000000001
-307,90235145,Portimão,2021-07-07,8,43c94035,2,Contentor semi-enterrado,3000,0.5,Bom,Tem resíduos/monos ao lado dos contentores,2,Sim,Não,37.150348,-8.544396,1.0,3090.6
-308,e893a0ba,Portimão,2021-07-07,5,edd44727,2,Contentor semi-enterrado,3000,0.75,Bom,Recolheram 1,1,Não,Não,37.121794,-8.549889,0.5,2325.6
-309,f3ad7aeb,Portimão,2021-07-07,8,679d8ba6,2,Contentor semi-enterrado,3000,0.5,Bom,São mas só recolheu 1 contentor,1,Não,Não,37.148988,-8.544965,0.5,1560.6
-310,d0550058,Portimão,2021-07-07,5,aea7b589,2,Rectangular c/ rodas,800,0.5,Bom,"1 a 100, 1 a 50",2,Não,Não,37.121878,-8.560688,1.0,824.16
-311,e5c78714,Portimão,2021-07-07,8,db889172,2,Contentor semi-enterrado,3000,0.25,Bom,,2,Não,Não,37.148282,-8.544354,1.0,1575.6
-312,2533b4d2,Portimão,2021-07-07,5,55522cbd,3,Rectangular c/ rodas,1000,0.75,Bom,"1 a 75, 2 a 50%",3,Não,Não,37.121983,-8.563972,1.0,2302.8
-313,c8352166,Portimão,2021-07-07,8,0c161a2c,2,Rectangular c/ rodas,1000,0.25,Bom,,2,Não,Não,37.148493,-8.545833,1.0,525.2
-314,21cf133a,Portimão,2021-07-07,5,73584580,3,Rectangular c/ rodas,1000,0.5,Bom,,3,Não,Não,37.121168,-8.561873,1.0,1545.3000000000002
-315,2dc143b2,Portimão,2021-07-07,8,cf273494,2,Contentor semi-enterrado,3000,0.5,Razoável,Recolhido apenas 1 de 2,1,Não,Não,37.148475,-8.547098,0.5,1560.6
-316,e0e42f7a,Portimão,2021-07-07,8,153df996,1,Contentor semi-enterrado,3000,0.5,Razoável,Plano inclinado dificulta a acção da viatura,1,Não,Não,37.149208,-8.5483,1.0,1545.3
-317,2471dd47,Portimão,2021-07-07,5,21bb9dfd,8,Rectangular c/ rodas,1000,1.0,Bom,Recolheram 4 a 100%,4,Não,Sim,37.121142,-8.560311,0.5,4120.8
-318,de88fdf1,Portimão,2021-07-07,5,a887e1a3,5,Rectangular c/ rodas,800,0.5,Bom,Recolheram 1,1,Não,Não,37.120423,-8.553299,0.2,428.4000000000001
-319,e6ea1cc1,Portimão,2021-07-07,8,cc07f4dd,3,Contentor semi-enterrado,1000,0.5,Bom,"Recolhidos 2, um a 50% e outro 25%, um 50% por recolher",2,Não,Não,37.150357,-8.549222,0.6666666666666666,1035.3
-320,e5d4f0ae,Portimão,2021-07-07,5,6a518fb6,1,Rectangular c/ rodas,1000,1.0,Bom,,1,Não,Não,37.121093,-8.556574,1.0,1020.1
-321,04dc0a85,Portimão,2021-07-07,5,1cfe7b9f,2,Rectangular c/ rodas,1000,1.0,Bom,,1,Não,Não,37.120838,-8.556898,0.5,1030.2
-322,0f29bba0,Portimão,2021-07-07,5,219bbc43,1,Contentor semi-enterrado,3000,0.5,Bom,,1,Não,Não,37.120489,-8.558642,1.0,1545.3
-323,6f35f267,Portimão,2021-07-07,8,ffe56c59,1,Rectangular c/ rodas,1000,0.25,Bom,Contentor,1,Não,Não,37.153238,-8.544605,1.0,262.6
-324,88a79ba3,Portimão,2021-07-07,8,f205565b,1,Rectangular c/ rodas,1000,0.75,Bom,Mudança de faixa,1,Não,Não,37.151461,-8.541391,1.0,767.6
-325,04dad046,Portimão,2021-07-07,5,2123e3ee,1,Rectangular c/ rodas,1000,0.25,Bom,,1,Não,Não,37.119866,-8.55732,1.0,262.6
-326,83b0f958,Portimão,2021-07-07,8,7cd6b0ea,2,Contentor semi-enterrado,3000,0.75,Bom,"Recolha de apenas 1 a 75%, segundo por recolher",1,Não,Não,37.15034,-8.540322,0.5,2325.6
-327,05ef06b2,Portimão,2021-07-07,5,fabcee38,1,Rectangular c/ rodas,1000,0.5,Bom,,1,Não,Não,37.119609,-8.555881,1.0,515.1
-328,9c99312d,Portimão,2021-07-07,5,92bf7ad3,2,Rectangular c/ rodas,1000,1.0,Bom,2 a 100%,2,Não,Não,37.122784,-8.556905,1.0,2040.2
-329,9f242d08,Portimão,2021-07-07,8,12c1cb03,3,Contentor semi-enterrado,3000,0.75,Bom,"Recolhidos 2 para evitar cheiro do resíduos , por recolher contentor 50%uo alimentar",2,Não,Não,37.14787,-8.540894,0.6666666666666666,4628.4
-330,c23179bc,Portimão,2021-07-07,5,008de347,3,Rectangular c/ rodas,1000,1.0,Bom,Recolheram 2 a 100,2,Não,Não,37.123798,-8.555336,0.6666666666666666,2050.3
-331,46c7b49e,Portimão,2021-07-07,5,b5346b9f,2,Contentor semi-enterrado,3000,1.0,Bom,Recolhidos alternadamente. Recolheram 1 a 100%,1,Não,Não,37.124351,-8.557377,0.5,3090.6
-332,2ab809fa,Portimão,2021-07-07,5,171812ee,1,Contentor semi-enterrado,3000,0.75,Bom,"1 a 75, 1 a 50%",1,Não,Não,37.125768,-8.557854,1.0,2302.8
-333,851a058c,Portimão,2021-07-07,8,d2b68c94,3,Contentor semi-enterrado,3000,0.75,Bom,"Recolha de 1 a 75%, de 1 a 25%, outro 25% por recolher",2,Não,Não,37.148111,-8.542388,0.6666666666666666,4628.4
-334,d7b81a04,Portimão,2021-07-07,5,8c1ca0f5,1,Rectangular c/ rodas,1000,0.5,Bom,,1,Não,Não,37.126969,-8.554983,1.0,515.1
-335,32264e1c,Portimão,2021-07-07,5,1bbe855e,2,Contentor semi-enterrado,1000,1.0,Bom,Recolheram 1 a 100,1,Não,Não,37.127739,-8.553932,0.5,1030.2
-336,433ec434,Portimão,2021-07-07,5,edeb837f,2,Rectangular c/ rodas,1000,0.5,Bom,,2,Não,Não,37.126388,-8.552597,1.0,1030.2
-337,7c4374a0,Portimão,2021-07-07,8,899736b2,2,Contentor semi-enterrado,3000,0.75,Razoável,Pouca preocupação dos residentes em acondicionar os resíduos . Mistura de recicláveis com não recicláveis.,2,Sim,Não,37.148194,-8.540983,1.0,4605.6
-338,9e6a5f20,Portimão,2021-07-07,5,bf91ed80,2,Contentor semi-enterrado,3000,0.75,Bom,,2,Não,Não,37.128081,-8.552166,1.0,4605.6
-339,0776c2dc,Portimão,2021-07-07,8,f020b858,2,Contentor semi-enterrado,3000,0.5,Razoável,,2,Não,Não,37.149509,-8.540646,1.0,3090.6
-340,492775f9,Portimão,2021-07-07,5,cf54cdb0,1,Contentor semi-enterrado,3000,0.5,Bom,Cuba mal colocada/virada,1,Sim,Não,37.131186,-8.551158,1.0,1545.3
-341,99a95938,Portimão,2021-07-07,8,854ae39e,3,Contentor semi-enterrado,1000,0.5,Razoável,"Recolhidos 2 a 50%, 3 por recolher",2,Não,Não,37.150073,-8.541406,0.6666666666666666,1035.3
-342,2303c648,Portimão,2021-07-07,5,3ef43ce7,2,Contentor semi-enterrado,3000,0.75,Bom,Recolheram 1 a 76,1,Não,Não,37.130196,-8.549731,0.5,2325.6
-343,d36d5085,Portimão,2021-07-07,8,b4b4f5fe,1,Rectangular c/ rodas,1000,1.0,Razoável,,1,Não,Não,37.15061,-8.542868,1.0,1020.1
-344,3ddc5855,Portimão,2021-07-07,8,e7d32bb4,3,Rectangular c/ rodas,1000,0.75,Razoável,"Recolhidos 2 a 75%, por recolher 1",2,Não,Não,37.151463,-8.544322,0.6666666666666666,1542.8
-345,37f3854e,Portimão,2021-07-07,5,494471c7,1,Rectangular c/ rodas,800,0.75,Bom,,1,Não,Não,37.126869,-8.547045,1.0,614.08
-346,8601b10b,Portimão,2021-07-07,5,360ae551,1,Rectangular c/ rodas,1000,0.75,Bom,"1 a 75, 1 a 25",1,Não,Não,37.129189,-8.548556,1.0,767.6
-347,a4134541,Portimão,2021-07-07,5,762d30a7,2,Rectangular c/ rodas,1000,0.5,Bom,Dois a 50,2,Não,Não,37.12954,-8.548415,1.0,1030.2
-348,836fb400,Portimão,2021-07-07,5,f866d4a8,2,Contentor semi-enterrado,3000,0.5,Bom,"Recolheram 1, a 50%",1,Não,Não,37.130181,-8.547663,0.5,1560.6
-349,4669d1a5,Portimão,2021-07-07,8,a28cf9ba,23,Rectangular c/ rodas,1000,1.0,Razoável,Recolhidos 22,22,Não,Não,37.154723,-8.538439,0.9565217391304348,22452.3
-350,4669d1a5,Portimão,2021-07-07,8,71b01dd2,4,Rectangular c/ rodas,800,1.0,Bom,Recolhidos 3,3,Não,Não,37.154723,-8.538439,0.75,2456.32
-351,8886934b,Portimão,2021-07-07,5,a8202702,2,Contentor semi-enterrado,3000,1.0,Bom,"Recolheram 1, a 100%",1,Não,Não,37.130768,-8.546639,0.5,3090.6
-352,b421cff4,Portimão,2021-07-07,5,c8a86eab,2,Contentor semi-enterrado,3000,1.0,Bom,"Recolheram 1, a 100%",1,Não,Não,37.131472,-8.546871,0.5,3090.6
-353,9d71e78a,Portimão,2021-07-07,5,8457c2a1,1,Contentor semi-enterrado,1000,0.5,Bom,,1,Não,Não,37.13247,-8.547341,1.0,515.1
-354,c6e8f931,Portimão,2021-07-07,5,1129f4c4,2,Contentor semi-enterrado,3000,1.0,Bom,"Recolheram 1, a 100%",1,Não,Não,37.132836,-8.547921,0.5,3090.6
-355,8852ded7,Portimão,2021-07-07,5,c26f2851,1,Contentor semi-enterrado,3000,0.0,Bom,,1,Não,Não,37.134617,-8.546549,1.0,30.299999999999997
-356,c60d9289,Portimão,2021-07-07,5,0387b1f7,2,Contentor semi-enterrado,3000,0.5,Bom,Recolheram 1,1,Não,Não,37.134307,-8.547002,0.5,1560.6
-357,e847f0dd,Portimão,2021-07-07,5,246ea6a9,1,Contentor semi-enterrado,3000,1.0,Bom,,1,Não,Não,37.133483,-8.548842,1.0,3060.3
-358,1635fd33,Portimão,2021-07-07,5,9b3f9ed5,1,Contentor semi-enterrado,3000,0.5,Bom,,1,Não,Não,37.13354,-8.549366,1.0,1545.3
-359,05fc67a9,Portimão,2021-07-07,5,314c0d94,2,Contentor semi-enterrado,3000,1.0,Bom,Recolheram 1 a 100,1,Não,Não,37.1325,-8.549578,0.5,3090.6
-360,03eb1eab,Portimão,2021-07-07,5,a290dbf9,2,Contentor semi-enterrado,3000,0.5,Bom,Recolheram 1,1,Não,Não,37.13179,-8.550266,0.5,1560.6
-361,9ee8b6d4,Portimão,2021-07-07,5,2029d8f5,2,Contentor semi-enterrado,3000,1.0,Bom,Recolheram 1,1,Não,Não,37.133839,-8.552383,0.5,3090.6
-362,ad589e42,Portimão,2021-07-07,5,c8d4a135,1,Rectangular c/ rodas,1000,1.0,Bom,,1,Não,Não,37.134192,-8.550774,1.0,1020.1
-363,33baa7a8,Portimão,2021-07-07,5,3b5cb0aa,3,Contentor semi-enterrado,3000,0.75,Bom,"Recolheram 2, a 75% ambos",2,Não,Não,37.13495,-8.549593,0.6666666666666666,4628.4
-364,e71797b9,Portimão,2021-07-07,5,a0d54751,2,Contentor semi-enterrado,3000,0.5,Bom,Recolheram 1,1,Não,Não,37.136279,-8.550126,0.5,1560.6
-365,ade3f098,Portimão,2021-07-07,5,ac158215,2,Contentor semi-enterrado,3000,1.0,Bom,Recolheram 1,1,Não,Não,37.135661,-8.550499,0.5,3090.6
-366,e663d1cd,Portimão,2021-07-07,5,ea09a273,2,Contentor semi-enterrado,3000,0.5,Bom,Recolheram 1,1,Não,Não,37.136084,-8.551254,0.5,1560.6
-367,8440dd1b,Portimão,2021-07-07,8,faca984a,1,Rectangular c/ rodas,1000,0.5,Razoável,,1,Não,Não,37.161582,-8.556243,1.0,515.1
-368,d044dcda,Portimão,2021-07-07,8,2999064a,1,Rectangular c/ rodas,1000,0.5,Bom,,1,Não,Não,37.161552,-8.572158,1.0,515.1
-369,f800a885,Portimão,2021-07-07,5,6e1b289e,1,Contentor semi-enterrado,3000,0.5,Bom,,1,Não,Não,37.135279,-8.553084,1.0,1545.3
-370,bea7c414,Portimão,2021-07-07,5,10994752,1,Contentor semi-enterrado,3000,0.0,Bom,"Não recolhido, vazio",0,Não,Não,37.134987,-8.551333,0.0,0.3
-371,7cd45db6,Portimão,2021-07-07,8,857c8d4f,1,Rectangular c/ rodas,1000,0.25,Bom,"Contentor isolado só uma vivenda, parece ser só com vidros",1,Não,Não,37.166494,-8.577673,1.0,262.6
-372,d5b4597d,Portimão,2021-07-07,5,1f89ec8d,2,Contentor semi-enterrado,3000,0.75,Bom,Recolheram 1,1,Não,Não,37.134914,-8.54826,0.5,2325.6
-373,a26384c6,Portimão,2021-07-07,8,ae7854d8,1,Rectangular c/ rodas,1000,0.25,Razoável,Não recolhido,0,Não,Não,37.16161,-8.592282,0.0,2.6000000000000005
-374,2f991522,Portimão,2021-07-07,5,88cb727d,2,Contentor semi-enterrado,3000,0.75,Bom,Recolheram 1,1,Não,Não,37.135083,-8.547014,0.5,2325.6
-375,31cda574,Portimão,2021-07-07,8,e5177f26,2,Rectangular c/ rodas,800,0.75,Bom,"1 cheio, 1 a 75%",2,Não,Não,37.162492,-8.592916,1.0,1228.16
-376,a8481949,Portimão,2021-07-07,5,4777e76b,4,Rectangular c/ rodas,1000,1.0,Bom,"2 a 100, 2 a 50",4,Não,Não,37.136157,-8.547052,1.0,4080.4
-377,ba5d21b8,Portimão,2021-07-07,8,484d4328,1,Rectangular c/ rodas,1000,0.5,Bom,,1,Não,Não,37.161402,-8.593892,1.0,515.1
-378,2b37e7f9,Portimão,2021-07-07,8,67be45e3,2,Rectangular c/ rodas,1000,0.5,Razoável,Recolha dos dois locais,2,Não,Não,37.160348,-8.600012,1.0,1030.2
-379,340b3f6a,Portimão,2021-07-07,5,60d2e611,3,Contentor semi-enterrado,3000,1.0,Bom,Recolheram 1 a 100%,1,Não,Não,37.137958,-8.547504,0.3333333333333333,3120.9
-380,ec3a0a43,Portimão,2021-07-07,8,661049bc,1,Rectangular c/ rodas,1000,1.0,Razoável,Sacos no chao,1,Não,Não,37.161923,-8.600401,1.0,1020.1
-381,5adc112e,Portimão,2021-07-07,8,8fd00438,1,Rectangular c/ rodas,1000,0.75,Bom,,1,Não,Não,37.162965,-8.602814,1.0,767.6
-382,3cee3873,Portimão,2021-07-07,8,cc7ca385,2,Rectangular c/ rodas,1000,1.0,Bom,,1,Não,Não,37.164834,-8.605378,0.5,1030.2
-383,62554965,Portimão,2021-07-07,5,1d6aa843,2,Contentor semi-enterrado,3000,1.0,Bom,"Recolheram 1 a 150%, outro a 100%",2,Não,Não,37.139709,-8.547574,1.0,6120.6
-384,126d21e2,Portimão,2021-07-07,8,756bfcca,1,Rectangular c/ rodas,1000,0.0,Bom,,1,Não,Não,37.165304,-8.606539,1.0,10.1
-385,5ab00cc8,Portimão,2021-07-07,8,4d8a4caf,1,Rectangular c/ rodas,1000,0.25,Bom,,1,Não,Não,37.165176,-8.603899,1.0,262.6
-386,c568bf3d,Portimão,2021-07-07,8,75b01be2,1,Rectangular c/ rodas,1000,0.25,Razoável,,1,Não,Não,37.164348,-8.603636,1.0,262.6
-387,85c88987,Portimão,2021-07-07,5,1ebc6963,3,Rectangular c/ rodas,1000,1.0,Bom,"Recolheram 2, 1 a 100, 1 a 50",2,Não,Não,37.138839,-8.547913,0.6666666666666666,2050.3
-388,f403b744,Portimão,2021-07-07,8,55668ef8,2,Rectangular c/ rodas,1000,1.0,Razoável,"1 a 100%, outro 25%",2,Não,Não,37.163621,-8.602901,1.0,2040.2
-389,4271700a,Portimão,2021-07-07,5,a3d51013,2,Contentor semi-enterrado,3000,0.75,Bom,Dois a 75,2,Não,Não,37.137464,-8.548452,1.0,4605.6
-390,f4c6c36c,Portimão,2021-07-07,8,d630c63a,2,Rectangular c/ rodas,1000,0.5,Razoável,,2,Não,Não,37.16415,-8.602039,1.0,1030.2
-391,9b0136e9,Portimão,2021-07-07,8,03c1c937,3,Rectangular c/ rodas,1000,0.75,Bom,Recolha de um cheio de areia/brita,1,Não,Não,37.165569,-8.602014,0.3333333333333333,782.8000000000001
-392,c5636a66,Portimão,2021-07-07,8,48d7db77,3,Rectangular c/ rodas,1000,0.5,Bom,Recolheram 2,2,Não,Não,37.164495,-8.602911,0.6666666666666666,1035.3
-393,c33bef0e,Portimão,2021-07-07,5,39ec352b,3,Contentor semi-enterrado,3000,1.0,Bom,"Recolheram 2, 1 a 100, 1 a 75",2,Não,Não,37.13685,-8.547896,0.6666666666666666,6150.9
-394,3041c967,Portimão,2021-07-07,8,37dafe2a,2,Contentor semi-enterrado,3000,0.75,Bom,"Contentor 75% recebido, segundo contentor por recolher",1,Não,Não,37.164038,-8.601533,0.5,2325.6
-395,c94ca9ec,Portimão,2021-07-07,5,b39e4855,2,Rectangular c/ rodas,1000,1.0,Bom,"Recolheram 2,",2,Não,Não,37.137261,-8.551442,1.0,2040.2
-396,e152e6e5,Portimão,2021-07-07,8,c162cdb1,2,Rectangular c/ rodas,1000,1.0,Bom,Parque caravanas,2,Não,Não,37.166,-8.601162,1.0,2040.2
-397,92e172ab,Portimão,2021-07-07,5,6416c226,2,Contentor semi-enterrado,3000,0.5,Bom,Recolheram 1,1,Não,Não,37.13662,-8.553593,0.5,1560.6
-398,2f276110,Portimão,2021-07-07,8,31c394bc,3,Rectangular c/ rodas,1000,1.0,Bom,,3,Não,Não,37.163041,-8.600343,1.0,3060.3
-399,e0c11460,Portimão,2021-07-07,5,b3f3a94b,1,Contentor semi-enterrado,3000,1.0,Bom,,1,Não,Não,37.135494,-8.558887,1.0,3060.3
-400,d9db9633,Portimão,2021-07-07,5,b41ca428,2,Rectangular c/ rodas,1000,0.5,Bom,Recolheram 1,2,Não,Não,37.13545,-8.559038,1.0,1030.2
-401,235d2f0a,Portimão,2021-07-07,8,e132f7df,3,Rectangular c/ rodas,800,0.75,Razoável,Recolha dos 3 contentores - um deles 100%,3,Não,Não,37.162131,-8.602087,1.0,1842.2400000000002
-402,d1a51dff,Portimão,2021-07-07,8,494474ed,2,Rectangular c/ rodas,1000,0.5,Bom,,2,Não,Não,37.160263,-8.601925,1.0,1030.2
-403,eae5fda3,Portimão,2021-07-07,8,7a7d80c3,1,Rectangular c/ rodas,1000,0.5,Bom,,1,Não,Não,37.157456,-8.606135,1.0,515.1
-404,0a895ffd,Portimão,2021-07-07,8,4cff3407,2,Rectangular c/ rodas,1000,0.5,Bom,,2,Não,Não,37.153774,-8.613453,1.0,1030.2
-405,e9f2fca9,Portimão,2021-07-07,8,0787092b,1,Rectangular c/ rodas,1000,0.75,Bom,,1,Não,Não,37.154345,-8.60977,1.0,767.6
-406,baba112f,Portimão,2021-07-07,8,9804639a,2,Rectangular c/ rodas,1000,0.5,Razoável,,2,Não,Não,37.15725,-8.625508,1.0,1030.2
-407,c9ea8fd3,Portimão,2021-07-07,8,06339a62,1,Rectangular c/ rodas,1000,0.75,Bom,,1,Não,Não,37.156576,-8.6267,1.0,767.6
-408,d0d0f9c8,Portimão,2021-07-07,8,d8f5d50c,2,Contentor semi-enterrado,3000,0.5,Razoável,Um a 50% outro 75%,2,Não,Não,37.153532,-8.623061,1.0,3090.6
-409,721225bb,Portimão,2021-07-07,8,4559aa2f,1,Rectangular c/ rodas,1000,0.25,Razoável,,1,Não,Não,37.157281,-8.629651,1.0,262.6
-410,0268d964,Portimão,2021-07-07,8,aaf9f431,2,Rectangular c/ rodas,1000,0.75,Razoável,Um cheio recolhido,2,Não,Não,37.158663,-8.631673,1.0,1535.2
-411,d03d55fe,Portimão,2021-07-07,8,97712c19,1,Rectangular c/ rodas,1000,0.5,Razoável,,1,Não,Não,37.162608,-8.631369,1.0,515.1
-412,fd8bf186,Portimão,2021-07-08,8,8ba6b2c7,1,Rectangular c/ rodas,1000,1.0,Razoável,"Um cheio, segundo a metade",1,Não,Não,37.1635,-8.633147,1.0,1020.1
-413,328b2df5,Portimão,2021-07-08,5,92ba92e2,1,Contentor semi-enterrado,3000,0.0,Bom,,1,Não,Não,37.132808,-8.552119,1.0,30.299999999999997
-414,3a0bf616,Portimão,2021-07-08,5,b20eb812,2,Rectangular c/ rodas,1000,1.0,Bom,"Recolheram 2, 1 a 100, 1 a 50",2,Não,Não,37.131114,-8.551737,1.0,2040.2
-415,3d47e029,Portimão,2021-07-08,8,e0da6196,4,Rectangular c/ rodas,1000,1.0,Bom,"Cheios de terras, resíduos sem ser acondicionados,parece residuos de construção",4,Sim,Sim,37.16024,-8.632388,1.0,4080.4
-416,8e9d17ce,Portimão,2021-07-08,5,a8d12faa,2,Rectangular c/ rodas,1000,0.5,Bom,"Recolheram 1, a 50%",1,Não,Não,37.129623,-8.55089,0.5,520.2
-417,af75dfb6,Portimão,2021-07-08,5,a943a919,1,Rectangular c/ rodas,1000,0.5,Bom,,1,Não,Não,37.130007,-8.554368,1.0,515.1
-418,3c862db8,Portimão,2021-07-08,8,318c2464,1,Rectangular c/ rodas,1000,0.25,Razoável,Não recolhido,0,Não,Não,37.152898,-8.622696,0.0,2.6000000000000005
-419,b261e96c,Portimão,2021-07-08,5,63cf67d9,2,Rectangular c/ rodas,1000,0.5,Bom,Recolheram 1,1,Não,Não,37.128955,-8.556137,0.5,520.2
-420,2b8f46d5,Portimão,2021-07-08,8,5824f859,1,Rectangular c/ rodas,1000,1.0,Bom,Recolhido,1,Não,Não,37.152574,-8.619007,1.0,1020.1
-421,9469387d,Portimão,2021-07-08,8,76b5b964,1,Rectangular c/ rodas,1000,0.75,Razoável,,1,Não,Não,37.152858,-8.616512,1.0,767.6
-422,ae228fe3,Portimão,2021-07-08,5,6f080e0a,2,Rectangular c/ rodas,1000,0.5,Bom,,2,Não,Não,37.127712,-8.560425,1.0,1030.2
-423,0c9ae744,Portimão,2021-07-08,8,cfc3bfaa,1,Rectangular c/ rodas,1000,0.25,Razoável,,1,Não,Não,37.154281,-8.613867,1.0,262.6
-424,f7764289,Portimão,2021-07-08,8,be709fd1,2,Rectangular c/ rodas,1000,0.5,Bom,"Recolhido 1 a 50%, outro 25 por recolher",1,Não,Não,37.156528,-8.614402,0.5,520.2
-425,10354f80,Portimão,2021-07-08,5,c00354e7,3,Contentor semi-enterrado,3000,0.0,Bom,,0,Não,Não,37.123767,-8.558839,0.0,0.8999999999999999
-426,7fcc1148,Portimão,2021-07-08,5,c9f4f2d0,2,Contentor semi-enterrado,3000,0.0,Bom,,0,Não,Não,37.123885,-8.561973,0.0,0.6
-427,0a43a94e,Portimão,2021-07-08,8,806c78d4,2,Contentor semi-enterrado,3000,0.5,Bom,"Recolheu 1- 50%, e ficou 1 de 28%",1,Não,Não,37.157874,-8.613775,0.5,1560.6
-428,9e7eea45,Portimão,2021-07-08,5,196db04a,1,Rectangular c/ rodas,1000,0.75,Bom,,1,Não,Não,37.123571,-8.563277,1.0,767.6
-429,4a223071,Portimão,2021-07-08,5,a53268f8,3,Contentor semi-enterrado,3000,0.0,Bom,Um está fechado temporariamente,2,Não,Não,37.124765,-8.563982,0.6666666666666666,60.9
-430,de86c26d,Portimão,2021-07-08,8,ed6603b9,2,Contentor semi-enterrado,3000,0.75,Bom,Verdes e terra,2,Não,Não,37.160697,-8.613223,1.0,4605.6
-431,4aae9239,Portimão,2021-07-08,8,c08ef19f,1,Rectangular c/ rodas,1000,0.5,Razoável,,1,Não,Não,37.162831,-8.611981,1.0,515.1
-432,4564876a,Portimão,2021-07-08,8,a6f2a5a1,1,Rectangular c/ rodas,1000,1.0,Bom,Fim de zona,1,Não,Não,37.164335,-8.610283,1.0,1020.1
-433,67a35bc4,Portimão,2021-07-08,5,22f93e77,12,Rectangular c/ rodas,800,1.0,Bom,Recolheram 6 a 75%,6,Não,Não,37.126378,-8.564024,0.5,4944.96
-434,a6912620,Portimão,2021-07-08,5,6d8f3d36,4,Contentor semi-enterrado,3000,0.0,Bom,Dois encerrados temporariamente,2,Não,Não,37.125479,-8.565903,0.5,61.2
-435,57d74d27,Portimão,2021-07-08,8,0aa614e7,2,Rectangular c/ rodas,1000,1.0,Razoável,"Um cheio, outro 25% e estão por baixo de uma ponte.",2,Não,Não,37.178661,-8.611855,1.0,2040.2
-436,0efaa897,Portimão,2021-07-08,5,815b5ba5,2,Rectangular c/ rodas,1000,0.0,Bom,,0,Não,Não,37.130377,-8.564781,0.0,0.2
-437,b9c834bc,Portimão,2021-07-08,8,52154f0e,1,Rectangular c/ rodas,1000,0.5,Bom,,1,Não,Não,37.173665,-8.612483,1.0,515.1
-438,74b2bd31,Portimão,2021-07-08,5,93abc5b0,4,Rectangular c/ rodas,800,0.5,Bom,"Recolheram 2, ambos a 50",2,Não,Não,37.130123,-8.565715,0.5,832.3199999999999
-439,3b3a19a6,Portimão,2021-07-08,5,248e910e,2,Contentor semi-enterrado,3000,0.0,Razoável,Não recolhido. Fechados por erro de outra equipa?,0,Não,Não,37.138772,-8.566254,0.0,0.6
-440,b25ce1a0,Portimão,2021-07-08,8,ce6b0d38,1,Contentor semi-enterrado,3000,0.5,Bom,,1,Não,Não,37.163867,-8.611315,1.0,1545.3
-441,584b9669,Portimão,2021-07-08,5,28ca3d42,2,Contentor semi-enterrado,3000,0.0,Bom,,0,Não,Não,37.13891,-8.567646,0.0,0.6
-442,1b999d4a,Portimão,2021-07-08,8,c058fb8e,1,Rectangular c/ rodas,1000,1.0,Mau,Tampa partida,1,Não,Não,37.163814,-8.614879,1.0,1020.1
-443,75c852b9,Portimão,2021-07-08,5,440e25c5,2,Contentor semi-enterrado,3000,0.0,Bom,,0,Não,Não,37.139789,-8.566721,0.0,0.6
-444,c71e703f,Portimão,2021-07-08,5,b6ea4ad2,2,Contentor semi-enterrado,3000,0.0,Bom,,0,Não,Não,37.138847,-8.564737,0.0,0.6
-445,af4fc16c,Portimão,2021-07-08,8,4f03b846,1,Rectangular c/ rodas,1000,0.5,Razoável,,1,Não,Não,37.167501,-8.61879,1.0,515.1
-446,414ce2a6,Portimão,2021-07-08,5,30099c37,2,Contentor semi-enterrado,3000,0.0,Bom,,0,Não,Não,37.137713,-8.563675,0.0,0.6
-447,3057e30a,Portimão,2021-07-08,5,7f764d6e,2,Contentor semi-enterrado,3000,0.0,Bom,,0,Não,Não,37.138302,-8.56263,0.0,0.6
-448,3a649cc3,Portimão,2021-07-08,5,71b66e9c,2,Contentor semi-enterrado,3000,0.0,Bom,,0,Não,Não,37.139256,-8.563309,0.0,0.6
-449,3ce9d359,Portimão,2021-07-08,8,e88e8123,4,Rectangular c/ rodas,1000,0.75,Bom,4 contentores a entrada da cm 1052,4,Não,Não,37.174988,-8.626994,1.0,3070.4
-450,a97f2ba7,Portimão,2021-07-08,5,ac75bc26,2,Contentor semi-enterrado,3000,0.0,Bom,,0,Não,Não,37.139141,-8.57122,0.0,0.6
-451,f9566503,Portimão,2021-07-08,8,c2059748,2,Rectangular c/ rodas,1000,0.5,Bom,,2,Não,Não,37.161216,-8.614323,1.0,1030.2
-452,7d628b2d,Portimão,2021-07-08,5,af20ea8d,1,Rectangular c/ rodas,1000,0.0,Bom,,0,Não,Não,37.140174,-8.577167,0.0,0.1
-453,4ef4f205,Portimão,2021-07-08,8,a617b14c,2,Contentor semi-enterrado,1000,0.5,Bom,,2,Não,Não,37.160721,-8.614958,1.0,1030.2
-454,e6d62a0c,Portimão,2021-07-08,5,55056260,1,Rectangular c/ rodas,1000,0.5,Bom,,1,Não,Não,37.140709,-8.574665,1.0,515.1
-455,04f310b3,Portimão,2021-07-08,8,1975678b,2,Rectangular c/ rodas,1000,1.0,Bom,,2,Não,Não,37.160377,-8.615341,1.0,2040.2
-456,c063e95e,Portimão,2021-07-08,8,b898d51d,2,Recipiente redondo,1000,0.5,Razoável,,2,Não,Não,37.159362,-8.61548,1.0,1030.2
-457,af577872,Portimão,2021-07-08,5,fc395105,2,Contentor semi-enterrado,3000,0.0,Bom,,0,Não,Não,37.136884,-8.568039,0.0,0.6
-458,fe96706c,Portimão,2021-07-08,8,b9b82f2c,2,Contentor semi-enterrado,3000,0.5,Bom,"Recolhido 1 a 50%, por recolher 25%",1,Não,Não,37.159072,-8.6171,0.5,1560.6
-459,c119c59f,Portimão,2021-07-08,8,a83b88ff,1,Contentor semi-enterrado,3000,0.75,Razoável,"Algo degradado, mas intacto",1,Não,Não,37.156923,-8.616325,1.0,2302.8
-460,e1b780a9,Portimão,2021-07-08,8,1980048c,2,Rectangular c/ rodas,1000,1.0,Bom,"Cheio, mas com maioria  seletivos",2,Não,Não,37.160214,-8.612764,1.0,2040.2
-461,df1d456c,Portimão,2021-07-08,8,a44a0454,1,Rectangular c/ rodas,1000,0.25,Bom,,1,Não,Não,37.160319,-8.611807,1.0,262.6
-462,24d5602e,Portimão,2021-07-08,8,8eccb31b,1,Rectangular c/ rodas,1000,0.5,Razoável,,1,Não,Não,37.159111,-8.611311,1.0,515.1
-463,c10f5722,Portimão,2021-07-08,8,e6a13409,2,Contentor semi-enterrado,3000,0.5,Razoável,Recolhido apenas 1 a 50%,1,Não,Não,37.156329,-8.613524,0.5,1560.6
-464,62f54933,Portimão,2021-07-08,8,18a024a2,4,Rectangular c/ rodas,1000,1.0,Razoável,"Recolheram um apenas, restantes a 25%",1,Não,Não,37.161582,-8.585758,0.25,1050.4
-465,a31f0e0f,Portimão,2021-07-08,8,0db57b68,2,Rectangular c/ rodas,800,0.5,Razoável,Recolhido 1,1,Não,Não,37.160936,-8.578503,0.5,416.15999999999997
-466,bb6a049d,Portimão,2021-07-08,8,10ba5e32,6,Rectangular c/ rodas,800,0.75,Bom,Recolhido 1 e restantes a 25%,1,Não,Não,37.161063,-8.579446,0.16666666666666666,644.48
-467,bb6a049d,Portimão,2021-07-08,8,54b3dfc4,8,Rectangular c/ rodas,1000,0.75,Bom,Recolhos 2 a 75%,2,Não,Não,37.161063,-8.579446,0.25,1580.8
-468,c1ad7c73,Portimão,2021-07-08,8,5313ebff,1,Rectangular c/ rodas,1000,0.75,Bom,,1,Não,Não,37.161654,-8.574758,1.0,767.6
-469,42a2fc5f,Portimão,2021-07-08,9,a006005a,1,Rectangular c/ rodas,1000,0.75,Bom,Oficina,1,Não,Sim,37.155369,-8.545691,1.0,767.6
-470,e13e4ff5,Portimão,2021-07-08,9,bcd3c16e,1,Contentor semi-enterrado,1000,0.5,Bom,,1,Não,Não,37.156002,-8.546151,1.0,515.1
-471,a689b962,Portimão,2021-07-08,9,9dbecbb6,1,Rectangular c/ rodas,1000,0.25,Bom,,1,Não,Não,37.157453,-8.546995,1.0,262.6
-472,60f07e43,Portimão,2021-07-08,9,482f4905,2,Rectangular c/ rodas,1000,0.25,Bom,"Recolha de um a 25%, um zero por recolver",1,Não,Não,37.159198,-8.546922,0.5,265.2
-473,b64d3409,Portimão,2021-07-08,9,ed51d7a2,2,Rectangular c/ rodas,1000,0.5,Bom,Por recolher um 0%,1,Não,Não,37.165569,-8.549867,0.5,520.2
-474,039411ce,Portimão,2021-07-08,9,c029d664,1,Rectangular c/ rodas,1000,0.25,Bom,,1,Não,Não,37.167728,-8.551821,1.0,262.6
-475,054ab1e5,Portimão,2021-07-08,9,141c6442,2,Rectangular c/ rodas,1000,1.0,Bom,"Um 100, outro 75",2,Não,Não,37.171046,-8.550841,1.0,2040.2
-476,39308263,Portimão,2021-07-08,9,e464559a,1,Rectangular c/ rodas,1000,1.0,Bom,Sempre recolhido mesmo que vazio,1,Não,Não,37.172288,-8.550653,1.0,1020.1
-477,c2e81530,Portimão,2021-07-08,9,ee66ca38,2,Contentor semi-enterrado,3000,1.0,Bom,"Um a 100 %, outro 25",1,Não,Não,37.170377,-8.553232,0.5,3090.6
-478,8c59ba71,Portimão,2021-07-08,9,3f9345d6,1,Rectangular c/ rodas,1000,0.0,Bom,S recolba,0,Não,Não,37.173306,-8.55199,0.0,0.1
-479,ddf275f5,Portimão,2021-07-08,9,a41e2d7c,2,Rectangular c/ rodas,1000,0.5,Bom,Ambos recolhidos,2,Não,Não,37.172594,-8.553472,1.0,1030.2
-480,e8d4ad0f,Portimão,2021-07-08,9,a604d757,1,Rectangular c/ rodas,1000,0.5,Bom,,1,Não,Não,37.172927,-8.554851,1.0,515.1
-481,e2b84930,Portimão,2021-07-08,9,b6aa3d35,2,Rectangular c/ rodas,1000,0.5,Bom,"Um 50, outro 25",2,Não,Não,37.175924,-8.556535,1.0,1030.2
-482,f77ba4dd,Portimão,2021-07-08,9,60830d7f,1,Rectangular c/ rodas,1000,0.75,Bom,,1,Não,Não,37.150185,-8.551025,1.0,767.6
-483,35a86ca8,Portimão,2021-07-08,9,730d8d6f,2,Rectangular c/ rodas,3000,1.0,Bom,Um 100% e outro entupido com 0%,1,Não,Não,37.147,-8.547323,0.5,3090.6
-484,3b89b1aa,Portimão,2021-07-08,9,825d08ea,1,Contentor semi-enterrado,3000,0.75,Bom,0.75,1,Não,Não,37.147277,-8.545084,1.0,2302.8
-485,76e8834f,Portimão,2021-07-08,9,b86de41e,3,Contentor semi-enterrado,3000,0.75,Bom,Churrasqueira de vez em quando coloca aqui cinzas,3,Não,Sim,37.146586,-8.54381,1.0,6908.4000000000015
-486,f2b31e4f,Portimão,2021-07-08,9,b9a2685d,3,Contentor semi-enterrado,3000,0.5,Bom,"Recolhidos 3 contentores a 50%, resíduos incluem tapetes, almofadas, e outros resíduos produzidos esporadicamente",3,Sim,Não,37.146086,-8.545643,1.0,4635.900000000001
-487,50a9bab4,Portimão,2021-07-08,9,6da6a3f3,1,Contentor semi-enterrado,3000,1.0,Bom,Regularmente cheio de serradura,1,Não,Sim,37.146142,-8.547349,1.0,3060.3
-488,4ca44709,Portimão,2021-07-08,9,60fd85b2,2,Rectangular c/ rodas,1000,0.5,Bom,"Um recolhido, segundo vaxio",1,Não,Não,37.151399,-8.554039,0.5,520.2
-489,ee2d7819,Portimão,2021-07-08,9,50786935,3,Rectangular c/ rodas,1000,1.0,Razoável,Recolhido um cheio,1,Não,Não,37.15126,-8.553549,0.3333333333333333,1040.3
-490,59b9c433,Portimão,2021-07-08,9,ded71095,4,Rectangular c/ rodas,1000,1.0,Razoável,"2 cheios, 1 25% outro vazio",2,Não,Não,37.15058,-8.553273,0.5,2060.4
-491,ae0c4fe9,Portimão,2021-07-08,9,58d470b5,3,Rectangular c/ rodas,1000,0.75,Razoável,Recolhido um cheio,3,Não,Não,37.150842,-8.553861,1.0,2302.8
-492,99e6bd1e,Portimão,2021-07-08,9,2b696eab,1,Contentor semi-enterrado,3000,0.25,Razoável,,1,Não,Não,37.150143,-8.552478,1.0,787.8
-493,6200976f,Portimão,2021-07-08,9,d1c68ede,1,Contentor semi-enterrado,3000,0.0,Bom,Ilha não a uso,0,Não,Não,37.148731,-8.552808,0.0,0.3
-494,35e7a8cf,Portimão,2021-07-08,9,950c2892,2,Contentor semi-enterrado,3000,0.5,Bom,"Rec 75%, outro por rec",1,Não,Não,37.148664,-8.551218,0.5,1560.6
-495,cb52b50c,Portimão,2021-07-08,9,babda7f0,2,Rectangular c/ rodas,3000,0.75,Bom,"Um a 75%, outro a 25%",1,Não,Não,37.147416,-8.551487,0.5,2325.6
-496,66d4efaf,Portimão,2021-07-08,9,bcffe5ef,2,Contentor semi-enterrado,3000,0.75,Bom,75% recolha do primeiro e outro de 50%,1,Não,Não,37.14692,-8.549929,0.5,2325.6
-497,dd3f827c,Portimão,2021-07-08,9,2b5642ac,2,Contentor semi-enterrado,3000,1.0,Razoável,"Recolhido um contentor 100%, outro 25%",1,Não,Não,37.144635,-8.54829,0.5,3090.6
-498,4b53424e,Portimão,2021-07-08,9,aab3d253,4,Rectangular c/ rodas,1000,0.75,Razoável,"Contentores do lar de idosos, 2 a 75 %, 2 a 25%, contentores pouco mantidos no interior",2,Não,Sim,37.144333,-8.547176,0.5,1550.4
-499,d6f7d0b7,Portimão,2021-07-08,9,855c48e0,3,Rectangular c/ rodas,3000,0.75,Bom,"Recolhidos dois, um por recolher a 75%",2,Não,Não,37.143652,-8.544572,0.6666666666666666,4628.4
-500,143b7e2a,Portimão,2021-07-08,9,bfc898ed,2,Contentor semi-enterrado,3000,0.75,Bom,Colaboradores pensam que deveria haver outro contentor,2,Não,Não,37.143716,-8.545947,1.0,4605.6
-501,adb156ee,Portimão,2021-07-08,9,6464d91d,3,Contentor semi-enterrado,3000,0.5,Bom,"Rec 1 contentor, outro vazio e outro por estrear",1,Não,Não,37.142681,-8.545922,0.3333333333333333,1575.8999999999999
-502,769c0fe3,Portimão,2021-07-08,9,a4a3df94,3,Contentor semi-enterrado,3000,0.5,Bom,"Recolhido um a 75%, outros sem nada para recolher, ontem recolhido tudo",1,Não,Não,37.146096,-8.541369,0.3333333333333333,1575.8999999999999
-503,0c82c6e5,Portimão,2021-07-08,9,5dd1e246,3,Contentor semi-enterrado,3000,0.75,Bom,"Recolhidos 3 a 75%, zona residencial",3,Não,Não,37.144145,-8.542296,1.0,6908.4000000000015
-504,cec06cf7,Portimão,2021-07-08,9,57cb735b,2,Contentor semi-enterrado,3000,0.5,Bom,Tampa plástico,2,Não,Não,37.143513,-8.543107,1.0,3090.6
-505,a03f3b53,Portimão,2021-07-08,9,7ffccb46,2,Contentor semi-enterrado,3000,0.5,Bom,"Recolhido um a 50%, uma por recolher",1,Não,Não,37.142024,-8.544103,0.5,1560.6
-506,8ec3c8d7,Portimão,2021-07-08,9,7906c8bd,2,Contentor semi-enterrado,3000,0.75,Mau,Contentor vazio por recolher com lixo em cima,1,Sim,Não,37.14128,-8.544764,0.5,2325.6
-507,7bbe3b8b,Portimão,2021-07-08,9,124ff54e,1,Rectangular c/ rodas,1000,0.75,Bom,,1,Não,Não,37.141677,-8.542834,1.0,767.6
-508,411016d4,Portimão,2021-07-08,9,9ec3b9ef,5,Rectangular c/ rodas,1000,0.75,Bom,Recolhidos 3 cheios e 2 vazios,3,Não,Não,37.141781,-8.542613,0.6,2318.0
-509,281b313b,Portimão,2021-07-08,9,0222eb07,2,Contentor semi-enterrado,3000,0.25,Bom,Recolhidos a 25%,2,Não,Não,37.142867,-8.541127,1.0,1575.6
-510,1be7ab1f,Portimão,2021-07-08,9,0a45b1ac,2,Contentor semi-enterrado,3000,0.75,Bom,75% ambos,2,Não,Não,37.146183,-8.54075,1.0,4605.6
-511,ea49239e,Portimão,2021-07-08,9,b2876e8d,3,Contentor semi-enterrado,3000,0.5,Razoável,Recolhidos dois contentores,2,Não,Não,37.146842,-8.539721,0.6666666666666666,3105.8999999999996
-512,fa8995c7,Portimão,2021-07-08,9,401b8cd9,2,Contentor semi-enterrado,3000,0.75,Bom,"Recolhido um a 75%, outro por recolher",1,Não,Não,37.146533,-8.537954,0.5,2325.6
-513,4f573f95,Portimão,2021-07-08,9,5a42e45f,1,Contentor semi-enterrado,3000,0.25,Bom,,1,Não,Não,37.147708,-8.538812,1.0,787.8
-514,6435fb10,Portimão,2021-07-08,9,b36427e3,3,Contentor semi-enterrado,3000,0.5,Razoável,"Recolhido 1 a 50%, por recolher 2 a 25 %",1,Não,Não,37.145605,-8.536915,0.3333333333333333,1575.8999999999999
-515,2014bd4f,Portimão,2021-07-08,9,d07790b7,2,Rectangular c/ rodas,1000,0.5,Razoável,Rec 1,1,Não,Não,37.145873,-8.535362,0.5,520.2
-516,a4530ba6,Portimão,2021-07-08,9,bc05a54e,2,Rectangular c/ rodas,1000,0.25,Bom,Recolhido 1 de 2 - hospital campanha,1,Não,Não,37.145841,-8.535024,0.5,265.2
-517,0bd15a88,Portimão,2021-07-08,9,f157f5df,3,Sacos de lixo,1000,0.25,Bom,Recolhido 1 800l,1,Não,Não,37.144884,-8.534258,0.3333333333333333,267.8
-518,f0dd87ad,Portimão,2021-07-08,9,4fe58008,1,Rectangular c/ rodas,1000,0.25,Bom,Recolhido apenas 1 a 25%,1,Não,Não,37.145602,-8.533794,1.0,262.6
-519,c6bc3005,Portimão,2021-07-08,9,681f8faf,3,Rectangular c/ rodas,1000,0.0,Bom,Vaxioa,0,Não,Não,37.145282,-8.532734,0.0,0.3
-520,1c92db20,Portimão,2021-07-08,9,57f691d1,4,Rectangular c/ rodas,1000,0.5,Bom,"Recolha de 1 a 50% e outro a 25%, dois a 0",2,Não,Não,37.146326,-8.53381,0.5,1040.4
-521,5ec708e2,Portimão,2021-07-08,9,14dfb2b4,1,Rectangular c/ rodas,1000,0.5,Razoável,,1,Não,Não,37.1472,-8.535898,1.0,515.1
-522,956c81c6,Portimão,2021-07-08,9,28335666,1,Rectangular c/ rodas,120,0.25,Bom,,1,Não,Não,37.147448,-8.53606,1.0,31.512
-523,d98c0081,Portimão,2021-07-08,9,9c1de334,2,Rectangular c/ rodas,1000,0.5,Bom,,2,Não,Não,37.147479,-8.536105,1.0,1030.2
-524,976e701f,Portimão,2021-07-08,9,6bde9c56,1,Rectangular c/ rodas,1000,0.75,Bom,,1,Não,Não,37.148276,-8.535991,1.0,767.6
-525,9357f4ad,Portimão,2021-07-08,9,cb09a0e6,2,Rectangular c/ rodas,1000,0.5,Bom,"Recolhido contentor 50, por recolher contentor 0",1,Não,Não,37.148198,-8.535246,0.5,520.2
-526,a1dbf1f0,Portimão,2021-07-08,9,2aec892c,3,Rectangular c/ rodas,1000,1.0,Bom,"75, 50, 100 todos recolhidos",3,Não,Não,37.147726,-8.535099,1.0,3060.3
-527,a03793b0,Portimão,2021-07-08,9,a31f969d,2,Contentor semi-enterrado,3000,0.5,Bom,"Recolhido apenas 1, outro vazio",1,Não,Não,37.148292,-8.536747,0.5,1560.6
-528,adf2fe92,Portimão,2021-07-08,9,b44b824c,1,Rectangular c/ rodas,3000,0.5,Bom,Com colchão colocado na Relva,1,Sim,Não,37.149036,-8.537586,1.0,1545.3
-529,799dbef6,Portimão,2021-07-08,9,e9a6c561,1,Rectangular c/ rodas,1000,0.75,Bom,,1,Não,Não,37.149899,-8.539353,1.0,767.6
-530,34af414d,Portimão,2021-07-08,9,8c0f4dd6,2,Rectangular c/ rodas,1000,1.0,Bom,Recolha de dois a 50%,2,Não,Não,37.149962,-8.53633,1.0,2040.2
-531,d9ed6758,Portimão,2021-07-08,9,324b81da,1,Rectangular c/ rodas,1000,1.0,Bom,,1,Não,Não,37.153591,-8.534324,1.0,1020.1
-532,8a014565,Portimão,2021-07-08,9,da70184b,1,Recipiente redondo,3000,0.25,Bom,,1,Não,Não,37.154074,-8.533358,1.0,787.8
-533,8ca0c4ce,Portimão,2021-07-08,9,fbb74976,1,Rectangular c/ rodas,1000,0.25,Bom,,1,Não,Não,37.154317,-8.533548,1.0,262.6
-534,c71da491,Portimão,2021-07-08,9,b6673fdd,1,Rectangular c/ rodas,1000,0.25,Razoável,,1,Não,Não,37.152203,-8.524663,1.0,262.6
-535,69eb8c8f,Portimão,2021-07-08,9,dcb27c42,2,Rectangular c/ rodas,1000,0.25,Bom,Recolhidos os dois a 25%,2,Não,Não,37.153354,-8.525803,1.0,525.2
-536,f429a2ad,Portimão,2021-07-08,9,bed3218e,1,Contentor semi-enterrado,1000,0.25,Bom,,1,Não,Não,37.155356,-8.530098,1.0,262.6
-537,e7f225cf,Portimão,2021-07-08,9,15bdf545,2,Rectangular c/ rodas,1000,1.0,Bom,Um cheio e outro vazio,1,Não,Não,37.157451,-8.526301,0.5,1030.2
-538,e660461c,Portimão,2021-07-08,9,04064f87,1,Rectangular c/ rodas,1000,1.0,Bom,,1,Não,Não,37.157592,-8.52542,1.0,1020.1
-539,4e7e3d93,Portimão,2021-07-08,9,d1b8c0f2,2,Rectangular c/ rodas,1000,1.0,Bom,Dois cheios,2,Não,Não,37.157333,-8.5258,1.0,2040.2
-540,3335cc70,Portimão,2021-07-08,9,9b8ec66e,1,Rectangular c/ rodas,1000,0.5,Bom,,1,Não,Não,37.156451,-8.525971,1.0,515.1
-541,6a94030e,Portimão,2021-07-08,9,ba8e8e3f,1,Rectangular c/ rodas,120,0.0,Bom,,1,Não,Não,37.156352,-8.527018,1.0,1.212
-542,89d04195,Portimão,2021-07-08,9,1e7987fd,2,Rectangular c/ rodas,3000,0.5,Bom,Contentor entupido vazio e outro 50%,1,Sim,Não,37.156663,-8.528245,0.5,1560.6
-543,139ff285,Portimão,2021-07-08,9,db20c28b,1,Rectangular c/ rodas,1000,0.75,Bom,,1,Não,Não,37.162386,-8.533784,1.0,767.6
-544,b5a22245,Portimão,2021-07-09,1,1eb2f7f3,1,Contentor semi-enterrado,3000,0.5,Bom,,1,Não,Não,37.148107,-8.547763,1.0,1545.3
-545,56794de0,Portimão,2021-07-09,1,88fa3a7e,1,Rectangular c/ rodas,1000,0.0,Bom,Não recolhido,0,Não,Não,37.148108,-8.547819,0.0,0.1
-546,e6e96738,Portimão,2021-07-09,1,bca0045d,1,Rectangular c/ rodas,800,0.25,Bom,,1,Não,Não,37.128853,-8.546568,1.0,210.08
-547,3f5f9624,Portimão,2021-07-09,1,b53d2275,1,Contentor semi-enterrado,1000,0.5,Bom,,1,Não,Não,37.130541,-8.545431,1.0,515.1
-548,a7328ed7,Portimão,2021-07-09,1,fc8cb521,2,Rectangular c/ rodas,1000,0.5,Bom,Recolheram 1 a 50%,1,Não,Não,37.119344,-8.5507,0.5,520.2
-549,dd6a47bb,Portimão,2021-07-09,1,af2a3fdd,2,Rectangular c/ rodas,1000,0.5,Bom,Recolheram 1,1,Não,Não,37.119175,-8.550877,0.5,520.2
-550,1418595b,Portimão,2021-07-09,1,4aa41c0e,2,Contentor semi-enterrado,3000,0.75,Bom,Recolheram 1 a 75%,1,Não,Não,37.119037,-8.547717,0.5,2325.6
-551,28d00597,Portimão,2021-07-09,1,a53708de,3,Contentor semi-enterrado,3000,0.75,Bom,"Dois a 75%, um a 50%",3,Não,Não,37.119481,-8.544628,1.0,6908.4000000000015
-552,caa9c618,Portimão,2021-07-09,1,7cf777f8,5,Contentor semi-enterrado,3000,0.5,Bom,Recolheram dois a 50%. Restantes a 25% - atipico,2,Não,Não,37.118204,-8.543928,0.4,3136.5000000000005
-553,ab55a5ea,Portimão,2021-07-09,1,50555276,5,Contentor semi-enterrado,3000,1.0,Bom,"1 a 100, 3 a 75, 1 a 50",4,Não,Não,37.119449,-8.540215,0.8,12271.500000000002
-554,5db29140,Portimão,2021-07-09,1,b28e0060,5,Contentor semi-enterrado,3000,1.0,Bom,Recolheram 1 a 100%. Dois encerrados temporariamente.,1,Não,Não,37.120377,-8.540675,0.2,3181.5
-555,8c4df43d,Portimão,2021-07-09,1,fff725ae,5,Contentor semi-enterrado,3000,1.0,Bom,"Recolheram 3. Um a 100, um a 75, um a 50%",3,Não,Não,37.119741,-8.541296,0.6,9241.5
-556,5ec4adb0,Portimão,2021-07-09,1,12ae6ab6,3,Contentor semi-enterrado,3000,0.75,Bom,Recolheram 2,2,Não,Não,37.119611,-8.542592,0.6666666666666666,4628.4
-557,a79c511f,Portimão,2021-07-09,1,12c090d6,19,Rectangular c/ rodas,800,1.0,Bom,"Recolheram 7, a 100%",7,Não,Não,37.121441,-8.537349,0.3684210526315789,5809.5199999999995
-558,2a1ad53f,Portimão,2021-07-09,1,283c80e0,3,Contentor semi-enterrado,3000,0.5,Mau,Recolheram 1,1,Não,Não,37.120888,-8.536227,0.3333333333333333,1575.8999999999999
-559,a0a5a0c2,Portimão,2021-07-09,1,642da15e,3,Contentor semi-enterrado,3000,1.0,Bom,Recolheram dois a 100%,2,Não,Não,37.119728,-8.536057,0.6666666666666666,6150.9
-560,c7f89223,Portimão,2021-07-09,1,8f695f8c,4,Contentor semi-enterrado,3000,1.0,Bom,"Recolheram 3. Um a 100, um a 75, um a 50",3,Não,Não,37.119744,-8.537135,0.75,9211.2
-561,674fecdc,Portimão,2021-07-09,1,2300100c,3,Contentor semi-enterrado,3000,1.0,Razoável,Recolheram duas a 100%. Uma Cuba rachada no topo.,2,Não,Não,37.12051,-8.539052,0.6666666666666666,6150.9
-562,f6cf0379,Portimão,2021-07-09,1,254ee739,2,Contentor semi-enterrado,3000,0.5,Bom,Recolheram 1,1,Não,Não,37.120792,-8.539699,0.5,1560.6
-563,a769a45c,Portimão,2021-07-09,1,0bdc2201,2,Contentor semi-enterrado,3000,0.75,Bom,,2,Não,Não,37.11877,-8.536434,1.0,4605.6
-564,efb851df,Portimão,2021-07-09,1,efdc348b,1,Contentor semi-enterrado,3000,0.5,Bom,,1,Não,Não,37.118501,-8.534983,1.0,1545.3
-565,9b371ba3,Portimão,2021-07-09,1,23a1a04f,4,Contentor semi-enterrado,3000,1.0,Bom,"Recolheram 3, duas a 100, uma a 50",3,Não,Não,37.118259,-8.5335,0.75,9211.2
-566,0a15ed91,Portimão,2021-07-09,1,de3ca8c9,1,Contentor semi-enterrado,3000,0.0,Bom,,0,Não,Não,37.11707,-8.530672,0.0,0.3
-567,99d0fa2a,Portimão,2021-07-09,1,a5de8449,1,Contentor semi-enterrado,3000,0.0,Bom,,0,Não,Não,37.117796,-8.530419,0.0,0.3
-568,70206f52,Portimão,2021-07-09,1,a80fe888,1,Rectangular c/ rodas,1000,0.5,Bom,,1,Não,Não,37.118729,-8.531643,1.0,515.1
-569,97440fcb,Portimão,2021-07-09,1,a475a766,4,Contentor semi-enterrado,3000,0.5,Bom,Recolheram 1,1,Não,Não,37.118679,-8.53326,0.25,1591.2
-570,4b70fcff,Portimão,2021-07-09,1,b32d3e23,1,Contentor semi-enterrado,3000,0.5,Bom,,1,Não,Não,37.119702,-8.5338,1.0,1545.3
-571,77bda249,Portimão,2021-07-09,1,7915a325,7,Contentor semi-enterrado,3000,0.75,Bom,"Recolheram 5. Três a 50, duas a 75. Duas encerradas temporariamente.",5,Não,Não,37.115812,-8.529229,0.7142857142857143,11559.6
-572,74671f39,Portimão,2021-07-09,1,34961ffa,7,Rectangular c/ rodas,800,0.0,Bom,,0,Não,Não,37.119053,-8.529429,0.0,0.56
-573,fff383e9,Portimão,2021-07-09,1,9d25f776,1,Rectangular c/ rodas,800,1.0,Bom,,1,Não,Não,37.12187,-8.526688,1.0,816.08
-574,7ea59f9e,Portimão,2021-07-09,1,5f0ea0dc,12,Rectangular c/ rodas,800,0.75,Bom,,12,Não,Não,37.122161,-8.52872,1.0,7368.960000000001
-575,f38b9200,Portimão,2021-07-09,1,3076f3dc,5,Rectangular c/ rodas,1000,0.5,Bom,Recolheram 3 a 50%,3,Não,Não,37.12368,-8.527517,0.6,1555.4999999999998
-576,5e5e210f,Portimão,2021-07-09,1,a9e7ad82,1,Rectangular c/ rodas,1000,0.75,Bom,,1,Não,Não,37.122948,-8.527113,1.0,767.6
-577,71d09d2e,Portimão,2021-07-09,1,235688fd,4,Contentor semi-enterrado,3000,0.75,Bom,"Recolheram 3. Uma a 75, duas a 50",3,Não,Não,37.122501,-8.537407,0.75,6931.2
-578,d96dd26e,Portimão,2021-07-09,1,e3b6bf32,2,Rectangular c/ rodas,800,1.0,Bom,Recolheram os dois,2,Não,Não,37.122251,-8.539391,1.0,1632.16
-579,b8e5de87,Portimão,2021-07-09,1,9e1ddd97,1,Contentor semi-enterrado,3000,0.0,Bom,,0,Não,Não,37.122064,-8.539177,0.0,0.3
-580,8394d074,Portimão,2021-07-09,1,3b40bb0c,2,Contentor semi-enterrado,3000,0.75,Bom,,2,Não,Não,37.121762,-8.539605,1.0,4605.6
-581,abd195c9,Portimão,2021-07-09,1,7c20048d,2,Rectangular c/ rodas,800,1.0,Bom,,2,Não,Não,37.122113,-8.539181,1.0,1632.16
-582,6abc4d3d,Portimão,2021-07-09,1,59ae812a,2,Contentor semi-enterrado,3000,0.5,Bom,Recolhido 1,1,Não,Não,37.124403,-8.541682,0.5,1560.6
-583,8d793574,Portimão,2021-07-09,1,d580257a,3,Contentor semi-enterrado,3000,0.0,Bom,,0,Não,Não,37.124113,-8.5383,0.0,0.8999999999999999
-584,fda46a83,Portimão,2021-07-09,1,34df71c3,2,Contentor semi-enterrado,3000,0.5,Bom,Ambas a 50,2,Não,Não,37.122855,-8.53989,1.0,3090.6
-585,a3c14e00,Portimão,2021-07-09,1,4f8f9523,1,Contentor semi-enterrado,3000,0.75,Razoável,Pintada,1,Não,Não,37.121452,-8.540717,1.0,2302.8
-586,b989dae4,Portimão,2021-07-09,1,18b4b63f,4,Rectangular c/ rodas,1000,1.0,Bom,Recolheram todos a 100%,4,Não,Não,37.121041,-8.541652,1.0,4080.4
-587,a3d2ce5b,Portimão,2021-07-09,1,faad28ea,4,Contentor semi-enterrado,3000,1.0,Bom,"Recolheram 3. Um a 100, duas a 75",3,Não,Não,37.120928,-8.544252,0.75,9211.2
-588,b8ca0afe,Portimão,2021-07-09,1,572a9db8,3,Contentor semi-enterrado,3000,0.0,Bom,,0,Não,Não,37.121495,-8.545202,0.0,0.8999999999999999
-589,b8db10ed,Portimão,2021-07-09,1,ac6a2754,3,Contentor semi-enterrado,3000,0.5,Bom,Recolheram 2. Ambos a 50%,2,Não,Não,37.121641,-8.547138,0.6666666666666666,3105.8999999999996
-590,b9080146,Portimão,2021-07-09,1,74e1135f,1,Contentor semi-enterrado,3000,0.5,Bom,,1,Não,Não,37.120767,-8.549237,1.0,1545.3
-591,a6fa971e,Portimão,2021-07-09,1,bbe3be54,2,Contentor semi-enterrado,3000,0.75,Razoável,"Um a 75, um a 50. Rachado",2,Não,Não,37.119974,-8.549106,1.0,4605.6
-592,3252d584,Portimão,2021-07-09,1,4c2b0d18,3,Contentor semi-enterrado,3000,0.0,Razoável,Um fora de serviço,2,Não,Não,37.120456,-8.547772,0.6666666666666666,60.9
-593,7e4c40b4,Portimão,2021-07-09,1,31b829b4,3,Contentor semi-enterrado,3000,1.0,Bom,Recolheram 1,1,Não,Não,37.12035,-8.546267,0.3333333333333333,3120.9
-594,b663a16b,Portimão,2021-07-09,1,40e542d1,2,Contentor semi-enterrado,3000,0.0,Bom,,0,Não,Não,37.122844,-8.548213,0.0,0.6
-595,7a8d67aa,Portimão,2021-07-09,1,c7b11ac9,9,Outro,3000,1.0,Bom,,9,Não,Não,37.123983,-8.534203,1.0,27542.699999999997
+,ID,City,Date,Circuit,id_containers,contentores,tipo,volume,percentagem,estado,notas,Recolhidos,Fora do Contentor,Uso Comercial,Latitude,Longitude,recolhas,enchimento,litros
+0,6d30fb8e,Portimão,2021-07-05,4,dce2e794,1,Rectangular c/ rodas,1000,0.5,Bom,,1,Não,Não,37.144729,-8.548999,1.0,0.5,500.0
+1,b8c094dc,Portimão,2021-07-05,4,6c3e6f6e,2,Rectangular c/ rodas,1000,0.5,Bom,,2,Não,Não,37.144659,-8.551605,1.0,0.5,1000.0
+2,3f325f9c,Portimão,2021-07-05,2,50c9c5a1,3,Rectangular c/ rodas,1000,1.0,Bom,Recolheram 2,2,Não,Não,37.132873,-8.543445,0.6666666666666666,0.6666666666666666,2000.0
+3,02a231e4,Portimão,2021-07-05,4,8630ae90,4,Rectangular c/ rodas,1000,0.75,Bom,,4,Não,Não,37.145611,-8.552184,1.0,0.75,3000.0
+4,f1e7c3c6,Portimão,2021-07-05,4,ac851fd1,2,Rectangular c/ rodas,1000,0.75,Bom,,2,Não,Não,37.146479,-8.554225,1.0,0.75,1500.0
+5,810116c8,Portimão,2021-07-05,2,4f3389d6,2,Contentor semi-enterrado,3000,0.5,Bom,Levantam 1 de cada vez,2,Não,Não,37.132178,-8.542857,1.0,0.5,3000.0
+6,e02e3eea,Portimão,2021-07-05,4,d9b383b0,3,Rectangular c/ rodas,1000,0.75,Bom,,3,Não,Não,37.14639,-8.555024,1.0,0.75,2250.0
+7,4ffb81b5,Portimão,2021-07-05,2,1b60f72d,3,Contentor semi-enterrado,3000,0.75,Bom,"Recolheram 2, um a 75% e outro a 50%",2,Não,Não,37.131525,-8.543819,0.6666666666666666,0.5,4500.0
+8,c28aa56d,Portimão,2021-07-05,4,50064dd5,1,Contentor semi-enterrado,3000,0.75,Bom,,1,Não,Não,37.146884,-8.558688,1.0,0.75,2250.0
+9,6b9203a7,Portimão,2021-07-05,2,95155c32,2,Contentor semi-enterrado,3000,0.75,Bom,"Recolheram, um a 75% e outro a 50%",2,Não,Não,37.131241,-8.54443,1.0,0.75,4500.0
+10,ec762cf9,Portimão,2021-07-05,4,9cd8e8bc,1,Contentor semi-enterrado,3000,0.75,Bom,,1,Não,Não,37.147146,-8.559262,1.0,0.75,2250.0
+11,6153140a,Portimão,2021-07-05,2,a4d4d238,2,Contentor semi-enterrado,3000,1.0,Bom,"Recolheram 1, apanharam monos e colocaram nos indiferenciado",1,Sim,Não,37.130493,-8.544502,0.5,0.5,3000.0
+12,3844032c,Portimão,2021-07-05,4,6c6804af,1,Rectangular c/ rodas,120,1.0,Bom,Restaurantes pontual,1,Não,Não,37.150846,-8.56302,1.0,1.0,120.0
+13,b3c6a53e,Portimão,2021-07-05,2,5f4eaebb,2,Contentor semi-enterrado,3000,0.75,Bom,"Recolheram 2, um a 75, outro a 50%",2,Não,Não,37.130337,-8.54365,1.0,0.75,4500.0
+14,76a8ecf6,Portimão,2021-07-05,4,1818b7e7,3,Contentor semi-enterrado,3000,0.75,Bom,,3,Não,Não,37.149838,-8.562878,1.0,0.75,6750.0
+15,41cf7de0,Portimão,2021-07-05,2,272d2cb2,3,Contentor semi-enterrado,3000,0.75,Bom,"Recolheram 2, um a 50 e outro a 75",3,Não,Não,37.131436,-8.543421,1.0,0.75,6750.0
+16,7b776307,Portimão,2021-07-05,4,e763b75e,1,Contentor semi-enterrado,3000,0.5,Bom,,1,Não,Não,37.14848,-8.561535,1.0,0.5,1500.0
+17,f7afaacc,Portimão,2021-07-05,2,75b2a645,3,Contentor semi-enterrado,3000,0.75,Bom,"Recolheram 3. A 50, 75 e 100",3,Não,Não,37.131526,-8.541816,1.0,0.75,6750.0
+18,cad5a910,Portimão,2021-07-05,4,7dc71512,2,Rectangular c/ rodas,1000,1.0,Bom,Papel e cartão,2,Não,Não,37.148176,-8.559997,1.0,1.0,2000.0
+19,ebbf9ed3,Portimão,2021-07-05,4,f8c5d07c,2,Rectangular c/ rodas,1000,0.75,Bom,,2,Não,Não,37.147462,-8.558012,1.0,0.75,1500.0
+20,8d93db10,Portimão,2021-07-05,2,f1d37c41,2,Contentor semi-enterrado,3000,0.75,Bom,"Recolheram os dois. Um a 75, outro a 50",2,Não,Não,37.132542,-8.542214,1.0,0.75,4500.0
+21,1e5a7218,Portimão,2021-07-05,4,50d35fd6,2,Contentor semi-enterrado,3000,0.5,Bom,Não se encontravam muito cheios,2,Não,Não,37.146726,-8.558314,1.0,0.5,3000.0
+22,6846932d,Portimão,2021-07-05,2,e7b2576c,1,Contentor semi-enterrado,3000,0.75,Bom,,1,Não,Não,37.132794,-8.538279,1.0,0.75,2250.0
+23,77d4a99e,Portimão,2021-07-05,2,66be8acd,3,Contentor semi-enterrado,3000,0.75,Bom,Dois a 75,2,Não,Não,37.131685,-8.538739,0.6666666666666666,0.5,4500.0
+24,b55ad507,Portimão,2021-07-05,2,f5e1a5d4,4,Contentor semi-enterrado,3000,0.75,Bom,"2 a 75%, 1 a 50%",3,Não,Não,37.130579,-8.539691,0.75,0.5625,6750.0
+25,5f94eb77,Portimão,2021-07-05,2,9a8367b5,3,Contentor semi-enterrado,3000,0.75,Bom,"Dois a 75, um a 50",2,Não,Não,37.129647,-8.539728,0.6666666666666666,0.5,4500.0
+26,11d94f4c,Portimão,2021-07-05,4,63e7e52b,3,Contentor semi-enterrado,3000,0.75,Bom,,3,Não,Não,37.144615,-8.560501,1.0,0.75,6750.0
+27,f33ab37b,Portimão,2021-07-05,4,3b7aeafd,2,Contentor semi-enterrado,3000,0.75,Bom,,2,Não,Não,37.144353,-8.559795,1.0,0.75,4500.0
+28,8018525c,Portimão,2021-07-05,2,113a890e,2,Contentor semi-enterrado,3000,0.5,Bom,Dois a 50%,2,Não,Não,37.13242,-8.538783,1.0,0.5,3000.0
+29,48f6e238,Portimão,2021-07-05,2,766ee8c9,3,Contentor semi-enterrado,3000,0.5,Bom,Dois a 50,3,Não,Não,37.132302,-8.540695,1.0,0.5,4500.0
+30,e0962364,Portimão,2021-07-05,4,d43e3229,1,Contentor semi-enterrado,3000,0.75,Bom,Roupas,1,Não,Não,37.144623,-8.558955,1.0,0.75,2250.0
+31,2943ba54,Portimão,2021-07-05,2,93008abb,2,Contentor semi-enterrado,3000,0.75,Bom,"Um a 100, um a 75",2,Não,Não,37.13144,-8.540291,1.0,0.75,4500.0
+32,a48969ab,Portimão,2021-07-05,4,f18fccfa,2,Contentor semi-enterrado,3000,0.0,Bom,,2,Não,Não,37.14357,-8.557785,1.0,0.0,0.0
+33,a9aa583e,Portimão,2021-07-05,4,79fdbdde,2,Rectangular c/ rodas,1000,1.0,Bom,,2,Não,Não,37.143577,-8.559097,1.0,1.0,2000.0
+34,36d2e07f,Portimão,2021-07-05,4,e3ccdfba,1,Contentor semi-enterrado,3000,0.75,Bom,,1,Não,Não,37.143196,-8.556214,1.0,0.75,2250.0
+35,612ead32,Portimão,2021-07-05,2,5d4f24d2,4,Contentor semi-enterrado,3000,0.75,Bom,"Um a 75, um a 50",2,Não,Não,37.129943,-8.540896,0.5,0.375,4500.0
+36,049d0ec0,Portimão,2021-07-05,4,bf4394e2,2,Contentor semi-enterrado,3000,0.75,Bom,Um está cheio e outro não está,1,Não,Não,37.144829,-8.556207,0.5,0.375,2250.0
+37,91d50a32,Portimão,2021-07-05,2,61029cfa,1,Contentor semi-enterrado,3000,0.5,Bom,,1,Não,Não,37.129979,-8.542106,1.0,0.5,1500.0
+38,50ad790f,Portimão,2021-07-05,4,82bfc46f,1,Rectangular c/ rodas,1000,0.75,Bom,,1,Não,Não,37.144902,-8.556175,1.0,0.75,750.0
+39,7e0abc7c,Portimão,2021-07-05,4,79df299f,1,Contentor semi-enterrado,3000,0.0,Bom,Vazio,0,Não,Não,37.144352,-8.552237,0.0,0.0,0.0
+40,a387c38b,Portimão,2021-07-05,2,30e1b7cb,2,Contentor semi-enterrado,3000,0.5,Razoável,Dois a 50%. Contentor quebrado no cimo.,2,Não,Não,37.128886,-8.542745,1.0,0.5,3000.0
+41,7b6f37e8,Portimão,2021-07-05,4,ee0eb456,1,Rectangular c/ rodas,1000,1.0,Bom,,1,Não,Não,37.143892,-8.55232,1.0,1.0,1000.0
+42,6c7f75f2,Portimão,2021-07-05,4,2be5035a,1,Contentor semi-enterrado,3000,0.75,Bom,,1,Não,Não,37.144026,-8.553766,1.0,0.75,2250.0
+43,34b794a8,Portimão,2021-07-05,2,37fac70f,2,Contentor semi-enterrado,3000,0.5,Bom,1 a 50%,1,Não,Não,37.127547,-8.543245,0.5,0.25,1500.0
+44,0bfc83ca,Portimão,2021-07-05,4,8f6e3594,2,Rectangular c/ rodas,1000,1.0,Bom,,2,Não,Não,37.143073,-8.553542,1.0,1.0,2000.0
+45,bffb2740,Portimão,2021-07-05,2,61f119e6,2,Contentor semi-enterrado,3000,1.0,Bom,"Um a 100, um a 50%",2,Não,Não,37.128732,-8.542508,1.0,1.0,6000.0
+46,7e6a64a1,Portimão,2021-07-05,4,5c99e8e3,1,Rectangular c/ rodas,1000,1.0,Bom,,1,Não,Não,37.141079,-8.551498,1.0,1.0,1000.0
+47,485a2295,Portimão,2021-07-05,4,32f67da5,1,Contentor semi-enterrado,3000,0.75,Bom,,1,Não,Não,37.141778,-8.550207,1.0,0.75,2250.0
+48,d0287f6b,Portimão,2021-07-05,2,6e5ff711,2,Contentor semi-enterrado,3000,0.5,Bom,Duas a 50%,2,Não,Não,37.127061,-8.544296,1.0,0.5,3000.0
+49,c5f15d82,Portimão,2021-07-05,4,93f0d7f8,2,Contentor semi-enterrado,3000,0.75,Bom,,2,Não,Não,37.142303,-8.550382,1.0,0.75,4500.0
+50,6bb01f46,Portimão,2021-07-05,2,3249b7f8,3,Contentor semi-enterrado,3000,0.75,Bom,"Um a 75, dois a 50%",3,Não,Não,37.127888,-8.545758,1.0,0.75,6750.0
+51,87a58186,Portimão,2021-07-05,4,9c85156b,1,Contentor semi-enterrado,3000,1.0,Bom,,1,Não,Não,37.143544,-8.550435,1.0,1.0,3000.0
+52,56d95bc9,Portimão,2021-07-05,4,f8effd42,2,Rectangular c/ rodas,1000,0.75,Bom,Junto a ecoponto,2,Não,Não,37.142799,-8.552139,1.0,0.75,1500.0
+53,9dba4ce4,Portimão,2021-07-05,4,71e046b3,2,Contentor semi-enterrado,3000,0.75,Bom,Lixo em redor. Não é limpo,2,Sim,Não,37.142138,-8.554214,1.0,0.75,4500.0
+54,d0108303,Portimão,2021-07-05,2,3f77a594,1,Contentor semi-enterrado,3000,0.5,Bom,"Escola perto fechada, costuma encher",1,Não,Não,37.127388,-8.539982,1.0,0.5,1500.0
+55,3d6108cc,Portimão,2021-07-05,2,8d24f7bf,3,Contentor semi-enterrado,3000,0.75,Bom,"Recolheram 2. Um a 75, outro a 50%",2,Não,Não,37.125675,-8.540502,0.6666666666666666,0.5,4500.0
+56,f8b6357b,Portimão,2021-07-05,4,059659b7,1,Contentor semi-enterrado,3000,0.75,Bom,Ilha ecológica limpa,1,Não,Não,37.141262,-8.552657,1.0,0.75,2250.0
+57,c281371e,Portimão,2021-07-05,4,f6b1a410,3,Rectangular c/ rodas,1000,0.5,Bom,Lixo em redor. Monos,3,Sim,Não,37.138994,-8.554458,1.0,0.5,1500.0
+58,f9779980,Portimão,2021-07-05,2,057acc32,2,Contentor semi-enterrado,3000,0.5,Bom,Recolheram um a 50%,2,Não,Não,37.125489,-8.541853,1.0,0.5,3000.0
+59,d40f9bcc,Portimão,2021-07-05,4,daf30b0c,1,Contentor semi-enterrado,3000,1.0,Bom,,1,Não,Não,37.140729,-8.556175,1.0,1.0,3000.0
+60,e378c59f,Portimão,2021-07-05,2,a5cfd07b,2,Contentor semi-enterrado,3000,0.5,Bom,Dois a 50%,2,Não,Não,37.126149,-8.538172,1.0,0.5,3000.0
+61,74f12452,Portimão,2021-07-05,4,dd90c1d4,1,Contentor semi-enterrado,3000,0.75,Bom,Ilha ecológica bem conservada,1,Não,Não,37.140418,-8.559351,1.0,0.75,2250.0
+62,74f12452,Portimão,2021-07-05,4,6c6f68c8,2,Contentor semi-enterrado,3000,0.75,Bom,,2,Não,Não,37.140418,-8.559351,1.0,0.75,4500.0
+63,6fdeda4e,Portimão,2021-07-05,2,58eff08c,2,Contentor semi-enterrado,3000,0.75,Bom,"Um a 75, relva à beira",1,Sim,Não,37.122883,-8.535954,0.5,0.375,2250.0
+64,272888a5,Portimão,2021-07-05,4,58f2988c,1,Contentor semi-enterrado,3000,0.75,Bom,2 mas só 1 foi realizado,1,Não,Não,37.141353,-8.560623,1.0,0.75,2250.0
+65,1dd1950c,Portimão,2021-07-05,2,3f072c78,3,Contentor semi-enterrado,3000,1.0,Bom,"Um a 100, dois a 75",3,Não,Não,37.124682,-8.536359,1.0,1.0,9000.0
+66,8bea72a1,Portimão,2021-07-05,4,7641098f,2,Contentor semi-enterrado,3000,0.75,Bom,Óleos em garrafoes,2,Não,Não,37.14185,-8.561364,1.0,0.75,4500.0
+67,affedcfd,Portimão,2021-07-05,2,6c9c0547,1,Contentor semi-enterrado,3000,0.75,Bom,,1,Não,Não,37.126451,-8.536474,1.0,0.75,2250.0
+68,497941dc,Portimão,2021-07-05,4,902ffdf3,1,Contentor semi-enterrado,3000,0.75,Bom,Lixo em volta do contentor. 2 contentores só um foi recolhido,1,Sim,Não,37.142862,-8.561738,1.0,0.75,2250.0
+69,8707a7c9,Portimão,2021-07-05,2,405b1080,3,Contentor semi-enterrado,3000,0.5,Bom,Os três a 50%,3,Não,Não,37.127525,-8.53479,1.0,0.5,4500.0
+70,226c309d,Portimão,2021-07-05,4,98d08f10,2,Contentor semi-enterrado,3000,0.75,Bom,,2,Não,Não,37.142006,-8.563126,1.0,0.75,4500.0
+71,a85a129c,Portimão,2021-07-05,4,0e9e4df9,2,Contentor semi-enterrado,3000,1.0,Bom,Ruído após 23h,2,Não,Não,37.140522,-8.562302,1.0,1.0,6000.0
+72,d99d23fa,Portimão,2021-07-05,2,e204daa4,3,Contentor semi-enterrado,3000,0.75,Bom,"Dois recolhidos. Um a 75, um a 50%",2,Não,Não,37.126369,-8.535894,0.6666666666666666,0.5,4500.0
+73,8184b756,Portimão,2021-07-05,4,b1f214b9,3,Contentor semi-enterrado,3000,0.75,Bom,2 visitados e 1 recolhido,1,Não,Não,37.139923,-8.560084,0.3333333333333333,0.25,2250.0
+74,b128a905,Portimão,2021-07-05,2,d18899e6,2,Contentor semi-enterrado,3000,0.5,Bom,Recolheram um a 50,1,Não,Não,37.123959,-8.537027,0.5,0.25,1500.0
+75,11197ad2,Portimão,2021-07-05,2,6354aabe,2,Contentor semi-enterrado,3000,0.75,Bom,Recolheram 1. Demoraram mais porque tiveram de recolher vidro e partir.,1,Não,Não,37.126055,-8.537357,0.5,0.375,2250.0
+76,5eb8a47a,Portimão,2021-07-05,2,c9c72c47,2,Contentor semi-enterrado,3000,0.75,Bom,"Recolheram dois. Um a 75, um a 25. Recolheram o de 25 para não ficar a cheirar mal.",2,Não,Não,37.127267,-8.538574,1.0,0.75,4500.0
+77,de2f7104,Portimão,2021-07-05,2,3fe7ac04,1,Contentor semi-enterrado,3000,0.75,Bom,,1,Não,Não,37.12774,-8.537411,1.0,0.75,2250.0
+78,df936b8a,Portimão,2021-07-05,2,1a036895,1,Contentor semi-enterrado,3000,0.5,Bom,Um a 50%,1,Não,Não,37.128131,-8.538822,1.0,0.5,1500.0
+79,260b35ea,Portimão,2021-07-05,2,dc72eb79,2,Contentor semi-enterrado,3000,1.0,Bom,"Uma a 100, outra a 75",2,Não,Não,37.128464,-8.539873,1.0,1.0,6000.0
+80,12f49b02,Portimão,2021-07-05,2,1976b388,2,Rectangular c/ rodas,1000,0.25,Bom,"Recolheram 1. Um a 50, outro só tinha um saco",1,Não,Não,37.127377,-8.531184,0.5,0.125,250.0
+81,a4d7bf0d,Portimão,2021-07-05,2,a78c2b6c,1,Rectangular c/ rodas,1000,1.0,Bom,,1,Não,Não,37.129541,-8.531811,1.0,1.0,1000.0
+82,70e849b6,Portimão,2021-07-05,2,193efa5f,2,Contentor semi-enterrado,3000,0.5,Bom,Dois a 50%,2,Não,Não,37.126481,-8.534424,1.0,0.5,3000.0
+83,c6650c94,Portimão,2021-07-05,2,06958ef0,3,Rectangular c/ rodas,1000,1.0,Bom,Os 3 a 100%,3,Não,Não,37.129745,-8.533846,1.0,1.0,3000.0
+84,93763d44,Portimão,2021-07-05,4,64dec7f7,1,Rectangular c/ rodas,1000,0.5,Bom,,1,Não,Não,37.142141,-8.564316,1.0,0.5,500.0
+85,ccf96395,Portimão,2021-07-05,4,70fbd034,1,Contentor semi-enterrado,3000,0.75,Bom,,1,Não,Não,37.145627,-8.564521,1.0,0.75,2250.0
+86,f88abfc1,Portimão,2021-07-05,2,d325816b,3,Contentor semi-enterrado,3000,0.5,Bom,"Recolheram 1, a 50%. Tem três poços mas um está encerrado",1,Não,Não,37.130725,-8.53507,0.3333333333333333,0.16666666666666666,1500.0
+87,879e20c6,Portimão,2021-07-05,4,5b921356,1,Contentor semi-enterrado,3000,0.5,Bom,Afastado de prédios.,1,Não,Não,37.145893,-8.56317,1.0,0.5,1500.0
+88,fb1ffede,Portimão,2021-07-05,2,717e780f,3,Contentor semi-enterrado,3000,0.75,Bom,"Recolheram 2. Um a 75, um a 50%",2,Não,Não,37.129677,-8.53405,0.6666666666666666,0.5,4500.0
+89,9c2e3613,Portimão,2021-07-05,4,c40df902,1,Contentor semi-enterrado,3000,0.0,Bom,Não recolhido,0,Não,Não,37.144898,-8.565498,0.0,0.0,0.0
+90,cb4542c9,Portimão,2021-07-05,4,b90b7f2d,1,Rectangular c/ rodas,1000,0.0,Bom,Não recolhido,0,Não,Não,37.149864,-8.567631,0.0,0.0,0.0
+91,c32b2e3e,Portimão,2021-07-05,2,1f015167,2,Rectangular c/ rodas,3000,0.75,Bom,Os dois a 75,2,Não,Não,37.129393,-8.535592,1.0,0.75,4500.0
+92,dbfbf7af,Portimão,2021-07-05,4,62f71bac,1,Contentor semi-enterrado,1000,0.5,Bom,Zona rural,1,Não,Não,37.150582,-8.568328,1.0,0.5,500.0
+93,becb43b3,Portimão,2021-07-05,4,b17ebc17,2,Rectangular c/ rodas,1000,0.75,Razoável,Ilha . Zona i,2,Não,Não,37.148926,-8.568421,1.0,0.75,1500.0
+94,de5f7980,Portimão,2021-07-05,2,0c608433,3,Rectangular c/ rodas,3000,0.5,Bom,Recolheram 2. Os dois a 50%,2,Não,Não,37.129204,-8.537198,0.6666666666666666,0.3333333333333333,3000.0
+95,9542fa1c,Portimão,2021-07-05,4,1ba81e9b,1,Rectangular c/ rodas,1000,1.0,Razoável,Ruído. Caes,1,Não,Não,37.144481,-8.566049,1.0,1.0,1000.0
+96,6ca3adc2,Portimão,2021-07-05,4,b23a7538,1,Contentor semi-enterrado,3000,1.0,Bom,,1,Não,Não,37.143769,-8.56338,1.0,1.0,3000.0
+97,0b7f57d6,Portimão,2021-07-05,4,3cd4120e,2,Contentor semi-enterrado,3000,0.75,Bom,Em3 recolheram 2,2,Não,Não,37.144286,-8.562435,1.0,0.75,4500.0
+98,52271dbc,Portimão,2021-07-05,2,6177bcc5,1,Rectangular c/ rodas,1000,0.75,Bom,,1,Não,Não,37.134442,-8.538858,1.0,0.75,750.0
+99,970147c6,Portimão,2021-07-05,2,e4dcc008,3,Contentor semi-enterrado,3000,1.0,Razoável,"Dois a 100, um a 75. Um está quebrado no topo.",3,Não,Não,37.134617,-8.537836,1.0,1.0,9000.0
+100,4fffb89b,Portimão,2021-07-05,4,df6444b4,1,Rectangular c/ rodas,1000,1.0,Bom,Junto a prédio e zona comercial,1,Não,Sim,37.138952,-8.556812,1.0,1.0,1000.0
+101,f13f23a6,Portimão,2021-07-05,4,3689adeb,1,Contentor semi-enterrado,3000,0.75,Bom,Zona residencial. Ruido,1,Não,Não,37.137111,-8.554262,1.0,0.75,2250.0
+102,4787166d,Portimão,2021-07-05,4,6952ac2f,1,Rectangular c/ rodas,1000,0.75,Bom,,1,Não,Não,37.136459,-8.55484,1.0,0.75,750.0
+103,78d62a8f,Portimão,2021-07-05,2,5e8695c3,2,Contentor semi-enterrado,3000,0.75,Bom,"Um a 75, um a 50",2,Não,Não,37.135332,-8.537616,1.0,0.75,4500.0
+104,a0ec00e3,Portimão,2021-07-05,4,e28bc597,1,Contentor semi-enterrado,3000,0.5,Bom,,1,Não,Não,37.136711,-8.560235,1.0,0.5,1500.0
+105,68261622,Portimão,2021-07-06,4,0585fa57,1,Contentor semi-enterrado,3000,1.0,Bom,,1,Não,Não,37.136895,-8.562653,1.0,1.0,3000.0
+106,6b5ead61,Portimão,2021-07-06,2,63ee9bf7,2,Contentor semi-enterrado,3000,0.5,Razoável,Dois a 50. Um está quebrado no topo.,2,Não,Não,37.134563,-8.536686,1.0,0.5,3000.0
+107,6f41b518,Portimão,2021-07-06,4,88114f77,1,Contentor semi-enterrado,3000,0.0,Bom,Não houve recolha,0,Não,Não,37.137197,-8.562657,0.0,0.0,0.0
+108,4afbcc41,Portimão,2021-07-06,4,cc3db6f6,1,Contentor semi-enterrado,3000,0.0,Bom,Não houve,0,Não,Não,37.135813,-8.564347,0.0,0.0,0.0
+109,18dc81e0,Portimão,2021-07-06,2,27e44ad4,2,Contentor semi-enterrado,3000,0.5,Bom,"Recolheram 1, a 50",1,Não,Não,37.13294,-8.536643,0.5,0.25,1500.0
+110,36cf1333,Portimão,2021-07-06,4,84455f2d,2,Contentor semi-enterrado,3000,0.5,Razoável,Colocamos razoável pq uns dos contentor está um pouco danificado,2,Não,Não,37.136673,-8.564685,1.0,0.5,3000.0
+111,8a9a3f05,Portimão,2021-07-06,4,1ab7e763,2,Contentor semi-enterrado,3000,0.5,Bom,,2,Não,Não,37.136366,-8.565754,1.0,0.5,3000.0
+112,e513f513,Portimão,2021-07-06,2,34d4c740,2,Contentor semi-enterrado,3000,1.0,Bom,Recolheram 1 a 100%,1,Não,Não,37.131792,-8.537137,0.5,0.5,3000.0
+113,19354a9b,Portimão,2021-07-06,4,2ed72858,1,Rectangular c/ rodas,1000,0.5,Bom,,1,Não,Não,37.134136,-8.56707,1.0,0.5,500.0
+114,dd01ead7,Portimão,2021-07-06,4,1ffae6d8,2,Rectangular c/ rodas,1000,0.75,Bom,Lixo em redor passível de recolha. Caixas de madeira,2,Sim,Não,37.133816,-8.568979,1.0,0.75,1500.0
+115,eb0f3009,Portimão,2021-07-06,4,59bb132b,1,Contentor semi-enterrado,3000,0.0,Bom,Não foi recolhido 1 de 2,1,Não,Não,37.134437,-8.569433,1.0,0.0,0.0
+116,e27f3d91,Portimão,2021-07-06,4,64c391fa,1,Contentor semi-enterrado,3000,0.5,Bom,,1,Não,Não,37.13442,-8.569454,1.0,0.5,1500.0
+117,464fb609,Portimão,2021-07-06,2,8edc04f4,2,Contentor semi-enterrado,3000,0.5,Bom,Dois a 50,2,Não,Não,37.131631,-8.535898,1.0,0.5,3000.0
+118,e7d0655f,Portimão,2021-07-06,4,68eee35c,1,Contentor semi-enterrado,3000,0.75,Bom,,1,Não,Não,37.135118,-8.569516,1.0,0.75,2250.0
+119,87f52c62,Portimão,2021-07-06,2,c2ab13a7,2,Contentor semi-enterrado,3000,0.5,Bom,"Recolheram 1, a 50",1,Não,Não,37.131735,-8.534948,0.5,0.25,1500.0
+120,c1aa6bbb,Portimão,2021-07-06,4,9de747c3,2,Rectangular c/ rodas,1000,0.25,Bom,Lixo no chão,2,Não,Não,37.134049,-8.570563,1.0,0.25,500.0
+121,7fbee138,Portimão,2021-07-06,4,b62a8ec8,3,Rectangular c/ rodas,1000,0.25,Bom,,3,Não,Não,37.132991,-8.571184,1.0,0.25,750.0
+122,a7fe9607,Portimão,2021-07-06,4,22ddce4d,1,Contentor semi-enterrado,3000,0.5,Bom,3 mas só 1 foi recolhido,1,Não,Não,37.132591,-8.572869,1.0,0.5,1500.0
+123,d30e484c,Portimão,2021-07-06,2,9634f46b,2,Contentor semi-enterrado,3000,1.0,Razoável,"Um a 100, outro a 75. Um com buraco no topo.",2,Não,Não,37.135788,-8.535639,1.0,1.0,6000.0
+124,f9e00392,Portimão,2021-07-06,4,66c3f19e,2,Rectangular c/ rodas,1000,1.0,Bom,,2,Não,Não,37.135009,-8.574606,1.0,1.0,2000.0
+125,f5320f60,Portimão,2021-07-06,2,100169ab,1,Contentor semi-enterrado,3000,0.75,Bom,Um a 75,1,Não,Não,37.136757,-8.535612,1.0,0.75,2250.0
+126,0a927b56,Portimão,2021-07-06,4,9d90060d,1,Rectangular c/ rodas,1000,1.0,Bom,,1,Não,Não,37.134332,-8.57668,1.0,1.0,1000.0
+127,b553454f,Portimão,2021-07-06,4,353a74d0,1,Rectangular c/ rodas,240,0.0,Mau,Não recolhidos,0,Não,Não,37.134331,-8.57667,0.0,0.0,0.0
+128,dee0b286,Portimão,2021-07-06,4,5b741eb9,3,Rectangular c/ rodas,1000,0.5,Bom,Monos não recolhidos,3,Não,Não,37.133995,-8.571856,1.0,0.5,1500.0
+129,e9a0c8fa,Portimão,2021-07-06,4,2056608d,3,Rectangular c/ rodas,1000,0.75,Bom,,3,Não,Não,37.132899,-8.570322,1.0,0.75,2250.0
+130,8c8242db,Portimão,2021-07-06,2,026ec4ae,3,Contentor semi-enterrado,3000,0.75,Razoável,"Recolheram 2, os dois a 75",2,Não,Não,37.135993,-8.537334,0.6666666666666666,0.5,4500.0
+131,4b9a11a0,Portimão,2021-07-06,4,c1091bae,2,Rectangular c/ rodas,1000,0.75,Bom,,2,Não,Não,37.132126,-8.570975,1.0,0.75,1500.0
+132,b49afdc9,Portimão,2021-07-06,4,93fa1c4f,2,Rectangular c/ rodas,1000,0.75,Bom,,2,Não,Não,37.133019,-8.574072,1.0,0.75,1500.0
+133,0b7acffd,Portimão,2021-07-06,2,1eef397a,1,Rectangular c/ rodas,1000,1.0,Bom,,1,Não,Não,37.13507,-8.539217,1.0,1.0,1000.0
+134,b361cba7,Portimão,2021-07-06,4,9d1c2e9c,3,Contentor semi-enterrado,3000,1.0,Bom,Lixo em redor,3,Não,Não,37.131363,-8.572973,1.0,1.0,9000.0
+135,9426214d,Portimão,2021-07-06,2,40f6cc54,2,Contentor semi-enterrado,3000,0.5,Bom,Dois a 50,2,Não,Não,37.133851,-8.540823,1.0,0.5,3000.0
+136,333403d2,Portimão,2021-07-06,4,7312cbb2,1,Contentor semi-enterrado,3000,0.0,Bom,Não recolheu,0,Não,Não,37.125789,-8.573703,0.0,0.0,0.0
+137,0de59f4c,Portimão,2021-07-06,4,d6b9d92d,1,Rectangular c/ rodas,1000,0.75,Razoável,,1,Não,Não,37.130536,-8.573982,1.0,0.75,750.0
+138,df3a8189,Portimão,2021-07-06,2,a5a82474,3,Contentor semi-enterrado,3000,1.0,Bom,"Recolheram 3, um a 100, dois a 50%",3,Não,Não,37.133236,-8.544895,1.0,1.0,9000.0
+139,a90397be,Portimão,2021-07-06,4,401a4d79,1,Rectangular c/ rodas,1000,0.0,Bom,Não recolh,0,Não,Não,37.130255,-8.575803,0.0,0.0,0.0
+140,35a9c634,Portimão,2021-07-06,4,44499450,2,Contentor semi-enterrado,3000,0.75,Bom,Lixo recolhido a volta,2,Sim,Não,37.132061,-8.577631,1.0,0.75,4500.0
+141,9135f7c2,Portimão,2021-07-06,4,dfe0b431,3,Contentor semi-enterrado,3000,0.75,Bom,,3,Não,Não,37.13124,-8.577111,1.0,0.75,6750.0
+142,d1b0351d,Portimão,2021-07-06,4,8aa093e1,1,Contentor semi-enterrado,3000,0.0,Bom,Não recolhido,0,Não,Não,37.128562,-8.582252,0.0,0.0,0.0
+143,dbad717c,Portimão,2021-07-06,4,a61a08d7,1,Rectangular c/ rodas,1000,0.5,Bom,Contentor em bomba de gasolina,1,Não,Sim,37.128961,-8.579543,1.0,0.5,500.0
+144,bdf94f62,Portimão,2021-07-06,4,dc2e1769,2,Rectangular c/ rodas,1000,0.25,Razoável,,2,Não,Não,37.129369,-8.583618,1.0,0.25,500.0
+145,cca3d56d,Portimão,2021-07-06,2,39c92a40,1,Rectangular c/ rodas,1000,0.5,Bom,,1,Não,Não,37.2076,-8.538776,1.0,0.5,500.0
+146,ac99d849,Portimão,2021-07-06,4,c206d04c,1,Contentor semi-enterrado,3000,0.0,Bom,Não recolhid,0,Não,Não,37.131022,-8.583801,0.0,0.0,0.0
+147,71e95f3f,Portimão,2021-07-06,4,4ccf9707,1,Contentor semi-enterrado,3000,0.75,Bom,,1,Não,Não,37.130202,-8.582286,1.0,0.75,2250.0
+148,424ddb1c,Portimão,2021-07-06,2,ffe18bcc,2,Rectangular c/ rodas,1000,1.0,Bom,"Dois, um a 100, um a 50",2,Não,Não,37.222154,-8.543736,1.0,1.0,2000.0
+149,ff28866f,Portimão,2021-07-06,4,193a6cb3,1,Rectangular c/ rodas,1000,0.75,Bom,Recolha em Hotel,1,Não,Sim,37.129482,-8.582513,1.0,0.75,750.0
+150,c331d1e3,Portimão,2021-07-06,2,57674881,3,Rectangular c/ rodas,1000,1.0,Bom,"Um a 100, um a 50, um a 25",3,Não,Não,37.228318,-8.543916,1.0,1.0,3000.0
+151,0bf41c4b,Portimão,2021-07-06,4,52c62536,5,Rectangular c/ rodas,1000,0.75,Bom,,5,Não,Não,37.130667,-8.580986,1.0,0.75,3750.0
+152,c6a2cc90,Portimão,2021-07-06,4,24554c50,1,Contentor semi-enterrado,3000,0.0,Bom,Não recolhidos,0,Não,Não,37.129255,-8.582848,0.0,0.0,0.0
+153,8ddf33dc,Portimão,2021-07-06,4,59d13542,1,Contentor semi-enterrado,3000,0.75,Bom,,1,Não,Não,37.128119,-8.58342,1.0,0.75,2250.0
+154,778edbc6,Portimão,2021-07-06,2,24bb6253,2,Rectangular c/ rodas,1000,1.0,Bom,"Recolheram 1, a 100",1,Não,Não,37.240145,-8.546035,0.5,0.5,1000.0
+155,70c5f183,Portimão,2021-07-06,4,23121937,2,Contentor semi-enterrado,3000,0.75,Bom,,0,Não,Não,37.127127,-8.581425,0.0,0.0,0.0
+156,d2b76293,Portimão,2021-07-06,2,a8323c19,1,Rectangular c/ rodas,1000,0.5,Bom,,1,Não,Não,37.233102,-8.544179,1.0,0.5,500.0
+157,8df5d499,Portimão,2021-07-06,4,798c4163,3,Rectangular c/ rodas,1000,0.5,Bom,,1,Não,Não,37.12528,-8.579752,0.3333333333333333,0.16666666666666666,500.0
+158,fdb42b6e,Portimão,2021-07-06,2,c3db32b8,1,Sacos de lixo,120,0.5,Mau,Devia ter contentor mas contentor não estava no sitio,1,Sim,Não,37.2297,-8.543996,1.0,0.5,60.0
+159,bd4f9836,Portimão,2021-07-06,4,6c186629,2,Contentor semi-enterrado,3000,0.75,Bom,,2,Não,Não,37.127356,-8.57671,1.0,0.75,4500.0
+160,fee0d39e,Portimão,2021-07-06,2,93885963,2,Rectangular c/ rodas,1000,0.5,Bom,"Um a 50, um a 25",2,Não,Não,37.224649,-8.543881,1.0,0.5,1000.0
+161,3a0c4f55,Portimão,2021-07-06,2,c848e3bc,4,Rectangular c/ rodas,1000,1.0,Bom,"3 a 100, 1 a 25%",4,Não,Não,37.218243,-8.543653,1.0,1.0,4000.0
+162,96ab3d90,Portimão,2021-07-06,4,5540c303,1,Contentor semi-enterrado,3000,0.75,Bom,Só foi recolhido 1 de 2,1,Não,Não,37.128954,-8.57788,1.0,0.75,2250.0
+163,9cebf650,Portimão,2021-07-06,2,f63b3744,1,Rectangular c/ rodas,1000,0.25,Bom,,1,Não,Não,37.215255,-8.543443,1.0,0.25,250.0
+164,f5fc46da,Portimão,2021-07-06,2,22b41a4a,1,Rectangular c/ rodas,1000,0.5,Bom,,1,Não,Não,37.214284,-8.543438,1.0,0.5,500.0
+165,8f6434c6,Portimão,2021-07-06,6,06cdac25,2,Contentor semi-enterrado,3000,0.25,Bom,"Ambos foram recolhidos, 25% ambos",2,Não,Não,37.154239,-8.556219,1.0,0.25,1500.0
+166,adc2ee0b,Portimão,2021-07-06,3,161be496,1,Contentor semi-enterrado,3000,0.25,Bom,,1,Não,Não,37.140974,-8.543153,1.0,0.25,750.0
+167,e8ad0fc8,Portimão,2021-07-06,3,e9043da8,2,Contentor semi-enterrado,3000,0.0,Bom,"Visitamos 2 ,mas só recolhemos um",1,Não,Não,37.141181,-8.541624,0.5,0.0,0.0
+168,1f3b2c0d,Portimão,2021-07-06,3,e3527a93,1,Contentor semi-enterrado,3000,0.25,Bom,Visitou 2 e recolheu 1,1,Não,Não,37.14107,-8.540905,1.0,0.25,750.0
+169,2a5e1d47,Portimão,2021-07-06,6,e6a058f5,2,Rectangular c/ rodas,1000,0.5,Bom,Um a 25 e outro 5p,2,Não,Não,37.151623,-8.576419,1.0,0.5,1000.0
+170,c4454e61,Portimão,2021-07-06,6,c77e5ec2,2,Rectangular c/ rodas,1000,0.25,Razoável,"2 contentores, recolha de 1, ambos a 25%",1,Não,Não,37.148912,-8.587705,0.5,0.125,250.0
+171,7904a8f1,Portimão,2021-07-06,3,f3029eba,3,Contentor semi-enterrado,3000,0.25,Bom,3 visitados 1 recolhido,1,Não,Não,37.141027,-8.540359,0.3333333333333333,0.08333333333333333,750.0
+172,71db6701,Portimão,2021-07-06,6,db766a58,3,Contentor semi-enterrado,3000,0.5,Razoável,"Recolheram 1 contentor, deixaram um com verdes a 50 %",1,Não,Não,37.14753,-8.583949,0.3333333333333333,0.16666666666666666,1500.0
+173,72fee7b0,Portimão,2021-07-06,3,84ef668a,2,Contentor semi-enterrado,3000,0.25,Bom,Zona com trânsito. Estacionamento sentido inverso ao de circulação. 2 visitados.  1Reco,1,Não,Não,37.140448,-8.539526,0.5,0.125,750.0
+174,58d208a9,Portimão,2021-07-06,6,1a782528,2,Rectangular c/ rodas,1000,0.25,Bom,"Ambos recolhidos, já tinham sido recolhidos no dia anterior",2,Não,Não,37.144366,-8.586472,1.0,0.25,500.0
+175,23bf64a3,Portimão,2021-07-06,3,4d1515c3,2,Contentor semi-enterrado,3000,0.25,Bom,,2,Não,Não,37.139554,-8.53938,1.0,0.25,1500.0
+176,1e68fe8b,Portimão,2021-07-06,3,2450dedf,2,Contentor semi-enterrado,3000,0.5,Bom,2 em 2 . Corrigir último ponto.,2,Não,Não,37.139575,-8.539424,1.0,0.5,3000.0
+177,d02d23ef,Portimão,2021-07-06,6,f098278f,2,Contentor semi-enterrado,3000,0.75,Bom,Recolhido todos os dias,2,Não,Não,37.14643,-8.586414,1.0,0.75,4500.0
+178,6c0b6cf4,Portimão,2021-07-06,3,fcc7e755,2,Contentor semi-enterrado,3000,0.75,Bom,,2,Não,Não,37.138918,-8.538688,1.0,0.75,4500.0
+179,f366400a,Portimão,2021-07-06,6,3a47490e,3,Contentor semi-enterrado,3000,0.25,Bom,"Nenhum recolhido, com monos não recolhidos",0,Sim,Não,37.143597,-8.583548,0.0,0.0,0.0
+180,33357ac7,Portimão,2021-07-06,6,a7e56021,2,Contentor semi-enterrado,3000,0.25,Razoável,"2 contentores, 1 semi enterrafo",2,Não,Não,37.142409,-8.574635,1.0,0.25,1500.0
+181,7f76e408,Portimão,2021-07-06,6,56b0c3eb,1,Rectangular c/ rodas,1000,0.5,Bom,Recolhido,1,Não,Não,37.142366,-8.573449,1.0,0.5,500.0
+182,73314168,Portimão,2021-07-06,3,96bb089b,4,Contentor semi-enterrado,3000,0.5,Bom,Recolha de 3 em 4,3,Não,Não,37.139034,-8.536605,0.75,0.375,4500.0
+183,0d7bb02b,Portimão,2021-07-06,6,4582c24d,1,Rectangular c/ rodas,1000,0.25,Bom,"Não rechido, nem mono",0,Sim,Não,37.141709,-8.5718,0.0,0.0,0.0
+184,cef59c66,Portimão,2021-07-06,6,7166e2f2,2,Contentor semi-enterrado,3000,0.5,Bom,"Recolhidos no dia anterior, n recolhidos no circuito",0,Não,Não,37.140911,-8.5704,0.0,0.0,0.0
+185,7d6dd273,Portimão,2021-07-06,6,76509541,2,Contentor semi-enterrado,3000,0.25,Bom,"1inut,n rec",0,Não,Não,37.140866,-8.570036,0.0,0.0,0.0
+186,4236d38d,Portimão,2021-07-06,6,051b2993,1,Contentor semi-enterrado,3000,0.25,Bom,"N recolhido,",0,Não,Não,37.140924,-8.569282,0.0,0.0,0.0
+187,4eb2c7da,Portimão,2021-07-06,6,de541f7f,2,Contentor semi-enterrado,3000,0.5,Bom,"Recolheram 1 contentor apenas, outro 25 %",1,Não,Não,37.142743,-8.571777,0.5,0.25,1500.0
+188,b1e060ba,Portimão,2021-07-06,6,f3fc1c0b,1,Rectangular c/ rodas,1000,0.25,Bom,N rec,0,Não,Não,37.14327,-8.57327,0.0,0.0,0.0
+189,36bc795d,Portimão,2021-07-06,3,a4724593,2,Contentor semi-enterrado,3000,0.75,Bom,Problemas de trânsito. Centro comercial,2,Não,Sim,37.140068,-8.538156,1.0,0.75,4500.0
+190,dd86885a,Portimão,2021-07-06,6,fd9f2b54,2,Rectangular c/ rodas,1000,0.25,Bom,Rec 1,1,Não,Não,37.143477,-8.574136,0.5,0.125,250.0
+191,51c111f5,Portimão,2021-07-06,6,9ed7ae49,1,Rectangular c/ rodas,1000,0.25,Bom,,1,Não,Não,37.143547,-8.577972,1.0,0.25,250.0
+192,11b84f8a,Portimão,2021-07-06,6,695179d4,2,Rectangular c/ rodas,1000,0.25,Razoável,Recolheram 1,1,Não,Não,37.144477,-8.5812,0.5,0.125,250.0
+193,09c2aec0,Portimão,2021-07-06,3,6c58b117,2,Contentor semi-enterrado,3000,0.5,Bom,3 visitados e  2 recolhidos,2,Não,Não,37.140599,-8.538119,1.0,0.5,3000.0
+194,43d706a6,Portimão,2021-07-06,6,0b2ba3e1,1,Contentor semi-enterrado,3000,0.5,Razoável,Contentor algo leve,1,Não,Não,37.135304,-8.59012,1.0,0.5,1500.0
+195,b62f45eb,Portimão,2021-07-06,6,ab22bb16,2,Contentor semi-enterrado,3000,0.5,Bom,"Colocado a beira de um cruzamento, recolheram 1, outro inutilizavel",1,Não,Não,37.13587,-8.588041,0.5,0.25,1500.0
+196,a6a04202,Portimão,2021-07-06,6,3962b4fa,1,Contentor semi-enterrado,3000,1.0,Bom,"Problemas operacionais com a remoção dos resíduos, contentor que deveria ser de hotel",1,Não,Sim,37.136422,-8.586722,1.0,1.0,3000.0
+197,0118d806,Portimão,2021-07-06,3,c678fa7e,3,Contentor semi-enterrado,3000,0.75,Bom,Lixo comercial. Supermercado,3,Não,Sim,37.141087,-8.53823,1.0,0.75,6750.0
+198,9ee14547,Portimão,2021-07-06,6,eda95eb8,2,Sacos de lixo,3000,0.5,Bom,Recolheram 1,1,Não,Não,37.13692,-8.584736,0.5,0.25,1500.0
+199,8c8d0565,Portimão,2021-07-06,3,18a1f2eb,2,Contentor semi-enterrado,3000,0.75,Bom,,2,Não,Não,37.139411,-8.541279,1.0,0.75,4500.0
+200,4cb931b1,Portimão,2021-07-06,6,5d8031e2,6,Rectangular c/ rodas,1000,1.0,Bom,"Recolhido todos os dias, hoje foram 2",2,Não,Sim,37.135882,-8.58449,0.3333333333333333,0.3333333333333333,2000.0
+201,36f01009,Portimão,2021-07-06,6,d2d9c39f,4,Rectangular c/ rodas,1000,0.5,Bom,"Recolheram 2, 1 cheio, restantes 50%",2,Não,Não,37.137582,-8.585724,0.5,0.25,1000.0
+202,03d5f295,Portimão,2021-07-06,6,9ad95dd3,2,Contentor semi-enterrado,3000,0.75,Bom,Recolhido apenas o cheio,1,Não,Não,37.139269,-8.584903,0.5,0.375,2250.0
+203,83dc666e,Portimão,2021-07-06,3,34d23995,1,Contentor semi-enterrado,3000,0.75,Bom,1 de 2 recolhidos,1,Não,Não,37.139933,-8.54196,1.0,0.75,2250.0
+204,fcdd84d0,Portimão,2021-07-06,6,aa84f709,1,Rectangular c/ rodas,1000,0.5,Razoável,Muitos verdes,1,Não,Não,37.140118,-8.584685,1.0,0.5,500.0
+205,1dd66842,Portimão,2021-07-06,3,e0857223,3,Contentor semi-enterrado,3000,0.75,Bom,3 recolhas. Recolha 6x semana,3,Não,Não,37.140133,-8.542603,1.0,0.75,6750.0
+206,d983c250,Portimão,2021-07-06,6,73dcd4c7,2,Rectangular c/ rodas,1000,0.75,Bom,Grande ponto de dor - requer enorme viagem até aos contentores,2,Não,Não,37.138488,-8.582094,1.0,0.75,1500.0
+207,70163f5e,Portimão,2021-07-06,3,6fd81e18,1,Rectangular c/ rodas,1000,0.25,Razoável,Bairro informal,1,Não,Não,37.140235,-8.543026,1.0,0.25,250.0
+208,a141da43,Portimão,2021-07-06,3,e06dfd1b,1,Rectangular c/ rodas,1000,0.25,Razoável,,1,Não,Não,37.140219,-8.543147,1.0,0.25,250.0
+209,3178b7fe,Portimão,2021-07-06,6,77668b50,2,Contentor semi-enterrado,3000,0.75,Bom,"1 75 % rec, 1 50% n rec",1,Não,Não,37.131907,-8.592413,0.5,0.375,2250.0
+210,26bf8d5a,Portimão,2021-07-06,6,5a2161cc,2,Contentor semi-enterrado,3000,0.5,Mau,"Recolha de 1 50%, outro n rec",1,Não,Não,37.131823,-8.591525,0.5,0.25,1500.0
+211,6757c706,Portimão,2021-07-06,3,eed890a5,1,Contentor semi-enterrado,3000,0.25,Bom,1 não recolhido,0,Não,Não,37.139331,-8.544941,0.0,0.0,0.0
+212,29d8c178,Portimão,2021-07-06,6,d726755a,2,Contentor semi-enterrado,3000,0.75,Bom,"Recolha de um 75%, fica por recolher outro 50%",1,Não,Não,37.130392,-8.591921,0.5,0.375,2250.0
+213,86b30ad6,Portimão,2021-07-06,3,25005d06,3,Rectangular c/ rodas,1000,0.5,Bom,Centro saúde,3,Não,Não,37.138919,-8.545203,1.0,0.5,1500.0
+214,da03e303,Portimão,2021-07-06,6,981c20ee,2,Contentor semi-enterrado,3000,0.5,Razoável,Recolheram 1,1,Não,Não,37.127661,-8.588725,0.5,0.25,1500.0
+215,7d0135d3,Portimão,2021-07-06,3,0360cd6a,1,Contentor semi-enterrado,3000,0.75,Bom,,1,Não,Não,37.138718,-8.543178,1.0,0.75,2250.0
+216,cd422d4e,Portimão,2021-07-06,6,5e98af2b,3,Contentor semi-enterrado,3000,0.5,Bom,"Recolhido 1, outros entre 25 e 50%",1,Não,Não,37.123648,-8.588973,0.3333333333333333,0.16666666666666666,1500.0
+217,bce34122,Portimão,2021-07-06,6,07a9700b,3,Contentor semi-enterrado,3000,0.75,Razoável,"Recolheram 2, um a 75 e outro 50",2,Não,Não,37.123991,-8.590372,0.6666666666666666,0.5,4500.0
+218,71dad8c4,Portimão,2021-07-06,6,042b957e,1,Rectangular c/ rodas,3000,0.5,Bom,Recolhido,1,Não,Não,37.124781,-8.590013,1.0,0.5,1500.0
+219,d399badd,Portimão,2021-07-06,6,bf999c26,2,Contentor semi-enterrado,3000,0.5,Razoável,Recolhido 1 a 75%,1,Não,Não,37.122851,-8.586226,0.5,0.25,1500.0
+220,a0cc9a04,Portimão,2021-07-06,6,352d1655,2,Contentor semi-enterrado,3000,0.25,Bom,Nenhum recolhido,0,Não,Não,37.12289,-8.584465,0.0,0.0,0.0
+221,b75b510f,Portimão,2021-07-06,6,646aaf53,5,Rectangular c/ rodas,1000,1.0,Bom,"Recolheram 1 cheio e 1 a 50%,  deixaram outro",2,Não,Sim,37.120983,-8.582435,0.4,0.4,2000.0
+222,af754cf9,Portimão,2021-07-06,6,57025ffe,2,Rectangular c/ rodas,800,0.5,Bom,Recolha de 1,1,Não,Não,37.122181,-8.580481,0.5,0.25,400.0
+223,4eda5c8e,Portimão,2021-07-06,6,8050c18d,1,Rectangular c/ rodas,1000,0.5,Bom,Recolha,1,Não,Não,37.123275,-8.577453,1.0,0.5,500.0
+224,a4e44de0,Portimão,2021-07-06,6,5b77c075,2,Contentor semi-enterrado,3000,0.25,Bom,"N recolhidos, viatura a obstruir",0,Não,Sim,37.122093,-8.576247,0.0,0.0,0.0
+225,77deb581,Portimão,2021-07-06,6,5ac65b18,3,Rectangular c/ rodas,800,1.0,Bom,"3 recolhidos, resíduos fora de contentor por recolher, hotel",3,Sim,Sim,37.120701,-8.573379,1.0,1.0,2400.0
+226,021ceb1e,Portimão,2021-07-06,3,58160980,1,Contentor semi-enterrado,3000,0.5,Razoável,Avaria do veículo,1,Não,Não,37.138603,-8.541557,1.0,0.5,1500.0
+227,296ebb94,Portimão,2021-07-06,6,f7b12582,1,Contentor semi-enterrado,3000,0.75,Bom,Volume elevado de verdes,1,Não,Não,37.121858,-8.567719,1.0,0.75,2250.0
+228,3f599e86,Portimão,2021-07-06,3,8baff145,3,Rectangular c/ rodas,1000,1.0,Razoável,,3,Não,Não,37.138356,-8.540313,1.0,1.0,3000.0
+229,e16d7b18,Portimão,2021-07-06,6,15abd51f,2,Rectangular c/ rodas,1000,0.5,Bom,"Recolhido 1, outro 25% n recolhido",1,Não,Não,37.122613,-8.564974,0.5,0.25,500.0
+230,414996a3,Portimão,2021-07-06,6,2156afbe,1,Rectangular c/ rodas,1000,1.0,Bom,,1,Não,Não,37.122409,-8.566523,1.0,1.0,1000.0
+231,646be738,Portimão,2021-07-06,6,029f9674,1,Rectangular c/ rodas,1000,0.5,Bom,Verdes,1,Não,Não,37.121584,-8.570133,1.0,0.5,500.0
+232,0decd370,Portimão,2021-07-06,6,36140f87,1,Rectangular c/ rodas,1000,0.5,Bom,,1,Não,Não,37.121101,-8.571483,1.0,0.5,500.0
+233,224b4e82,Portimão,2021-07-06,6,,10,Rectangular c/ rodas,800,1.0,Bom,,10,Não,Sim,37.12221,-8.57493,1.0,1.0,8000.0
+234,224b4e82,Portimão,2021-07-06,6,ab09bbdf,14,Rectangular c/ rodas,1000,1.0,Razoável,"14 1100, 10 de 800",14,Não,Sim,37.12221,-8.57493,1.0,1.0,14000.0
+235,ff958abb,Portimão,2021-07-06,3,6f2233f9,7,Rectangular c/ rodas,1000,0.75,Razoável,Setor comercial. Cozinha.,7,Não,Sim,37.137507,-8.538518,1.0,0.75,5250.0
+236,1d6cb9cd,Portimão,2021-07-06,6,f041bbc1,1,Rectangular c/ rodas,1000,0.75,Bom,,1,Não,Não,37.122695,-8.576576,1.0,0.75,750.0
+237,b2bd1a25,Portimão,2021-07-06,6,5f74c59f,1,Contentor semi-enterrado,3000,0.25,Bom,N recolhido,0,Não,Não,37.125016,-8.578785,0.0,0.0,0.0
+238,33ce3c88,Portimão,2021-07-06,6,30c24208,3,Rectangular c/ rodas,1000,0.25,Razoável,Recolhidos 2 de 800 l a 25%,2,Não,Não,37.125037,-8.581398,0.6666666666666666,0.16666666666666666,500.0
+239,716141d3,Portimão,2021-07-06,6,0149092a,2,Contentor semi-enterrado,3000,0.25,Bom,Nenhum recolhido,0,Não,Não,37.127272,-8.583562,0.0,0.0,0.0
+240,96896f7f,Portimão,2021-07-06,6,1de04edb,1,Rectangular c/ rodas,1000,0.25,Bom,Recolhiso,1,Não,Não,37.128885,-8.587179,1.0,0.25,250.0
+241,4142db9d,Portimão,2021-07-06,6,830cb7f5,1,Rectangular c/ rodas,1000,0.75,Bom,,1,Não,Não,37.128773,-8.588687,1.0,0.75,750.0
+242,b0733cc1,Portimão,2021-07-06,6,dbfe9a97,2,Contentor semi-enterrado,3000,0.25,Bom,2 não levabtados,0,Não,Não,37.128852,-8.591111,0.0,0.0,0.0
+243,095c43c0,Portimão,2021-07-06,6,be4ceea2,3,Contentor semi-enterrado,1000,1.0,Bom,,3,Não,Não,37.128051,-8.590096,1.0,1.0,3000.0
+244,6827eebb,Portimão,2021-07-06,6,1388b81b,3,Rectangular c/ rodas,1000,0.5,Razoável,Recolheram 1 a 5p %,1,Não,Não,37.127833,-8.590322,0.3333333333333333,0.16666666666666666,500.0
+245,813ee2fd,Portimão,2021-07-06,6,ed4f8f93,2,Rectangular c/ rodas,1000,1.0,Bom,Zona residencial,2,Não,Não,37.127949,-8.591159,1.0,1.0,2000.0
+246,c34cb5e7,Portimão,2021-07-06,6,a61db482,2,Contentor semi-enterrado,3000,0.75,Bom,Recolhido 1 a u75 %,1,Não,Não,37.126506,-8.592553,0.5,0.375,2250.0
+247,1053b260,Portimão,2021-07-06,6,e6c92533,2,Rectangular c/ rodas,1000,0.5,Bom,Recolhidos dois,2,Não,Não,37.128272,-8.592309,1.0,0.5,1000.0
+248,6256eceb,Portimão,2021-07-06,6,f5ad3642,3,Rectangular c/ rodas,1000,0.5,Razoável,Uma recolha a 50%,1,Não,Não,37.128642,-8.592847,0.3333333333333333,0.16666666666666666,500.0
+249,140ca02d,Portimão,2021-07-06,6,416dbebd,4,Rectangular c/ rodas,1000,0.5,Bom,"Recolhido um, 3 por recolher con 25 a 50%",1,Não,Não,37.126777,-8.590639,0.25,0.125,500.0
+250,9ef6c9cd,Portimão,2021-07-06,6,,2,Rectangular c/ rodas,120,1.0,Mau,,2,Não,Sim,37.129996,-8.596369,1.0,1.0,240.0
+251,9ef6c9cd,Portimão,2021-07-06,6,1668756a,5,Contentor semi-enterrado,3000,0.75,Razoável,5 contentores enterrados 75% mais 2 120 2m mau estado e cheiks,5,Não,Sim,37.129996,-8.596369,1.0,0.75,11250.0
+252,c233f589,Portimão,2021-07-06,6,35efc01c,3,Contentor semi-enterrado,3000,0.75,Razoável,Um a 75 % - recolhido e outros dois por recolher a 35%,1,Não,Não,37.127863,-8.5954,0.3333333333333333,0.25,2250.0
+253,55b21362,Portimão,2021-07-06,6,06272eb8,1,Rectangular c/ rodas,1000,0.5,Razoável,Monos neste local,1,Sim,Não,37.127352,-8.595973,1.0,0.5,500.0
+254,c6684a76,Portimão,2021-07-06,6,3ca6ece2,1,Rectangular c/ rodas,1000,0.5,Razoável,Monos n recolhidos,1,Sim,Não,37.126931,-8.5963,1.0,0.5,500.0
+255,7273fde5,Portimão,2021-07-06,6,b4e307cc,2,Contentor semi-enterrado,1000,0.75,Razoável,Maioria verdes em ambos,2,Não,Não,37.126445,-8.595959,1.0,0.75,1500.0
+256,e4f669ed,Portimão,2021-07-06,6,cbdbcc74,3,Rectangular c/ rodas,1000,0.5,Razoável,Recolhidos 2 a 75% e um por recokher,3,Não,Não,37.123674,-8.596353,1.0,0.5,1500.0
+257,6e3f9945,Portimão,2021-07-06,6,f2dd480f,2,Rectangular c/ rodas,1000,0.5,Bom,"Recolhido um a 75%,outro a 25%",1,Não,Não,37.1237,-8.595325,0.5,0.25,500.0
+258,ee7ee1b2,Portimão,2021-07-06,6,4be74a22,2,Rectangular c/ rodas,1000,0.5,Razoável,Recolhidos ambos sem que estejam cheios - ingleses reclamam se não sempre recolhido (50 e 25),2,Não,Não,37.131267,-8.590676,1.0,0.5,1000.0
+259,8139b868,Portimão,2021-07-06,6,2a5f11a7,2,Contentor semi-enterrado,3000,0.75,Mau,Verdes que requerem algumas cuidado,2,Não,Não,37.132524,-8.59059,1.0,0.75,4500.0
+260,29bdc77c,Portimão,2021-07-06,6,601bcc91,2,Rectangular c/ rodas,1000,0.5,Bom,Recolhidos 2 - latas e cartao,2,Não,Não,37.133417,-8.59128,1.0,0.5,1000.0
+261,01b7ba33,Portimão,2021-07-06,6,e98da552,11,Rectangular c/ rodas,1000,1.0,Bom,9 de 800 litros e 2 de 1000,11,Não,Não,37.135044,-8.590596,1.0,1.0,11000.0
+262,42f30b8b,Portimão,2021-07-07,6,501fb327,1,Rectangular c/ rodas,1000,0.25,Bom,Não recolhido,0,Não,Não,37.140279,-8.589251,0.0,0.0,0.0
+263,ad42d182,Portimão,2021-07-07,6,0fcbc596,1,Recipiente redondo,1000,0.25,Bom,N recolhido,0,Não,Não,37.143207,-8.586426,0.0,0.0,0.0
+264,07b9b0fb,Portimão,2021-07-07,6,02e93f79,1,Rectangular c/ rodas,800,1.0,Bom,,1,Não,Não,37.143691,-8.585768,1.0,1.0,800.0
+265,1bc71bcd,Portimão,2021-07-07,6,d3120ec4,2,Contentor semi-enterrado,3000,0.5,Bom,"Recolhido apenas 1 - 50%, outro por recolher",1,Não,Não,37.145067,-8.584281,0.5,0.25,1500.0
+266,f3d5293b,Portimão,2021-07-07,6,1602d7bd,1,Rectangular c/ rodas,800,0.75,Bom,Apanharam folhas colocadas à parte,1,Sim,Não,37.146836,-8.582351,1.0,0.75,600.0
+267,a3dfefa7,Portimão,2021-07-07,6,7dafc958,1,Rectangular c/ rodas,1000,0.75,Bom,,1,Não,Não,37.147457,-8.579957,1.0,0.75,750.0
+268,e845deda,Portimão,2021-07-07,6,ad13d9c2,1,Rectangular c/ rodas,1000,0.25,Razoável,N recolhido,0,Não,Não,37.149353,-8.576761,0.0,0.0,0.0
+269,17f9a616,Portimão,2021-07-07,6,a80f0fa3,1,Rectangular c/ rodas,1000,0.5,Razoável,Zona turistica,1,Não,Sim,37.148989,-8.576053,1.0,0.5,500.0
+270,0f5e64da,Portimão,2021-07-07,6,24307859,1,Rectangular c/ rodas,1000,0.75,Bom,Recolha,1,Não,Não,37.152598,-8.575721,1.0,0.75,750.0
+271,882f49bd,Portimão,2021-07-07,6,beb7ef56,1,Rectangular c/ rodas,1000,0.25,Bom,,1,Não,Não,37.158139,-8.571842,1.0,0.25,250.0
+272,4c95564c,Portimão,2021-07-07,6,601b94f7,1,Rectangular c/ rodas,1000,0.5,Bom,,1,Não,Não,37.159523,-8.570891,1.0,0.5,500.0
+273,fa2a1889,Portimão,2021-07-07,6,b75ddeeb,1,Rectangular c/ rodas,1000,0.5,Razoável,,1,Não,Não,37.159579,-8.570733,1.0,0.5,500.0
+274,1bcad49e,Portimão,2021-07-07,6,b80f25e8,1,Rectangular c/ rodas,1000,0.25,Bom,Não recolhido,0,Não,Não,37.161539,-8.572882,0.0,0.0,0.0
+275,90c6ca75,Portimão,2021-07-07,6,ff32560c,4,Rectangular c/ rodas,1000,1.0,Razoável,Recolha fora do circuito,4,Não,Sim,37.161602,-8.585595,1.0,1.0,4000.0
+276,07926a3d,Portimão,2021-07-08,6,f932e3d5,8,Rectangular c/ rodas,800,0.5,Bom,"Recolha dos contentores todos, recolha de Hotel fora deste circuito",8,Não,Sim,37.160995,-8.579407,1.0,0.5,3200.0
+277,07926a3d,Portimão,2021-07-08,6,46b6b492,8,Rectangular c/ rodas,1000,0.5,Bom,Recolha extraordinária - hotel produz muitos resíduos normalmente,8,Não,Sim,37.160995,-8.579407,1.0,0.5,4000.0
+278,19111451,Portimão,2021-07-07,6,c7bcd8df,2,Rectangular c/ rodas,1000,1.0,Bom,"1 de 1100 recolhido, outro de 800 por recolher",1,Não,Sim,37.160991,-8.578486,0.5,0.5,1000.0
+279,e01051f2,Portimão,2021-07-07,8,0b13dca7,3,Rectangular c/ rodas,1000,0.5,Razoável,Os que se partem,3,Não,Não,37.157381,-8.552441,1.0,0.5,1500.0
+280,7ecf2568,Portimão,2021-07-07,8,5d3eeb3e,2,Rectangular c/ rodas,800,0.5,Razoável,,2,Não,Não,37.157379,-8.552663,1.0,0.5,800.0
+281,6c156aeb,Portimão,2021-07-07,8,083a2b99,1,Recipiente redondo,1000,0.5,Bom,,1,Não,Não,37.156216,-8.551942,1.0,0.5,500.0
+282,d1ac5bee,Portimão,2021-07-07,8,73e3287a,1,Rectangular c/ rodas,1000,0.5,Bom,Recolhido,1,Não,Não,37.153477,-8.552665,1.0,0.5,500.0
+283,91550b7d,Portimão,2021-07-07,5,f48a10ab,1,Rectangular c/ rodas,1000,0.25,Bom,,1,Não,Não,37.14349,-8.548502,1.0,0.25,250.0
+284,1e07a340,Portimão,2021-07-07,8,a3b91ac3,1,Rectangular c/ rodas,1000,0.5,Bom,,1,Não,Não,37.154519,-8.552837,1.0,0.5,500.0
+285,f6eb8b5a,Portimão,2021-07-07,8,365a3db9,1,Rectangular c/ rodas,1000,0.75,Bom,,1,Não,Não,37.157177,-8.553354,1.0,0.75,750.0
+286,5907da93,Portimão,2021-07-07,5,98614f8c,3,Rectangular c/ rodas,1000,1.0,Bom,"Recolheram 2, 1 a 100, 1 a 50",2,Não,Não,37.137716,-8.546378,0.6666666666666666,0.6666666666666666,2000.0
+287,a3fd88ed,Portimão,2021-07-07,8,bd921172,3,Rectangular c/ rodas,1000,0.75,Bom,,3,Não,Não,37.153142,-8.551152,1.0,0.75,2250.0
+288,a8ae5566,Portimão,2021-07-07,5,b71f9945,1,Rectangular c/ rodas,1000,0.5,Bom,,1,Não,Não,37.134117,-8.545778,1.0,0.5,500.0
+289,615f5dae,Portimão,2021-07-07,8,f1e35117,1,Rectangular c/ rodas,1000,0.75,Bom,,1,Não,Não,37.153947,-8.549964,1.0,0.75,750.0
+290,501bfd83,Portimão,2021-07-07,5,2b1d67fa,2,Rectangular c/ rodas,1000,0.75,Bom,"1 a 75, 1 a 50",2,Não,Não,37.133389,-8.546437,1.0,0.75,1500.0
+291,b0ee1980,Portimão,2021-07-07,8,2f3b1708,2,Rectangular c/ rodas,1000,0.75,Bom,"Aqui é uma empresa de banco alimentar,consta muitas frutas estragadas, e mal acondicionadas e estavam atirados dentária dos contentores",2,Não,Sim,37.154634,-8.549517,1.0,0.75,1500.0
+292,fbb8e368,Portimão,2021-07-07,8,89772a9c,1,Rectangular c/ rodas,1000,0.25,Bom,Não recolhidos,0,Não,Não,37.155201,-8.549466,0.0,0.0,0.0
+293,58c2176c,Portimão,2021-07-07,8,dd5df5a4,2,Rectangular c/ rodas,1000,0.25,Bom,,2,Não,Não,37.155696,-8.549066,1.0,0.25,500.0
+294,67f32d81,Portimão,2021-07-07,5,4d5dc884,1,Contentor semi-enterrado,3000,0.75,Bom,,1,Não,Não,37.132558,-8.546132,1.0,0.75,2250.0
+295,20c90e3d,Portimão,2021-07-07,5,de43fa87,2,Rectangular c/ rodas,1000,1.0,Bom,"1 a 100, 1 a 75",2,Não,Não,37.132248,-8.545911,1.0,1.0,2000.0
+296,920c0c6d,Portimão,2021-07-07,8,43a9cb2a,3,Rectangular c/ rodas,1000,0.25,Bom,Mal acondicionados,3,Sim,Não,37.152681,-8.5492,1.0,0.25,750.0
+297,69e5243f,Portimão,2021-07-07,5,2f7e406d,1,Rectangular c/ rodas,1000,1.0,Bom,,1,Não,Não,37.127547,-8.547646,1.0,1.0,1000.0
+298,7047686f,Portimão,2021-07-07,8,b7ea9f98,1,Contentor semi-enterrado,3000,0.5,Bom,,1,Não,Não,37.15198,-8.548515,1.0,0.5,1500.0
+299,7a310241,Portimão,2021-07-07,5,c8abc2a4,2,Contentor semi-enterrado,3000,0.75,Bom,"1 a 75, 1 a 50",2,Não,Não,37.123943,-8.545427,1.0,0.75,4500.0
+300,5ad3afbf,Portimão,2021-07-07,8,cec709cb,1,Rectangular c/ rodas,1000,0.5,Bom,,1,Não,Não,37.150663,-8.547082,1.0,0.5,500.0
+301,4544968c,Portimão,2021-07-07,5,98de6be6,3,Contentor semi-enterrado,3000,1.0,Bom,"Recolheram 2, os dois a 100",2,Não,Não,37.124727,-8.547382,0.6666666666666666,0.6666666666666666,6000.0
+302,ae02df34,Portimão,2021-07-07,8,ba1bddfe,2,Contentor semi-enterrado,3000,0.5,Bom,Muito mal acondicionados (resíduos colocados dentro das cubas sem sacos),2,Sim,Não,37.150513,-8.546119,1.0,0.5,3000.0
+303,cec9b8a3,Portimão,2021-07-07,8,02dc3adf,3,Contentor semi-enterrado,3000,0.25,Bom,"1-75%,2-100%,3-25%",3,Não,Não,37.151936,-8.545623,1.0,0.25,2250.0
+304,69eb6f9b,Portimão,2021-07-07,5,7d576a54,3,Contentor semi-enterrado,3000,1.0,Bom,2 a 100,2,Não,Não,37.12557,-8.548101,0.6666666666666666,0.6666666666666666,6000.0
+305,77555ce3,Portimão,2021-07-07,5,5d957ea6,1,Rectangular c/ rodas,1000,1.0,Bom,,1,Não,Não,37.124998,-8.549595,1.0,1.0,1000.0
+306,6ffaaea1,Portimão,2021-07-07,5,9a72d94f,3,Contentor semi-enterrado,3000,1.0,Bom,"Recolheram 3, 1 a 100, 1 a 75",3,Não,Não,37.124064,-8.54897,1.0,1.0,9000.0
+307,90235145,Portimão,2021-07-07,8,43c94035,2,Contentor semi-enterrado,3000,0.5,Bom,Tem resíduos/monos ao lado dos contentores,2,Sim,Não,37.150348,-8.544396,1.0,0.5,3000.0
+308,e893a0ba,Portimão,2021-07-07,5,edd44727,2,Contentor semi-enterrado,3000,0.75,Bom,Recolheram 1,1,Não,Não,37.121794,-8.549889,0.5,0.375,2250.0
+309,f3ad7aeb,Portimão,2021-07-07,8,679d8ba6,2,Contentor semi-enterrado,3000,0.5,Bom,São mas só recolheu 1 contentor,1,Não,Não,37.148988,-8.544965,0.5,0.25,1500.0
+310,d0550058,Portimão,2021-07-07,5,aea7b589,2,Rectangular c/ rodas,800,0.5,Bom,"1 a 100, 1 a 50",2,Não,Não,37.121878,-8.560688,1.0,0.5,800.0
+311,e5c78714,Portimão,2021-07-07,8,db889172,2,Contentor semi-enterrado,3000,0.25,Bom,,2,Não,Não,37.148282,-8.544354,1.0,0.25,1500.0
+312,2533b4d2,Portimão,2021-07-07,5,55522cbd,3,Rectangular c/ rodas,1000,0.75,Bom,"1 a 75, 2 a 50%",3,Não,Não,37.121983,-8.563972,1.0,0.75,2250.0
+313,c8352166,Portimão,2021-07-07,8,0c161a2c,2,Rectangular c/ rodas,1000,0.25,Bom,,2,Não,Não,37.148493,-8.545833,1.0,0.25,500.0
+314,21cf133a,Portimão,2021-07-07,5,73584580,3,Rectangular c/ rodas,1000,0.5,Bom,,3,Não,Não,37.121168,-8.561873,1.0,0.5,1500.0
+315,2dc143b2,Portimão,2021-07-07,8,cf273494,2,Contentor semi-enterrado,3000,0.5,Razoável,Recolhido apenas 1 de 2,1,Não,Não,37.148475,-8.547098,0.5,0.25,1500.0
+316,e0e42f7a,Portimão,2021-07-07,8,153df996,1,Contentor semi-enterrado,3000,0.5,Razoável,Plano inclinado dificulta a acção da viatura,1,Não,Não,37.149208,-8.5483,1.0,0.5,1500.0
+317,2471dd47,Portimão,2021-07-07,5,21bb9dfd,8,Rectangular c/ rodas,1000,1.0,Bom,Recolheram 4 a 100%,4,Não,Sim,37.121142,-8.560311,0.5,0.5,4000.0
+318,de88fdf1,Portimão,2021-07-07,5,a887e1a3,5,Rectangular c/ rodas,800,0.5,Bom,Recolheram 1,1,Não,Não,37.120423,-8.553299,0.2,0.1,400.0
+319,e6ea1cc1,Portimão,2021-07-07,8,cc07f4dd,3,Contentor semi-enterrado,1000,0.5,Bom,"Recolhidos 2, um a 50% e outro 25%, um 50% por recolher",2,Não,Não,37.150357,-8.549222,0.6666666666666666,0.3333333333333333,1000.0
+320,e5d4f0ae,Portimão,2021-07-07,5,6a518fb6,1,Rectangular c/ rodas,1000,1.0,Bom,,1,Não,Não,37.121093,-8.556574,1.0,1.0,1000.0
+321,04dc0a85,Portimão,2021-07-07,5,1cfe7b9f,2,Rectangular c/ rodas,1000,1.0,Bom,,1,Não,Não,37.120838,-8.556898,0.5,0.5,1000.0
+322,0f29bba0,Portimão,2021-07-07,5,219bbc43,1,Contentor semi-enterrado,3000,0.5,Bom,,1,Não,Não,37.120489,-8.558642,1.0,0.5,1500.0
+323,6f35f267,Portimão,2021-07-07,8,ffe56c59,1,Rectangular c/ rodas,1000,0.25,Bom,Contentor,1,Não,Não,37.153238,-8.544605,1.0,0.25,250.0
+324,88a79ba3,Portimão,2021-07-07,8,f205565b,1,Rectangular c/ rodas,1000,0.75,Bom,Mudança de faixa,1,Não,Não,37.151461,-8.541391,1.0,0.75,750.0
+325,04dad046,Portimão,2021-07-07,5,2123e3ee,1,Rectangular c/ rodas,1000,0.25,Bom,,1,Não,Não,37.119866,-8.55732,1.0,0.25,250.0
+326,83b0f958,Portimão,2021-07-07,8,7cd6b0ea,2,Contentor semi-enterrado,3000,0.75,Bom,"Recolha de apenas 1 a 75%, segundo por recolher",1,Não,Não,37.15034,-8.540322,0.5,0.375,2250.0
+327,05ef06b2,Portimão,2021-07-07,5,fabcee38,1,Rectangular c/ rodas,1000,0.5,Bom,,1,Não,Não,37.119609,-8.555881,1.0,0.5,500.0
+328,9c99312d,Portimão,2021-07-07,5,92bf7ad3,2,Rectangular c/ rodas,1000,1.0,Bom,2 a 100%,2,Não,Não,37.122784,-8.556905,1.0,1.0,2000.0
+329,9f242d08,Portimão,2021-07-07,8,12c1cb03,3,Contentor semi-enterrado,3000,0.75,Bom,"Recolhidos 2 para evitar cheiro do resíduos , por recolher contentor 50%uo alimentar",2,Não,Não,37.14787,-8.540894,0.6666666666666666,0.5,4500.0
+330,c23179bc,Portimão,2021-07-07,5,008de347,3,Rectangular c/ rodas,1000,1.0,Bom,Recolheram 2 a 100,2,Não,Não,37.123798,-8.555336,0.6666666666666666,0.6666666666666666,2000.0
+331,46c7b49e,Portimão,2021-07-07,5,b5346b9f,2,Contentor semi-enterrado,3000,1.0,Bom,Recolhidos alternadamente. Recolheram 1 a 100%,1,Não,Não,37.124351,-8.557377,0.5,0.5,3000.0
+332,2ab809fa,Portimão,2021-07-07,5,171812ee,1,Contentor semi-enterrado,3000,0.75,Bom,"1 a 75, 1 a 50%",1,Não,Não,37.125768,-8.557854,1.0,0.75,2250.0
+333,851a058c,Portimão,2021-07-07,8,d2b68c94,3,Contentor semi-enterrado,3000,0.75,Bom,"Recolha de 1 a 75%, de 1 a 25%, outro 25% por recolher",2,Não,Não,37.148111,-8.542388,0.6666666666666666,0.5,4500.0
+334,d7b81a04,Portimão,2021-07-07,5,8c1ca0f5,1,Rectangular c/ rodas,1000,0.5,Bom,,1,Não,Não,37.126969,-8.554983,1.0,0.5,500.0
+335,32264e1c,Portimão,2021-07-07,5,1bbe855e,2,Contentor semi-enterrado,1000,1.0,Bom,Recolheram 1 a 100,1,Não,Não,37.127739,-8.553932,0.5,0.5,1000.0
+336,433ec434,Portimão,2021-07-07,5,edeb837f,2,Rectangular c/ rodas,1000,0.5,Bom,,2,Não,Não,37.126388,-8.552597,1.0,0.5,1000.0
+337,7c4374a0,Portimão,2021-07-07,8,899736b2,2,Contentor semi-enterrado,3000,0.75,Razoável,Pouca preocupação dos residentes em acondicionar os resíduos . Mistura de recicláveis com não recicláveis.,2,Sim,Não,37.148194,-8.540983,1.0,0.75,4500.0
+338,9e6a5f20,Portimão,2021-07-07,5,bf91ed80,2,Contentor semi-enterrado,3000,0.75,Bom,,2,Não,Não,37.128081,-8.552166,1.0,0.75,4500.0
+339,0776c2dc,Portimão,2021-07-07,8,f020b858,2,Contentor semi-enterrado,3000,0.5,Razoável,,2,Não,Não,37.149509,-8.540646,1.0,0.5,3000.0
+340,492775f9,Portimão,2021-07-07,5,cf54cdb0,1,Contentor semi-enterrado,3000,0.5,Bom,Cuba mal colocada/virada,1,Sim,Não,37.131186,-8.551158,1.0,0.5,1500.0
+341,99a95938,Portimão,2021-07-07,8,854ae39e,3,Contentor semi-enterrado,1000,0.5,Razoável,"Recolhidos 2 a 50%, 3 por recolher",2,Não,Não,37.150073,-8.541406,0.6666666666666666,0.3333333333333333,1000.0
+342,2303c648,Portimão,2021-07-07,5,3ef43ce7,2,Contentor semi-enterrado,3000,0.75,Bom,Recolheram 1 a 76,1,Não,Não,37.130196,-8.549731,0.5,0.375,2250.0
+343,d36d5085,Portimão,2021-07-07,8,b4b4f5fe,1,Rectangular c/ rodas,1000,1.0,Razoável,,1,Não,Não,37.15061,-8.542868,1.0,1.0,1000.0
+344,3ddc5855,Portimão,2021-07-07,8,e7d32bb4,3,Rectangular c/ rodas,1000,0.75,Razoável,"Recolhidos 2 a 75%, por recolher 1",2,Não,Não,37.151463,-8.544322,0.6666666666666666,0.5,1500.0
+345,37f3854e,Portimão,2021-07-07,5,494471c7,1,Rectangular c/ rodas,800,0.75,Bom,,1,Não,Não,37.126869,-8.547045,1.0,0.75,600.0
+346,8601b10b,Portimão,2021-07-07,5,360ae551,1,Rectangular c/ rodas,1000,0.75,Bom,"1 a 75, 1 a 25",1,Não,Não,37.129189,-8.548556,1.0,0.75,750.0
+347,a4134541,Portimão,2021-07-07,5,762d30a7,2,Rectangular c/ rodas,1000,0.5,Bom,Dois a 50,2,Não,Não,37.12954,-8.548415,1.0,0.5,1000.0
+348,836fb400,Portimão,2021-07-07,5,f866d4a8,2,Contentor semi-enterrado,3000,0.5,Bom,"Recolheram 1, a 50%",1,Não,Não,37.130181,-8.547663,0.5,0.25,1500.0
+349,4669d1a5,Portimão,2021-07-07,8,a28cf9ba,23,Rectangular c/ rodas,1000,1.0,Razoável,Recolhidos 22,22,Não,Não,37.154723,-8.538439,0.9565217391304348,0.9565217391304348,22000.0
+350,4669d1a5,Portimão,2021-07-07,8,71b01dd2,4,Rectangular c/ rodas,800,1.0,Bom,Recolhidos 3,3,Não,Não,37.154723,-8.538439,0.75,0.75,2400.0
+351,8886934b,Portimão,2021-07-07,5,a8202702,2,Contentor semi-enterrado,3000,1.0,Bom,"Recolheram 1, a 100%",1,Não,Não,37.130768,-8.546639,0.5,0.5,3000.0
+352,b421cff4,Portimão,2021-07-07,5,c8a86eab,2,Contentor semi-enterrado,3000,1.0,Bom,"Recolheram 1, a 100%",1,Não,Não,37.131472,-8.546871,0.5,0.5,3000.0
+353,9d71e78a,Portimão,2021-07-07,5,8457c2a1,1,Contentor semi-enterrado,1000,0.5,Bom,,1,Não,Não,37.13247,-8.547341,1.0,0.5,500.0
+354,c6e8f931,Portimão,2021-07-07,5,1129f4c4,2,Contentor semi-enterrado,3000,1.0,Bom,"Recolheram 1, a 100%",1,Não,Não,37.132836,-8.547921,0.5,0.5,3000.0
+355,8852ded7,Portimão,2021-07-07,5,c26f2851,1,Contentor semi-enterrado,3000,0.0,Bom,,1,Não,Não,37.134617,-8.546549,1.0,0.0,0.0
+356,c60d9289,Portimão,2021-07-07,5,0387b1f7,2,Contentor semi-enterrado,3000,0.5,Bom,Recolheram 1,1,Não,Não,37.134307,-8.547002,0.5,0.25,1500.0
+357,e847f0dd,Portimão,2021-07-07,5,246ea6a9,1,Contentor semi-enterrado,3000,1.0,Bom,,1,Não,Não,37.133483,-8.548842,1.0,1.0,3000.0
+358,1635fd33,Portimão,2021-07-07,5,9b3f9ed5,1,Contentor semi-enterrado,3000,0.5,Bom,,1,Não,Não,37.13354,-8.549366,1.0,0.5,1500.0
+359,05fc67a9,Portimão,2021-07-07,5,314c0d94,2,Contentor semi-enterrado,3000,1.0,Bom,Recolheram 1 a 100,1,Não,Não,37.1325,-8.549578,0.5,0.5,3000.0
+360,03eb1eab,Portimão,2021-07-07,5,a290dbf9,2,Contentor semi-enterrado,3000,0.5,Bom,Recolheram 1,1,Não,Não,37.13179,-8.550266,0.5,0.25,1500.0
+361,9ee8b6d4,Portimão,2021-07-07,5,2029d8f5,2,Contentor semi-enterrado,3000,1.0,Bom,Recolheram 1,1,Não,Não,37.133839,-8.552383,0.5,0.5,3000.0
+362,ad589e42,Portimão,2021-07-07,5,c8d4a135,1,Rectangular c/ rodas,1000,1.0,Bom,,1,Não,Não,37.134192,-8.550774,1.0,1.0,1000.0
+363,33baa7a8,Portimão,2021-07-07,5,3b5cb0aa,3,Contentor semi-enterrado,3000,0.75,Bom,"Recolheram 2, a 75% ambos",2,Não,Não,37.13495,-8.549593,0.6666666666666666,0.5,4500.0
+364,e71797b9,Portimão,2021-07-07,5,a0d54751,2,Contentor semi-enterrado,3000,0.5,Bom,Recolheram 1,1,Não,Não,37.136279,-8.550126,0.5,0.25,1500.0
+365,ade3f098,Portimão,2021-07-07,5,ac158215,2,Contentor semi-enterrado,3000,1.0,Bom,Recolheram 1,1,Não,Não,37.135661,-8.550499,0.5,0.5,3000.0
+366,e663d1cd,Portimão,2021-07-07,5,ea09a273,2,Contentor semi-enterrado,3000,0.5,Bom,Recolheram 1,1,Não,Não,37.136084,-8.551254,0.5,0.25,1500.0
+367,8440dd1b,Portimão,2021-07-07,8,faca984a,1,Rectangular c/ rodas,1000,0.5,Razoável,,1,Não,Não,37.161582,-8.556243,1.0,0.5,500.0
+368,d044dcda,Portimão,2021-07-07,8,2999064a,1,Rectangular c/ rodas,1000,0.5,Bom,,1,Não,Não,37.161552,-8.572158,1.0,0.5,500.0
+369,f800a885,Portimão,2021-07-07,5,6e1b289e,1,Contentor semi-enterrado,3000,0.5,Bom,,1,Não,Não,37.135279,-8.553084,1.0,0.5,1500.0
+370,bea7c414,Portimão,2021-07-07,5,10994752,1,Contentor semi-enterrado,3000,0.0,Bom,"Não recolhido, vazio",0,Não,Não,37.134987,-8.551333,0.0,0.0,0.0
+371,7cd45db6,Portimão,2021-07-07,8,857c8d4f,1,Rectangular c/ rodas,1000,0.25,Bom,"Contentor isolado só uma vivenda, parece ser só com vidros",1,Não,Não,37.166494,-8.577673,1.0,0.25,250.0
+372,d5b4597d,Portimão,2021-07-07,5,1f89ec8d,2,Contentor semi-enterrado,3000,0.75,Bom,Recolheram 1,1,Não,Não,37.134914,-8.54826,0.5,0.375,2250.0
+373,a26384c6,Portimão,2021-07-07,8,ae7854d8,1,Rectangular c/ rodas,1000,0.25,Razoável,Não recolhido,0,Não,Não,37.16161,-8.592282,0.0,0.0,0.0
+374,2f991522,Portimão,2021-07-07,5,88cb727d,2,Contentor semi-enterrado,3000,0.75,Bom,Recolheram 1,1,Não,Não,37.135083,-8.547014,0.5,0.375,2250.0
+375,31cda574,Portimão,2021-07-07,8,e5177f26,2,Rectangular c/ rodas,800,0.75,Bom,"1 cheio, 1 a 75%",2,Não,Não,37.162492,-8.592916,1.0,0.75,1200.0
+376,a8481949,Portimão,2021-07-07,5,4777e76b,4,Rectangular c/ rodas,1000,1.0,Bom,"2 a 100, 2 a 50",4,Não,Não,37.136157,-8.547052,1.0,1.0,4000.0
+377,ba5d21b8,Portimão,2021-07-07,8,484d4328,1,Rectangular c/ rodas,1000,0.5,Bom,,1,Não,Não,37.161402,-8.593892,1.0,0.5,500.0
+378,2b37e7f9,Portimão,2021-07-07,8,67be45e3,2,Rectangular c/ rodas,1000,0.5,Razoável,Recolha dos dois locais,2,Não,Não,37.160348,-8.600012,1.0,0.5,1000.0
+379,340b3f6a,Portimão,2021-07-07,5,60d2e611,3,Contentor semi-enterrado,3000,1.0,Bom,Recolheram 1 a 100%,1,Não,Não,37.137958,-8.547504,0.3333333333333333,0.3333333333333333,3000.0
+380,ec3a0a43,Portimão,2021-07-07,8,661049bc,1,Rectangular c/ rodas,1000,1.0,Razoável,Sacos no chao,1,Não,Não,37.161923,-8.600401,1.0,1.0,1000.0
+381,5adc112e,Portimão,2021-07-07,8,8fd00438,1,Rectangular c/ rodas,1000,0.75,Bom,,1,Não,Não,37.162965,-8.602814,1.0,0.75,750.0
+382,3cee3873,Portimão,2021-07-07,8,cc7ca385,2,Rectangular c/ rodas,1000,1.0,Bom,,1,Não,Não,37.164834,-8.605378,0.5,0.5,1000.0
+383,62554965,Portimão,2021-07-07,5,1d6aa843,2,Contentor semi-enterrado,3000,1.0,Bom,"Recolheram 1 a 150%, outro a 100%",2,Não,Não,37.139709,-8.547574,1.0,1.0,6000.0
+384,126d21e2,Portimão,2021-07-07,8,756bfcca,1,Rectangular c/ rodas,1000,0.0,Bom,,1,Não,Não,37.165304,-8.606539,1.0,0.0,0.0
+385,5ab00cc8,Portimão,2021-07-07,8,4d8a4caf,1,Rectangular c/ rodas,1000,0.25,Bom,,1,Não,Não,37.165176,-8.603899,1.0,0.25,250.0
+386,c568bf3d,Portimão,2021-07-07,8,75b01be2,1,Rectangular c/ rodas,1000,0.25,Razoável,,1,Não,Não,37.164348,-8.603636,1.0,0.25,250.0
+387,85c88987,Portimão,2021-07-07,5,1ebc6963,3,Rectangular c/ rodas,1000,1.0,Bom,"Recolheram 2, 1 a 100, 1 a 50",2,Não,Não,37.138839,-8.547913,0.6666666666666666,0.6666666666666666,2000.0
+388,f403b744,Portimão,2021-07-07,8,55668ef8,2,Rectangular c/ rodas,1000,1.0,Razoável,"1 a 100%, outro 25%",2,Não,Não,37.163621,-8.602901,1.0,1.0,2000.0
+389,4271700a,Portimão,2021-07-07,5,a3d51013,2,Contentor semi-enterrado,3000,0.75,Bom,Dois a 75,2,Não,Não,37.137464,-8.548452,1.0,0.75,4500.0
+390,f4c6c36c,Portimão,2021-07-07,8,d630c63a,2,Rectangular c/ rodas,1000,0.5,Razoável,,2,Não,Não,37.16415,-8.602039,1.0,0.5,1000.0
+391,9b0136e9,Portimão,2021-07-07,8,03c1c937,3,Rectangular c/ rodas,1000,0.75,Bom,Recolha de um cheio de areia/brita,1,Não,Não,37.165569,-8.602014,0.3333333333333333,0.25,750.0
+392,c5636a66,Portimão,2021-07-07,8,48d7db77,3,Rectangular c/ rodas,1000,0.5,Bom,Recolheram 2,2,Não,Não,37.164495,-8.602911,0.6666666666666666,0.3333333333333333,1000.0
+393,c33bef0e,Portimão,2021-07-07,5,39ec352b,3,Contentor semi-enterrado,3000,1.0,Bom,"Recolheram 2, 1 a 100, 1 a 75",2,Não,Não,37.13685,-8.547896,0.6666666666666666,0.6666666666666666,6000.0
+394,3041c967,Portimão,2021-07-07,8,37dafe2a,2,Contentor semi-enterrado,3000,0.75,Bom,"Contentor 75% recebido, segundo contentor por recolher",1,Não,Não,37.164038,-8.601533,0.5,0.375,2250.0
+395,c94ca9ec,Portimão,2021-07-07,5,b39e4855,2,Rectangular c/ rodas,1000,1.0,Bom,"Recolheram 2,",2,Não,Não,37.137261,-8.551442,1.0,1.0,2000.0
+396,e152e6e5,Portimão,2021-07-07,8,c162cdb1,2,Rectangular c/ rodas,1000,1.0,Bom,Parque caravanas,2,Não,Não,37.166,-8.601162,1.0,1.0,2000.0
+397,92e172ab,Portimão,2021-07-07,5,6416c226,2,Contentor semi-enterrado,3000,0.5,Bom,Recolheram 1,1,Não,Não,37.13662,-8.553593,0.5,0.25,1500.0
+398,2f276110,Portimão,2021-07-07,8,31c394bc,3,Rectangular c/ rodas,1000,1.0,Bom,,3,Não,Não,37.163041,-8.600343,1.0,1.0,3000.0
+399,e0c11460,Portimão,2021-07-07,5,b3f3a94b,1,Contentor semi-enterrado,3000,1.0,Bom,,1,Não,Não,37.135494,-8.558887,1.0,1.0,3000.0
+400,d9db9633,Portimão,2021-07-07,5,b41ca428,2,Rectangular c/ rodas,1000,0.5,Bom,Recolheram 1,2,Não,Não,37.13545,-8.559038,1.0,0.5,1000.0
+401,235d2f0a,Portimão,2021-07-07,8,e132f7df,3,Rectangular c/ rodas,800,0.75,Razoável,Recolha dos 3 contentores - um deles 100%,3,Não,Não,37.162131,-8.602087,1.0,0.75,1800.0
+402,d1a51dff,Portimão,2021-07-07,8,494474ed,2,Rectangular c/ rodas,1000,0.5,Bom,,2,Não,Não,37.160263,-8.601925,1.0,0.5,1000.0
+403,eae5fda3,Portimão,2021-07-07,8,7a7d80c3,1,Rectangular c/ rodas,1000,0.5,Bom,,1,Não,Não,37.157456,-8.606135,1.0,0.5,500.0
+404,0a895ffd,Portimão,2021-07-07,8,4cff3407,2,Rectangular c/ rodas,1000,0.5,Bom,,2,Não,Não,37.153774,-8.613453,1.0,0.5,1000.0
+405,e9f2fca9,Portimão,2021-07-07,8,0787092b,1,Rectangular c/ rodas,1000,0.75,Bom,,1,Não,Não,37.154345,-8.60977,1.0,0.75,750.0
+406,baba112f,Portimão,2021-07-07,8,9804639a,2,Rectangular c/ rodas,1000,0.5,Razoável,,2,Não,Não,37.15725,-8.625508,1.0,0.5,1000.0
+407,c9ea8fd3,Portimão,2021-07-07,8,06339a62,1,Rectangular c/ rodas,1000,0.75,Bom,,1,Não,Não,37.156576,-8.6267,1.0,0.75,750.0
+408,d0d0f9c8,Portimão,2021-07-07,8,d8f5d50c,2,Contentor semi-enterrado,3000,0.5,Razoável,Um a 50% outro 75%,2,Não,Não,37.153532,-8.623061,1.0,0.5,3000.0
+409,721225bb,Portimão,2021-07-07,8,4559aa2f,1,Rectangular c/ rodas,1000,0.25,Razoável,,1,Não,Não,37.157281,-8.629651,1.0,0.25,250.0
+410,0268d964,Portimão,2021-07-07,8,aaf9f431,2,Rectangular c/ rodas,1000,0.75,Razoável,Um cheio recolhido,2,Não,Não,37.158663,-8.631673,1.0,0.75,1500.0
+411,d03d55fe,Portimão,2021-07-07,8,97712c19,1,Rectangular c/ rodas,1000,0.5,Razoável,,1,Não,Não,37.162608,-8.631369,1.0,0.5,500.0
+412,fd8bf186,Portimão,2021-07-08,8,8ba6b2c7,1,Rectangular c/ rodas,1000,1.0,Razoável,"Um cheio, segundo a metade",1,Não,Não,37.1635,-8.633147,1.0,1.0,1000.0
+413,328b2df5,Portimão,2021-07-08,5,92ba92e2,1,Contentor semi-enterrado,3000,0.0,Bom,,1,Não,Não,37.132808,-8.552119,1.0,0.0,0.0
+414,3a0bf616,Portimão,2021-07-08,5,b20eb812,2,Rectangular c/ rodas,1000,1.0,Bom,"Recolheram 2, 1 a 100, 1 a 50",2,Não,Não,37.131114,-8.551737,1.0,1.0,2000.0
+415,3d47e029,Portimão,2021-07-08,8,e0da6196,4,Rectangular c/ rodas,1000,1.0,Bom,"Cheios de terras, resíduos sem ser acondicionados,parece residuos de construção",4,Sim,Sim,37.16024,-8.632388,1.0,1.0,4000.0
+416,8e9d17ce,Portimão,2021-07-08,5,a8d12faa,2,Rectangular c/ rodas,1000,0.5,Bom,"Recolheram 1, a 50%",1,Não,Não,37.129623,-8.55089,0.5,0.25,500.0
+417,af75dfb6,Portimão,2021-07-08,5,a943a919,1,Rectangular c/ rodas,1000,0.5,Bom,,1,Não,Não,37.130007,-8.554368,1.0,0.5,500.0
+418,3c862db8,Portimão,2021-07-08,8,318c2464,1,Rectangular c/ rodas,1000,0.25,Razoável,Não recolhido,0,Não,Não,37.152898,-8.622696,0.0,0.0,0.0
+419,b261e96c,Portimão,2021-07-08,5,63cf67d9,2,Rectangular c/ rodas,1000,0.5,Bom,Recolheram 1,1,Não,Não,37.128955,-8.556137,0.5,0.25,500.0
+420,2b8f46d5,Portimão,2021-07-08,8,5824f859,1,Rectangular c/ rodas,1000,1.0,Bom,Recolhido,1,Não,Não,37.152574,-8.619007,1.0,1.0,1000.0
+421,9469387d,Portimão,2021-07-08,8,76b5b964,1,Rectangular c/ rodas,1000,0.75,Razoável,,1,Não,Não,37.152858,-8.616512,1.0,0.75,750.0
+422,ae228fe3,Portimão,2021-07-08,5,6f080e0a,2,Rectangular c/ rodas,1000,0.5,Bom,,2,Não,Não,37.127712,-8.560425,1.0,0.5,1000.0
+423,0c9ae744,Portimão,2021-07-08,8,cfc3bfaa,1,Rectangular c/ rodas,1000,0.25,Razoável,,1,Não,Não,37.154281,-8.613867,1.0,0.25,250.0
+424,f7764289,Portimão,2021-07-08,8,be709fd1,2,Rectangular c/ rodas,1000,0.5,Bom,"Recolhido 1 a 50%, outro 25 por recolher",1,Não,Não,37.156528,-8.614402,0.5,0.25,500.0
+425,10354f80,Portimão,2021-07-08,5,c00354e7,3,Contentor semi-enterrado,3000,0.0,Bom,,0,Não,Não,37.123767,-8.558839,0.0,0.0,0.0
+426,7fcc1148,Portimão,2021-07-08,5,c9f4f2d0,2,Contentor semi-enterrado,3000,0.0,Bom,,0,Não,Não,37.123885,-8.561973,0.0,0.0,0.0
+427,0a43a94e,Portimão,2021-07-08,8,806c78d4,2,Contentor semi-enterrado,3000,0.5,Bom,"Recolheu 1- 50%, e ficou 1 de 28%",1,Não,Não,37.157874,-8.613775,0.5,0.25,1500.0
+428,9e7eea45,Portimão,2021-07-08,5,196db04a,1,Rectangular c/ rodas,1000,0.75,Bom,,1,Não,Não,37.123571,-8.563277,1.0,0.75,750.0
+429,4a223071,Portimão,2021-07-08,5,a53268f8,3,Contentor semi-enterrado,3000,0.0,Bom,Um está fechado temporariamente,2,Não,Não,37.124765,-8.563982,0.6666666666666666,0.0,0.0
+430,de86c26d,Portimão,2021-07-08,8,ed6603b9,2,Contentor semi-enterrado,3000,0.75,Bom,Verdes e terra,2,Não,Não,37.160697,-8.613223,1.0,0.75,4500.0
+431,4aae9239,Portimão,2021-07-08,8,c08ef19f,1,Rectangular c/ rodas,1000,0.5,Razoável,,1,Não,Não,37.162831,-8.611981,1.0,0.5,500.0
+432,4564876a,Portimão,2021-07-08,8,a6f2a5a1,1,Rectangular c/ rodas,1000,1.0,Bom,Fim de zona,1,Não,Não,37.164335,-8.610283,1.0,1.0,1000.0
+433,67a35bc4,Portimão,2021-07-08,5,22f93e77,12,Rectangular c/ rodas,800,1.0,Bom,Recolheram 6 a 75%,6,Não,Não,37.126378,-8.564024,0.5,0.5,4800.0
+434,a6912620,Portimão,2021-07-08,5,6d8f3d36,4,Contentor semi-enterrado,3000,0.0,Bom,Dois encerrados temporariamente,2,Não,Não,37.125479,-8.565903,0.5,0.0,0.0
+435,57d74d27,Portimão,2021-07-08,8,0aa614e7,2,Rectangular c/ rodas,1000,1.0,Razoável,"Um cheio, outro 25% e estão por baixo de uma ponte.",2,Não,Não,37.178661,-8.611855,1.0,1.0,2000.0
+436,0efaa897,Portimão,2021-07-08,5,815b5ba5,2,Rectangular c/ rodas,1000,0.0,Bom,,0,Não,Não,37.130377,-8.564781,0.0,0.0,0.0
+437,b9c834bc,Portimão,2021-07-08,8,52154f0e,1,Rectangular c/ rodas,1000,0.5,Bom,,1,Não,Não,37.173665,-8.612483,1.0,0.5,500.0
+438,74b2bd31,Portimão,2021-07-08,5,93abc5b0,4,Rectangular c/ rodas,800,0.5,Bom,"Recolheram 2, ambos a 50",2,Não,Não,37.130123,-8.565715,0.5,0.25,800.0
+439,3b3a19a6,Portimão,2021-07-08,5,248e910e,2,Contentor semi-enterrado,3000,0.0,Razoável,Não recolhido. Fechados por erro de outra equipa?,0,Não,Não,37.138772,-8.566254,0.0,0.0,0.0
+440,b25ce1a0,Portimão,2021-07-08,8,ce6b0d38,1,Contentor semi-enterrado,3000,0.5,Bom,,1,Não,Não,37.163867,-8.611315,1.0,0.5,1500.0
+441,584b9669,Portimão,2021-07-08,5,28ca3d42,2,Contentor semi-enterrado,3000,0.0,Bom,,0,Não,Não,37.13891,-8.567646,0.0,0.0,0.0
+442,1b999d4a,Portimão,2021-07-08,8,c058fb8e,1,Rectangular c/ rodas,1000,1.0,Mau,Tampa partida,1,Não,Não,37.163814,-8.614879,1.0,1.0,1000.0
+443,75c852b9,Portimão,2021-07-08,5,440e25c5,2,Contentor semi-enterrado,3000,0.0,Bom,,0,Não,Não,37.139789,-8.566721,0.0,0.0,0.0
+444,c71e703f,Portimão,2021-07-08,5,b6ea4ad2,2,Contentor semi-enterrado,3000,0.0,Bom,,0,Não,Não,37.138847,-8.564737,0.0,0.0,0.0
+445,af4fc16c,Portimão,2021-07-08,8,4f03b846,1,Rectangular c/ rodas,1000,0.5,Razoável,,1,Não,Não,37.167501,-8.61879,1.0,0.5,500.0
+446,414ce2a6,Portimão,2021-07-08,5,30099c37,2,Contentor semi-enterrado,3000,0.0,Bom,,0,Não,Não,37.137713,-8.563675,0.0,0.0,0.0
+447,3057e30a,Portimão,2021-07-08,5,7f764d6e,2,Contentor semi-enterrado,3000,0.0,Bom,,0,Não,Não,37.138302,-8.56263,0.0,0.0,0.0
+448,3a649cc3,Portimão,2021-07-08,5,71b66e9c,2,Contentor semi-enterrado,3000,0.0,Bom,,0,Não,Não,37.139256,-8.563309,0.0,0.0,0.0
+449,3ce9d359,Portimão,2021-07-08,8,e88e8123,4,Rectangular c/ rodas,1000,0.75,Bom,4 contentores a entrada da cm 1052,4,Não,Não,37.174988,-8.626994,1.0,0.75,3000.0
+450,a97f2ba7,Portimão,2021-07-08,5,ac75bc26,2,Contentor semi-enterrado,3000,0.0,Bom,,0,Não,Não,37.139141,-8.57122,0.0,0.0,0.0
+451,f9566503,Portimão,2021-07-08,8,c2059748,2,Rectangular c/ rodas,1000,0.5,Bom,,2,Não,Não,37.161216,-8.614323,1.0,0.5,1000.0
+452,7d628b2d,Portimão,2021-07-08,5,af20ea8d,1,Rectangular c/ rodas,1000,0.0,Bom,,0,Não,Não,37.140174,-8.577167,0.0,0.0,0.0
+453,4ef4f205,Portimão,2021-07-08,8,a617b14c,2,Contentor semi-enterrado,1000,0.5,Bom,,2,Não,Não,37.160721,-8.614958,1.0,0.5,1000.0
+454,e6d62a0c,Portimão,2021-07-08,5,55056260,1,Rectangular c/ rodas,1000,0.5,Bom,,1,Não,Não,37.140709,-8.574665,1.0,0.5,500.0
+455,04f310b3,Portimão,2021-07-08,8,1975678b,2,Rectangular c/ rodas,1000,1.0,Bom,,2,Não,Não,37.160377,-8.615341,1.0,1.0,2000.0
+456,c063e95e,Portimão,2021-07-08,8,b898d51d,2,Recipiente redondo,1000,0.5,Razoável,,2,Não,Não,37.159362,-8.61548,1.0,0.5,1000.0
+457,af577872,Portimão,2021-07-08,5,fc395105,2,Contentor semi-enterrado,3000,0.0,Bom,,0,Não,Não,37.136884,-8.568039,0.0,0.0,0.0
+458,fe96706c,Portimão,2021-07-08,8,b9b82f2c,2,Contentor semi-enterrado,3000,0.5,Bom,"Recolhido 1 a 50%, por recolher 25%",1,Não,Não,37.159072,-8.6171,0.5,0.25,1500.0
+459,c119c59f,Portimão,2021-07-08,8,a83b88ff,1,Contentor semi-enterrado,3000,0.75,Razoável,"Algo degradado, mas intacto",1,Não,Não,37.156923,-8.616325,1.0,0.75,2250.0
+460,e1b780a9,Portimão,2021-07-08,8,1980048c,2,Rectangular c/ rodas,1000,1.0,Bom,"Cheio, mas com maioria  seletivos",2,Não,Não,37.160214,-8.612764,1.0,1.0,2000.0
+461,df1d456c,Portimão,2021-07-08,8,a44a0454,1,Rectangular c/ rodas,1000,0.25,Bom,,1,Não,Não,37.160319,-8.611807,1.0,0.25,250.0
+462,24d5602e,Portimão,2021-07-08,8,8eccb31b,1,Rectangular c/ rodas,1000,0.5,Razoável,,1,Não,Não,37.159111,-8.611311,1.0,0.5,500.0
+463,c10f5722,Portimão,2021-07-08,8,e6a13409,2,Contentor semi-enterrado,3000,0.5,Razoável,Recolhido apenas 1 a 50%,1,Não,Não,37.156329,-8.613524,0.5,0.25,1500.0
+464,62f54933,Portimão,2021-07-08,8,18a024a2,4,Rectangular c/ rodas,1000,1.0,Razoável,"Recolheram um apenas, restantes a 25%",1,Não,Não,37.161582,-8.585758,0.25,0.25,1000.0
+465,a31f0e0f,Portimão,2021-07-08,8,0db57b68,2,Rectangular c/ rodas,800,0.5,Razoável,Recolhido 1,1,Não,Não,37.160936,-8.578503,0.5,0.25,400.0
+466,bb6a049d,Portimão,2021-07-08,8,10ba5e32,6,Rectangular c/ rodas,800,0.75,Bom,Recolhido 1 e restantes a 25%,1,Não,Não,37.161063,-8.579446,0.16666666666666666,0.125,600.0
+467,bb6a049d,Portimão,2021-07-08,8,54b3dfc4,8,Rectangular c/ rodas,1000,0.75,Bom,Recolhos 2 a 75%,2,Não,Não,37.161063,-8.579446,0.25,0.1875,1500.0
+468,c1ad7c73,Portimão,2021-07-08,8,5313ebff,1,Rectangular c/ rodas,1000,0.75,Bom,,1,Não,Não,37.161654,-8.574758,1.0,0.75,750.0
+469,42a2fc5f,Portimão,2021-07-08,9,a006005a,1,Rectangular c/ rodas,1000,0.75,Bom,Oficina,1,Não,Sim,37.155369,-8.545691,1.0,0.75,750.0
+470,e13e4ff5,Portimão,2021-07-08,9,bcd3c16e,1,Contentor semi-enterrado,1000,0.5,Bom,,1,Não,Não,37.156002,-8.546151,1.0,0.5,500.0
+471,a689b962,Portimão,2021-07-08,9,9dbecbb6,1,Rectangular c/ rodas,1000,0.25,Bom,,1,Não,Não,37.157453,-8.546995,1.0,0.25,250.0
+472,60f07e43,Portimão,2021-07-08,9,482f4905,2,Rectangular c/ rodas,1000,0.25,Bom,"Recolha de um a 25%, um zero por recolver",1,Não,Não,37.159198,-8.546922,0.5,0.125,250.0
+473,b64d3409,Portimão,2021-07-08,9,ed51d7a2,2,Rectangular c/ rodas,1000,0.5,Bom,Por recolher um 0%,1,Não,Não,37.165569,-8.549867,0.5,0.25,500.0
+474,039411ce,Portimão,2021-07-08,9,c029d664,1,Rectangular c/ rodas,1000,0.25,Bom,,1,Não,Não,37.167728,-8.551821,1.0,0.25,250.0
+475,054ab1e5,Portimão,2021-07-08,9,141c6442,2,Rectangular c/ rodas,1000,1.0,Bom,"Um 100, outro 75",2,Não,Não,37.171046,-8.550841,1.0,1.0,2000.0
+476,39308263,Portimão,2021-07-08,9,e464559a,1,Rectangular c/ rodas,1000,1.0,Bom,Sempre recolhido mesmo que vazio,1,Não,Não,37.172288,-8.550653,1.0,1.0,1000.0
+477,c2e81530,Portimão,2021-07-08,9,ee66ca38,2,Contentor semi-enterrado,3000,1.0,Bom,"Um a 100 %, outro 25",1,Não,Não,37.170377,-8.553232,0.5,0.5,3000.0
+478,8c59ba71,Portimão,2021-07-08,9,3f9345d6,1,Rectangular c/ rodas,1000,0.0,Bom,S recolba,0,Não,Não,37.173306,-8.55199,0.0,0.0,0.0
+479,ddf275f5,Portimão,2021-07-08,9,a41e2d7c,2,Rectangular c/ rodas,1000,0.5,Bom,Ambos recolhidos,2,Não,Não,37.172594,-8.553472,1.0,0.5,1000.0
+480,e8d4ad0f,Portimão,2021-07-08,9,a604d757,1,Rectangular c/ rodas,1000,0.5,Bom,,1,Não,Não,37.172927,-8.554851,1.0,0.5,500.0
+481,e2b84930,Portimão,2021-07-08,9,b6aa3d35,2,Rectangular c/ rodas,1000,0.5,Bom,"Um 50, outro 25",2,Não,Não,37.175924,-8.556535,1.0,0.5,1000.0
+482,f77ba4dd,Portimão,2021-07-08,9,60830d7f,1,Rectangular c/ rodas,1000,0.75,Bom,,1,Não,Não,37.150185,-8.551025,1.0,0.75,750.0
+483,35a86ca8,Portimão,2021-07-08,9,730d8d6f,2,Rectangular c/ rodas,3000,1.0,Bom,Um 100% e outro entupido com 0%,1,Não,Não,37.147,-8.547323,0.5,0.5,3000.0
+484,3b89b1aa,Portimão,2021-07-08,9,825d08ea,1,Contentor semi-enterrado,3000,0.75,Bom,0.75,1,Não,Não,37.147277,-8.545084,1.0,0.75,2250.0
+485,76e8834f,Portimão,2021-07-08,9,b86de41e,3,Contentor semi-enterrado,3000,0.75,Bom,Churrasqueira de vez em quando coloca aqui cinzas,3,Não,Sim,37.146586,-8.54381,1.0,0.75,6750.0
+486,f2b31e4f,Portimão,2021-07-08,9,b9a2685d,3,Contentor semi-enterrado,3000,0.5,Bom,"Recolhidos 3 contentores a 50%, resíduos incluem tapetes, almofadas, e outros resíduos produzidos esporadicamente",3,Sim,Não,37.146086,-8.545643,1.0,0.5,4500.0
+487,50a9bab4,Portimão,2021-07-08,9,6da6a3f3,1,Contentor semi-enterrado,3000,1.0,Bom,Regularmente cheio de serradura,1,Não,Sim,37.146142,-8.547349,1.0,1.0,3000.0
+488,4ca44709,Portimão,2021-07-08,9,60fd85b2,2,Rectangular c/ rodas,1000,0.5,Bom,"Um recolhido, segundo vaxio",1,Não,Não,37.151399,-8.554039,0.5,0.25,500.0
+489,ee2d7819,Portimão,2021-07-08,9,50786935,3,Rectangular c/ rodas,1000,1.0,Razoável,Recolhido um cheio,1,Não,Não,37.15126,-8.553549,0.3333333333333333,0.3333333333333333,1000.0
+490,59b9c433,Portimão,2021-07-08,9,ded71095,4,Rectangular c/ rodas,1000,1.0,Razoável,"2 cheios, 1 25% outro vazio",2,Não,Não,37.15058,-8.553273,0.5,0.5,2000.0
+491,ae0c4fe9,Portimão,2021-07-08,9,58d470b5,3,Rectangular c/ rodas,1000,0.75,Razoável,Recolhido um cheio,3,Não,Não,37.150842,-8.553861,1.0,0.75,2250.0
+492,99e6bd1e,Portimão,2021-07-08,9,2b696eab,1,Contentor semi-enterrado,3000,0.25,Razoável,,1,Não,Não,37.150143,-8.552478,1.0,0.25,750.0
+493,6200976f,Portimão,2021-07-08,9,d1c68ede,1,Contentor semi-enterrado,3000,0.0,Bom,Ilha não a uso,0,Não,Não,37.148731,-8.552808,0.0,0.0,0.0
+494,35e7a8cf,Portimão,2021-07-08,9,950c2892,2,Contentor semi-enterrado,3000,0.5,Bom,"Rec 75%, outro por rec",1,Não,Não,37.148664,-8.551218,0.5,0.25,1500.0
+495,cb52b50c,Portimão,2021-07-08,9,babda7f0,2,Rectangular c/ rodas,3000,0.75,Bom,"Um a 75%, outro a 25%",1,Não,Não,37.147416,-8.551487,0.5,0.375,2250.0
+496,66d4efaf,Portimão,2021-07-08,9,bcffe5ef,2,Contentor semi-enterrado,3000,0.75,Bom,75% recolha do primeiro e outro de 50%,1,Não,Não,37.14692,-8.549929,0.5,0.375,2250.0
+497,dd3f827c,Portimão,2021-07-08,9,2b5642ac,2,Contentor semi-enterrado,3000,1.0,Razoável,"Recolhido um contentor 100%, outro 25%",1,Não,Não,37.144635,-8.54829,0.5,0.5,3000.0
+498,4b53424e,Portimão,2021-07-08,9,aab3d253,4,Rectangular c/ rodas,1000,0.75,Razoável,"Contentores do lar de idosos, 2 a 75 %, 2 a 25%, contentores pouco mantidos no interior",2,Não,Sim,37.144333,-8.547176,0.5,0.375,1500.0
+499,d6f7d0b7,Portimão,2021-07-08,9,855c48e0,3,Rectangular c/ rodas,3000,0.75,Bom,"Recolhidos dois, um por recolher a 75%",2,Não,Não,37.143652,-8.544572,0.6666666666666666,0.5,4500.0
+500,143b7e2a,Portimão,2021-07-08,9,bfc898ed,2,Contentor semi-enterrado,3000,0.75,Bom,Colaboradores pensam que deveria haver outro contentor,2,Não,Não,37.143716,-8.545947,1.0,0.75,4500.0
+501,adb156ee,Portimão,2021-07-08,9,6464d91d,3,Contentor semi-enterrado,3000,0.5,Bom,"Rec 1 contentor, outro vazio e outro por estrear",1,Não,Não,37.142681,-8.545922,0.3333333333333333,0.16666666666666666,1500.0
+502,769c0fe3,Portimão,2021-07-08,9,a4a3df94,3,Contentor semi-enterrado,3000,0.5,Bom,"Recolhido um a 75%, outros sem nada para recolher, ontem recolhido tudo",1,Não,Não,37.146096,-8.541369,0.3333333333333333,0.16666666666666666,1500.0
+503,0c82c6e5,Portimão,2021-07-08,9,5dd1e246,3,Contentor semi-enterrado,3000,0.75,Bom,"Recolhidos 3 a 75%, zona residencial",3,Não,Não,37.144145,-8.542296,1.0,0.75,6750.0
+504,cec06cf7,Portimão,2021-07-08,9,57cb735b,2,Contentor semi-enterrado,3000,0.5,Bom,Tampa plástico,2,Não,Não,37.143513,-8.543107,1.0,0.5,3000.0
+505,a03f3b53,Portimão,2021-07-08,9,7ffccb46,2,Contentor semi-enterrado,3000,0.5,Bom,"Recolhido um a 50%, uma por recolher",1,Não,Não,37.142024,-8.544103,0.5,0.25,1500.0
+506,8ec3c8d7,Portimão,2021-07-08,9,7906c8bd,2,Contentor semi-enterrado,3000,0.75,Mau,Contentor vazio por recolher com lixo em cima,1,Sim,Não,37.14128,-8.544764,0.5,0.375,2250.0
+507,7bbe3b8b,Portimão,2021-07-08,9,124ff54e,1,Rectangular c/ rodas,1000,0.75,Bom,,1,Não,Não,37.141677,-8.542834,1.0,0.75,750.0
+508,411016d4,Portimão,2021-07-08,9,9ec3b9ef,5,Rectangular c/ rodas,1000,0.75,Bom,Recolhidos 3 cheios e 2 vazios,3,Não,Não,37.141781,-8.542613,0.6,0.44999999999999996,2250.0
+509,281b313b,Portimão,2021-07-08,9,0222eb07,2,Contentor semi-enterrado,3000,0.25,Bom,Recolhidos a 25%,2,Não,Não,37.142867,-8.541127,1.0,0.25,1500.0
+510,1be7ab1f,Portimão,2021-07-08,9,0a45b1ac,2,Contentor semi-enterrado,3000,0.75,Bom,75% ambos,2,Não,Não,37.146183,-8.54075,1.0,0.75,4500.0
+511,ea49239e,Portimão,2021-07-08,9,b2876e8d,3,Contentor semi-enterrado,3000,0.5,Razoável,Recolhidos dois contentores,2,Não,Não,37.146842,-8.539721,0.6666666666666666,0.3333333333333333,3000.0
+512,fa8995c7,Portimão,2021-07-08,9,401b8cd9,2,Contentor semi-enterrado,3000,0.75,Bom,"Recolhido um a 75%, outro por recolher",1,Não,Não,37.146533,-8.537954,0.5,0.375,2250.0
+513,4f573f95,Portimão,2021-07-08,9,5a42e45f,1,Contentor semi-enterrado,3000,0.25,Bom,,1,Não,Não,37.147708,-8.538812,1.0,0.25,750.0
+514,6435fb10,Portimão,2021-07-08,9,b36427e3,3,Contentor semi-enterrado,3000,0.5,Razoável,"Recolhido 1 a 50%, por recolher 2 a 25 %",1,Não,Não,37.145605,-8.536915,0.3333333333333333,0.16666666666666666,1500.0
+515,2014bd4f,Portimão,2021-07-08,9,d07790b7,2,Rectangular c/ rodas,1000,0.5,Razoável,Rec 1,1,Não,Não,37.145873,-8.535362,0.5,0.25,500.0
+516,a4530ba6,Portimão,2021-07-08,9,bc05a54e,2,Rectangular c/ rodas,1000,0.25,Bom,Recolhido 1 de 2 - hospital campanha,1,Não,Não,37.145841,-8.535024,0.5,0.125,250.0
+517,0bd15a88,Portimão,2021-07-08,9,f157f5df,3,Sacos de lixo,1000,0.25,Bom,Recolhido 1 800l,1,Não,Não,37.144884,-8.534258,0.3333333333333333,0.08333333333333333,250.0
+518,f0dd87ad,Portimão,2021-07-08,9,4fe58008,1,Rectangular c/ rodas,1000,0.25,Bom,Recolhido apenas 1 a 25%,1,Não,Não,37.145602,-8.533794,1.0,0.25,250.0
+519,c6bc3005,Portimão,2021-07-08,9,681f8faf,3,Rectangular c/ rodas,1000,0.0,Bom,Vaxioa,0,Não,Não,37.145282,-8.532734,0.0,0.0,0.0
+520,1c92db20,Portimão,2021-07-08,9,57f691d1,4,Rectangular c/ rodas,1000,0.5,Bom,"Recolha de 1 a 50% e outro a 25%, dois a 0",2,Não,Não,37.146326,-8.53381,0.5,0.25,1000.0
+521,5ec708e2,Portimão,2021-07-08,9,14dfb2b4,1,Rectangular c/ rodas,1000,0.5,Razoável,,1,Não,Não,37.1472,-8.535898,1.0,0.5,500.0
+522,956c81c6,Portimão,2021-07-08,9,28335666,1,Rectangular c/ rodas,120,0.25,Bom,,1,Não,Não,37.147448,-8.53606,1.0,0.25,30.0
+523,d98c0081,Portimão,2021-07-08,9,9c1de334,2,Rectangular c/ rodas,1000,0.5,Bom,,2,Não,Não,37.147479,-8.536105,1.0,0.5,1000.0
+524,976e701f,Portimão,2021-07-08,9,6bde9c56,1,Rectangular c/ rodas,1000,0.75,Bom,,1,Não,Não,37.148276,-8.535991,1.0,0.75,750.0
+525,9357f4ad,Portimão,2021-07-08,9,cb09a0e6,2,Rectangular c/ rodas,1000,0.5,Bom,"Recolhido contentor 50, por recolher contentor 0",1,Não,Não,37.148198,-8.535246,0.5,0.25,500.0
+526,a1dbf1f0,Portimão,2021-07-08,9,2aec892c,3,Rectangular c/ rodas,1000,1.0,Bom,"75, 50, 100 todos recolhidos",3,Não,Não,37.147726,-8.535099,1.0,1.0,3000.0
+527,a03793b0,Portimão,2021-07-08,9,a31f969d,2,Contentor semi-enterrado,3000,0.5,Bom,"Recolhido apenas 1, outro vazio",1,Não,Não,37.148292,-8.536747,0.5,0.25,1500.0
+528,adf2fe92,Portimão,2021-07-08,9,b44b824c,1,Rectangular c/ rodas,3000,0.5,Bom,Com colchão colocado na Relva,1,Sim,Não,37.149036,-8.537586,1.0,0.5,1500.0
+529,799dbef6,Portimão,2021-07-08,9,e9a6c561,1,Rectangular c/ rodas,1000,0.75,Bom,,1,Não,Não,37.149899,-8.539353,1.0,0.75,750.0
+530,34af414d,Portimão,2021-07-08,9,8c0f4dd6,2,Rectangular c/ rodas,1000,1.0,Bom,Recolha de dois a 50%,2,Não,Não,37.149962,-8.53633,1.0,1.0,2000.0
+531,d9ed6758,Portimão,2021-07-08,9,324b81da,1,Rectangular c/ rodas,1000,1.0,Bom,,1,Não,Não,37.153591,-8.534324,1.0,1.0,1000.0
+532,8a014565,Portimão,2021-07-08,9,da70184b,1,Recipiente redondo,3000,0.25,Bom,,1,Não,Não,37.154074,-8.533358,1.0,0.25,750.0
+533,8ca0c4ce,Portimão,2021-07-08,9,fbb74976,1,Rectangular c/ rodas,1000,0.25,Bom,,1,Não,Não,37.154317,-8.533548,1.0,0.25,250.0
+534,c71da491,Portimão,2021-07-08,9,b6673fdd,1,Rectangular c/ rodas,1000,0.25,Razoável,,1,Não,Não,37.152203,-8.524663,1.0,0.25,250.0
+535,69eb8c8f,Portimão,2021-07-08,9,dcb27c42,2,Rectangular c/ rodas,1000,0.25,Bom,Recolhidos os dois a 25%,2,Não,Não,37.153354,-8.525803,1.0,0.25,500.0
+536,f429a2ad,Portimão,2021-07-08,9,bed3218e,1,Contentor semi-enterrado,1000,0.25,Bom,,1,Não,Não,37.155356,-8.530098,1.0,0.25,250.0
+537,e7f225cf,Portimão,2021-07-08,9,15bdf545,2,Rectangular c/ rodas,1000,1.0,Bom,Um cheio e outro vazio,1,Não,Não,37.157451,-8.526301,0.5,0.5,1000.0
+538,e660461c,Portimão,2021-07-08,9,04064f87,1,Rectangular c/ rodas,1000,1.0,Bom,,1,Não,Não,37.157592,-8.52542,1.0,1.0,1000.0
+539,4e7e3d93,Portimão,2021-07-08,9,d1b8c0f2,2,Rectangular c/ rodas,1000,1.0,Bom,Dois cheios,2,Não,Não,37.157333,-8.5258,1.0,1.0,2000.0
+540,3335cc70,Portimão,2021-07-08,9,9b8ec66e,1,Rectangular c/ rodas,1000,0.5,Bom,,1,Não,Não,37.156451,-8.525971,1.0,0.5,500.0
+541,6a94030e,Portimão,2021-07-08,9,ba8e8e3f,1,Rectangular c/ rodas,120,0.0,Bom,,1,Não,Não,37.156352,-8.527018,1.0,0.0,0.0
+542,89d04195,Portimão,2021-07-08,9,1e7987fd,2,Rectangular c/ rodas,3000,0.5,Bom,Contentor entupido vazio e outro 50%,1,Sim,Não,37.156663,-8.528245,0.5,0.25,1500.0
+543,139ff285,Portimão,2021-07-08,9,db20c28b,1,Rectangular c/ rodas,1000,0.75,Bom,,1,Não,Não,37.162386,-8.533784,1.0,0.75,750.0
+544,b5a22245,Portimão,2021-07-09,1,1eb2f7f3,1,Contentor semi-enterrado,3000,0.5,Bom,,1,Não,Não,37.148107,-8.547763,1.0,0.5,1500.0
+545,56794de0,Portimão,2021-07-09,1,88fa3a7e,1,Rectangular c/ rodas,1000,0.0,Bom,Não recolhido,0,Não,Não,37.148108,-8.547819,0.0,0.0,0.0
+546,e6e96738,Portimão,2021-07-09,1,bca0045d,1,Rectangular c/ rodas,800,0.25,Bom,,1,Não,Não,37.128853,-8.546568,1.0,0.25,200.0
+547,3f5f9624,Portimão,2021-07-09,1,b53d2275,1,Contentor semi-enterrado,1000,0.5,Bom,,1,Não,Não,37.130541,-8.545431,1.0,0.5,500.0
+548,a7328ed7,Portimão,2021-07-09,1,fc8cb521,2,Rectangular c/ rodas,1000,0.5,Bom,Recolheram 1 a 50%,1,Não,Não,37.119344,-8.5507,0.5,0.25,500.0
+549,dd6a47bb,Portimão,2021-07-09,1,af2a3fdd,2,Rectangular c/ rodas,1000,0.5,Bom,Recolheram 1,1,Não,Não,37.119175,-8.550877,0.5,0.25,500.0
+550,1418595b,Portimão,2021-07-09,1,4aa41c0e,2,Contentor semi-enterrado,3000,0.75,Bom,Recolheram 1 a 75%,1,Não,Não,37.119037,-8.547717,0.5,0.375,2250.0
+551,28d00597,Portimão,2021-07-09,1,a53708de,3,Contentor semi-enterrado,3000,0.75,Bom,"Dois a 75%, um a 50%",3,Não,Não,37.119481,-8.544628,1.0,0.75,6750.0
+552,caa9c618,Portimão,2021-07-09,1,7cf777f8,5,Contentor semi-enterrado,3000,0.5,Bom,Recolheram dois a 50%. Restantes a 25% - atipico,2,Não,Não,37.118204,-8.543928,0.4,0.2,3000.0
+553,ab55a5ea,Portimão,2021-07-09,1,50555276,5,Contentor semi-enterrado,3000,1.0,Bom,"1 a 100, 3 a 75, 1 a 50",4,Não,Não,37.119449,-8.540215,0.8,0.8,12000.0
+554,5db29140,Portimão,2021-07-09,1,b28e0060,5,Contentor semi-enterrado,3000,1.0,Bom,Recolheram 1 a 100%. Dois encerrados temporariamente.,1,Não,Não,37.120377,-8.540675,0.2,0.2,3000.0
+555,8c4df43d,Portimão,2021-07-09,1,fff725ae,5,Contentor semi-enterrado,3000,1.0,Bom,"Recolheram 3. Um a 100, um a 75, um a 50%",3,Não,Não,37.119741,-8.541296,0.6,0.6,9000.0
+556,5ec4adb0,Portimão,2021-07-09,1,12ae6ab6,3,Contentor semi-enterrado,3000,0.75,Bom,Recolheram 2,2,Não,Não,37.119611,-8.542592,0.6666666666666666,0.5,4500.0
+557,a79c511f,Portimão,2021-07-09,1,12c090d6,19,Rectangular c/ rodas,800,1.0,Bom,"Recolheram 7, a 100%",7,Não,Não,37.121441,-8.537349,0.3684210526315789,0.3684210526315789,5600.0
+558,2a1ad53f,Portimão,2021-07-09,1,283c80e0,3,Contentor semi-enterrado,3000,0.5,Mau,Recolheram 1,1,Não,Não,37.120888,-8.536227,0.3333333333333333,0.16666666666666666,1500.0
+559,a0a5a0c2,Portimão,2021-07-09,1,642da15e,3,Contentor semi-enterrado,3000,1.0,Bom,Recolheram dois a 100%,2,Não,Não,37.119728,-8.536057,0.6666666666666666,0.6666666666666666,6000.0
+560,c7f89223,Portimão,2021-07-09,1,8f695f8c,4,Contentor semi-enterrado,3000,1.0,Bom,"Recolheram 3. Um a 100, um a 75, um a 50",3,Não,Não,37.119744,-8.537135,0.75,0.75,9000.0
+561,674fecdc,Portimão,2021-07-09,1,2300100c,3,Contentor semi-enterrado,3000,1.0,Razoável,Recolheram duas a 100%. Uma Cuba rachada no topo.,2,Não,Não,37.12051,-8.539052,0.6666666666666666,0.6666666666666666,6000.0
+562,f6cf0379,Portimão,2021-07-09,1,254ee739,2,Contentor semi-enterrado,3000,0.5,Bom,Recolheram 1,1,Não,Não,37.120792,-8.539699,0.5,0.25,1500.0
+563,a769a45c,Portimão,2021-07-09,1,0bdc2201,2,Contentor semi-enterrado,3000,0.75,Bom,,2,Não,Não,37.11877,-8.536434,1.0,0.75,4500.0
+564,efb851df,Portimão,2021-07-09,1,efdc348b,1,Contentor semi-enterrado,3000,0.5,Bom,,1,Não,Não,37.118501,-8.534983,1.0,0.5,1500.0
+565,9b371ba3,Portimão,2021-07-09,1,23a1a04f,4,Contentor semi-enterrado,3000,1.0,Bom,"Recolheram 3, duas a 100, uma a 50",3,Não,Não,37.118259,-8.5335,0.75,0.75,9000.0
+566,0a15ed91,Portimão,2021-07-09,1,de3ca8c9,1,Contentor semi-enterrado,3000,0.0,Bom,,0,Não,Não,37.11707,-8.530672,0.0,0.0,0.0
+567,99d0fa2a,Portimão,2021-07-09,1,a5de8449,1,Contentor semi-enterrado,3000,0.0,Bom,,0,Não,Não,37.117796,-8.530419,0.0,0.0,0.0
+568,70206f52,Portimão,2021-07-09,1,a80fe888,1,Rectangular c/ rodas,1000,0.5,Bom,,1,Não,Não,37.118729,-8.531643,1.0,0.5,500.0
+569,97440fcb,Portimão,2021-07-09,1,a475a766,4,Contentor semi-enterrado,3000,0.5,Bom,Recolheram 1,1,Não,Não,37.118679,-8.53326,0.25,0.125,1500.0
+570,4b70fcff,Portimão,2021-07-09,1,b32d3e23,1,Contentor semi-enterrado,3000,0.5,Bom,,1,Não,Não,37.119702,-8.5338,1.0,0.5,1500.0
+571,77bda249,Portimão,2021-07-09,1,7915a325,7,Contentor semi-enterrado,3000,0.75,Bom,"Recolheram 5. Três a 50, duas a 75. Duas encerradas temporariamente.",5,Não,Não,37.115812,-8.529229,0.7142857142857143,0.5357142857142857,11250.0
+572,74671f39,Portimão,2021-07-09,1,34961ffa,7,Rectangular c/ rodas,800,0.0,Bom,,0,Não,Não,37.119053,-8.529429,0.0,0.0,0.0
+573,fff383e9,Portimão,2021-07-09,1,9d25f776,1,Rectangular c/ rodas,800,1.0,Bom,,1,Não,Não,37.12187,-8.526688,1.0,1.0,800.0
+574,7ea59f9e,Portimão,2021-07-09,1,5f0ea0dc,12,Rectangular c/ rodas,800,0.75,Bom,,12,Não,Não,37.122161,-8.52872,1.0,0.75,7200.0
+575,f38b9200,Portimão,2021-07-09,1,3076f3dc,5,Rectangular c/ rodas,1000,0.5,Bom,Recolheram 3 a 50%,3,Não,Não,37.12368,-8.527517,0.6,0.3,1500.0
+576,5e5e210f,Portimão,2021-07-09,1,a9e7ad82,1,Rectangular c/ rodas,1000,0.75,Bom,,1,Não,Não,37.122948,-8.527113,1.0,0.75,750.0
+577,71d09d2e,Portimão,2021-07-09,1,235688fd,4,Contentor semi-enterrado,3000,0.75,Bom,"Recolheram 3. Uma a 75, duas a 50",3,Não,Não,37.122501,-8.537407,0.75,0.5625,6750.0
+578,d96dd26e,Portimão,2021-07-09,1,e3b6bf32,2,Rectangular c/ rodas,800,1.0,Bom,Recolheram os dois,2,Não,Não,37.122251,-8.539391,1.0,1.0,1600.0
+579,b8e5de87,Portimão,2021-07-09,1,9e1ddd97,1,Contentor semi-enterrado,3000,0.0,Bom,,0,Não,Não,37.122064,-8.539177,0.0,0.0,0.0
+580,8394d074,Portimão,2021-07-09,1,3b40bb0c,2,Contentor semi-enterrado,3000,0.75,Bom,,2,Não,Não,37.121762,-8.539605,1.0,0.75,4500.0
+581,abd195c9,Portimão,2021-07-09,1,7c20048d,2,Rectangular c/ rodas,800,1.0,Bom,,2,Não,Não,37.122113,-8.539181,1.0,1.0,1600.0
+582,6abc4d3d,Portimão,2021-07-09,1,59ae812a,2,Contentor semi-enterrado,3000,0.5,Bom,Recolhido 1,1,Não,Não,37.124403,-8.541682,0.5,0.25,1500.0
+583,8d793574,Portimão,2021-07-09,1,d580257a,3,Contentor semi-enterrado,3000,0.0,Bom,,0,Não,Não,37.124113,-8.5383,0.0,0.0,0.0
+584,fda46a83,Portimão,2021-07-09,1,34df71c3,2,Contentor semi-enterrado,3000,0.5,Bom,Ambas a 50,2,Não,Não,37.122855,-8.53989,1.0,0.5,3000.0
+585,a3c14e00,Portimão,2021-07-09,1,4f8f9523,1,Contentor semi-enterrado,3000,0.75,Razoável,Pintada,1,Não,Não,37.121452,-8.540717,1.0,0.75,2250.0
+586,b989dae4,Portimão,2021-07-09,1,18b4b63f,4,Rectangular c/ rodas,1000,1.0,Bom,Recolheram todos a 100%,4,Não,Não,37.121041,-8.541652,1.0,1.0,4000.0
+587,a3d2ce5b,Portimão,2021-07-09,1,faad28ea,4,Contentor semi-enterrado,3000,1.0,Bom,"Recolheram 3. Um a 100, duas a 75",3,Não,Não,37.120928,-8.544252,0.75,0.75,9000.0
+588,b8ca0afe,Portimão,2021-07-09,1,572a9db8,3,Contentor semi-enterrado,3000,0.0,Bom,,0,Não,Não,37.121495,-8.545202,0.0,0.0,0.0
+589,b8db10ed,Portimão,2021-07-09,1,ac6a2754,3,Contentor semi-enterrado,3000,0.5,Bom,Recolheram 2. Ambos a 50%,2,Não,Não,37.121641,-8.547138,0.6666666666666666,0.3333333333333333,3000.0
+590,b9080146,Portimão,2021-07-09,1,74e1135f,1,Contentor semi-enterrado,3000,0.5,Bom,,1,Não,Não,37.120767,-8.549237,1.0,0.5,1500.0
+591,a6fa971e,Portimão,2021-07-09,1,bbe3be54,2,Contentor semi-enterrado,3000,0.75,Razoável,"Um a 75, um a 50. Rachado",2,Não,Não,37.119974,-8.549106,1.0,0.75,4500.0
+592,3252d584,Portimão,2021-07-09,1,4c2b0d18,3,Contentor semi-enterrado,3000,0.0,Razoável,Um fora de serviço,2,Não,Não,37.120456,-8.547772,0.6666666666666666,0.0,0.0
+593,7e4c40b4,Portimão,2021-07-09,1,31b829b4,3,Contentor semi-enterrado,3000,1.0,Bom,Recolheram 1,1,Não,Não,37.12035,-8.546267,0.3333333333333333,0.3333333333333333,3000.0
+594,b663a16b,Portimão,2021-07-09,1,40e542d1,2,Contentor semi-enterrado,3000,0.0,Bom,,0,Não,Não,37.122844,-8.548213,0.0,0.0,0.0
+595,7a8d67aa,Portimão,2021-07-09,1,c7b11ac9,9,Outro,3000,1.0,Bom,,9,Não,Não,37.123983,-8.534203,1.0,1.0,27000.0

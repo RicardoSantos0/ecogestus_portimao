@@ -9,6 +9,7 @@ import dash
 import dash_core_components as dcc
 import dash_html_components as html
 import dash_bootstrap_components as dbc
+import dash_daq as daq
 import plotly.graph_objects as go
 import dash_auth
 from dash.dependencies import Input, Output, State
@@ -100,7 +101,7 @@ app.layout = dbc.Container([
     #linha 2, Dropdown de selecção : Mapa e outras representações
     dbc.Row([html.Div(),
     html.Br(),
-    html.Label(['Circuitos de Recolha observados'], style={'font-weight': 'bold'}),
+    html.Label(['Seleccione o(s) circuito(s) de recolha que pretende observar:'], style={'font-weight': 'bold'}),
     dcc.Dropdown(id='my_dropdown',
                  options=[
                      {'label': 'Circuito 1', 'value': 1},
@@ -119,7 +120,7 @@ app.layout = dbc.Container([
                  multi=True,  # allow multiple dropdown values to be selected
                  searchable=True,  # allow user-searching of dropdown values
                  search_value='',  # remembers the value searched in dropdown
-                 placeholder='Seleccione o(s) circuito(s) que pretende acompanhar...',  # gray, default text shown when no option is selected
+                 placeholder='Escolha, pelo menos, um circuito de recolha...',  # gray, default text shown when no option is selected
                  clearable=True,  # allow user to removes the selected value
                  style= {'width' : '100%'},  # use dictionary to define CSS styles of your dropdown
                  className='select_box',           #activate separate CSS document in assets folder
@@ -129,7 +130,14 @@ app.layout = dbc.Container([
                 #html.Br()
     # 'session': browser tab is closed
     # 'local': browser cookies are deleted
-    #
+    daq.ToggleSwitch(
+                id='tamanho-contentor',
+                label = ['Potencial acumulação de resíduos', 'Volume de resíduos recolhidos'],
+                value = False,
+                style={'font-weight': 'bold'},
+                size = 70,
+                theme = 'dark'
+            ),
     ],
     className='eight columns'),
 #linha 3 - Mapa e subplots
@@ -162,10 +170,11 @@ app.layout = dbc.Container([
 # Callback 1: Map visualization
 @app.callback(
     Output(component_id='c-rec', component_property='figure'),
-    [Input(component_id='my_dropdown', component_property='value')]
+    [Input(component_id='my_dropdown', component_property='value'),
+     Input(component_id = 'tamanho-contentor', component_property='value')]
 )
 
-def build_graph(circuito):
+def build_graph(circuito, tamanho):
     '''constrói um mapa representativo dos circuitos seleccionados a partir do circuito escolhido pelo utilizador'''
 
     if not circuito:
@@ -198,33 +207,63 @@ def build_graph(circuito):
         name = 'rotas',
         ))
 
-    #split between underground and surface level containers not possible yet
-        trace_i = ilhas[ilhas['Circuit'] == i]
-        traces.append(go.Scattermapbox(
-        lat=trace_i['Latitude'],
-        lon=trace_i['Longitude'],
-        mode='markers',
-        marker=go.scattermapbox.Marker(
-            size= trace_i['litros']/200,
-            color = trace_i['Circuit'].map(color_dict),
-            ),
-            customdata=np.stack((trace_i["contentores"], (trace_i["recolhas"] * 100).astype(int),
-                                (trace_i["percentagem"] * 100).astype(int), trace_i["tipo"],
-                                 trace_i['volume'], trace_i['estado'], trace_i["Circuit"],
-                                 ), axis=-1),
-            hovertemplate=
-            #lado esquerdo do hover
-            '<b>Contentores Visitados</b>: %{customdata[0]}<br>' +
-            '<b>Contentores Recolhidos/Visitados</b>: %{customdata[1]}%<br>' +
-            '<b>Grau de enchimento contentores recolhidos</b>: %{customdata[2]}%<br>' +
-            '<b>Coordenadas</b>: lon - %{lon:.2f}, lat - %{lat:.2f}' +
-            #lado direito do hover
-            '<extra><b>Tipo de Contentor: %{customdata[3]}</b><br>' +
-            '<b>Capacidade do Contentor (l): %{customdata[4]}</b><br>' +
-            '<b>Estado: %{customdata[5]}</b><br>'
-            '<b>Circuito de Recolha %{customdata[6]}</b><br></extra>',
-            name = '<b>Ilha Ecológica/Contentores</b>'
-    ))
+        if tamanho is True:
+        #split between underground and surface level containers not possible yet
+            trace_i = ilhas[ilhas['Circuit'] == i]
+            traces.append(go.Scattermapbox(
+            lat=trace_i['Latitude'],
+            lon=trace_i['Longitude'],
+            mode='markers',
+            marker=go.scattermapbox.Marker(
+                size= ((trace_i['litros'] + 1000)/200),
+                color = trace_i['Circuit'].map(color_dict),
+                ),
+                customdata=np.stack((trace_i["contentores"], (trace_i["recolhas"] * 100).astype(int),
+                                    (trace_i["percentagem"] * 100).astype(int), trace_i["tipo"],
+                                     trace_i['volume'], trace_i['estado'], trace_i["Circuit"],
+                                     ), axis=-1),
+                hovertemplate=
+                #lado esquerdo do hover
+                '<b>Contentores Visitados</b>: %{customdata[0]}<br>' +
+                '<b>Contentores Recolhidos/Visitados</b>: %{customdata[1]}%<br>' +
+                '<b>Grau de enchimento contentores recolhidos</b>: %{customdata[2]}%<br>' +
+                '<b>Coordenadas</b>: lon - %{lon:.2f}, lat - %{lat:.2f}' +
+                #lado direito do hover
+                '<extra><b>Tipo de Contentor: %{customdata[3]}</b><br>' +
+                '<b>Capacidade do Contentor (l): %{customdata[4]}</b><br>' +
+                '<b>Estado: %{customdata[5]}</b><br>'
+                '<b>Circuito de Recolha %{customdata[6]}</b><br></extra>',
+                name = '<b>Ilha Ecológica/Contentores</b>'
+        ))
+
+        else:
+            # split between underground and surface level containers not possible yet
+            trace_i = ilhas[ilhas['Circuit'] == i]
+            traces.append(go.Scattermapbox(
+                lat=trace_i['Latitude'],
+                lon=trace_i['Longitude'],
+                mode='markers',
+                marker=go.scattermapbox.Marker(
+                    size=(trace_i['enchimento']+0.05) * 70,
+                    color=trace_i['Circuit'].map(color_dict),
+                ),
+                customdata=np.stack((trace_i["contentores"], (trace_i["recolhas"] * 100).astype(int),
+                                     (trace_i["percentagem"] * 100).astype(int), trace_i["tipo"],
+                                     trace_i['volume'], trace_i['estado'], trace_i["Circuit"],
+                                     ), axis=-1),
+                hovertemplate=
+                # lado esquerdo do hover
+                '<b>Contentores Visitados</b>: %{customdata[0]}<br>' +
+                '<b>Contentores Recolhidos/Visitados</b>: %{customdata[1]}%<br>' +
+                '<b>Grau de enchimento contentores recolhidos</b>: %{customdata[2]}%<br>' +
+                '<b>Coordenadas</b>: lon - %{lon:.2f}, lat - %{lat:.2f}' +
+                # lado direito do hover
+                '<extra><b>Tipo de Contentor: %{customdata[3]}</b><br>' +
+                '<b>Capacidade do Contentor (l): %{customdata[4]}</b><br>' +
+                '<b>Estado: %{customdata[5]}</b><br>'
+                '<b>Circuito de Recolha %{customdata[6]}</b><br></extra>',
+                name='<b>Ilha Ecológica/Contentores</b>'
+            ))
         #start
     return {    'data' : traces,#, traces_i],
                'layout': go.Layout(
