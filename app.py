@@ -10,6 +10,7 @@ import dash_html_components as html
 import dash_bootstrap_components as dbc
 import dash_daq as daq
 import plotly.graph_objects as go
+from plotly.subplots import make_subplots
 import dash_auth
 from dash.dependencies import Input, Output, State
 from flask import Flask
@@ -28,9 +29,8 @@ circuitos.style.format({'Dist. Acumulada (km)': "{:.2f}", 'Longitude': "{:.2f}",
 #open other data
 pass
 #____________________________________________________________________________________
-# Variáveis globais - dicionário de cores
-# Necessitarei de verificar o que se passa, não estou a conseguir mapear cores de rotas
-
+# Variáveis globais
+# dicionário de cores
 color_dict = {1: '#008490',
               2: '#580000',
               3: '#001563',
@@ -39,10 +39,12 @@ color_dict = {1: '#008490',
               6: '#F75D50',
               7: '#EB6B02',
               8: '#98000D',
-              9: '#ffba08'}
+              9: '#ffba08',
+              }
 
 #created list as placeholder for better solution of line_color since plotly does not seem to handle it well
 color_list = ['#008490', '#580000', '#001563', '#005B46', '#6D017F', '#F75D50', '#EB6B02', '#98000D', '#ffba08']
+carga_util = 10906
 
 #____________________________________________________________________________________
 # Manipulação de dados - criação de variáveis
@@ -60,7 +62,7 @@ external_stylesheets = ['https://cdn.rawgit.com/plotly/dash-app-stylesheets/2d26
 
 # create app
 app = dash.Dash(__name__, external_stylesheets=external_stylesheets) #changed to insert oil and gas stylesheet
-auth = dash_auth.BasicAuth(app, USER_PASS)
+#auth = dash_auth.BasicAuth(app, USER_PASS)
 
 server = app.server
 app.layout = dbc.Container([
@@ -135,30 +137,58 @@ app.layout = dbc.Container([
                 value = False,
                 style={'font-weight': 'bold'},
                 size = 70,
-                theme = 'dark'
+                className = 'button'
             ),
     ],
-    className='eight columns'),
+    className='six columns'),
 #linha 3 - Mapa e subplots
     dbc.Row([dbc.Col(html.Div(
                     children=dcc.Graph(
                         id='c-rec',
                     ),
                     style={"margin": "10px"},
-                    className='eight columns'),
+                    className='seven columns'),
                     ),
-        dbc.Col([html.P('Acompanhamento dos Circuitos de Recolha',
-                 style = {'textAlign': 'center', 'font-weight': 'bold'}),
-                html.P('O mapa à esquerda ilustra e resume o acompanhamento no terreno dos circuitos de recolha da EMARP. ' +
-                        'Para cada localização foram registados:',
-                        style = {'textAlign': 'justify'}),
-                html.P('O número de contentores visitados e a respetiva capacidade volumétrica,', style = {'font-weight': 'bold', 'textAlign': 'justify'}),
-                html.P('O número de contentores recolhidos e o grau de enchimento observado,', style = {'font-weight': 'bold', 'textAlign': 'justify'}),
-                html.P('Tendo por base os indicadores observados, foi feita uma estimativa da contribuição (em volume) de cada localização para o total dos resíduos recolhidos. Essa contribuição está representada no diâmetro de cada ponto.',
-                       style = {'textAlign': 'justify'})],
-                className = 'three columns',
-                style={'display': "inline-block"})
-        ], no_gutters=True, justify='start')
+        dbc.Col(html.Div(
+                    children=dcc.Graph(
+                        id='aux-graph',
+                    ),
+                    style={"margin": "10px", 'display': 'inline-block'},
+                className = 'four columns'),),
+        dbc.Row(dcc.Markdown('''
+###### **Modos de visualização dos pontos:**      
+
+**Potencial acumulação de resíduos**: Neste modo de visualização, o diâmetro de cada ponto é proporcional ao grau de enchimento (em percentagem) dos contentores visitados numa determinada localização*.
+
+**Volume de resíduos recolhidos**: Neste modo de visualização, o tamanho de cada ponto é proporcional ao volume estimado de resíduos recolhidos em cada localização.
+A estimativa de volume é uma função do número de contentores recolhidos, da sua capacidade volumétrica (em litros) e do seu grau de enchimento (em percentagem)*. 
+
+    *ver notas metodológicas adicionais para aceder aos detalhes sobre recolha de informações.
+
+###### **Notas metodológicas adicionais:**
+
+As informações presentes neste separador ilustram as observações realizadas pela equipa técnica da Ecogestus, Lda. ao longo do acompanhamento dos circuitos de recolha da EMARP.
+O acompanhamento decorreu **entre os dias 5 e 9 de Julho de 2021**. No total, foram observados 8 circuitos de recolha: 
+>
+> Os circuitos **1**, **2**, **4**, **5**, **6** e **8** foram **acompanhados de forma integral**,
+> 
+> Os circuitos **3** e **9** foram acompanhados apenas em parte. **As observações relacionadas com o circuito 3 não foram incluídas**. 
+>
+
+###### Para cada circuito:
+
+**1. Foi registado o trajeto (coordenadas, distância percorrida e o tempo de duração do circuito)** realizado pela viatura de recolha desde o estaleiro da EMARP até ao local de descarga (_Aterro Sanitário do Barlavento_). Estas informações encontram-se representadas no mapa (na forma de linhas).
+
+**2. Foram registadas as localizações dos contentores e ilhas ecológicas associados ao circuito (representadas, no mapa, na forma de pontos). Para cada localização, obteve-se**:
+
+>    
+>*  O número de contentores visitados e a respetiva capacidade volumétrica,
+>*  O número de contentores recolhidos e o grau de enchimento observado nos contentores recolhidos,
+>
+  
+        ''', style = {'text-align': 'justify', 'textAlign': 'justify'}),
+            className = 'twelve columns')
+        ],  no_gutters=True, justify='start')
     ], fluid = True)
 
 #________________________________________________________________________________________________________________________
@@ -168,8 +198,9 @@ app.layout = dbc.Container([
 
 # Callback 1: Map visualization
 @app.callback(
-    Output(component_id='c-rec', component_property='figure'),
-    [Input(component_id='my_dropdown', component_property='value'),
+    [Output(component_id='c-rec', component_property='figure'),
+    Output(component_id = 'aux-graph', component_property='figure')],
+    [Input(component_id ='my_dropdown', component_property='value'),
      Input(component_id = 'tamanho-contentor', component_property='value')]
 )
 
@@ -185,9 +216,19 @@ def build_graph(circuito, tamanho):
 
     ilhas = cont_recolha[cont_recolha['Circuit'].isin(circuito)]
 
+    #create subplot
+    fig = make_subplots(
+        rows=3, cols=3,
+        specs=[[{"type": "domain"}, {"type": "domain"}, {"type": "domain"}],
+               [{"type": "domain"}, {"type": "domain"}, {"type": "domain"}],
+               [{"type": "domain"}, {"type": "domain"}, {"type": "domain"}]],
+    )
+
     #parte 2: criação do mapa - circuitos
     #trace vazio
     traces = []
+
+    #criar placeholder para segunda figura que usará mesmo input
     for i in c_lista:
 
         trace = passeios[passeios['Circuit'] == i]
@@ -206,9 +247,9 @@ def build_graph(circuito, tamanho):
         name = 'rotas',
         ))
 
+        trace_i = ilhas[ilhas['Circuit'] == i]
         if tamanho is True:
         #split between underground and surface level containers not possible yet
-            trace_i = ilhas[ilhas['Circuit'] == i]
             traces.append(go.Scattermapbox(
             lat=trace_i['Latitude'],
             lon=trace_i['Longitude'],
@@ -237,7 +278,6 @@ def build_graph(circuito, tamanho):
 
         else:
             # split between underground and surface level containers not possible yet
-            trace_i = ilhas[ilhas['Circuit'] == i]
             traces.append(go.Scattermapbox(
                 lat=trace_i['Latitude'],
                 lon=trace_i['Longitude'],
@@ -263,11 +303,13 @@ def build_graph(circuito, tamanho):
                 '<b>Circuito de Recolha %{customdata[6]}</b><br></extra>',
                 name='<b>Ilha Ecológica/Contentores</b>'
             ))
+
         #start
-    return {    'data' : traces,#, traces_i],
+    map_1 =  {    'data' : traces,#, traces_i],
                'layout': go.Layout(
                 uirevision= 'figure',
                 autosize=True,
+                height=600,
                 margin=dict(
                     l=30,
                     r=30,
@@ -286,11 +328,67 @@ def build_graph(circuito, tamanho):
                         lon=-8.552441
                                 ),
                     pitch=0,
-                    zoom=10
+                    zoom=11
                         ),
                     )
         }
 
+    fig.add_trace(go.Indicator(
+        mode="number",
+        value= ilhas['contentores'].sum(),
+        delta={'position': "top", 'reference': 320},
+        domain={'x': [0, 1], 'y': [0, 1]}),
+        row=1, col=1),
+
+    fig.add_trace(go.Indicator(
+        mode="number",
+        value= ilhas['contentores'].sum(),
+        delta={'position': "top", 'reference': 320},
+        domain={'x': [0, 1], 'y': [0, 1]}),
+        row=1, col=2),
+
+    fig.add_trace(go.Indicator(
+        mode="number",
+        value= ilhas['contentores'].sum(),),
+        row=1, col=3),
+
+    fig.add_trace(go.Indicator(
+        mode="number",
+        value= ilhas['contentores'].sum(),),
+        row=2, col=1),
+
+    fig.add_trace(go.Indicator(
+        mode="number",
+        value= ilhas['contentores'].sum(),),
+        row=2, col=2),
+
+    fig.add_trace(go.Indicator(
+        mode="number",
+        value= ilhas['contentores'].sum(),),
+        row=2, col=3),
+
+
+    fig.add_trace(go.Indicator(
+        mode="number",
+        value=ilhas['contentores'].sum(),),
+        row=3, col=1),
+
+    fig.add_trace(go.Indicator(
+        mode="number",
+        value=ilhas['contentores'].sum(),
+        delta={'position': "top", 'reference': 320},
+        domain={'x': [0, 1], 'y': [0, 1]}),
+        row=3, col=2),
+
+    fig.add_trace(go.Indicator(
+        mode="number",
+        value=ilhas['contentores'].sum(),
+        delta={'position': "top", 'reference': 320},
+        domain={'x': [0, 1], 'y': [0, 1]}),
+        row=3, col=3),
+    fig.update_layout(height=600, showlegend=False)
+
+    return [map_1, fig]
 #---------------------------------------------------------------
 if __name__ == '__main__':
     app.run_server(debug = True)
