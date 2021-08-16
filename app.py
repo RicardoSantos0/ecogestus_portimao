@@ -24,7 +24,10 @@ with open('./assets/mapbox_tkn.txt', 'r') as f:
 #open circuits
 circuitos = pd.read_csv('./datasets/agg_circuitos.csv')
 cont_recolha = pd.read_csv('./datasets/cont_recolha.csv')
+registos = pd.read_csv('./datasets/dados_registos.csv')
+
 circuitos.style.format({'Dist. Acumulada (km)': "{:.2f}", 'Longitude': "{:.2f}", 'Latitude': "{:.2f}"})
+registos.style.format({'ton/km': "{:.2f}", 'ton/h': "{:.2f}", ',capacidade_%': "{:.2f}"})
 
 #open other data
 pass
@@ -133,7 +136,7 @@ app.layout = dbc.Container([
     # 'local': browser cookies are deleted
     daq.ToggleSwitch(
                 id='tamanho-contentor',
-                label = ['Potencial acumulação de resíduos', 'Volume de resíduos recolhidos'],
+                label = ['Potencial acumulação de resíduos', 'Volume Recolhido'],
                 value = False,
                 style={'font-weight': 'bold'},
                 size = 70,
@@ -147,14 +150,13 @@ app.layout = dbc.Container([
                         id='c-rec',
                     ),
                     style={"margin": "10px"},
-                    className='seven columns'),
+                    className='six columns'),
                     ),
         dbc.Col(html.Div(
                     children=dcc.Graph(
                         id='aux-graph',
                     ),
-                    style={"margin": "10px", 'display': 'inline-block'},
-                className = 'four columns'),),
+                className = 'five columns'),),
         dbc.Row(dcc.Markdown('''
 ###### **Modos de visualização dos pontos:**      
 
@@ -215,6 +217,10 @@ def build_graph(circuito, tamanho):
     c_lista = list(passeios.Circuit.unique())
 
     ilhas = cont_recolha[cont_recolha['Circuit'].isin(circuito)]
+    enterrados = ilhas[ilhas['volume'] == 3000]
+    superficie = ilhas[ilhas['volume'] != 3000]
+
+    reg_trace = registos[registos['Circuit'].isin(circuito)]
 
     #create subplot
     fig = make_subplots(
@@ -222,6 +228,8 @@ def build_graph(circuito, tamanho):
         specs=[[{"type": "domain"}, {"type": "domain"}, {"type": "domain"}],
                [{"type": "domain"}, {"type": "domain"}, {"type": "domain"}],
                [{"type": "domain"}, {"type": "domain"}, {"type": "domain"}]],
+        row_titles= ['', '<b>C. Superfície</b>', '<b>C. Semi-Enterrados</b>'],
+        #column_titles= ['<b>Visitados</b>', '<b>Recolhidos</b>', '<b>Grau Enchimento</b>']
     )
 
     #parte 2: criação do mapa - circuitos
@@ -259,14 +267,14 @@ def build_graph(circuito, tamanho):
                 color = trace_i['Circuit'].map(color_dict),
                 ),
                 customdata=np.stack((trace_i["contentores"], (trace_i["recolhas"] * 100).astype(int),
-                                    (trace_i["percentagem"] * 100).astype(int), trace_i["tipo"],
+                                     trace_i["litros"], trace_i["tipo"],
                                      trace_i['volume'], trace_i['estado'], trace_i["Circuit"],
                                      ), axis=-1),
                 hovertemplate=
                 #lado esquerdo do hover
                 '<b>Contentores Visitados</b>: %{customdata[0]}<br>' +
                 '<b>Contentores Recolhidos/Visitados</b>: %{customdata[1]}%<br>' +
-                '<b>Grau de enchimento contentores recolhidos</b>: %{customdata[2]}%<br>' +
+                '<b>Volume Recolhido (valor estimado)</b>: %{customdata[2]}l<br>' +
                 '<b>Coordenadas</b>: lon - %{lon:.2f}, lat - %{lat:.2f}' +
                 #lado direito do hover
                 '<extra><b>Tipo de Contentor: %{customdata[3]}</b><br>' +
@@ -287,14 +295,14 @@ def build_graph(circuito, tamanho):
                     color=trace_i['Circuit'].map(color_dict),
                 ),
                 customdata=np.stack((trace_i["contentores"], (trace_i["recolhas"] * 100).astype(int),
-                                     (trace_i["percentagem"] * 100).astype(int), trace_i["tipo"],
+                                     (trace_i["enchimento"] * 100).astype(int), trace_i["tipo"],
                                      trace_i['volume'], trace_i['estado'], trace_i["Circuit"],
                                      ), axis=-1),
                 hovertemplate=
                 # lado esquerdo do hover
                 '<b>Contentores Visitados</b>: %{customdata[0]}<br>' +
                 '<b>Contentores Recolhidos/Visitados</b>: %{customdata[1]}%<br>' +
-                '<b>Grau de enchimento contentores recolhidos</b>: %{customdata[2]}%<br>' +
+                '<b>Grau de enchimento dos contentores</b>: %{customdata[2]}%<br>' +
                 '<b>Coordenadas</b>: lon - %{lon:.2f}, lat - %{lat:.2f}' +
                 # lado direito do hover
                 '<extra><b>Tipo de Contentor: %{customdata[3]}</b><br>' +
@@ -333,59 +341,61 @@ def build_graph(circuito, tamanho):
                     )
         }
 
+
     fig.add_trace(go.Indicator(
         mode="number",
-        value= ilhas['contentores'].sum(),
-        delta={'position': "top", 'reference': 320},
-        domain={'x': [0, 1], 'y': [0, 1]}),
+        value=reg_trace['ton/h'].sum(),
+        title = '<b>Ton/Hora</b>'),
         row=1, col=1),
 
     fig.add_trace(go.Indicator(
         mode="number",
-        value= ilhas['contentores'].sum(),
-        delta={'position': "top", 'reference': 320},
-        domain={'x': [0, 1], 'y': [0, 1]}),
+        value=reg_trace['ton/km'].mean(),
+        title='<b>Ton/km</b>'),
         row=1, col=2),
 
     fig.add_trace(go.Indicator(
         mode="number",
-        value= ilhas['contentores'].sum(),),
+        number ={'suffix' : '%'},
+        value=reg_trace['capacidade_%'].mean() * 100,
+        title='<b>Cap. Recolhida</b>'),
         row=1, col=3),
 
     fig.add_trace(go.Indicator(
         mode="number",
-        value= ilhas['contentores'].sum(),),
+        value= superficie['contentores'].sum(),
+        title='<b>Visitados</b>'),
         row=2, col=1),
 
     fig.add_trace(go.Indicator(
         mode="number",
-        value= ilhas['contentores'].sum(),),
+        value= superficie['Recolhidos'].sum(),
+        title='<b>Recolhidos</b>'),
         row=2, col=2),
 
     fig.add_trace(go.Indicator(
         mode="number",
-        value= ilhas['contentores'].sum(),),
+        number = {'suffix' : '%'},
+        value=superficie['enchimento'].mean() * 100,
+        title='<b>Enchimento</b>'),
         row=2, col=3),
-
 
     fig.add_trace(go.Indicator(
         mode="number",
-        value=ilhas['contentores'].sum(),),
+        value= enterrados['contentores'].sum()),
         row=3, col=1),
 
     fig.add_trace(go.Indicator(
         mode="number",
-        value=ilhas['contentores'].sum(),
-        delta={'position': "top", 'reference': 320},
-        domain={'x': [0, 1], 'y': [0, 1]}),
+        value= enterrados['Recolhidos'].sum(),),
         row=3, col=2),
 
     fig.add_trace(go.Indicator(
         mode="number",
-        value=ilhas['contentores'].sum(),
-        delta={'position': "top", 'reference': 320},
-        domain={'x': [0, 1], 'y': [0, 1]}),
+        number = {'suffix' : '%'},
+        value=enterrados['enchimento'].mean() * 100),
         row=3, col=3),
+
     fig.update_layout(height=600, showlegend=False)
 
     return [map_1, fig]
