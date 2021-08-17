@@ -1,6 +1,5 @@
 '''este ficheiro será o índice da aplicação, será a partir das ligações aqui colocadas que será
 depois, possível, fazer a ligação entre diferentes páginas'''
-import dash_core_components as dcc
 import dash_html_components as html
 import dash_bootstrap_components as dbc
 from dash.dependencies import Input, Output
