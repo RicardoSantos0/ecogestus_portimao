@@ -18,5 +18,5 @@ app = dash.Dash(__name__, external_stylesheets=external_stylesheets,
                             'content': 'width=device-width, initial-scale=1.0'}]
                 )
 #insert authentication and start server
-auth = dash_auth.BasicAuth(app, USER_PASS)
+#auth = dash_auth.BasicAuth(app, USER_PASS)
 server = app.server
