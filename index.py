@@ -29,22 +29,35 @@ app_tabs = html.Div(
 app.layout = dbc.Container([
     dbc.Row([dbc.Col(html.Img(
                             src="https://www.ecogestus.com/pt/wp-content/uploads/2021/01/ecogestus_logotipo_moderno-2.jpeg",
-                            style={'height': '100%', 'width': '100%', 'verticalAlign': 'middle'},
+                            style={'height': '100%', 'width': '100%'}
+                            ),
+                            width = 1,
+                        ),
+            dbc.Col(html.Img(
+                            src="https://www.emarp.pt/wp-content/uploads/2021/07/EMARP_LOGO-PRINCIPAL.png",
+                            style={'height': '80%', 'width': '60%'}
+                            ),
                             width = 2,
-                        )),
+                        ),
             dbc.Col(html.H2("Portimão | Desempenho da Recolha de RU",
-                            style={"textAlign": "center"}), width=8),
+                            style = { "text-align" : "center", 'font-weight': 'bold'}),
+                            width=7),
             dbc.Col(
                 html.A(dbc.Button(
                         "Visite-nos",
                         color = 'success',
                         className= "mr-1",
-                        id="learnMore"),
+                        id="learnMore",
+                        ),
                         href="https://www.ecogestus.com",
                 ),
                 width = 2,
             )
-    ]),
+    ],
+        justify="center",
+        align="center",
+        className="h-50",
+    ),
     html.Hr(),
     dbc.Row(dbc.Col(app_tabs, width=12), className="mb-2"),
     html.Div(id='content', children=[])

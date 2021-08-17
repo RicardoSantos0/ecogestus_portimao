@@ -58,7 +58,7 @@ visita_layout = html.Div(
         dbc.Row(
             dbc.Col(
                 [
-                    html.Label(['Seleccione o(s) circuito(s) de recolha que pretende observar:'], style={'font-weight': 'bold', "textAlign": "center"}),
+                    html.Label(['Seleccione o(s) circuito(s) de recolha que pretende observar:'], style={'font-weight': 'bold'}),
                     dcc.Dropdown(id='my_dropdown',
                         options=[
                                 {'label': 'Circuito 1', 'value': 1},
@@ -85,7 +85,8 @@ visita_layout = html.Div(
                         # persistence_type='memory'         #remembers dropdown value selected until...
                         ),
                     ],
-            width = 12),
+                style={'text-align': 'center'},
+                width = 12),
         ),
     #linha 3 - Cartões com indicadores de interesse
         dbc.Row(
@@ -95,24 +96,34 @@ visita_layout = html.Div(
                         id='ton/km',
                     ),
                     style = {"margin": "10px"}),
-                width = 3),
-            dbc.Col(html.Div(
+                width = 2),
+                dbc.Col(html.Div(
+                    children=dcc.Graph(
+                        id='kg/m3',
+                    ),
+                    style={"margin": "10px"}),
+                    width=2),
+                dbc.Col(html.Div(
                     children=dcc.Graph(
                         id='ton/h',
                     ),
                     style = {"margin": "10px"}),
-                width = 3),
-            dbc.Col(html.Div(
+                width = 2),
+                dbc.Col(html.Div(
                     children=dcc.Graph(
                         id='kg/ht',
                     ),style = {"margin": "10px"}),
-                width = 3),
-            dbc.Col(html.Div(
-            children=dcc.Graph(
-                id='capacidade',
-            ),style = {"margin": "10px"}),
-            width = 3),
-        ]),
+                width = 2),
+                dbc.Col(html.Div(
+                    children=dcc.Graph(
+                        id='capacidade',
+                ),style = {"margin": "10px"}),
+                width = 2),
+        ],
+            justify="center",
+            align="center",
+            className="h-50",
+        ),
 
     #linha 4 - Mapa e subplots
         dbc.Row(
@@ -124,13 +135,14 @@ visita_layout = html.Div(
                             label=['Potencial acumulação de resíduos', 'Volume Recolhido'],
                             value=False,
                             style={'font-weight': 'bold'},
-                            size=70,
-                            className = 'button'),
+                            size=100,
+                            ),
                         html.Div(
                             children=dcc.Graph(
                             id='c-rec'),
                             style={"margin": "10px"},),
                     ],
+                style={'text-align': 'center'},
                 width = 7,
         ),
                 dbc.Col(html.Div(
@@ -199,6 +211,7 @@ O acompanhamento decorreu **entre os dias 5 e 9 de Julho de 2021**. No total, fo
 # Callback 1: Map visualization
 @app.callback(
     [Output(component_id='ton/km', component_property='figure'),
+    Output(component_id='kg/m3', component_property='figure'),
     Output(component_id='ton/h', component_property='figure'),
     Output(component_id='kg/ht', component_property='figure'),
     Output(component_id='capacidade', component_property='figure'),
@@ -309,7 +322,7 @@ def build_graph(circuito, tamanho):
                'layout': go.Layout(
                 uirevision= 'figure',
                 autosize=True,
-                height=600,
+                height=500,
                 margin=dict(
                     l=30,
                     r=30,
@@ -335,18 +348,26 @@ def build_graph(circuito, tamanho):
     #criar os novos indicadores
 
     kg_km = go.Figure(go.Indicator(
-    mode="number + delta",
-    delta={'position': "top", 'reference': 123.75, 'relative': True},
-    value=reg_trace['kg/km'].mean(),
-    title = '<b>kg/km</b>'))
+        mode="number + delta",
+        #delta={'position': "top", 'reference': 123.75, 'relative': True},
+        value=reg_trace['kg/km'].mean(),
+        title = '<b>kg/km</b>'))
+
+    kg_m3 = go.Figure(go.Indicator(
+        mode="number + delta",
+        #delta={'position': "top", 'reference': 123.75, 'relative': True},
+        value=reg_trace['kg/m3'].mean(),
+        title = '<b>kg/m3</b>'))
+
     ton_h = go.Figure(go.Indicator(
         mode="number+delta",
-        delta={'position': "top", 'reference': 1.95, 'relative': True},
+        #delta={'position': "top", 'reference': 1.95, 'relative': True},
         value=reg_trace['ton/h'].mean(),
         title = '<b>ton/hora</b>'))
+
     kg_ht = go.Figure(go.Indicator(
         mode="number+delta",
-        delta={'position': "top", 'reference': 713.75, 'relative': True},
+        #delta={'position': "top", 'reference': 713.75, 'relative': True},
         value=reg_trace['kg/ht'].mean(),
         title = '<b>kg/horaT</b>'))
     cap = go.Figure(go.Indicator(
@@ -453,14 +474,14 @@ def build_graph(circuito, tamanho):
 
     fig.update_layout(height=600, showlegend=False)
     card_layout = {"paper_bgcolor" : "LightSteelBlue", 'autosize' : False,
-                    "width" : 325, "height" : 200, "margin" : {"l" : 50, "r":50,
-                                                                "b": 5, "t":40,
-                                                                "pad" : 4}
+                    "height" : 100, "margin" : {"l" : 50, "r":50,
+                                                "b": 5, "t":40,
+                                                "pad" : 4}
                    }
-    cards = [kg_km, ton_h, kg_ht, cap]
+    cards = [kg_km, kg_m3, ton_h, kg_ht, cap]
 
     for i in cards:
         i.update_layout(card_layout)
 
-    return [kg_km, ton_h, kg_ht, cap, map_1, fig]
+    return [kg_km, kg_m3, ton_h, kg_ht, cap, map_1, fig]
 #---------------------------------------------------------------

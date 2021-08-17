@@ -8,7 +8,7 @@ USER_PASS = [['ecogestus', 'emarp2021']]
 
 #external stylesheet
 #external_stylesheets = ['https://codepen.io/chriddyp/pen/bWLwgP.css']
-external_stylesheets = [dbc.themes.LUX]
+external_stylesheets = [dbc.themes.SPACELAB]
 #external_stylesheets = ['https://cdn.rawgit.com/plotly/dash-app-stylesheets/2d266c578d2a6e8850ebce48fdb52759b2aef506/stylesheet-oil-and-gas.css']
 #____________________________________________________________________________________________________________________
 
