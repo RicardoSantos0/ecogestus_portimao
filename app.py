@@ -27,7 +27,7 @@ cont_recolha = pd.read_csv('./datasets/cont_recolha.csv')
 registos = pd.read_csv('./datasets/dados_registos.csv')
 
 circuitos.style.format({'Dist. Acumulada (km)': "{:.2f}", 'Longitude': "{:.2f}", 'Latitude': "{:.2f}"})
-registos.style.format({'ton/km': "{:.2f}", 'ton/h': "{:.2f}", ',capacidade_%': "{:.2f}"})
+registos.style.format({'kg/km': "{:.2f}", 'ton/h': "{:.2f}", ',capacidade_usada': "{:.2f}"})
 
 #open other data
 pass
@@ -47,7 +47,7 @@ color_dict = {1: '#008490',
 
 #created list as placeholder for better solution of line_color since plotly does not seem to handle it well
 color_list = ['#008490', '#580000', '#001563', '#005B46', '#6D017F', '#F75D50', '#EB6B02', '#98000D', '#ffba08']
-carga_util = 10906
+carga_util = 10.906
 
 #____________________________________________________________________________________
 # Manipulação de dados - criação de variáveis
@@ -58,9 +58,9 @@ cont_recolha.replace('Ã£','ã', inplace = True)
 USER_PASS = [['ecogestus', 'emarp2021']]
 
 #external stylesheet
-#external_stylesheets = ['https://codepen.io/chriddyp/pen/bWLwgP.css']
+external_stylesheets = ['https://codepen.io/chriddyp/pen/bWLwgP.css']
 #external_stylesheets = [dbc.themes.SPACELAB]
-external_stylesheets = ['https://cdn.rawgit.com/plotly/dash-app-stylesheets/2d266c578d2a6e8850ebce48fdb52759b2aef506/stylesheet-oil-and-gas.css']
+#external_stylesheets = ['https://cdn.rawgit.com/plotly/dash-app-stylesheets/2d266c578d2a6e8850ebce48fdb52759b2aef506/stylesheet-oil-and-gas.css']
 #____________________________________________________________________________________________________________________
 
 # create app
@@ -127,37 +127,76 @@ app.layout = dbc.Container([
                  placeholder='Escolha, pelo menos, um circuito de recolha...',  # gray, default text shown when no option is selected
                  clearable=True,  # allow user to removes the selected value
                  style= {'width' : '100%'},  # use dictionary to define CSS styles of your dropdown
-                 className='select_box',           #activate separate CSS document in assets folder
+                 #className='select_box',           #activate separate CSS document in assets folder
                  # persistence=True,                 #remembers dropdown value. Used with persistence_type
                  # persistence_type='memory'         #remembers dropdown value selected until...
                  ),  # 'memory': browser tab is refreshed
                 #html.Br()
     # 'session': browser tab is closed
     # 'local': browser cookies are deleted
-    daq.ToggleSwitch(
-                id='tamanho-contentor',
-                label = ['Potencial acumulação de resíduos', 'Volume Recolhido'],
-                value = False,
-                style={'font-weight': 'bold'},
-                size = 70,
-                className = 'button'
-            ),
     ],
-    className='six columns'),
-#linha 3 - Mapa e subplots
+    className='twelve columns'),
+
+    #linha 3 - Cartões com indicadores de interesse
     dbc.Row([dbc.Col(html.Div(
+                    children=dcc.Graph(
+                        id='ton/km',
+                    ),
+                    style = {"margin": "10px"}),
+                className = 'three columns'),
+            dbc.Col(html.Div(
+                    children=dcc.Graph(
+                        id='ton/h',
+                    ),
+                    style = {"margin": "10px"}),
+                className = 'three columns'),
+            dbc.Col(html.Div(
+                    children=dcc.Graph(
+                        id='kg/ht',
+                    ),style = {"margin": "10px"}),
+                className = 'three columns'),
+            dbc.Col(html.Div(
+            children=dcc.Graph(
+                id='capacidade',
+            ),style = {"margin": "10px"}),
+            className='three columns'),
+        ]),
+    #linha 4 - Mapa e subplots
+    dbc.Row([dbc.Col([html.Div(
+        daq.ToggleSwitch(
+            id='tamanho-contentor',
+            label=['Potencial acumulação de resíduos', 'Volume Recolhido'],
+            value=False,
+            style={'font-weight': 'bold', 'vertical-align' : 'middle'},
+            size=70,
+            className='button'
+        ), className= 'seven columns'),
+        html.Div(
                     children=dcc.Graph(
                         id='c-rec',
                     ),
                     style={"margin": "10px"},
-                    className='six columns'),
-                    ),
+                    className='seven columns'),
+                    ],
+        ),
         dbc.Col(html.Div(
                     children=dcc.Graph(
                         id='aux-graph',
                     ),
                 className = 'five columns'),),
         dbc.Row(dcc.Markdown('''
+###### **Notas:**
+
+Os valores de produtividade calculados têm, como termo de comparação, os seguintes valores de referência obtidos pela Equipa Técnica da Ecogestus num estudo semelhante realizado no Município de Mafra:
+
+**Quilogramas por km**: 123.75 kg/km
+
+**Toneladas por hora**: 1.95 ton/h
+
+**Kg por hora trabalhada**: 723.75 kg/horaT
+
+**Capacidade**: O peso útil de referência da viatura de recolha - 10906 kg
+
 ###### **Modos de visualização dos pontos:**      
 
 **Potencial acumulação de resíduos**: Neste modo de visualização, o diâmetro de cada ponto é proporcional ao grau de enchimento (em percentagem) dos contentores visitados numa determinada localização*.
@@ -165,7 +204,7 @@ app.layout = dbc.Container([
 **Volume de resíduos recolhidos**: Neste modo de visualização, o tamanho de cada ponto é proporcional ao volume estimado de resíduos recolhidos em cada localização.
 A estimativa de volume é uma função do número de contentores recolhidos, da sua capacidade volumétrica (em litros) e do seu grau de enchimento (em percentagem)*. 
 
-    *ver notas metodológicas adicionais para aceder aos detalhes sobre recolha de informações.
+    *ver notas metodológicas adicionais para aceder aos detalhes sobre a recolha de dados.
 
 ###### **Notas metodológicas adicionais:**
 
@@ -200,7 +239,11 @@ O acompanhamento decorreu **entre os dias 5 e 9 de Julho de 2021**. No total, fo
 
 # Callback 1: Map visualization
 @app.callback(
-    [Output(component_id='c-rec', component_property='figure'),
+    [Output(component_id='ton/km', component_property='figure'),
+    Output(component_id='ton/h', component_property='figure'),
+    Output(component_id='kg/ht', component_property='figure'),
+    Output(component_id='capacidade', component_property='figure'),
+    Output(component_id='c-rec', component_property='figure'),
     Output(component_id = 'aux-graph', component_property='figure')],
     [Input(component_id ='my_dropdown', component_property='value'),
      Input(component_id = 'tamanho-contentor', component_property='value')]
@@ -224,12 +267,12 @@ def build_graph(circuito, tamanho):
 
     #create subplot
     fig = make_subplots(
-        rows=3, cols=3,
-        specs=[[{"type": "domain"}, {"type": "domain"}, {"type": "domain"}],
-               [{"type": "domain"}, {"type": "domain"}, {"type": "domain"}],
-               [{"type": "domain"}, {"type": "domain"}, {"type": "domain"}]],
-        row_titles= ['', '<b>C. Superfície</b>', '<b>C. Semi-Enterrados</b>'],
-        #column_titles= ['<b>Visitados</b>', '<b>Recolhidos</b>', '<b>Grau Enchimento</b>']
+        rows=3, cols=2,
+        specs=[[{"type": "domain"}, {"type": "domain"}],
+               [{"type": "domain"}, {"type": "domain"}],
+               [{"type": "domain"}, {"type": "domain"}]],
+        column_titles= ['<b>C. Superfície</b>', '<b>C. Semi-Enterrados</b>'],
+        row_titles= ['<b>Visitados</b>', '<b>Recolhidos</b>', '<b>% Enchimento</b>']
     )
 
     #parte 2: criação do mapa - circuitos
@@ -340,65 +383,78 @@ def build_graph(circuito, tamanho):
                         ),
                     )
         }
+    #criar os novos indicadores
 
+    kg_km = go.Figure(go.Indicator(
+    mode="number + delta",
+    delta={'position': "top", 'reference': 123.75, 'relative': True},
+    value=reg_trace['kg/km'].mean(),
+    title = '<b>kg/km</b>'))
+    ton_h = go.Figure(go.Indicator(
+        mode="number+delta",
+        delta={'position': "top", 'reference': 1.95, 'relative': True},
+        value=reg_trace['ton/h'].mean(),
+        title = '<b>ton/hora</b>'))
+    kg_ht = go.Figure(go.Indicator(
+        mode="number+delta",
+        delta={'position': "top", 'reference': 713.75, 'relative': True},
+        value=reg_trace['kg/ht'].mean(),
+        title = '<b>kg/horaT</b>'))
+    cap = go.Figure(go.Indicator(
+        mode="number+delta",
+        delta={'position': "top", 'reference': carga_util, 'relative': True,
+               "decreasing": {"symbol": "👍", "color" : "#3D9970"}, "increasing": {"symbol": "❌", "color" : "#FF4136"}},
+        number={"suffix" : " t"},
+        value=reg_trace['capacidade_usada'].mean(),
+        title = '<b>Peso em transporte</b>'))
 
     fig.add_trace(go.Indicator(
         mode="number",
-        value=reg_trace['ton/h'].sum(),
-        title = '<b>Ton/Hora</b>'),
+        value= superficie['contentores'].sum()
+    ),
         row=1, col=1),
 
     fig.add_trace(go.Indicator(
         mode="number",
-        value=reg_trace['ton/km'].mean(),
-        title='<b>Ton/km</b>'),
-        row=1, col=2),
-
-    fig.add_trace(go.Indicator(
-        mode="number",
-        number ={'suffix' : '%'},
-        value=reg_trace['capacidade_%'].mean() * 100,
-        title='<b>Cap. Recolhida</b>'),
-        row=1, col=3),
-
-    fig.add_trace(go.Indicator(
-        mode="number",
-        value= superficie['contentores'].sum(),
-        title='<b>Visitados</b>'),
-        row=2, col=1),
-
-    fig.add_trace(go.Indicator(
-        mode="number",
         value= superficie['Recolhidos'].sum(),
-        title='<b>Recolhidos</b>'),
-        row=2, col=2),
+        ),
+        row=2, col=1),
 
     fig.add_trace(go.Indicator(
         mode="number",
         number = {'suffix' : '%'},
         value=superficie['enchimento'].mean() * 100,
-        title='<b>Enchimento</b>'),
-        row=2, col=3),
-
-    fig.add_trace(go.Indicator(
-        mode="number",
-        value= enterrados['contentores'].sum()),
+        ),
         row=3, col=1),
 
     fig.add_trace(go.Indicator(
         mode="number",
+        value= enterrados['contentores'].sum()),
+        row=1, col=2),
+
+    fig.add_trace(go.Indicator(
+        mode="number",
         value= enterrados['Recolhidos'].sum(),),
-        row=3, col=2),
+        row=2, col=2),
 
     fig.add_trace(go.Indicator(
         mode="number",
         number = {'suffix' : '%'},
         value=enterrados['enchimento'].mean() * 100),
-        row=3, col=3),
+        row=3, col=2),
 
     fig.update_layout(height=600, showlegend=False)
+    card_layout = {"paper_bgcolor" : "LightSteelBlue", 'autosize' : False,
+                    "width" : 325, "height" : 200, "margin" : {"l" : 50, "r":50,
+                                                                "b": 5, "t":40,
+                                                                "pad" : 4}
+                   }
+    cards = [kg_km, ton_h, kg_ht, cap]
 
-    return [map_1, fig]
+    for i in cards:
+        i.update_layout(card_layout)
+
+    return [kg_km, ton_h, kg_ht, cap, map_1, fig]
 #---------------------------------------------------------------
 if __name__ == '__main__':
     app.run_server(debug = True)
