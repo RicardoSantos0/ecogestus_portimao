@@ -33,11 +33,6 @@ app.layout = dbc.Container([
                             style={'height': '100%', 'width': '100%', 'verticalAlign': 'middle'},
                             width = 2,
                         )),
-                dbc.Col(html.Img(
-                    src="https://www.ecogestus.com/pt/wp-content/uploads/2021/01/ecogestus_logotipo_moderno-2.jpeg",
-                    style={'autosize' : True, 'verticalAlign': 'middle'},
-                    width=2,
-                )),
             dbc.Col(html.H2("Portimão | Desempenho da Recolha de RU",
                             style={"textAlign": "center"}), width=8),
             dbc.Col(
