@@ -13,7 +13,7 @@ import plotly.graph_objects as go
 from plotly.subplots import make_subplots
 import dash_auth
 from dash.dependencies import Input, Output, State
-from flask import Flask
+#from flask import Flask
 
 #____________________________________________________________________________________
 #Dealing with figures to show on dashboard
@@ -103,9 +103,7 @@ app.layout = dbc.Container([
         )])
         ]),
     #linha 2, Dropdown de selecção : Mapa e outras representações
-    dbc.Row([html.Div(),
-    html.Br(),
-    html.Label(['Seleccione o(s) circuito(s) de recolha que pretende observar:'], style={'font-weight': 'bold'}),
+    dbc.Row([html.Div(html.Label(['Seleccione o(s) circuito(s) de recolha que pretende observar:'], style={'font-weight': 'bold', "textAlign": "center"})),
     dcc.Dropdown(id='my_dropdown',
                  options=[
                      {'label': 'Circuito 1', 'value': 1},
@@ -162,12 +160,13 @@ app.layout = dbc.Container([
             className='three columns'),
         ]),
     #linha 4 - Mapa e subplots
+    dbc.Row(html.Div(html.Label(['Seleccione um modo de visualização no mapa'], style={'font-weight': 'bold'}))),
     dbc.Row([dbc.Col([html.Div(
         daq.ToggleSwitch(
             id='tamanho-contentor',
             label=['Potencial acumulação de resíduos', 'Volume Recolhido'],
             value=False,
-            style={'font-weight': 'bold', 'vertical-align' : 'middle'},
+            style={'font-weight': 'bold'},
             size=70,
             className='button'
         ), className= 'seven columns'),
@@ -195,7 +194,7 @@ Os valores de produtividade calculados têm, como termo de comparação, os segu
 
 **Kg por hora trabalhada**: 723.75 kg/horaT
 
-**Capacidade**: O peso útil de referência da viatura de recolha - 10906 kg
+**Peso em carga**: Para este indicador específico, a referência usada será o peso útil de referência da viatura de recolha - 10906 kg
 
 ###### **Modos de visualização dos pontos:**      
 
@@ -265,16 +264,6 @@ def build_graph(circuito, tamanho):
 
     reg_trace = registos[registos['Circuit'].isin(circuito)]
 
-    #create subplot
-    fig = make_subplots(
-        rows=3, cols=2,
-        specs=[[{"type": "domain"}, {"type": "domain"}],
-               [{"type": "domain"}, {"type": "domain"}],
-               [{"type": "domain"}, {"type": "domain"}]],
-        column_titles= ['<b>C. Superfície</b>', '<b>C. Semi-Enterrados</b>'],
-        row_titles= ['<b>Visitados</b>', '<b>Recolhidos</b>', '<b>% Enchimento</b>']
-    )
-
     #parte 2: criação do mapa - circuitos
     #trace vazio
     traces = []
@@ -310,18 +299,18 @@ def build_graph(circuito, tamanho):
                 color = trace_i['Circuit'].map(color_dict),
                 ),
                 customdata=np.stack((trace_i["contentores"], (trace_i["recolhas"] * 100).astype(int),
-                                     trace_i["litros"], trace_i["tipo"],
-                                     trace_i['volume'], trace_i['estado'], trace_i["Circuit"],
+                                     trace_i["litros"]/1000, trace_i["tipo"],
+                                     trace_i['volume']/1000, trace_i['estado'], trace_i["Circuit"],
                                      ), axis=-1),
                 hovertemplate=
                 #lado esquerdo do hover
                 '<b>Contentores Visitados</b>: %{customdata[0]}<br>' +
                 '<b>Contentores Recolhidos/Visitados</b>: %{customdata[1]}%<br>' +
-                '<b>Volume Recolhido (valor estimado)</b>: %{customdata[2]}l<br>' +
+                '<b>Volume Recolhido (valor estimado)</b>: %{customdata[2]} m3<br>' +
                 '<b>Coordenadas</b>: lon - %{lon:.2f}, lat - %{lat:.2f}' +
                 #lado direito do hover
                 '<extra><b>Tipo de Contentor: %{customdata[3]}</b><br>' +
-                '<b>Capacidade do Contentor (l): %{customdata[4]}</b><br>' +
+                '<b>Capacidade do Contentor (m3): %{customdata[4]}</b><br>' +
                 '<b>Estado: %{customdata[5]}</b><br>'
                 '<b>Circuito de Recolha %{customdata[6]}</b><br></extra>',
                 name = '<b>Ilha Ecológica/Contentores</b>'
@@ -339,7 +328,7 @@ def build_graph(circuito, tamanho):
                 ),
                 customdata=np.stack((trace_i["contentores"], (trace_i["recolhas"] * 100).astype(int),
                                      (trace_i["enchimento"] * 100).astype(int), trace_i["tipo"],
-                                     trace_i['volume'], trace_i['estado'], trace_i["Circuit"],
+                                     trace_i['volume']/1000, trace_i['estado'], trace_i["Circuit"],
                                      ), axis=-1),
                 hovertemplate=
                 # lado esquerdo do hover
@@ -349,7 +338,7 @@ def build_graph(circuito, tamanho):
                 '<b>Coordenadas</b>: lon - %{lon:.2f}, lat - %{lat:.2f}' +
                 # lado direito do hover
                 '<extra><b>Tipo de Contentor: %{customdata[3]}</b><br>' +
-                '<b>Capacidade do Contentor (l): %{customdata[4]}</b><br>' +
+                '<b>Capacidade do Contentor (m3): %{customdata[4]}</b><br>' +
                 '<b>Estado: %{customdata[5]}</b><br>'
                 '<b>Circuito de Recolha %{customdata[6]}</b><br></extra>',
                 name='<b>Ilha Ecológica/Contentores</b>'
@@ -408,40 +397,99 @@ def build_graph(circuito, tamanho):
         value=reg_trace['capacidade_usada'].mean(),
         title = '<b>Peso em transporte</b>'))
 
-    fig.add_trace(go.Indicator(
-        mode="number",
-        value= superficie['contentores'].sum()
-    ),
-        row=1, col=1),
+    ##Figura 3 - Apoio ao Gráfico - criação condicional, again
+    #nova condição dependente do modo de visualização
+    if tamanho is True:
+        # create subplot
+        fig = make_subplots(
+            rows=3, cols=2,
+            specs=[[{"type": "domain"}, {"type": "domain"}],
+                   [{"type": "domain"}, {"type": "domain"}],
+                   [{"type": "domain"}, {"type": "domain"}]],
+            column_titles=['<b>Cont. Superfície</b>', '<b>Cont. Semi-Enterrados</b>'],
+            row_titles=['<b>N. Visitados</b>', '<b>N. Recolhidos</b>', '<b>V. Recolhido (est)</b>']
+        )
 
-    fig.add_trace(go.Indicator(
-        mode="number",
-        value= superficie['Recolhidos'].sum(),
+        fig.add_trace(go.Indicator(
+            mode="number",
+            value=superficie['contentores'].sum()
         ),
-        row=2, col=1),
+            row=1, col=1),
 
-    fig.add_trace(go.Indicator(
-        mode="number",
-        number = {'suffix' : '%'},
-        value=superficie['enchimento'].mean() * 100,
+        fig.add_trace(go.Indicator(
+            mode="number",
+            value=superficie['Recolhidos'].sum(),
         ),
-        row=3, col=1),
+            row=2, col=1),
 
-    fig.add_trace(go.Indicator(
-        mode="number",
-        value= enterrados['contentores'].sum()),
-        row=1, col=2),
+        fig.add_trace(go.Indicator(
+            mode="number",
+            value=enterrados['contentores'].sum()),
+            row=1, col=2),
 
-    fig.add_trace(go.Indicator(
-        mode="number",
-        value= enterrados['Recolhidos'].sum(),),
-        row=2, col=2),
+        fig.add_trace(go.Indicator(
+            mode="number",
+            value=enterrados['Recolhidos'].sum(), ),
+            row=2, col=2),
 
-    fig.add_trace(go.Indicator(
-        mode="number",
-        number = {'suffix' : '%'},
-        value=enterrados['enchimento'].mean() * 100),
-        row=3, col=2),
+        fig.add_trace(go.Indicator(
+            mode="number",
+            number={'suffix': ' m3'},
+            value=superficie['litros'].sum() / 1000,
+        ),
+            row=3, col=1),
+
+        fig.add_trace(go.Indicator(
+            mode="number",
+            number={'suffix': ' m3'},
+            value=enterrados['litros'].sum() / 1000),
+            row=3, col=2),
+
+    else:
+        # create subplot
+        fig = make_subplots(
+            rows=3, cols=2,
+            specs=[[{"type": "domain"}, {"type": "domain"}],
+                   [{"type": "domain"}, {"type": "domain"}],
+                   [{"type": "domain"}, {"type": "domain"}]],
+            column_titles=['<b>Cont. Superfície</b>', '<b>Cont. Semi-Enterrados</b>'],
+            row_titles=['<b>N. Visitados</b>', '<b>N. Recolhidos</b>', '<b>% Enchimento</b>']
+        )
+
+        fig.add_trace(go.Indicator(
+            mode="number",
+            value=superficie['contentores'].sum()
+        ),
+            row=1, col=1),
+
+        fig.add_trace(go.Indicator(
+            mode="number",
+            value=superficie['Recolhidos'].sum(),
+        ),
+            row=2, col=1),
+
+        fig.add_trace(go.Indicator(
+            mode="number",
+            value=enterrados['contentores'].sum()),
+            row=1, col=2),
+
+        fig.add_trace(go.Indicator(
+            mode="number",
+            value=enterrados['Recolhidos'].sum(), ),
+            row=2, col=2),
+
+        fig.add_trace(go.Indicator(
+            mode="number",
+            number = {'suffix' : '%'},
+            value=superficie['enchimento'].mean() * 100,
+            ),
+            row=3, col=1),
+
+        fig.add_trace(go.Indicator(
+            mode="number",
+            number = {'suffix' : '%'},
+            value=enterrados['enchimento'].mean() * 100),
+            row=3, col=2),
 
     fig.update_layout(height=600, showlegend=False)
     card_layout = {"paper_bgcolor" : "LightSteelBlue", 'autosize' : False,
