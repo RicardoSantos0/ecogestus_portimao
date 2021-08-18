@@ -135,7 +135,7 @@ visita_layout = html.Div(
                             label=['Grau de enchimento dos contentores', 'Volume de resíduos recolhidos'],
                             value=False,
                             style={'font-weight': 'bold'},
-                            size=100,
+                            size=70,
                             ),
                         html.Div(
                             children=dcc.Graph(
