@@ -5,8 +5,7 @@ import dash_bootstrap_components as dbc
 from dash.dependencies import Input, Output
 
 #ligação à aplicação
-from app import app
-from app import server
+from app import app, server
 
 #ligação àquelas que serão as futuras tabs
 from visita import visita_layout
@@ -48,6 +47,8 @@ app.layout = dbc.Container([
                         color = 'success',
                         className= "mr-1",
                         id="learnMore",
+                        outline = True,
+                        size = 'lg'
                         ),
                         href="https://www.ecogestus.com",
                 ),

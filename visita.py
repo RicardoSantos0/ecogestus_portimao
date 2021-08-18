@@ -132,7 +132,7 @@ visita_layout = html.Div(
                         html.Label(['Seleccione um modo de visualização no mapa'], style={'font-weight': 'bold', 'align' : 'center'}),
                         daq.ToggleSwitch(
                             id='tamanho-contentor',
-                            label=['Potencial acumulação de resíduos', 'Volume Recolhido'],
+                            label=['Grau de enchimento dos contentores', 'Volume de resíduos recolhidos'],
                             value=False,
                             style={'font-weight': 'bold'},
                             size=100,
@@ -157,15 +157,7 @@ visita_layout = html.Div(
                 dcc.Markdown('''
 ###### **Notas:**
 
-Os valores de produtividade calculados têm, como termo de comparação, os seguintes valores de referência obtidos pela Equipa Técnica da Ecogestus num estudo semelhante realizado no Município de Mafra:
-
-**Quilogramas por km**: 123.75 kg/km
-
-**Toneladas por hora**: 1.95 ton/h
-
-**Kg por hora trabalhada**: 723.75 kg/horaT
-
-**Peso em carga**: Para este indicador específico, a referência usada será o peso útil de referência da viatura de recolha - 10906 kg
+**Peso em carga**: Este indicador é comparado com o peso útil de referência da viatura de recolha - 10906 kg
 
 ###### **Modos de visualização dos pontos:**      
 
