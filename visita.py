@@ -24,7 +24,7 @@ cont_recolha = pd.read_csv('./datasets/cont_recolha.csv')
 registos = pd.read_csv('./datasets/dados_registos.csv')
 
 circuitos.style.format({'Dist. Acumulada (km)': "{:.2f}", 'Longitude': "{:.2f}", 'Latitude': "{:.2f}"})
-registos.style.format({'kg/km': "{:.2f}", 'ton/h': "{:.2f}", ',capacidade_usada': "{:.2f}"})
+registos.style.format({'kg/km': "{:.2f}", 'ton/h': "{:.2f}", ',capacidade_usada': "{:.0f}"})
 
 #open other data
 pass
@@ -343,7 +343,7 @@ def build_graph(circuito, tamanho):
         mode="number + delta",
         #delta={'position': "top", 'reference': 123.75, 'relative': True},
         value=reg_trace['kg/km'].mean(),
-        title = '<b>kg/km</b>'))
+        title = '<b>kg/km</b>'),)
 
     kg_m3 = go.Figure(go.Indicator(
         mode="number + delta",
