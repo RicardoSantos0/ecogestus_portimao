@@ -368,7 +368,7 @@ def build_graph(circuito, tamanho):
                "decreasing": {"symbol": "👍", "color" : "#3D9970"}, "increasing": {"symbol": "❌", "color" : "#FF4136"}},
         number={"suffix" : " t"},
         value=reg_trace['capacidade_usada'].mean(),
-        title = '<b>Peso em transporte</b>'))
+        title = '<b>Carga Máxima</b>'))
 
     ##Figura 3 - Apoio ao Gráfico - criação condicional, again
     #nova condição dependente do modo de visualização
