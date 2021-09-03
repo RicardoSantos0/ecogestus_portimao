@@ -309,29 +309,29 @@ def build_graph(circuito, tamanho):
         mode="number",
         #delta={'position': "top", 'reference': 123.75, 'relative': True},
         value=reg_trace['kg/km'].mean(),
-        title = '<b>Produtividade (kg/km)</b>'),)
+        title = '<b>Prod.(kg/km)</b>'),)
 
     kg_m3 = go.Figure(go.Indicator(
         mode="number",
         #delta={'position': "top", 'reference': 123.75, 'relative': True},
         value=reg_trace['kg/m3'].mean(),
-        title = '<b>Peso específico (kg/m3)</b>'))
+        title = '<b>P. esp. (kg/m3)</b>'))
 
     ton_h = go.Figure(go.Indicator(
         mode="number",
         #delta={'position': "top", 'reference': 1.95, 'relative': True},
         value=reg_trace['ton/h'].mean(),
-        title = '<b>Produtividade (t/hora)</b>'))
+        title = '<b>Prod. (t/hora)</b>'))
 
     kg_ht = go.Figure(go.Indicator(
         mode="number",
         #delta={'position': "top", 'reference': 713.75, 'relative': True},
         value=reg_trace['kg/ht'].mean(),
-        title = '<b>Produtividade (kg/horaT)</b>'))
+        title = '<b>Prod. (kg/horaT)</b>'))
     cap = go.Figure(go.Indicator(
         mode="number",
         value=reg_trace['massa_t'].sum() / 1000,
-        title = '<b>Resíduos Recolhidos (t)</b>'))
+        title = '<b>Res. Rec. (t)</b>'))
 
     ##Figura 3 - Apoio ao Gráfico - criação condicional, again
     #nova condição dependente do modo de visualização
