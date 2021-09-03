@@ -327,7 +327,7 @@ def build_graph(circuito, tamanho):
         mode="number",
         #delta={'position': "top", 'reference': 713.75, 'relative': True},
         value=reg_trace['kg/ht'].mean(),
-        title = '<b>kg/horaT</b>'))
+        title = '<b>Produtividade (kg/horaT)</b>'))
     cap = go.Figure(go.Indicator(
         mode="number",
         value=reg_trace['massa_t'].sum() / 1000,
