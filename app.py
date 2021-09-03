@@ -15,8 +15,10 @@ external_stylesheets = [dbc.themes.SPACELAB]
 # create app
 app = dash.Dash(__name__, external_stylesheets=external_stylesheets,
                 meta_tags=[{'name': 'viewport',
-                            'content': 'width=device-width, initial-scale=1.0'}]
+                            'content': 'width=device-width, initial-scale=1.0'},
+                           ]
                 )
+app.config.suppress_callback_exceptions = True
 #insert authentication and start server
 auth = dash_auth.BasicAuth(app, USER_PASS)
 server = app.server

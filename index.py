@@ -9,7 +9,7 @@ from app import app, server
 
 #ligação àquelas que serão as futuras tabs
 from visita import visita_layout
-#from historico import historico_layout
+from historico import historico_layout
 
 # our app's Tabs *********************************************************
 app_tabs = html.Div(
@@ -73,7 +73,7 @@ def switch_tab(tab_chosen):
         return visita_layout
     elif tab_chosen == "hist":
         #return historico_layout
-        return html.P('Página em construção')
+        return 'Esta página ainda se encontra em construção. Procuraremos tê-la disponível com a maior brevidade possível.'
 
 if __name__=='__main__':
     app.run_server(debug=True)

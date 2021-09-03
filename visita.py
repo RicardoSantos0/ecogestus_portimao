@@ -24,7 +24,8 @@ cont_recolha = pd.read_csv('./datasets/cont_recolha.csv')
 registos = pd.read_csv('./datasets/dados_registos.csv')
 
 circuitos.style.format({'Dist. Acumulada (km)': "{:.2f}", 'Longitude': "{:.2f}", 'Latitude': "{:.2f}"})
-registos.style.format({'kg/km': "{:.2f}", 'ton/h': "{:.2f}", ',capacidade_usada': "{:.0f}"})
+registos.style.format({'kg/km': "{:.2f}", 'ton/h': "{:.2f}", ',capacidade_usada': "{:.1f}", 'vol_instalado_m3': "{:.1f}",
+                       'vol_recolhido_m3' : '{:.1f}'})
 
 #open other data
 pass
@@ -152,46 +153,11 @@ visita_layout = html.Div(
                     width = 5)
                 ]
         ),
-        dbc.Row(
-            dbc.Col(
-                dcc.Markdown('''
-###### **Notas:**
+#         dbc.Row(
+#             dbc.Col(
+        #             )
+        #         )
 
-**Peso em carga**: Este indicador é comparado com o peso útil de referência da viatura de recolha - 10906 kg
-
-###### **Modos de visualização dos pontos:**      
-
-**Potencial acumulação de resíduos**: Neste modo de visualização, o diâmetro de cada ponto é proporcional ao grau de enchimento (em percentagem) dos contentores visitados numa determinada localização*.
-
-**Volume de resíduos recolhidos**: Neste modo de visualização, o tamanho de cada ponto é proporcional ao volume estimado de resíduos recolhidos em cada localização.
-A estimativa de volume é uma função do número de contentores recolhidos, da sua capacidade volumétrica (em litros) e do seu grau de enchimento (em percentagem)*. 
-
-    *ver notas metodológicas adicionais para aceder aos detalhes sobre a recolha de dados.
-
-###### **Notas metodológicas adicionais:**
-
-As informações presentes neste separador ilustram as observações realizadas pela equipa técnica da Ecogestus, Lda. ao longo do acompanhamento dos circuitos de recolha da EMARP.
-O acompanhamento decorreu **entre os dias 5 e 9 de Julho de 2021**. No total, foram observados 8 circuitos de recolha: 
->
-> Os circuitos **1**, **2**, **4**, **5**, **6** e **8** foram **acompanhados de forma integral**,
-> 
-> Os circuitos **3** e **9** foram acompanhados apenas em parte. **As observações relacionadas com o circuito 3 não foram incluídas**. 
->
-
-###### Para cada circuito:
-
-**1. Foi registado o trajeto (coordenadas, distância percorrida e o tempo de duração do circuito)** realizado pela viatura de recolha desde o estaleiro da EMARP até ao local de descarga (_Aterro Sanitário do Barlavento_). Estas informações encontram-se representadas no mapa (na forma de linhas).
-
-**2. Foram registadas as localizações dos contentores e ilhas ecológicas associados ao circuito (representadas, no mapa, na forma de pontos). Para cada localização, obteve-se**:
-
->    
->*  O número de contentores visitados e a respetiva capacidade volumétrica,
->*  O número de contentores recolhidos e o grau de enchimento observado nos contentores recolhidos,
->
-  
-        ''', style = {'text-align': 'justify', 'textAlign': 'justify'}),
-        width = 12),
-            )
         ]
     )
 
@@ -260,19 +226,19 @@ def build_graph(circuito, tamanho):
             lon=trace_i['Longitude'],
             mode='markers',
             marker=go.scattermapbox.Marker(
-                size= ((trace_i['litros'] + 1000)/200),
+                size= ((trace_i['vol_recolhido_m3'] + 1)/0.2),
                 color = trace_i['Circuit'].map(color_dict),
                 ),
-                customdata=np.stack((trace_i["contentores"], (trace_i["recolhas"] * 100).astype(int),
-                                     trace_i["litros"]/1000, trace_i["tipo"],
-                                     trace_i['volume']/1000, trace_i['estado'], trace_i["Circuit"],
+                customdata=np.stack((trace_i["contentores"], (trace_i["%_recolhidos"] * 100).astype(int),
+                                     trace_i["vol_recolhido_m3"], trace_i["tipo"],
+                                     trace_i['vol_instalado_m3'], trace_i['estado'], trace_i["Circuit"],
                                      ), axis=-1),
                 hovertemplate=
                 #lado esquerdo do hover
                 '<b>Contentores Visitados</b>: %{customdata[0]}<br>' +
                 '<b>Contentores Recolhidos/Visitados</b>: %{customdata[1]}%<br>' +
                 '<b>Volume Recolhido (valor estimado)</b>: %{customdata[2]} m3<br>' +
-                '<b>Coordenadas</b>: lon - %{lon:.2f}, lat - %{lat:.2f}' +
+                '<b>Coordenadas</b>: lon: %{lon:.2f}, lat: %{lat:.2f}' +
                 #lado direito do hover
                 '<extra><b>Tipo de Contentor: %{customdata[3]}</b><br>' +
                 '<b>Capacidade do Contentor (m3): %{customdata[4]}</b><br>' +
@@ -288,19 +254,19 @@ def build_graph(circuito, tamanho):
                 lon=trace_i['Longitude'],
                 mode='markers',
                 marker=go.scattermapbox.Marker(
-                    size=(trace_i['enchimento']+0.05) * 70,
+                    size=(trace_i['percentagem']+0.05) * 70,
                     color=trace_i['Circuit'].map(color_dict),
                 ),
-                customdata=np.stack((trace_i["contentores"], (trace_i["recolhas"] * 100).astype(int),
-                                     (trace_i["enchimento"] * 100).astype(int), trace_i["tipo"],
-                                     trace_i['volume']/1000, trace_i['estado'], trace_i["Circuit"],
+                customdata=np.stack((trace_i["contentores"], (trace_i["%_recolhidos"] * 100).astype(int),
+                                     (trace_i["percentagem"] * 100).astype(int), trace_i["tipo"],
+                                     trace_i['vol_instalado_m3'], trace_i['estado'], trace_i["Circuit"],
                                      ), axis=-1),
                 hovertemplate=
                 # lado esquerdo do hover
                 '<b>Contentores Visitados</b>: %{customdata[0]}<br>' +
                 '<b>Contentores Recolhidos/Visitados</b>: %{customdata[1]}%<br>' +
                 '<b>Grau de enchimento dos contentores</b>: %{customdata[2]}%<br>' +
-                '<b>Coordenadas</b>: lon - %{lon:.2f}, lat - %{lat:.2f}' +
+                '<b>Coordenadas</b>: lon: %{lon:.2f}, lat: %{lat:.2f}' +
                 # lado direito do hover
                 '<extra><b>Tipo de Contentor: %{customdata[3]}</b><br>' +
                 '<b>Capacidade do Contentor (m3): %{customdata[4]}</b><br>' +
@@ -340,35 +306,32 @@ def build_graph(circuito, tamanho):
     #criar os novos indicadores
 
     kg_km = go.Figure(go.Indicator(
-        mode="number + delta",
+        mode="number",
         #delta={'position': "top", 'reference': 123.75, 'relative': True},
         value=reg_trace['kg/km'].mean(),
-        title = '<b>kg/km</b>'),)
+        title = '<b>Produtividade (kg/km)</b>'),)
 
     kg_m3 = go.Figure(go.Indicator(
-        mode="number + delta",
+        mode="number",
         #delta={'position': "top", 'reference': 123.75, 'relative': True},
         value=reg_trace['kg/m3'].mean(),
-        title = '<b>kg/m3</b>'))
+        title = '<b>Peso específico (kg/m3)</b>'))
 
     ton_h = go.Figure(go.Indicator(
-        mode="number+delta",
+        mode="number",
         #delta={'position': "top", 'reference': 1.95, 'relative': True},
         value=reg_trace['ton/h'].mean(),
-        title = '<b>ton/hora</b>'))
+        title = '<b>Produtividade (t/hora)</b>'))
 
     kg_ht = go.Figure(go.Indicator(
-        mode="number+delta",
+        mode="number",
         #delta={'position': "top", 'reference': 713.75, 'relative': True},
         value=reg_trace['kg/ht'].mean(),
         title = '<b>kg/horaT</b>'))
     cap = go.Figure(go.Indicator(
-        mode="number+delta",
-        delta={'position': "top", 'reference': carga_util, 'relative': True,
-               "decreasing": {"symbol": "👍", "color" : "#3D9970"}, "increasing": {"symbol": "❌", "color" : "#FF4136"}},
-        number={"suffix" : " t"},
-        value=reg_trace['capacidade_usada'].mean(),
-        title = '<b>Carga Máxima</b>'))
+        mode="number",
+        value=reg_trace['massa_t'].sum() / 1000,
+        title = '<b>Resíduos Recolhidos (t)</b>'))
 
     ##Figura 3 - Apoio ao Gráfico - criação condicional, again
     #nova condição dependente do modo de visualização
@@ -408,14 +371,14 @@ def build_graph(circuito, tamanho):
         fig.add_trace(go.Indicator(
             mode="number",
             number={'suffix': ' m3'},
-            value=superficie['litros'].sum() / 1000,
+            value=superficie['vol_recolhido_m3'].sum(),
         ),
             row=3, col=1),
 
         fig.add_trace(go.Indicator(
             mode="number",
             number={'suffix': ' m3'},
-            value=enterrados['litros'].sum() / 1000),
+            value=enterrados['vol_recolhido_m3'].sum()),
             row=3, col=2),
 
     else:
@@ -426,7 +389,7 @@ def build_graph(circuito, tamanho):
                    [{"type": "domain"}, {"type": "domain"}],
                    [{"type": "domain"}, {"type": "domain"}]],
             column_titles=['<b>Cont. Superfície</b>', '<b>Cont. Semi-Enterrados</b>'],
-            row_titles=['<b>N. Visitados</b>', '<b>N. Recolhidos</b>', '<b>% Enchimento</b>']
+            row_titles=['<b>N. Visitados</b>', '<b>N. Recolhidos</b>', '<b>% Enchimento Rec.</b>']
         )
 
         fig.add_trace(go.Indicator(
@@ -454,14 +417,15 @@ def build_graph(circuito, tamanho):
         fig.add_trace(go.Indicator(
             mode="number",
             number = {'suffix' : '%'},
-            value=superficie['enchimento'].mean() * 100,
+            value = (np.dot(superficie['percentagem'], superficie['Recolhidos']) / np.sum(superficie['Recolhidos'])) * 100,
             ),
             row=3, col=1),
 
         fig.add_trace(go.Indicator(
             mode="number",
             number = {'suffix' : '%'},
-            value=enterrados['enchimento'].mean() * 100),
+            value = (np.dot(enterrados['percentagem'], enterrados['Recolhidos']) / np.sum(enterrados['Recolhidos'])) * 100,
+        ),
             row=3, col=2),
 
     fig.update_layout(height=600, showlegend=False)
@@ -475,5 +439,5 @@ def build_graph(circuito, tamanho):
     for i in cards:
         i.update_layout(card_layout)
 
-    return [kg_km, kg_m3, ton_h, kg_ht, cap, map_1, fig]
+    return [cap, kg_km, ton_h, kg_ht, kg_m3, map_1, fig]
 #---------------------------------------------------------------
