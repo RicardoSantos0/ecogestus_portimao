@@ -331,7 +331,7 @@ def build_graph(circuito, tamanho):
     cap = go.Figure(go.Indicator(
         mode="number",
         value=reg_trace['massa_t'].sum() / 1000,
-        title = '<b>Res. Rec. (t)</b>'))
+        title = '<b>Tonelagem  (t)</b>'))
 
     ##Figura 3 - Apoio ao Gráfico - criação condicional, again
     #nova condição dependente do modo de visualização

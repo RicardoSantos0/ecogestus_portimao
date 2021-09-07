@@ -4,7 +4,7 @@ import dash_auth
 import dash_bootstrap_components as dbc
 
 #Global Variables and Passwords
-USER_PASS = [['ecogestus', 'emarp2021']]
+USER_PASS = [['emarp', 'rsu2021']]
 
 #external stylesheet
 #external_stylesheets = ['https://codepen.io/chriddyp/pen/bWLwgP.css']

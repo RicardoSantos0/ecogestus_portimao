@@ -26,18 +26,20 @@ app_tabs = html.Div(
 )
 
 app.layout = dbc.Container([
-    dbc.Row([dbc.Col(html.Img(
-                            src="https://www.ecogestus.com/pt/wp-content/uploads/2021/01/ecogestus_logotipo_moderno-2.jpeg",
-                            style={'height': '100%', 'width': '100%'}
-                            ),
-                            width = 1,
-                        ),
-            dbc.Col(html.Img(
+    dbc.Row([            dbc.Col(html.Img(
                             src="https://www.emarp.pt/wp-content/uploads/2021/07/EMARP_LOGO-PRINCIPAL.png",
                             style={'height': '80%', 'width': '60%'}
                             ),
                             width = 2,
                         ),
+
+        dbc.Col(html.Img(
+                            src="https://www.3drivers.pt/contents/images/news/D04092018164019.jpg",
+                            style={'height': '120%', 'width': '120%'}
+                            ),
+                            width = 1,
+                        ),
+
             dbc.Col(html.H2("Portimão | Desempenho da Recolha de RU",
                             style = { "text-align" : "center", 'font-weight': 'bold'}),
                             width=7),
@@ -50,7 +52,7 @@ app.layout = dbc.Container([
                         outline = True,
                         size = 'lg'
                         ),
-                        href="https://www.ecogestus.com",
+                        href="https://www.3drivers.pt/",
                 ),
                 width = 2,
             )
