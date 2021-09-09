@@ -320,7 +320,7 @@ def build_graph(circuito, tamanho):
     ton_h = go.Figure(go.Indicator(
         mode="number",
         #delta={'position': "top", 'reference': 1.95, 'relative': True},
-        value=reg_trace['ton/h'].mean(),
+        value=round(reg_trace['ton/h'].mean(),2),
         title = '<b>Prod. (t/hora)</b>'))
 
     kg_ht = go.Figure(go.Indicator(
